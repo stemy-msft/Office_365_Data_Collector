@@ -3161,36 +3161,55 @@ else
 # Exchange Online Remote Powershell that supports MFA - Hybrid blade of EAC - https://cmdletpswmodule.blob.core.windows.net/exopsmodule/Microsoft.Online.CSE.PSModule.Client.application
 # Security and Compliance Center - https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps
 
-# Connection Urls
-# Hard-code these for initial testing
-$SharepointAdminCenter = "https://sweetwafflefarm-admin.sharepoint.com"
-$ExoConnectioUri = "https://outlook.office365.com/powershell-liveid/"
-$SccConnectionUri = "https://ps.compliance.protection.outlook.com/powershell-liveid/"
 
 # Try to re-use an existing connection
 $CurrentPSSession = Check-CurrentPsSession
 If (($CurrentPSSession -eq $false) -or ($ForceNewConnection -eq $True))
 {
-	If ($MFA -eq $null)
+	$domainHost = read-host "Please enter the domain host name.  (For example, if the domain is litware.onmicrosoft.com then enter 'litware'): "
+
+	# Connection Urls
+	# Hard-code these for initial testing
+	# Commercial
+	$SharepointAdminCenter = "https://$domainhost-admin.sharepoint.com"
+	$ExoConnectioUri = "https://outlook.office365.com/powershell-liveid/"
+	$SccConnectionUri = "https://ps.compliance.protection.outlook.com/powershell-liveid/"
+
+	# 21Vianet
+
+	# Office365 Germany
+	# SccConnectionUri = https://ps.compliance.protection.outlook.de/powershell-liveid/
+	# Connect-AzureAD -AzureEnvironment "AzureGermanyCloud"
+
+	# US Government GCC
+
+	# US Government DOD
+
+
+
+	If ($MFA -ne $true)
 	{
-		write-host "Since MFA is not in use, we can store the credentials for re-use."
+		write-host "Since MFA is not in use, we can store the credentials for re-use." -foregroundcolor green
+		# Blank does not work and canceling the cred box doesn't work
+		# Use switch for multiple credentials?
 		$O365Cred = get-credential
 	}
 	elseif ($MFA -eq $true)
 	{
-		#$O365Upn = Read-host "Please enter the user principal name with access to the tenant: "
+		$O365Upn = Read-host "Please enter the user principal name with access to the tenant: "
 	}
 
-	<#
 	# Connect to Azure AD
 	if ($MFA -eq $true)
 	{
-		write-host "Multi-factor authentication is enabled" -foreground color yellow
+		write-host "Multi-factor authentication is enabled" -foregroundcolor yellow
+		write-host "Connecting to AzureAD" -ForegroundColor Green
 		Connect-AzureAD -AccountId $O365Upn
 	}
 	else
 	{
-		$AzureCredential = Get-Credential -UserName $AzureAdmin
+		#$AzureCredential = Get-Credential -UserName $AzureAdmin
+		write-host "Connecting to AzureAD" -ForegroundColor Green
 		Connect-AzureAD -Credential $O365Cred
 	}
 
@@ -3199,12 +3218,14 @@ If (($CurrentPSSession -eq $false) -or ($ForceNewConnection -eq $True))
 	Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 	if ($MFA -eq $true)
 	{
-		write-host "Multi-factor authentication is enabled" -foreground color yellow
-		Connect-SPOService $SharepointAdminCenter -UserName $O365Upn
+		write-host "Multi-factor authentication is enabled" -foregroundcolor yellow
+		write-host "Connecting to Sharepoint Online" -ForegroundColor Green
+		Connect-SPOService -url $SharepointAdminCenter -UserName $O365Upn
 	}
 	else
 	{
-		Connect-SPOService $SharepointAdminCenter -Credential $O365Cred
+		write-host "Connecting to Sharepoint Online" -ForegroundColor Green
+		Connect-SPOService -url $SharepointAdminCenter -Credential $O365Cred
 	}
 
 	#Connect to Skype
@@ -3212,21 +3233,22 @@ If (($CurrentPSSession -eq $false) -or ($ForceNewConnection -eq $True))
 	Import-Module SkypeOnlineConnector
 	if ($MFA -eq $true)
 	{
-		write-host "Multi-factor authentication is enabled" -foreground color yellow
+		write-host "Multi-factor authentication is enabled" -foregroundcolor yellow
+		write-host "Connecting to Skype for Business Online" -ForegroundColor Green
 		$CsSession = New-CsOnlineSession -UserName $O365Upn
 	}
 	else
 	{
+		write-host "Connecting to Skype for Business Online" -ForegroundColor Green
 		$CsSession = New-CsOnlineSession -Credential $O365Cred
 	}
-	Import-PSSession $CsSession -AllowClobber
-	#>
+	Import-PSSession $CsSession
 
 	#Connect to Exchange Online
-	write-host "Connecting to Exchange Online" -foregroundcolor green
 	If ($MFA -eq $true)
 	{
 		write-host "Multi-factor authentication is enabled" -foregroundcolor yellow
+		write-host "Connecting to Exchange Online" -foregroundcolor green
 		$ModuleLocation = "$($env:LOCALAPPDATA)\Apps\2.0"
 		$ExoModuleLocation = @(Get-ChildItem -Path $ModuleLocation -Filter "Microsoft.Exchange.Management.ExoPowershellModule.manifest" -Recurse )
 		If ($ExoModuleLocation.Count -ge 1)
@@ -3235,29 +3257,28 @@ If (($CurrentPSSession -eq $false) -or ($ForceNewConnection -eq $True))
 			$FullExoModulePath =  $ExoModuleLocation[0].Directory.tostring() + "\Microsoft.Exchange.Management.ExoPowershellModule.dll"
 			Import-Module $FullExoModulePath  -Force
 			$ExoSession	= New-ExoPSSession
-			Import-PSSession $ExoSession -AllowClobber
 		}
 	}
 	else
 	{
+		write-host "Connecting to Exchange Online" -foregroundcolor green
 		$ExoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri $ExoConnectioUri -Credential $O365Cred -Authentication Basic -AllowRedirection
-		Import-PSSession $ExoSession -DisableNameChecking -AllowClobber
 	}
+	Import-PSSession $ExoSession
 
 	#Connect to Security and Compliance Center
-	<#
-	write-host "Connecting to Security and Compliance Center" -foregroundcolor green
 	If ($MFA -eq $true)
 	{
 		write-host "Multi-factor authentication is enabled" -foregroundcolor yellow
+		write-host "Connecting to Security and Compliance Center" -foregroundcolor green
 		Connect-IPPSSession -UserPrincipalName $AzureAdmin
 	}
 	else
 	{
-		$SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri $SccConnectionUri -Credential $UserCredential -Authentication Basic -AllowRedirection
-		Import-PSSession $SccSession -DisableNameChecking
+		write-host "Connecting to Security and Compliance Center" -foregroundcolor green
+		$SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri $SccConnectionUri -Credential $O365Cred -Authentication Basic -AllowRedirection
+		Import-PSSession $SccSession -Prefix CC
 	}
-	#>
 }
 else
 {
