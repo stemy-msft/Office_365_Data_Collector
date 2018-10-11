@@ -143,7 +143,6 @@ $tab_Step3_ClientAccess = New-Object System.Windows.Forms.TabPage
 $bx_ClientAccess_Functions = New-Object System.Windows.Forms.GroupBox
 $btn_Step3_ClientAccess_CheckAll = New-Object System.Windows.Forms.Button
 $btn_Step3_ClientAccess_UncheckAll = New-Object System.Windows.Forms.Button
-$chk_Org_Get_ActiveSyncOrgSettings = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_MobileDevice = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_MobileDevicePolicy = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_AvailabilityAddressSpace = New-Object System.Windows.Forms.CheckBox
@@ -158,18 +157,13 @@ $btn_Step3_Global_CheckAll = New-Object System.Windows.Forms.Button
 $btn_Step3_Global_UncheckAll = New-Object System.Windows.Forms.Button
 $chk_Org_Get_AddressBookPolicy  = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_AddressList  = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_AntiPhishPolicy = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_AntiSpoofingPolicy = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_AtpPolicyForO365 = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_EmailAddressPolicy = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_GlobalAddressList = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_OfflineAddressBook = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_OnPremisesOrganization = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_OrgConfig = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_Rbac = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_RetentionPolicy = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_RetentionPolicyTag = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_SmimeConfig = New-Object System.Windows.Forms.CheckBox
 #endregion Step3 Global tab
 
 #region Step3 Recipient Tab
@@ -179,19 +173,14 @@ $btn_Step3_Recipient_CheckAll = New-Object System.Windows.Forms.Button
 $btn_Step3_Recipient_UncheckAll = New-Object System.Windows.Forms.Button
 $chk_Org_Get_CalendarProcessing = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_CASMailbox = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_CASMailboxPlan = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_Contact = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_DistributionGroup = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_DynamicDistributionGroup = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_Mailbox = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_MailboxFolderStatistics = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_MailboxPermission = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_MailboxPlan = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_MailboxStatistics = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_MailUser = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_PublicFolder = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_PublicFolderStatistics = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_UnifiedGroup = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Quota = New-Object System.Windows.Forms.CheckBox
 #endregion Step3 Recipient Tab
 
@@ -201,7 +190,6 @@ $bx_Transport_Functions = New-Object System.Windows.Forms.GroupBox
 $btn_Step3_Transport_CheckAll = New-Object System.Windows.Forms.Button
 $btn_Step3_Transport_UncheckAll = New-Object System.Windows.Forms.Button
 $chk_Org_Get_AcceptedDomain = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_DkimSigningConfig = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_InboundConnector = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_RemoteDomain = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Get_OutboundConnector = New-Object System.Windows.Forms.CheckBox
@@ -345,7 +333,7 @@ $handler_btn_Step1_Mailboxes_Discover=
 	{
 		New-Item $Mailbox_outputfile -type file -Force
 	    $MailboxList = @()
-		get-mailbox -resultsize unlimited | where-object {$_.RecipientTypeDetails -ne "DiscoveryMailbox"} | ForEach-Object `
+		get-mailbox -resultsize unlimited | ForEach-Object `
 		{
 			$MailboxList += $_.alias
 		}
@@ -552,77 +540,45 @@ $handler_btn_Step3_Execute_Click=
 		# First we start the jobs that query the organization instead of the Exchange server
 		#Region ExOrg Non-server Functions
 		If ($chk_Org_Get_AcceptedDomain.checked -eq $true)
-		{
-			write-host "Starting Get-AcceptedDomain" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetAcceptedDomain.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
-		If ($chk_Org_Get_ActiveSyncOrgSettings.checked -eq $true)
-		{
-			write-host "Starting Get-ActiveSyncOrgSettings" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetActiveSyncOrgSettings.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
+			{
+				write-host "Starting Get-AcceptedDomain" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetAcceptedDomain.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
 		If ($chk_Org_Get_AddressBookPolicy.checked -eq $true)
-		{
-			write-host "Starting Get-AddressBookPolicy" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetAddressBookPolicy.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
+			{
+				write-host "Starting Get-AddressBookPolicy" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetAddressBookPolicy.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
 		If ($chk_Org_Get_AddressList.checked -eq $true)
-		{
-			write-host "Starting Get-AddressList" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetAddressList.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
+			{
+				write-host "Starting Get-AddressList" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetAddressList.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
 		If ($chk_Org_Get_AdminGroups.checked -eq $true)
-		{
-			write-host "Starting Get-AdminGroups" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_Misc_AdminGroups.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
-		If ($chk_Org_Get_AntiPhishPolicy.checked -eq $true)
-		{
-			write-host "Starting Get-AntiPhishPolicy" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetAntiPhishPolicy.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
-		If ($chk_Org_Get_AntiSpoofingPolicy.checked -eq $true)
-		{
-			write-host "Starting Get-AntiSpoofingPolicy" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetAntiSpoofingPolicy.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
-		If ($chk_Org_Get_AtpPolicyForO365.checked -eq $true)
-		{
-			write-host "Starting Get-AtpPolicyForO365" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetAtpPolicyForO365.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
+			{
+				write-host "Starting Get-AdminGroups" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_Misc_AdminGroups.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
 		If ($chk_Org_Get_AvailabilityAddressSpace.checked -eq $true)
-		{
-			write-host "Starting Get-AvailabilityAddressSpace" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetAvailabilityAddressSpace.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
+			{
+				write-host "Starting Get-AvailabilityAddressSpace" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetAvailabilityAddressSpace.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
 		If ($chk_Org_Get_CalendarProcessing.checked -eq $true)
 		{
 			For ($i = 1;$i -lt 11;$i++)
@@ -645,62 +601,38 @@ $handler_btn_Step3_Execute_Click=
 					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 			}
 		}
-		If ($chk_Org_Get_CasMailboxPlan.checked -eq $true)
-		{
-			write-host "Starting Get-CasMailboxPlan" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetCasMailboxPlan.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
-		If ($chk_Org_Get_Contact.checked -eq $true)
-		{
-			write-host "Starting Get-Contact" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetContact.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
 		If ($chk_Org_Get_DistributionGroup.checked -eq $true)
-		{
-			write-host "Starting Get-DistributionGroup" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetDistributionGroup.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
-	If ($chk_Org_Get_DkimSigningConfig.checked -eq $true)
-		{
-			write-host "Starting Get-DkimSigningConfig" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetDkimSigningConfig.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
+			{
+				write-host "Starting Get-DistributionGroup" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetDistributionGroup.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
 		If ($chk_Org_Get_DynamicDistributionGroup.checked -eq $true)
-		{
-			write-host "Starting Get-DynamicDistributionGroup" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetDynamicDistributionGroup.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
+			{
+				write-host "Starting Get-DynamicDistributionGroup" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetDynamicDistributionGroup.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
 		If ($chk_Org_Get_EmailAddressPolicy.checked -eq $true)
-		{
-			write-host "Starting Get-EmailAddressPolicy" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetEmailAddressPolicy.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
+			{
+				write-host "Starting Get-EmailAddressPolicy" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetEmailAddressPolicy.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
 		If ($chk_Org_Get_GlobalAddressList.checked -eq $true)
-		{
-			write-host "Starting Get-GlobalAddressList job" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetGlobalAddressList.ps1 -location $location -i $i}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
+			{
+				write-host "Starting Get-GlobalAddressList job" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetGlobalAddressList.ps1 -location $location -i $i}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
 		If ($chk_Org_Get_Mailbox.checked -eq $true)
 		{
 			For ($i = 1;$i -lt 11;$i++)
@@ -712,30 +644,14 @@ $handler_btn_Step3_Execute_Click=
 					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 			}
 		}
-		If ($chk_Org_Get_MailboxPlan.checked -eq $true)
-		{
-			write-host "Starting Get-MailboxPlan" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetMailboxPlan.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
-		If ($chk_Org_Get_MailUser.checked -eq $true)
-		{
-			write-host "Starting Get-MailUser" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetMailUser.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
 		If ($chk_Org_Get_InboundConnector.checked -eq $true)
-		{
-			write-host "Starting Get-InboundConnector" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetInboundConnector.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
+			{
+				write-host "Starting Get-InboundConnector" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetInboundConnector.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
 		If ($chk_Org_Get_MailboxFolderStatistics.checked -eq $true)
 		{
 			For ($i = 1;$i -lt 11;$i++)
@@ -770,168 +686,152 @@ $handler_btn_Step3_Execute_Click=
 			}
 		}
 		If ($chk_Org_Get_MobileDevice.checked -eq $true)
-		{
-			write-host "Starting Get-MobileDevice" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetMobileDevice.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
-		If ($chk_Org_Get_MobileDevicePolicy.checked -eq $true)
-		{
-			write-host "Starting Get-MobileDevicePolicy" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetMobileDeviceMbxPolicy.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
-		If ($chk_Org_Get_OfflineAddressBook.checked -eq $true)
-		{
-			write-host "Starting Get-OfflineAddressBook" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetOfflineAddressBook.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
-		If ($chk_Org_Get_OnPremisesOrganization.checked -eq $true)
-		{
-			write-host "Starting Get-OnPremisesOrganization" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetOnPremisesOrganization.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
-		If ($chk_Org_Get_OrgConfig.checked -eq $true)
-		{
-			write-host "Starting Get-OrgConfig" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetOrgConfig.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
-		If ($chk_Org_Get_OutboundConnector.checked -eq $true)
-		{
-			write-host "Starting Get-OutboundConnector" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetOutboundConnector.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
-		If ($chk_Org_Get_OwaMailboxPolicy.checked -eq $true)
-		{
-			write-host "Starting Get-OwaMailboxPolicy" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetOwaMailboxPolicy.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
-		If ($chk_Org_Get_PublicFolder.checked -eq $true)
-		{
-			write-host "Starting Get-PublicFolder" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetPublicFolder.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
-		If ($chk_Org_Get_PublicFolderStatistics.checked -eq $true)
-		{
-			write-host "Starting Get-PublicFolderStatistics" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetPublicFolderStats.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
-		If ($chk_Org_Quota.checked -eq $true)
-		{
-			For ($i = 1;$i -lt 11;$i++)
 			{
-				write-host "Starting Get-Quota job$i" -foregroundcolor green
+				write-host "Starting Get-MobileDevice" -foregroundcolor green
 				try
-					{.\O365DC_Scripts\ExOrg_Quota.ps1 -location $location -i $i}
+					{.\O365DC_Scripts\ExOrg_GetMobileDevice.ps1 -location $location}
 				catch [System.Management.Automation.CommandNotFoundException]
 					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 			}
-		}
+		If ($chk_Org_Get_MobileDevicePolicy.checked -eq $true)
+			{
+				write-host "Starting Get-MobileDevicePolicy" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetMobileDeviceMbxPolicy.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
+		If ($chk_Org_Get_OfflineAddressBook.checked -eq $true)
+			{
+				write-host "Starting Get-OfflineAddressBook" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetOfflineAddressBook.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
+		If ($chk_Org_Get_OrgConfig.checked -eq $true)
+			{
+				write-host "Starting Get-OrgConfig" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetOrgConfig.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
+		If ($chk_Org_Get_OutboundConnector.checked -eq $true)
+			{
+				write-host "Starting Get-OutboundConnector" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetOutboundConnector.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
+		If ($chk_Org_Get_OwaMailboxPolicy.checked -eq $true)
+			{
+				write-host "Starting Get-OwaMailboxPolicy" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetOwaMailboxPolicy.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
+		If ($chk_Org_Get_PublicFolder.checked -eq $true)
+			{
+				write-host "Starting Get-PublicFolder" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetPublicFolder.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
+		If ($chk_Org_Get_PublicFolderStatistics.checked -eq $true)
+			{
+				write-host "Starting Get-PublicFolderStatistics" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetPublicFolderStats.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
+		If ($chk_Org_Quota.checked -eq $true)
+			{
+				For ($i = 1;$i -lt 11;$i++)
+				{
+					write-host "Starting Get-Quota" -foregroundcolor green
+					try
+						{.\O365DC_Scripts\ExOrg_Quota.ps1 -location $location -i $i}
+					catch [System.Management.Automation.CommandNotFoundException]
+						{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+				}
+			}
 		If ($chk_Org_Get_Rbac.checked -eq $true)
-		{
-			write-host "Starting Get-Rbac" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetRbac.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
+			{
+				write-host "Starting Get-Rbac" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetRbac.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
 		If ($chk_Org_Get_RemoteDomain.checked -eq $true)
-		{
-			write-host "Starting Get-RemoteDomain" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetRemoteDomain.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
+			{
+				write-host "Starting Get-RemoteDomain" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetRemoteDomain.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
 		If ($chk_Org_Get_RetentionPolicy.checked -eq $true)
-		{
-			write-host "Starting Get-RetentionPolicy" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetRetentionPolicy.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
+			{
+				write-host "Starting Get-RetentionPolicy" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetRetentionPolicy.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
 		If ($chk_Org_Get_RetentionPolicyTag.checked -eq $true)
-		{
-			write-host "Starting Get-RetentionPolicyTag" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetRetentionPolicyTag.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
-		If ($chk_Org_Get_SmimeConfig.checked -eq $true)
-		{
-			write-host "Starting Get-SmimeConfig" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetSmimeConfig.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
+			{
+				write-host "Starting Get-RetentionPolicyTag" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetRetentionPolicyTag.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
 		If ($chk_Org_Get_TransportConfig.checked -eq $true)
-		{
-			write-host "Starting Get-TransportConfig" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetTransportConfig.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
+			{
+				write-host "Starting Get-TransportConfig" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetTransportConfig.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
 		If ($chk_Org_Get_TransportRule.checked -eq $true)
-		{
-			write-host "Starting Get-TransportRule" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetTransportRule.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
+			{
+				write-host "Starting Get-TransportRule" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetTransportRule.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
 		If ($chk_Org_Get_UmAutoAttendant.checked -eq $true)
-		{
-			write-host "Starting Get-UmAutoAttendant" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetUmAutoAttendant.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
+			{
+				write-host "Starting Get-UmAutoAttendant" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetUmAutoAttendant.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
 		If ($chk_Org_Get_UmDialPlan.checked -eq $true)
-		{
-			write-host "Starting Get-UmDialPlan" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetUmDialPlan.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
+			{
+				write-host "Starting Get-UmDialPlan" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetUmDialPlan.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
 		If ($chk_Org_Get_UmIpGateway.checked -eq $true)
-		{
-			write-host "Starting Get-UmIpGateway" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetUmIpGateway.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
+			{
+				write-host "Starting Get-UmIpGateway" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetUmIpGateway.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
 		If ($chk_Org_Get_UmMailbox.checked -eq $true)
 		{
 			For ($i = 1;$i -lt 11;$i++)
@@ -943,7 +843,7 @@ $handler_btn_Step3_Execute_Click=
 					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 			}
 		}
-#			If ($chk_Org_Get_UmMailboxConfiguration.checked -eq $true)
+			#			If ($chk_Org_Get_UmMailboxConfiguration.checked -eq $true)
 #			{
 #				For ($i = 1;$i -lt 11;$i++)
 #				{Start-O365DCJob -server $server -job "Get-UmMailboxConfiguration - Set $i" -JobType 0 -Location $location -JobScriptName "ExOrg_GetUmMailboxConfiguration.ps1" -i $i -PSSession $session_0}
@@ -954,21 +854,13 @@ $handler_btn_Step3_Execute_Click=
 #				{Start-O365DCJob -server $server -job "Get-UmMailboxPin - Set $i" -JobType 0 -Location $location -JobScriptName "ExOrg_GetUmMailboxPin.ps1" -i $i -PSSession $session_0}
 #			}
 		If ($chk_Org_Get_UmMailboxPolicy.checked -eq $true)
-		{
-			write-host "Starting Get-UmMailboxPolicy" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetUmMailboxPolicy.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
-		If ($chk_Org_Get_UnifiedGroup.checked -eq $true)
-		{
-			write-host "Starting Get-UnifiedGroup" -foregroundcolor green
-			try
-				{.\O365DC_Scripts\ExOrg_GetUnifiedGroup.ps1 -location $location}
-			catch [System.Management.Automation.CommandNotFoundException]
-				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
-		}
+			{
+				write-host "Starting Get-UmMailboxPolicy" -foregroundcolor green
+				try
+					{.\O365DC_Scripts\ExOrg_GetUmMailboxPolicy.ps1 -location $location}
+				catch [System.Management.Automation.CommandNotFoundException]
+					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
+			}
 		#EndRegion ExOrg Non-Server Functions
 	}
 	else
@@ -1709,30 +1601,6 @@ $Col_1_loc = 35
 $Col_2_loc = 290
 $Row_1_loc = 25
 $Row_2_loc = 25
-$chk_Org_Get_ActiveSyncOrgSettings.Font = $font_Calibri_10pt_normal
-	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_1_loc
-	$System_Drawing_Point.Y = $Row_1_loc
-	$Row_1_loc += 25
-	$chk_Org_Get_ActiveSyncOrgSettings.Location = $System_Drawing_Point
-	$chk_Org_Get_ActiveSyncOrgSettings.Name = "chk_Org_Get_ActiveSyncOrgSettings"
-	$chk_Org_Get_ActiveSyncOrgSettings.Size = $System_Drawing_Size_Reusable_chk
-	$chk_Org_Get_ActiveSyncOrgSettings.TabIndex = 0
-	$chk_Org_Get_ActiveSyncOrgSettings.Text = "Get-ActiveSyncOrgSettings"
-	$chk_Org_Get_ActiveSyncOrgSettings.UseVisualStyleBackColor = $True
-	$bx_ClientAccess_Functions.Controls.Add($chk_Org_Get_ActiveSyncOrgSettings)
-$chk_Org_Get_AvailabilityAddressSpace.Font = $font_Calibri_10pt_normal
-	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_1_loc
-	$System_Drawing_Point.Y = $Row_1_loc
-	$Row_1_loc += 25
-	$chk_Org_Get_AvailabilityAddressSpace.Location = $System_Drawing_Point
-	$chk_Org_Get_AvailabilityAddressSpace.Name = "chk_Org_Get_AvailabilityAddressSpace"
-	$chk_Org_Get_AvailabilityAddressSpace.Size = $System_Drawing_Size_Reusable_chk
-	$chk_Org_Get_AvailabilityAddressSpace.TabIndex = 10
-	$chk_Org_Get_AvailabilityAddressSpace.Text = "Get-AvailabilityAddressSpace"
-	$chk_Org_Get_AvailabilityAddressSpace.UseVisualStyleBackColor = $True
-	$bx_ClientAccess_Functions.Controls.Add($chk_Org_Get_AvailabilityAddressSpace)
 $chk_Org_Get_MobileDevice.Font = $font_Calibri_10pt_normal
 	$System_Drawing_Point = New-Object System.Drawing.Point
 	$System_Drawing_Point.X = $Col_1_loc
@@ -1757,6 +1625,18 @@ $chk_Org_Get_MobileDevicePolicy.Font = $font_Calibri_10pt_normal
 	$chk_Org_Get_MobileDevicePolicy.Text = "Get-MobileDeviceMailboxPolicy"
 	$chk_Org_Get_MobileDevicePolicy.UseVisualStyleBackColor = $True
 	$bx_ClientAccess_Functions.Controls.Add($chk_Org_Get_MobileDevicePolicy)
+$chk_Org_Get_AvailabilityAddressSpace.Font = $font_Calibri_10pt_normal
+	$System_Drawing_Point = New-Object System.Drawing.Point
+	$System_Drawing_Point.X = $Col_1_loc
+	$System_Drawing_Point.Y = $Row_1_loc
+	$Row_1_loc += 25
+	$chk_Org_Get_AvailabilityAddressSpace.Location = $System_Drawing_Point
+	$chk_Org_Get_AvailabilityAddressSpace.Name = "chk_Org_Get_AvailabilityAddressSpace"
+	$chk_Org_Get_AvailabilityAddressSpace.Size = $System_Drawing_Size_Reusable_chk
+	$chk_Org_Get_AvailabilityAddressSpace.TabIndex = 10
+	$chk_Org_Get_AvailabilityAddressSpace.Text = "Get-AvailabilityAddressSpace"
+	$chk_Org_Get_AvailabilityAddressSpace.UseVisualStyleBackColor = $True
+	$bx_ClientAccess_Functions.Controls.Add($chk_Org_Get_AvailabilityAddressSpace)
 $chk_Org_Get_OwaMailboxPolicy.Font = $font_Calibri_10pt_normal
 	$System_Drawing_Point = New-Object System.Drawing.Point
 	$System_Drawing_Point.X = $Col_1_loc
@@ -1843,42 +1723,6 @@ $chk_Org_Get_AddressList.Font = $font_Calibri_10pt_normal
 	$chk_Org_Get_AddressList.Text = "Get-AddressList"
 	$chk_Org_Get_AddressList.UseVisualStyleBackColor = $True
 	$bx_Global_Functions.Controls.Add($chk_Org_Get_AddressList)
-$chk_Org_Get_AntiPhishPolicy.Font = $font_Calibri_10pt_normal
-	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_1_loc
-	$System_Drawing_Point.Y = $Row_1_loc
-	$Row_1_loc += 25
-	$chk_Org_Get_AntiPhishPolicy.Location = $System_Drawing_Point
-	$chk_Org_Get_AntiPhishPolicy.Name = "chk_Org_Get_AntiPhishPolicy"
-	$chk_Org_Get_AntiPhishPolicy.Size = $System_Drawing_Size_Reusable_chk
-	$chk_Org_Get_AntiPhishPolicy.TabIndex = 18
-	$chk_Org_Get_AntiPhishPolicy.Text = "Get-AntiPhishPolicy"
-	$chk_Org_Get_AntiPhishPolicy.UseVisualStyleBackColor = $True
-	$bx_Global_Functions.Controls.Add($chk_Org_Get_AntiPhishPolicy)
-$chk_Org_Get_AntiSpoofingPolicy.Font = $font_Calibri_10pt_normal
-	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_1_loc
-	$System_Drawing_Point.Y = $Row_1_loc
-	$Row_1_loc += 25
-	$chk_Org_Get_AntiSpoofingPolicy.Location = $System_Drawing_Point
-	$chk_Org_Get_AntiSpoofingPolicy.Name = "chk_Org_Get_AntiSpoofingPolicy"
-	$chk_Org_Get_AntiSpoofingPolicy.Size = $System_Drawing_Size_Reusable_chk
-	$chk_Org_Get_AntiSpoofingPolicy.TabIndex = 18
-	$chk_Org_Get_AntiSpoofingPolicy.Text = "Get-AntiSpoofingPolicy"
-	$chk_Org_Get_AntiSpoofingPolicy.UseVisualStyleBackColor = $True
-	$bx_Global_Functions.Controls.Add($chk_Org_Get_AntiSpoofingPolicy)
-$chk_Org_Get_AtpPolicyForO365.Font = $font_Calibri_10pt_normal
-	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_1_loc
-	$System_Drawing_Point.Y = $Row_1_loc
-	$Row_1_loc += 25
-	$chk_Org_Get_AtpPolicyForO365.Location = $System_Drawing_Point
-	$chk_Org_Get_AtpPolicyForO365.Name = "chk_Org_Get_AtpPolicyForO365"
-	$chk_Org_Get_AtpPolicyForO365.Size = $System_Drawing_Size_Reusable_chk
-	$chk_Org_Get_AtpPolicyForO365.TabIndex = 18
-	$chk_Org_Get_AtpPolicyForO365.Text = "Get-AtpPolicyForO365"
-	$chk_Org_Get_AtpPolicyForO365.UseVisualStyleBackColor = $True
-	$bx_Global_Functions.Controls.Add($chk_Org_Get_AtpPolicyForO365)
 $chk_Org_Get_EmailAddressPolicy.Font = $font_Calibri_10pt_normal
 	$System_Drawing_Point = New-Object System.Drawing.Point
 	$System_Drawing_Point.X = $Col_1_loc
@@ -1905,9 +1749,9 @@ $chk_Org_Get_GlobalAddressList.Font = $font_Calibri_10pt_normal
 	$bx_Global_Functions.Controls.Add($chk_Org_Get_GlobalAddressList)
 $chk_Org_Get_OfflineAddressBook.Font = $font_Calibri_10pt_normal
 	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_2_loc
-	$System_Drawing_Point.Y = $Row_2_loc
-	$Row_2_loc += 25
+	$System_Drawing_Point.X = $Col_1_loc
+	$System_Drawing_Point.Y = $Row_1_loc
+	$Row_1_loc += 25
 	$chk_Org_Get_OfflineAddressBook.Location = $System_Drawing_Point
 	$chk_Org_Get_OfflineAddressBook.Name = "chk_Org_Get_OfflineAddressBook"
 	$chk_Org_Get_OfflineAddressBook.Size = $System_Drawing_Size_Reusable_chk
@@ -1915,23 +1759,11 @@ $chk_Org_Get_OfflineAddressBook.Font = $font_Calibri_10pt_normal
 	$chk_Org_Get_OfflineAddressBook.Text = "Get-OfflineAddressBook"
 	$chk_Org_Get_OfflineAddressBook.UseVisualStyleBackColor = $True
 	$bx_Global_Functions.Controls.Add($chk_Org_Get_OfflineAddressBook)
-$chk_Org_Get_OnPremisesOrganization.Font = $font_Calibri_10pt_normal
-	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_2_loc
-	$System_Drawing_Point.Y = $Row_2_loc
-	$Row_2_loc += 25
-	$chk_Org_Get_OnPremisesOrganization.Location = $System_Drawing_Point
-	$chk_Org_Get_OnPremisesOrganization.Name = "chk_Org_Get_OnPremisesOrganization"
-	$chk_Org_Get_OnPremisesOrganization.Size = $System_Drawing_Size_Reusable_chk
-	$chk_Org_Get_OnPremisesOrganization.TabIndex = 1
-	$chk_Org_Get_OnPremisesOrganization.Text = "Get-OnPremisesOrganization"
-	$chk_Org_Get_OnPremisesOrganization.UseVisualStyleBackColor = $True
-	$bx_Global_Functions.Controls.Add($chk_Org_Get_OnPremisesOrganization)
 $chk_Org_Get_OrgConfig.Font = $font_Calibri_10pt_normal
 	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_2_loc
-	$System_Drawing_Point.Y = $Row_2_loc
-	$Row_2_loc += 25
+	$System_Drawing_Point.X = $Col_1_loc
+	$System_Drawing_Point.Y = $Row_1_loc
+	$Row_1_loc += 25
 	$chk_Org_Get_OrgConfig.Location = $System_Drawing_Point
 	$chk_Org_Get_OrgConfig.Name = "chk_Org_Get_OrgConfig"
 	$chk_Org_Get_OrgConfig.Size = $System_Drawing_Size_Reusable_chk
@@ -1975,18 +1807,6 @@ $chk_Org_Get_RetentionPolicyTag.Font = $font_Calibri_10pt_normal
 	$chk_Org_Get_RetentionPolicyTag.Text = "Get-RetentionPolicyTag"
 	$chk_Org_Get_RetentionPolicyTag.UseVisualStyleBackColor = $True
 	$bx_Global_Functions.Controls.Add($chk_Org_Get_RetentionPolicyTag)
-$chk_Org_Get_SmimeConfig.Font = $font_Calibri_10pt_normal
-	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_2_loc
-	$System_Drawing_Point.Y = $Row_2_loc
-	$Row_2_loc += 25
-	$chk_Org_Get_SmimeConfig.Location = $System_Drawing_Point
-	$chk_Org_Get_SmimeConfig.Name = "chk_Org_Get_SmimeConfig"
-	$chk_Org_Get_SmimeConfig.Size = $System_Drawing_Size_Reusable_chk
-	$chk_Org_Get_SmimeConfig.TabIndex = 6
-	$chk_Org_Get_SmimeConfig.Text = "Get-SmimeConfig"
-	$chk_Org_Get_SmimeConfig.UseVisualStyleBackColor = $True
-	$bx_Global_Functions.Controls.Add($chk_Org_Get_SmimeConfig)
 #EndRegion Step3 Global tab
 
 #Region Step3 Recipient tab
@@ -2061,30 +1881,6 @@ $chk_Org_Get_CASMailbox.Font = $font_Calibri_10pt_normal
 	$chk_Org_Get_CASMailbox.Text = "Get-CASMailbox"
 	$chk_Org_Get_CASMailbox.UseVisualStyleBackColor = $True
 	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_CASMailbox)
-$chk_Org_Get_CasMailboxPlan.Font = $font_Calibri_10pt_normal
-	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_1_loc
-	$System_Drawing_Point.Y = $Row_1_loc
-	$Row_1_loc += 25
-	$chk_Org_Get_CasMailboxPlan.Location = $System_Drawing_Point
-	$chk_Org_Get_CasMailboxPlan.Name = "chk_Org_Get_CasMailboxPlan"
-	$chk_Org_Get_CasMailboxPlan.Size = $System_Drawing_Size_Reusable_chk
-	$chk_Org_Get_CasMailboxPlan.TabIndex = 8
-	$chk_Org_Get_CasMailboxPlan.Text = "Get-CasMailboxPlan"
-	$chk_Org_Get_CasMailboxPlan.UseVisualStyleBackColor = $True
-	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_CasMailboxPlan)
-$chk_Org_Get_Contact.Font = $font_Calibri_10pt_normal
-	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_1_loc
-	$System_Drawing_Point.Y = $Row_1_loc
-	$Row_1_loc += 25
-	$chk_Org_Get_Contact.Location = $System_Drawing_Point
-	$chk_Org_Get_Contact.Name = "chk_Org_Get_Contact"
-	$chk_Org_Get_Contact.Size = $System_Drawing_Size_Reusable_chk
-	$chk_Org_Get_Contact.TabIndex = 8
-	$chk_Org_Get_Contact.Text = "Get-Contact"
-	$chk_Org_Get_Contact.UseVisualStyleBackColor = $True
-	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_Contact)
 $chk_Org_Get_DistributionGroup.Font = $font_Calibri_10pt_normal
 	$System_Drawing_Point = New-Object System.Drawing.Point
 	$System_Drawing_Point.X = $Col_1_loc
@@ -2135,9 +1931,9 @@ $chk_Org_Get_MailboxFolderStatistics.Font = $font_Calibri_10pt_normal
 	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_MailboxFolderStatistics)
 $chk_Org_Get_MailboxPermission.Font = $font_Calibri_10pt_normal
 	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_2_loc
-	$System_Drawing_Point.Y = $Row_2_loc
-	$Row_2_loc += 25
+	$System_Drawing_Point.X = $Col_1_loc
+	$System_Drawing_Point.Y = $Row_1_loc
+	$Row_1_loc += 25
 	$chk_Org_Get_MailboxPermission.Location = $System_Drawing_Point
 	$chk_Org_Get_MailboxPermission.Name = "chk_Org_Get_MailboxPermission"
 	$chk_Org_Get_MailboxPermission.Size = $System_Drawing_Size_Reusable_chk
@@ -2145,23 +1941,11 @@ $chk_Org_Get_MailboxPermission.Font = $font_Calibri_10pt_normal
 	$chk_Org_Get_MailboxPermission.Text = "Get-MailboxPermission"
 	$chk_Org_Get_MailboxPermission.UseVisualStyleBackColor = $True
 	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_MailboxPermission)
-$chk_Org_Get_MailboxPlan.Font = $font_Calibri_10pt_normal
-	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_2_loc
-	$System_Drawing_Point.Y = $Row_2_loc
-	$Row_2_loc += 25
-	$chk_Org_Get_MailboxPlan.Location = $System_Drawing_Point
-	$chk_Org_Get_MailboxPlan.Name = "chk_Org_Get_MailboxPlan"
-	$chk_Org_Get_MailboxPlan.Size = $System_Drawing_Size_Reusable_chk
-	$chk_Org_Get_MailboxPlan.TabIndex = 8
-	$chk_Org_Get_MailboxPlan.Text = "Get-MailboxPlan"
-	$chk_Org_Get_MailboxPlan.UseVisualStyleBackColor = $True
-	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_MailboxPlan)
 $chk_Org_Get_MailboxStatistics.Font = $font_Calibri_10pt_normal
 	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_2_loc
-	$System_Drawing_Point.Y = $Row_2_loc
-	$Row_2_loc += 25
+	$System_Drawing_Point.X = $Col_1_loc
+	$System_Drawing_Point.Y = $Row_1_loc
+	$Row_1_loc += 25
 	$chk_Org_Get_MailboxStatistics.Location = $System_Drawing_Point
 	$chk_Org_Get_MailboxStatistics.Name = "chk_Org_Get_MailboxStatistics"
 	$chk_Org_Get_MailboxStatistics.Size = $System_Drawing_Size_Reusable_chk
@@ -2169,23 +1953,11 @@ $chk_Org_Get_MailboxStatistics.Font = $font_Calibri_10pt_normal
 	$chk_Org_Get_MailboxStatistics.Text = "Get-MailboxStatistics"
 	$chk_Org_Get_MailboxStatistics.UseVisualStyleBackColor = $True
 	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_MailboxStatistics)
-$chk_Org_Get_MailUser.Font = $font_Calibri_10pt_normal
-	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_2_loc
-	$System_Drawing_Point.Y = $Row_2_loc
-	$Row_2_loc += 25
-	$chk_Org_Get_MailUser.Location = $System_Drawing_Point
-	$chk_Org_Get_MailUser.Name = "chk_Org_Get_MailUser"
-	$chk_Org_Get_MailUser.Size = $System_Drawing_Size_Reusable_chk
-	$chk_Org_Get_MailUser.TabIndex = 8
-	$chk_Org_Get_MailUser.Text = "Get-MailUser"
-	$chk_Org_Get_MailUser.UseVisualStyleBackColor = $True
-	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_MailUser)
 $chk_Org_Get_PublicFolder.Font = $font_Calibri_10pt_normal
 	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_2_loc
-	$System_Drawing_Point.Y = $Row_2_loc
-	$Row_2_loc += 25
+	$System_Drawing_Point.X = $Col_1_loc
+	$System_Drawing_Point.Y = $Row_1_loc
+	$Row_1_loc += 25
 	$chk_Org_Get_PublicFolder.Location = $System_Drawing_Point
 	$chk_Org_Get_PublicFolder.Name = "chk_Org_Get_PublicFolder"
 	$chk_Org_Get_PublicFolder.Size = $System_Drawing_Size_Reusable_chk
@@ -2195,9 +1967,9 @@ $chk_Org_Get_PublicFolder.Font = $font_Calibri_10pt_normal
 	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_PublicFolder)
 $chk_Org_Get_PublicFolderStatistics.Font = $font_Calibri_10pt_normal
 	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_2_loc
-	$System_Drawing_Point.Y = $Row_2_loc
-	$Row_2_loc += 25
+	$System_Drawing_Point.X = $Col_1_loc
+	$System_Drawing_Point.Y = $Row_1_loc
+	$Row_1_loc += 25
 	$chk_Org_Get_PublicFolderStatistics.Location = $System_Drawing_Point
 	$chk_Org_Get_PublicFolderStatistics.Name = "chk_Org_Get_PublicFolderStatistics"
 	$chk_Org_Get_PublicFolderStatistics.Size = $System_Drawing_Size_Reusable_chk
@@ -2205,23 +1977,11 @@ $chk_Org_Get_PublicFolderStatistics.Font = $font_Calibri_10pt_normal
 	$chk_Org_Get_PublicFolderStatistics.Text = "Get-PublicFolderStatistics"
 	$chk_Org_Get_PublicFolderStatistics.UseVisualStyleBackColor = $True
 	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_PublicFolderStatistics)
-$chk_Org_Get_UnifiedGroup.Font = $font_Calibri_10pt_normal
-	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_2_loc
-	$System_Drawing_Point.Y = $Row_2_loc
-	$Row_2_loc += 25
-	$chk_Org_Get_UnifiedGroup.Location = $System_Drawing_Point
-	$chk_Org_Get_UnifiedGroup.Name = "chk_Org_Get_UnifiedGroup"
-	$chk_Org_Get_UnifiedGroup.Size = $System_Drawing_Size_Reusable_chk
-	$chk_Org_Get_UnifiedGroup.TabIndex = 8
-	$chk_Org_Get_UnifiedGroup.Text = "Get-UnifiedGroup"
-	$chk_Org_Get_UnifiedGroup.UseVisualStyleBackColor = $True
-	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_UnifiedGroup)
 $chk_Org_Quota.Font = $font_Calibri_10pt_normal
 	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_2_loc
-	$System_Drawing_Point.Y = $Row_2_loc
-	$Row_2_loc += 25
+	$System_Drawing_Point.X = $Col_1_loc
+	$System_Drawing_Point.Y = $Row_1_loc
+	$Row_1_loc += 25
 	$chk_Org_Quota.Location = $System_Drawing_Point
 	$chk_Org_Quota.Name = "chk_Org_Quota"
 	$chk_Org_Quota.Size = $System_Drawing_Size_Reusable_chk
@@ -2291,18 +2051,6 @@ $chk_Org_Get_AcceptedDomain.Font = $font_Calibri_10pt_normal
 	$chk_Org_Get_AcceptedDomain.Text = "Get-AcceptedDomain"
 	$chk_Org_Get_AcceptedDomain.UseVisualStyleBackColor = $True
 	$bx_Transport_Functions.Controls.Add($chk_Org_Get_AcceptedDomain)
-$chk_Org_Get_DkimSigningConfig.Font = $font_Calibri_10pt_normal
-	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_1_loc
-	$System_Drawing_Point.Y = $Row_1_loc
-	$Row_1_loc += 25
-	$chk_Org_Get_DkimSigningConfig.Location = $System_Drawing_Point
-	$chk_Org_Get_DkimSigningConfig.Name = "chk_Org_Get_DkimSigningConfig"
-	$chk_Org_Get_DkimSigningConfig.Size = $System_Drawing_Size_Reusable_chk
-	$chk_Org_Get_DkimSigningConfig.TabIndex = 8
-	$chk_Org_Get_DkimSigningConfig.Text = "Get-DkimSigningConfig"
-	$chk_Org_Get_DkimSigningConfig.UseVisualStyleBackColor = $True
-	$bx_Transport_Functions.Controls.Add($chk_Org_Get_DkimSigningConfig)
 $chk_Org_Get_InboundConnector.Font = $font_Calibri_10pt_normal
 	$System_Drawing_Point = New-Object System.Drawing.Point
 	$System_Drawing_Point.X = $Col_1_loc
@@ -2315,18 +2063,6 @@ $chk_Org_Get_InboundConnector.Font = $font_Calibri_10pt_normal
 	$chk_Org_Get_InboundConnector.Text = "Get-InboundConnector"
 	$chk_Org_Get_InboundConnector.UseVisualStyleBackColor = $True
 	$bx_Transport_Functions.Controls.Add($chk_Org_Get_InboundConnector)
-$chk_Org_Get_OutboundConnector.Font = $font_Calibri_10pt_normal
-	$System_Drawing_Point = New-Object System.Drawing.Point
-	$System_Drawing_Point.X = $Col_1_loc
-	$System_Drawing_Point.Y = $Row_1_loc
-	$Row_1_loc += 25
-	$chk_Org_Get_OutboundConnector.Location = $System_Drawing_Point
-	$chk_Org_Get_OutboundConnector.Name = "chk_Org_Get_OutboundConnector"
-	$chk_Org_Get_OutboundConnector.Size = $System_Drawing_Size_Reusable_chk
-	$chk_Org_Get_OutboundConnector.TabIndex = 11
-	$chk_Org_Get_OutboundConnector.Text = "Get-OutboundConnector"
-	$chk_Org_Get_OutboundConnector.UseVisualStyleBackColor = $True
-	$bx_Transport_Functions.Controls.Add($chk_Org_Get_OutboundConnector)
 $chk_Org_Get_RemoteDomain.Font = $font_Calibri_10pt_normal
 	$System_Drawing_Point = New-Object System.Drawing.Point
 	$System_Drawing_Point.X = $Col_1_loc
@@ -2339,6 +2075,18 @@ $chk_Org_Get_RemoteDomain.Font = $font_Calibri_10pt_normal
 	$chk_Org_Get_RemoteDomain.Text = "Get-RemoteDomain"
 	$chk_Org_Get_RemoteDomain.UseVisualStyleBackColor = $True
 	$bx_Transport_Functions.Controls.Add($chk_Org_Get_RemoteDomain)
+$chk_Org_Get_OutboundConnector.Font = $font_Calibri_10pt_normal
+	$System_Drawing_Point = New-Object System.Drawing.Point
+	$System_Drawing_Point.X = $Col_1_loc
+	$System_Drawing_Point.Y = $Row_1_loc
+	$Row_1_loc += 25
+	$chk_Org_Get_OutboundConnector.Location = $System_Drawing_Point
+	$chk_Org_Get_OutboundConnector.Name = "chk_Org_Get_OutboundConnector"
+	$chk_Org_Get_OutboundConnector.Size = $System_Drawing_Size_Reusable_chk
+	$chk_Org_Get_OutboundConnector.TabIndex = 11
+	$chk_Org_Get_OutboundConnector.Text = "Get-OutboundConnector"
+	$chk_Org_Get_OutboundConnector.UseVisualStyleBackColor = $True
+	$bx_Transport_Functions.Controls.Add($chk_Org_Get_OutboundConnector)
 $chk_Org_Get_TransportConfig.Font = $font_Calibri_10pt_normal
 	$System_Drawing_Point = New-Object System.Drawing.Point
 	$System_Drawing_Point.X = $Col_1_loc
@@ -3142,21 +2890,6 @@ Function Update-O365DCJobCount
 Function Get-ExOrgBoxStatus # See if any are checked
 {
 if (($chk_Org_Get_AcceptedDomain.checked -eq $true) -or
-
-($chk_Org_Get_ActiveSyncOrgSettings.checked -eq $true) -or
-($chk_Org_Get_AntiPhishPolicy.checked -eq $true) -or
-($chk_Org_Get_AntiSpoofingPolicy.checked -eq $true) -or
-($chk_Org_Get_AtpPolicyForO365.checked -eq $true) -or
-($chk_Org_Get_OnPremisesOrganization.checked -eq $true) -or
-($chk_Org_Get_SmimeConfig.checked -eq $true) -or
-($chk_Org_Get_CASMailboxPlan.checked -eq $true) -or
-($chk_Org_Get_Contact.checked -eq $true) -or
-($chk_Org_Get_MailboxPlan.checked -eq $true) -or
-($chk_Org_Get_MailUser.checked -eq $true) -or
-($chk_Org_Get_UnifiedGroup.checked -eq $true) -or
-($chk_Org_Get_DkimSigningConfig.checked -eq $true) -or
-
-
 	($chk_Org_Get_MobileDevice.checked -eq $true) -or
 	($chk_Org_Get_MobileDevicePolicy.checked -eq $true) -or
 	($chk_Org_Get_AddressBookPolicy.checked -eq $true) -or
@@ -3273,11 +3006,7 @@ Function Disable-TargetsMailbox
 
 Function Set-AllFunctionsClientAccess
 {
-	Param([boolean]$Check)
-	
-	$chk_Org_Get_ActiveSyncOrgSettings.checked = $Check
-
-
+    Param([boolean]$Check)
 	$chk_Org_Get_MobileDevice.Checked = $Check
 	$chk_Org_Get_MobileDevicePolicy.Checked = $Check
 	$chk_Org_Get_AvailabilityAddressSpace.Checked = $Check
@@ -3286,14 +3015,7 @@ Function Set-AllFunctionsClientAccess
 
 Function Set-AllFunctionsGlobal
 {
-	Param([boolean]$Check)
-	
-	$chk_Org_Get_AntiPhishPolicy.checked  = $Check
-	$chk_Org_Get_AntiSpoofingPolicy.checked  = $Check
-	$chk_Org_Get_AtpPolicyForO365.checked  = $Check
-	$chk_Org_Get_OnPremisesOrganization.checked = $Check
-	$chk_Org_Get_SmimeConfig.checked  = $Check
-
+    Param([boolean]$Check)
 	$chk_Org_Get_AddressBookPolicy.Checked = $Check
 	$chk_Org_Get_AddressList.Checked = $Check
 	$chk_Org_Get_EmailAddressPolicy.Checked = $Check
@@ -3307,15 +3029,7 @@ Function Set-AllFunctionsGlobal
 
 Function Set-AllFunctionsRecipient
 {
-	Param([boolean]$Check)
-	
-	
-	$chk_Org_Get_CASMailboxPlan.checked  = $Check
-	$chk_Org_Get_Contact.checked  = $Check
-	$chk_Org_Get_MailboxPlan.checked  = $Check
-	$chk_Org_Get_MailUser.checked  = $Check
-	$chk_Org_Get_UnifiedGroup.checked = $Check
-
+    Param([boolean]$Check)
 	$chk_Org_Get_CalendarProcessing.Checked = $Check
 	$chk_Org_Get_CASMailbox.Checked = $Check
 	$chk_Org_Get_DistributionGroup.Checked = $Check
@@ -3331,10 +3045,7 @@ Function Set-AllFunctionsRecipient
 
 Function Set-AllFunctionsTransport
 {
-	Param([boolean]$Check)
-	
-	$chk_Org_Get_DkimSigningConfig.checked  = $Check
-
+    Param([boolean]$Check)
 	$chk_Org_Get_AcceptedDomain.Checked = $Check
 	$chk_Org_Get_InboundConnector.Checked = $Check
 	$chk_Org_Get_RemoteDomain.Checked = $Check
