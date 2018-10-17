@@ -4024,7 +4024,7 @@ else
 # Exchange Online Remote Powershell that supports MFA - Hybrid blade of EAC - https://cmdletpswmodule.blob.core.windows.net/exopsmodule/Microsoft.Online.CSE.PSModule.Client.application
 # Security and Compliance Center - https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps
 
-$TestGUI = $true
+$TestGUI = $false
 if ($TestGUI -eq $true)
 {}
 else {
