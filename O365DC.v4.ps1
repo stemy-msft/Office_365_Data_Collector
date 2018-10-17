@@ -1468,7 +1468,7 @@ $handler_btn_Step4_Assemble_Click=
 		if ($chk_Step4_Sharepoint_Report.checked -eq $true)
 		{
 			write-host "-- Starting to assemble the Sharepoint Spreadsheet"
-				.\O365DC_Scripts\Core_assemble_Spo_Excel.ps1 -RunLocation $location
+				.\O365DC_Scripts\Core_assemble_Sharepoint_Excel.ps1 -RunLocation $location
 				write-host "---- Completed the Sharepoint Spreadsheet" -ForegroundColor Green
 		}
 
