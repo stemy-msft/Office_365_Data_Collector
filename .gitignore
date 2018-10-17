@@ -1,0 +1,15 @@
+# Ignore settings and add-on files
+
+settings.json
+
+*.json
+
+
+
+# Ignore any temp/working files
+
+*copy.ps1
+
+O365DC.v4 - Copy*.ps1
+
+**/O365DC_Scripts/* - Copy.ps1
