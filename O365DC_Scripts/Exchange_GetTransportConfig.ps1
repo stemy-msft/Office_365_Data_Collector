@@ -1,5 +1,5 @@
 #############################################################################
-#                     ExOrg_GetTransportConfig.ps1							#
+#                     Exchange_GetTransportConfig.ps1						#
 #                                     			 							#
 #                               4.0.2    		 							#
 #                                     			 							#
@@ -26,7 +26,7 @@ $a = get-date
 
 $ErrorActionPreference = "Stop"
 Trap {
-$ErrorText = "ExOrg_GetTransportConfig " + "`n" + $server + "`n"
+$ErrorText = "Exchange_GetTransportConfig " + "`n" + $server + "`n"
 $ErrorText += $_
 
 $ErrorLog = New-Object -TypeName System.Diagnostics.EventLog -ArgumentList Application
@@ -36,16 +36,16 @@ Try{$ErrorLog.WriteEntry($ErrorText,"Error", 100)}catch{}
 }
 
 set-location -LiteralPath $location
-$output_location = $location + "\output\ExOrg"
+$output_location = $location + "\output\Exchange"
 
 if ((Test-Path -LiteralPath $output_location) -eq $false)
     {New-Item -Path $output_location -ItemType directory -Force}
 
-$ExOrg_GetTransportConfig_outputfile = $output_location + "\ExOrg_GetTransportConfig.txt"
+$Exchange_GetTransportConfig_outputfile = $output_location + "\Exchange_GetTransportConfig.txt"
 
 @(Get-TransportConfig) | ForEach-Object `
 {
-	$output_ExOrg_GetTransportConfig = "Transport Config" + "`t" + `
+	$output_Exchange_GetTransportConfig = "Transport Config" + "`t" + `
 	$_.AddressBookPolicyRoutingEnabled + "`t" + `
 	$_.AnonymousSenderToRecipientRatePerHour + "`t" + `
 	$_.ClearCategories + "`t" + `
@@ -99,10 +99,10 @@ $ExOrg_GetTransportConfig_outputfile = $output_location + "\ExOrg_GetTransportCo
 	$_.VerifySecureSubmitEnabled + "`t" + `
 	$_.VoicemailJournalingEnabled + "`t" + `
 	$_.Xexch50Enabled
-	$output_ExOrg_GetTransportConfig | Out-File -FilePath $ExOrg_GetTransportConfig_outputfile -append 
+	$output_Exchange_GetTransportConfig | Out-File -FilePath $Exchange_GetTransportConfig_outputfile -append 
 }
 
-$EventText = "ExOrg_GetTransportConfig " + "`n" + $server + "`n"
+$EventText = "Exchange_GetTransportConfig " + "`n" + $server + "`n"
 $RunTimeInSec = [int](((get-date) - $a).totalseconds)
 $EventText += "Process run time`t`t" + $RunTimeInSec + " sec `n" 
 

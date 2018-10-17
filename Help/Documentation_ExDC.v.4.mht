@@ -3437,20 +3437,20 @@ anglekx:
 <p class=3DMsoNormal><span class=3DSpellE>ExDC</span> is used to collect a =
 large amount
 of information about an Exchange environment with minimal effort by the
-PFE.<span style=3D'mso-spacerun:yes'>  </span>The data is initially collect=
+PFE.<span style=3D'mso-spacerun:yes'>ï¿½ </span>The data is initially collect=
 ed
 into a series of text files that can then be assembled into Excel spreadshe=
 ets and
 a Word document on the data collection server or another workstation.<span
-style=3D'mso-spacerun:yes'>  </span>The four output files are:</p>
+style=3D'mso-spacerun:yes'>ï¿½ </span>The four output files are:</p>
 
 <p class=3DMsoListParagraphCxSpFirst style=3D'text-indent:-.25in;mso-list:l=
 2 level1 lfo15'><![if !supportLists]><span
 style=3D'font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-fa=
 mily:
-Symbol'><span style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times N=
+Symbol'><span style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times N=
 ew Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span class=3DSpellE>ExDC_DC</span> – Spread=
+</span></span></span><![endif]><span class=3DSpellE>ExDC_DC</span> ï¿½ Spread=
 sheet
 of WMI and registry settings on domain controllers</p>
 
@@ -3458,9 +3458,9 @@ of WMI and registry settings on domain controllers</p>
 l2 level1 lfo15'><![if !supportLists]><span
 style=3D'font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-fa=
 mily:
-Symbol'><span style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times N=
+Symbol'><span style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times N=
 ew Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span class=3DSpellE>ExDC_Exch</span> – Spre=
+</span></span></span><![endif]><span class=3DSpellE>ExDC_Exch</span> ï¿½ Spre=
 adsheet
 of WMI and registry settings on Exchange servers</p>
 
@@ -3468,9 +3468,9 @@ of WMI and registry settings on Exchange servers</p>
 l2 level1 lfo15'><![if !supportLists]><span
 style=3D'font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-fa=
 mily:
-Symbol'><span style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times N=
+Symbol'><span style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times N=
 ew Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span class=3DSpellE>ExDC_ExOrg</span> – Spr=
+</span></span></span><![endif]><span class=3DSpellE>ExDC_Exchange</span> ï¿½ Spr=
 eadsheet
 of Exchange organization cmdlet output</p>
 
@@ -3478,11 +3478,11 @@ of Exchange organization cmdlet output</p>
  level1 lfo15'><![if !supportLists]><span
 style=3D'font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-fa=
 mily:
-Symbol'><span style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times N=
+Symbol'><span style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times N=
 ew Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]><span class=3DSpellE>ExDC_ExchangeEnvironmen=
 talReport</span>
-– Document of the summary of Exchange environment</p>
+ï¿½ Document of the summary of Exchange environment</p>
 
 <p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
 
@@ -3558,7 +3558,7 @@ hange
 Management <span class=3DGramE>Tools :</span></b> If Exchange Server 2010, =
 Exchange
 2013, or Exchange 2016 is installed in the environment, the corresponding
-Exchange tools must be installed.<span style=3D'mso-spacerun:yes'>  </span>=
+Exchange tools must be installed.<span style=3D'mso-spacerun:yes'>ï¿½ </span>=
 If multiple
 versions are installed in the environment, the latest version of the Exchan=
 ge
@@ -3664,13 +3664,13 @@ The parameter displays the supported switches</p>
 tyle:normal'>Example:
 </i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
 .v4.ps1
-–Help<o:p></o:p></span></p>
+ï¿½Help<o:p></o:p></span></p>
 
 <p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>-<span class=
-=3DSpellE>JobCount_ExOrg</span></b><br>
+=3DSpellE>JobCount_Exchange</span></b><br>
 This parameter allows the max number of jobs for the Exchange Functions.<sp=
 an
-style=3D'mso-spacerun:yes'>  </span>The default value is 10, but if this va=
+style=3D'mso-spacerun:yes'>ï¿½ </span>The default value is 10, but if this va=
 lue is
 set too high, the <span class=3DSpellE>PowershellMaxConcurrency</span> for =
 the
@@ -3680,50 +3680,50 @@ Exchange Throttling policy may be exceeded.</p>
 tyle:normal'>Example:
 </i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
 .v4.ps1
-–<span class=3DSpellE>JobCount_ExOrg</span> 12</span><i style=3D'mso-bidi-f=
+ï¿½<span class=3DSpellE>JobCount_Exchange</span> 12</span><i style=3D'mso-bidi-f=
 ont-style:
 normal'><o:p></o:p></i></p>
 
 <p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>-<span class=
-=3DSpellE>JobPolling_ExOrg</span></b><br>
+=3DSpellE>JobPolling_Exchange</span></b><br>
 The polling interval in seconds for the Exchange Functions.<span
-style=3D'mso-spacerun:yes'>  </span>The default value is 5 seconds.</p>
+style=3D'mso-spacerun:yes'>ï¿½ </span>The default value is 5 seconds.</p>
 
 <p class=3DMsoNormal style=3D'text-indent:.5in'><i style=3D'mso-bidi-font-s=
 tyle:normal'>Example:
 </i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
 .v4.ps1
-–<span class=3DSpellE>JobPolling_ExOrg</span> 30</span></p>
+ï¿½<span class=3DSpellE>JobPolling_Exchange</span> 30</span></p>
 
 <p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>-<span class=
 =3DSpellE>JobCount_WMI</span></b><br>
 This parameter allows the max number of jobs for the Server Functions.<span
-style=3D'mso-spacerun:yes'>  </span>The default value is 25.</p>
+style=3D'mso-spacerun:yes'>ï¿½ </span>The default value is 25.</p>
 
 <p class=3DMsoNormal style=3D'text-indent:.5in'><i style=3D'mso-bidi-font-s=
 tyle:normal'>Example:
 </i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
 ExDC.v4.ps1
-–<span class=3DSpellE>JobCount_WMI</span> 40<o:p></o:p></span></p>
+ï¿½<span class=3DSpellE>JobCount_WMI</span> 40<o:p></o:p></span></p>
 
 <p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>-<span class=
 =3DSpellE>JobPolling_WMI</span></b><br>
 The polling interval in seconds for the Server Functions.<span
-style=3D'mso-spacerun:yes'>  </span>The default value is 5 seconds.</p>
+style=3D'mso-spacerun:yes'>ï¿½ </span>The default value is 5 seconds.</p>
 
 <p class=3DMsoNormal style=3D'text-indent:.5in'><i style=3D'mso-bidi-font-s=
 tyle:normal'>Example:
 </i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
 .v4.ps1
-–<span class=3DSpellE>JobPolling_WMI</span> 30</span></p>
+ï¿½<span class=3DSpellE>JobPolling_WMI</span> 30</span></p>
 
 <p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>-<span class=
 =3DSpellE>Timeout_WMI_Job</span></b><br>
-Job timeout for Server Functions.<span style=3D'mso-spacerun:yes'>  </span>=
+Job timeout for Server Functions.<span style=3D'mso-spacerun:yes'>ï¿½ </span>=
 If a
 job exceeds this value, it is terminated at the next interval specified in =
 <span
-class=3DSpellE>JobPolling_WMI</span>.<span style=3D'mso-spacerun:yes'>  </s=
+class=3DSpellE>JobPolling_WMI</span>.<span style=3D'mso-spacerun:yes'>ï¿½ </s=
 pan>The
 default value is 600 seconds but should be adjusted for organizations with
 servers over slow connections.</p>
@@ -3732,15 +3732,15 @@ servers over slow connections.</p>
 tyle:normal'>Example:
 </i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
 .v4.ps1
-–<span class=3DSpellE>Timeout_WMI_Job</span> 1200</span></p>
+ï¿½<span class=3DSpellE>Timeout_WMI_Job</span> 1200</span></p>
 
 <p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>-<span class=
-=3DSpellE>Timeout_ExOrg_Job</span></b><br>
-Job timeout for Exchange Functions.<span style=3D'mso-spacerun:yes'>  </spa=
+=3DSpellE>Timeout_Exchange_Job</span></b><br>
+Job timeout for Exchange Functions.<span style=3D'mso-spacerun:yes'>ï¿½ </spa=
 n>If a
 job exceeds this value, it is terminated at the next interval specified in =
 <span
-class=3DSpellE>JobPolling_ExOrg</span>.<span style=3D'mso-spacerun:yes'> 
+class=3DSpellE>JobPolling_Exchange</span>.<span style=3D'mso-spacerun:yes'>ï¿½
 </span>The default value is 3600 seconds but should be adjusted for
 organizations with <span class=3DGramE>a large number of</span> mailboxes or
 servers over slow connections.</p>
@@ -3749,16 +3749,16 @@ servers over slow connections.</p>
 tyle:normal'>Example:
 </i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
 .v4.ps1
-–<span class=3DSpellE>Timeout_ExOrg_Job</span> 7200</span></p>
+ï¿½<span class=3DSpellE>Timeout_Exchange_Job</span> 7200</span></p>
 
 <p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>-<span class=
 =3DSpellE>ServerForPSSession</span></b><br>
 This parameter is only used for organizations with Exchange 2010/2013.<span
-style=3D'mso-spacerun:yes'>  </span>By default, an Exchange 2010 or 2013 se=
+style=3D'mso-spacerun:yes'>ï¿½ </span>By default, an Exchange 2010 or 2013 se=
 rver
 will be selected to establish a remote <span class=3DSpellE>Powershell</spa=
 n>
-connection.<span style=3D'mso-spacerun:yes'>  </span>This switch allows a s=
+connection.<span style=3D'mso-spacerun:yes'>ï¿½ </span>This switch allows a s=
 erver
 to the specified manually.</p>
 
@@ -3766,7 +3766,7 @@ to the specified manually.</p>
 tyle:normal'>Example:
 </i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
 .v4.ps1
-–<span class=3DSpellE>ServerForPSSession</span> ExchangeCAS3<o:p></o:p></sp=
+ï¿½<span class=3DSpellE>ServerForPSSession</span> ExchangeCAS3<o:p></o:p></sp=
 an></p>
 
 <p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>-<span class=
@@ -3779,7 +3779,7 @@ the Domain Controllers and Exchange Servers tests.</p>
 tyle:normal'>Example:
 </i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
 .v4.ps1
-–<span class=3DSpellE>INI_Server</span> “.\Sample_INI_server.ini”</span></p>
+ï¿½<span class=3DSpellE>INI_Server</span> ï¿½.\Sample_INI_server.iniï¿½</span></p>
 
 <p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>-<span class=
 =3DSpellE>INI_Cluster</span><br>
@@ -3791,11 +3791,11 @@ for the Cluster tests.</p>
 tyle:normal'>Example:
 </i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
 .v4.ps1
-–<span class=3DSpellE>INI_Cluster</span> “.\Sample_INI_cluster.ini”</span><=
+ï¿½<span class=3DSpellE>INI_Cluster</span> ï¿½.\Sample_INI_cluster.iniï¿½</span><=
 /p>
 
 <p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>-<span class=
-=3DSpellE>INI_ExOrg</span><br>
+=3DSpellE>INI_Exchange</span><br>
 </b>This parameter allows an INI file to be specified with a test configura=
 tion
 for the Exchange Functions.</p>
@@ -3804,25 +3804,25 @@ for the Exchange Functions.</p>
 tyle:normal'>Example:
 </i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
 .v4.ps1
-–<span class=3DSpellE>INI_ExOrg</span> “.\Sample_INI_ExOrg.ini”</span></p>
+ï¿½<span class=3DSpellE>INI_Exchange</span> ï¿½.\Sample_INI_Exchange.iniï¿½</span></p>
 
 <p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>-<span class=
 =3DSpellE>NoEMS</span><br>
 </b>This switch will launch the <span class=3DSpellE>ExDC</span> GUI and by=
 pass
-the checks for Exchange Management Tools.<span style=3D'mso-spacerun:yes'> 
+the checks for Exchange Management Tools.<span style=3D'mso-spacerun:yes'>ï¿½
 </span></p>
 
 <p class=3DMsoNormal style=3D'text-indent:.5in'><i style=3D'mso-bidi-font-s=
 tyle:normal'>Example:
 </i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
 .v4.ps1
-–<span class=3DSpellE>NoEMS</span><o:p></o:p></span></p>
+ï¿½<span class=3DSpellE>NoEMS</span><o:p></o:p></span></p>
 
 <p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>ExDC.v4_NotAd=
 min.ps1<br>
 </b>This script is used in cases where the account does not have local admin
-permissions on the server or workstation.<span style=3D'mso-spacerun:yes'> 
+permissions on the server or workstation.<span style=3D'mso-spacerun:yes'>ï¿½
 </span>For <span class=3DGramE>example</span> if the contents of the data
 collection run on the Exchange server are moved to a local non-privileged
 workstation where Excel is installed for report generation, use this versio=
@@ -3869,10 +3869,10 @@ style=3D'mso-list:Ignore'>2.<span style=3D'font:7.0pt "Times New Roman"'>&n=
 bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Check the properties of the zip (Figure 1) a=
 nd
-insure that the file is not blocked.<span style=3D'mso-spacerun:yes'>  </sp=
+insure that the file is not blocked.<span style=3D'mso-spacerun:yes'>ï¿½ </sp=
 an>If
-the file is blocked, click on the “Unblock” button before proceeding to the
-next step.<span style=3D'mso-spacerun:yes'>  </span>If this is not done, the
+the file is blocked, click on the ï¿½Unblockï¿½ button before proceeding to the
+next step.<span style=3D'mso-spacerun:yes'>ï¿½ </span>If this is not done, the
 execution of the scripts may be unexpectedly blocked. </p>
 
 <p class=3DMsoListParagraphCxSpMiddle style=3D'text-indent:-.25in;mso-list:=
@@ -3882,7 +3882,7 @@ style=3D'mso-list:Ignore'>3.<span style=3D'font:7.0pt "Times New Roman"'>&n=
 bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Unzip the file to a working path with suffic=
 ient
-disk space.<span style=3D'mso-spacerun:yes'>  </span>The actual space requi=
+disk space.<span style=3D'mso-spacerun:yes'>ï¿½ </span>The actual space requi=
 rement
 is based on the amount of data collected but should be less than 100MB in m=
 ost
@@ -3945,7 +3945,7 @@ AAAAAIoEAABkcnMvZG93bnJldi54bWxQSwUGAAAAAAQABADzAAAAmQUAAAAA
  <![if supportFields]><span
     style=3D'mso-no-proof:yes'><span style=3D'mso-element:field-begin'></sp=
 an><span
-    style=3D'mso-spacerun:yes'> </span>SEQ Figure \* ARABIC <span
+    style=3D'mso-spacerun:yes'>ï¿½</span>SEQ Figure \* ARABIC <span
     style=3D'mso-element:field-separator'></span></span><![endif]><span
     style=3D'mso-no-proof:yes'>1</span><![if supportFields]><span
     style=3D'mso-no-proof:yes'><span style=3D'mso-element:field-end'></span=
@@ -4051,7 +4051,7 @@ p></span></h3>
 
 <p class=3DMsoNormal>The <span class=3DSpellE>ExDC</span> GUI consists of 4=
  main
-sections – the menu, the main tab group, the activity area, and the status =
+sections ï¿½ the menu, the main tab group, the activity area, and the status =
 bar.</p>
 
 <h3><span style=3D'font-family:"Calibri",sans-serif;mso-ascii-theme-font:mi=
@@ -4059,9 +4059,9 @@ nor-latin;
 mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'>The Menu<=
 o:p></o:p></span></h3>
 
-<p class=3DMsoNormal>The menu section has three main options – File, Toggle=
+<p class=3DMsoNormal>The menu section has three main options ï¿½ File, Toggle=
 , and
-Help.<span style=3D'mso-spacerun:yes'>  </span><br>
+Help.<span style=3D'mso-spacerun:yes'>ï¿½ </span><br>
 <b style=3D'mso-bidi-font-weight:normal'>File -&gt; Load all Targets from F=
 ile</b></p>
 
@@ -4070,18 +4070,18 @@ in
 Controllers from DC.txt, Exchange Servers from Exchange.txt, Exchange Nodes=
  (if
 applicable) from ClusterNodes.txt, and Mailboxes (if applicable) from
-Mailbox.txt.<span style=3D'mso-spacerun:yes'>  </span></p>
+Mailbox.txt.<span style=3D'mso-spacerun:yes'>ï¿½ </span></p>
 
 <p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>File -&gt; Pa=
 ckage
 application log<o:p></o:p></b></p>
 
 <p class=3DMsoNormal style=3D'margin-left:.5in'>This selection will save al=
-l “<span
-class=3DSpellE>ExDC</span>” events from the application log to an <span
+l ï¿½<span
+class=3DSpellE>ExDC</span>ï¿½ events from the application log to an <span
 class=3DSpellE>ExDC_Events</span>_&lt;<span class=3DSpellE>TimeStamp</span>=
 &gt;.txt
-file.<span style=3D'mso-spacerun:yes'>  </span>After the application events=
+file.<span style=3D'mso-spacerun:yes'>ï¿½ </span>After the application events=
  have
 been saved to the text file, it will create a zip file called <span
 class=3DSpellE>ExDCPackagedLogs</span>_&lt;<span class=3DSpellE>TimeStamp</=
@@ -4145,7 +4145,7 @@ Group<o:p></o:p></span></h3>
 
 <p class=3DMsoListParagraph style=3D'margin-left:0in;mso-add-space:auto'>Im=
 mediately
-under the Menu, the Main Tab Group has three tabs – Targets, Tests, and
+under the Menu, the Main Tab Group has three tabs ï¿½ Targets, Tests, and
 Reporting</p>
 
 <h3><span style=3D'font-family:"Calibri",sans-serif;mso-ascii-theme-font:mi=
@@ -4157,19 +4157,19 @@ Area<o:p></o:p></span></h3>
 <p class=3DMsoListParagraph style=3D'margin-left:0in;mso-add-space:auto'>The
 Activity Area takes up most of the area of the <span class=3DSpellE>ExDC</s=
 pan>
-GUI.<span style=3D'mso-spacerun:yes'>  </span>When Targets is selected, the
+GUI.<span style=3D'mso-spacerun:yes'>ï¿½ </span>When Targets is selected, the
 Activity Area will have tabs for Domain Controllers and Exchange Servers.<s=
 pan
-style=3D'mso-spacerun:yes'>  </span>Depending on the environment, an Exchan=
+style=3D'mso-spacerun:yes'>ï¿½ </span>Depending on the environment, an Exchan=
 ge
 Nodes and/or Mailboxes tab may also be present.<span style=3D'mso-spacerun:=
-yes'> 
+yes'>ï¿½
 </span>When Tests is selected, the Activity Area will have an Execute button
-and a tab for Server Functions.<span style=3D'mso-spacerun:yes'>  </span>De=
+and a tab for Server Functions.<span style=3D'mso-spacerun:yes'>ï¿½ </span>De=
 pending
-on the Environment, a second tab – <span class=3DSpellE>ExOrg</span> Functi=
-ons –
-may also be present.<span style=3D'mso-spacerun:yes'>  </span>When Reportin=
+on the Environment, a second tab ï¿½ <span class=3DSpellE>Exchange</span> Functi=
+ons ï¿½
+may also be present.<span style=3D'mso-spacerun:yes'>ï¿½ </span>When Reportin=
 g is
 selected, the Activity Area will have an Execute button and checkboxes to
 select the reports to generate.</p>
@@ -4265,8 +4265,8 @@ style=3D'mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
 style=3D'mso-list:Ignore'>5.<span style=3D'font:7.0pt "Times New Roman"'>&n=
 bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Once the form initializes, the three main ta=
-bs –
-Targets, Tests, and Reporting – will be visible at the top.</p>
+bs ï¿½
+Targets, Tests, and Reporting ï¿½ will be visible at the top.</p>
 
 <p class=3DMsoListParagraphCxSpMiddle align=3Dcenter style=3D'margin-left:0=
 in;
@@ -4286,16 +4286,16 @@ _14"><![endif]></span></p>
 style=3D'mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
 style=3D'mso-list:Ignore'>6.<span style=3D'font:7.0pt "Times New Roman"'>&n=
 bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>On the Domain Controllers tab, click the “Di=
-scover”
+</span></span></span><![endif]>On the Domain Controllers tab, click the ï¿½Di=
+scoverï¿½
 button to discover all domain controllers in the forest.<span
-style=3D'mso-spacerun:yes'>  </span>This will create a dc.txt file in the w=
+style=3D'mso-spacerun:yes'>ï¿½ </span>This will create a dc.txt file in the w=
 orking
-path.<span style=3D'mso-spacerun:yes'>  </span>If the dc.txt file has alrea=
+path.<span style=3D'mso-spacerun:yes'>ï¿½ </span>If the dc.txt file has alrea=
 dy
-been created, the “Load from File” button should be used to load the conten=
+been created, the ï¿½Load from Fileï¿½ button should be used to load the conten=
 ts
-of the file into checked list box.<span style=3D'mso-spacerun:yes'>  </span=
+of the file into checked list box.<span style=3D'mso-spacerun:yes'>ï¿½ </span=
 >Once
 discovery completes, undesired servers can be unchecked from the list.</p>
 
@@ -4317,14 +4317,14 @@ style=3D'mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
 style=3D'mso-list:Ignore'>7.<span style=3D'font:7.0pt "Times New Roman"'>&n=
 bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>On the Exchange Servers tab, click the
-“Discover” button to discover all Exchange servers in the forest.<span
-style=3D'mso-spacerun:yes'>  </span>This will create an exchange.txt file i=
+ï¿½Discoverï¿½ button to discover all Exchange servers in the forest.<span
+style=3D'mso-spacerun:yes'>ï¿½ </span>This will create an exchange.txt file i=
 n the
-working path.<span style=3D'mso-spacerun:yes'>  </span>If the exchange.txt =
+working path.<span style=3D'mso-spacerun:yes'>ï¿½ </span>If the exchange.txt =
 file
-has already been created, the “Load from File” button should be used to load
+has already been created, the ï¿½Load from Fileï¿½ button should be used to load
 the contents of the file into checked list box.<span style=3D'mso-spacerun:=
-yes'> 
+yes'>ï¿½
 </span>Once discovery completes, undesired servers can be unchecked from the
 list.</p>
 
@@ -4348,14 +4348,14 @@ l6 level1 lfo19'><![if !supportLists]><span
 style=3D'mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
 style=3D'mso-list:Ignore'>8.<span style=3D'font:7.0pt "Times New Roman"'>&n=
 bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>On the Mailboxes tab, click the “Discover”
+</span></span></span><![endif]>On the Mailboxes tab, click the ï¿½Discoverï¿½
 button to discover all mailboxes in the forest.<span style=3D'mso-spacerun:=
-yes'> 
+yes'>ï¿½
 </span>This will create a mailbox.txt file in the working path.<span
-style=3D'mso-spacerun:yes'>  </span>If the mailbox.txt file has already been
-created, the “Load from File” button should be used to load the contents of=
+style=3D'mso-spacerun:yes'>ï¿½ </span>If the mailbox.txt file has already been
+created, the ï¿½Load from Fileï¿½ button should be used to load the contents of=
  the
-file into checked list box.<span style=3D'mso-spacerun:yes'>  </span>Once
+file into checked list box.<span style=3D'mso-spacerun:yes'>ï¿½ </span>Once
 discovery completes, undesired mailboxes can be unchecked from the list.<br
 style=3D'mso-special-character:line-break'>
 <![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
@@ -4382,9 +4382,9 @@ l6 level1 lfo19'><![if !supportLists]><span
 style=3D'mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
 style=3D'mso-list:Ignore'>9.<span style=3D'font:7.0pt "Times New Roman"'>&n=
 bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Select the “Tests” tab at the top of the win=
+</span></span></span><![endif]>Select the ï¿½Testsï¿½ tab at the top of the win=
 dow.<span
-style=3D'mso-spacerun:yes'>  </span>The Tests are divided into Server Funct=
+style=3D'mso-spacerun:yes'>ï¿½ </span>The Tests are divided into Server Funct=
 ions
 and Exchange Functions.</p>
 
@@ -4565,12 +4565,12 @@ style=3D'mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
 style=3D'mso-list:Ignore'>18.<span style=3D'font:7.0pt "Times New Roman"'>&=
 nbsp;&nbsp;
 </span></span></span><![endif]>Once all desired servers and functions are
-selected, click the “Execute” button.<span style=3D'mso-spacerun:yes'> 
+selected, click the ï¿½Executeï¿½ button.<span style=3D'mso-spacerun:yes'>ï¿½
 </span>The form will minimize, and progress can be tracked in the initial <=
 span
-class=3DSpellE>Powershell</span> window.<span style=3D'mso-spacerun:yes'> 
+class=3DSpellE>Powershell</span> window.<span style=3D'mso-spacerun:yes'>ï¿½
 </span>Once all jobs complete, the form should restore to its original
-location.<span style=3D'mso-spacerun:yes'>  </span></p>
+location.<span style=3D'mso-spacerun:yes'>ï¿½ </span></p>
 
 <p class=3DMsoListParagraphCxSpLast><o:p>&nbsp;</o:p></p>
 
@@ -4593,13 +4593,13 @@ anglekx:
 class=3DSpellE>ExDC</span> Data into Reports<o:p></o:p></span></b></p>
 
 <p class=3DMsoListParagraph><span class=3DMsoSubtleEmphasis>Note:<span
-style=3D'mso-spacerun:yes'>  </span>When the report generation completes, e=
+style=3D'mso-spacerun:yes'>ï¿½ </span>When the report generation completes, e=
 ach of
-the spreadsheets will contain worksheets for all possible functions –
+the spreadsheets will contain worksheets for all possible functions ï¿½
 regardless of whether data is present for the function.<span
-style=3D'mso-spacerun:yes'>  </span>Worksheets without corresponding data w=
+style=3D'mso-spacerun:yes'>ï¿½ </span>Worksheets without corresponding data w=
 ill
-contain headers only.<span style=3D'mso-spacerun:yes'>  </span>The Environm=
+contain headers only.<span style=3D'mso-spacerun:yes'>ï¿½ </span>The Environm=
 ental
 Doc will also contain sections regardless of whether the data is present for
 the function.</span><i><span style=3D'color:gray;mso-themecolor:text1;mso-t=
@@ -4619,7 +4619,7 @@ style=3D'mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
 style=3D'mso-list:Ignore'>1.<span style=3D'font:7.0pt "Times New Roman"'>&n=
 bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>After data collection completes, select the
-“Reporting” tab at the top of the window.<span style=3D'mso-spacerun:yes'> 
+ï¿½Reportingï¿½ tab at the top of the window.<span style=3D'mso-spacerun:yes'>ï¿½
 </span></p>
 
 <p class=3DMsoListParagraphCxSpMiddle align=3Dcenter style=3D'margin-left:0=
@@ -4644,7 +4644,7 @@ style=3D'mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
 style=3D'mso-list:Ignore'>2.<span style=3D'font:7.0pt "Times New Roman"'>&n=
 bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>By default, all reports are selected.<span
-style=3D'mso-spacerun:yes'>  </span>Any of these can be unchecked, if desir=
+style=3D'mso-spacerun:yes'>ï¿½ </span>Any of these can be unchecked, if desir=
 ed.</p>
 
 <p class=3DMsoListParagraphCxSpLast style=3D'text-indent:-.25in;mso-list:l5=
@@ -4654,13 +4654,13 @@ style=3D'mso-list:Ignore'>3.<span style=3D'font:7.0pt "Times New Roman"'>&n=
 bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Once all desired reports are selected, click=
  the
-“Execute” button.<span style=3D'mso-spacerun:yes'>  </span>The form will mi=
+ï¿½Executeï¿½ button.<span style=3D'mso-spacerun:yes'>ï¿½ </span>The form will mi=
 nimize,
 and progress can be tracked in the initial <span class=3DSpellE>Powershell<=
 /span>
-window.<span style=3D'mso-spacerun:yes'>  </span>Once all selected reports
+window.<span style=3D'mso-spacerun:yes'>ï¿½ </span>Once all selected reports
 complete, the form should restore to its original location.<span
-style=3D'mso-spacerun:yes'>  </span></p>
+style=3D'mso-spacerun:yes'>ï¿½ </span></p>
 
 <h3><span style=3D'font-family:"Calibri",sans-serif;mso-ascii-theme-font:mi=
 nor-latin;
@@ -4678,7 +4678,7 @@ bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ed
 to an alternate server or workstation with Excel and <span class=3DSpellE>P=
 owershell</span>
-v2 installed.<span style=3D'mso-spacerun:yes'>  </span>It is not necessary =
+v2 installed.<span style=3D'mso-spacerun:yes'>ï¿½ </span>It is not necessary =
 that
 this server or workstation have the Exchange Management Tools installed.</p>
 
@@ -4733,9 +4733,9 @@ style=3D'mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
 style=3D'mso-list:Ignore'>6.<span style=3D'font:7.0pt "Times New Roman"'>&n=
 bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Once the form initializes, the three main ta=
-bs –
-Targets, Tests, and Reporting – will be visible at the top.<span
-style=3D'mso-spacerun:yes'>  </span>Select the “Reporting” tab at the top o=
+bs ï¿½
+Targets, Tests, and Reporting ï¿½ will be visible at the top.<span
+style=3D'mso-spacerun:yes'>ï¿½ </span>Select the ï¿½Reportingï¿½ tab at the top o=
 f the
 window.</p>
 
@@ -4758,7 +4758,7 @@ style=3D'mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
 style=3D'mso-list:Ignore'>1.<span style=3D'font:7.0pt "Times New Roman"'>&n=
 bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>By default, all reports are selected.<span
-style=3D'mso-spacerun:yes'>  </span>Any of these can be unchecked, if desir=
+style=3D'mso-spacerun:yes'>ï¿½ </span>Any of these can be unchecked, if desir=
 ed.</p>
 
 <p class=3DMsoListParagraphCxSpMiddle style=3D'text-indent:-.25in;mso-list:=
@@ -4768,12 +4768,12 @@ style=3D'mso-list:Ignore'>2.<span style=3D'font:7.0pt "Times New Roman"'>&n=
 bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Once all desired reports are selected, click=
  the
-“Execute” button.<span style=3D'mso-spacerun:yes'>  </span>The form will
+ï¿½Executeï¿½ button.<span style=3D'mso-spacerun:yes'>ï¿½ </span>The form will
 minimize, and progress can be tracked in the initial <span class=3DSpellE>P=
 owershell</span>
-window.<span style=3D'mso-spacerun:yes'>  </span>Once all selected reports
+window.<span style=3D'mso-spacerun:yes'>ï¿½ </span>Once all selected reports
 complete, the form should restore to its original location.<span
-style=3D'mso-spacerun:yes'>  </span></p>
+style=3D'mso-spacerun:yes'>ï¿½ </span></p>
 
 <p class=3DMsoListParagraphCxSpLast><o:p>&nbsp;</o:p></p>
 
@@ -4809,15 +4809,15 @@ minor-latin'> Transcript<o:p></o:p></span></h3>
 al-align:
 top'>The start-transcript functionality is enabled when the Tests start run=
 ning.<span
-style=3D'mso-spacerun:yes'>  </span>This file is created in the working path
+style=3D'mso-spacerun:yes'>ï¿½ </span>This file is created in the working path
 folder and contains the output shown in the <span class=3DSpellE>Powershell=
 </span>
-window.<span style=3D'mso-spacerun:yes'>  </span>This file is useful for
+window.<span style=3D'mso-spacerun:yes'>ï¿½ </span>This file is useful for
 reviewing the progress at a high level but does not contain much
 troubleshooting information.</p>
 
 <p class=3DMsoListParagraph><span class=3DMsoSubtleEmphasis>Note:<span
-style=3D'mso-spacerun:yes'>  </span>If <span class=3DSpellE>ExDC</span> fai=
+style=3D'mso-spacerun:yes'>ï¿½ </span>If <span class=3DSpellE>ExDC</span> fai=
 ls during
 the Tests phase of a run and causes the form to crash with an unhandled
 exception, Stop-Transcript must be manually run from the <span class=3DSpel=
@@ -4840,11 +4840,11 @@ al-align:
 top'>The <span class=3DSpellE>FailedJobs</span> text file is created in the
 working path folder if any jobs fail during an <span class=3DSpellE>ExDC</s=
 pan>
-run.<span style=3D'mso-spacerun:yes'>  </span>This file is designed to be a=
+run.<span style=3D'mso-spacerun:yes'>ï¿½ </span>This file is designed to be a=
  quick
 reference for failed jobs, so that issues can be <span class=3DGramE>addres=
 sed</span>
-and the jobs restarted.<span style=3D'mso-spacerun:yes'>  </span>Like the
+and the jobs restarted.<span style=3D'mso-spacerun:yes'>ï¿½ </span>Like the
 transcript, this file is intended to be a reference and does not contain mu=
 ch
 troubleshooting information.</p>
@@ -4862,7 +4862,7 @@ minor-latin'> text file<o:p></o:p></span></h3>
 al-align:
 top'>While an <span class=3DSpellE>ExDC</span> run is underway, the <span
 class=3DSpellE>RunningJobs</span> text file will be created.<span
-style=3D'mso-spacerun:yes'>  </span>This file is updated at the polling int=
+style=3D'mso-spacerun:yes'>ï¿½ </span>This file is updated at the polling int=
 erval
 and contains the following information:</p>
 
@@ -4874,7 +4874,7 @@ line-height:normal;mso-list:l7 level1 lfo31;vertical-align:top'><![if !supp=
 ortLists]><span
 style=3D'font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-fa=
 mily:
-Symbol'><span style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times N=
+Symbol'><span style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times N=
 ew Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Job Name</p>
 
@@ -4886,7 +4886,7 @@ line-height:normal;mso-list:l7 level1 lfo31;vertical-align:top'><![if !supp=
 ortLists]><span
 style=3D'font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-fa=
 mily:
-Symbol'><span style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times N=
+Symbol'><span style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times N=
 ew Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Job State</p>
 
@@ -4898,7 +4898,7 @@ line-height:normal;mso-list:l7 level1 lfo31;vertical-align:top'><![if !supp=
 ortLists]><span
 style=3D'font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-fa=
 mily:
-Symbol'><span style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times N=
+Symbol'><span style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times N=
 ew Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Job Process PID</p>
 
@@ -4910,7 +4910,7 @@ line-height:normal;mso-list:l7 level1 lfo31;vertical-align:top'><![if !supp=
 ortLists]><span
 style=3D'font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-fa=
 mily:
-Symbol'><span style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times N=
+Symbol'><span style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times N=
 ew Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Job Process time running</p>
 
@@ -4929,19 +4929,19 @@ Log<o:p></o:p></span></h3>
 <p class=3DMsoNormal style=3D'margin-bottom:7.5pt;line-height:normal;vertic=
 al-align:
 top'>The core of the troubleshooting for <span class=3DSpellE>ExDC</span> is
-contained in the application log.<span style=3D'mso-spacerun:yes'>  </span>=
+contained in the application log.<span style=3D'mso-spacerun:yes'>ï¿½ </span>=
 During
 the run, <span class=3DSpellE>ExDC</span> will add events with a source of =
-“<span
-class=3DSpellE>ExDC</span>” to the application log on the data collection
-server.<span style=3D'mso-spacerun:yes'>  </span>Events are logged:</p>
+ï¿½<span
+class=3DSpellE>ExDC</span>ï¿½ to the application log on the data collection
+server.<span style=3D'mso-spacerun:yes'>ï¿½ </span>Events are logged:</p>
 
 <p class=3DMsoListParagraphCxSpFirst style=3D'margin-bottom:7.5pt;mso-add-s=
 pace:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 1</p>
 
@@ -4963,7 +4963,7 @@ space:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 2</p>
 
@@ -4984,7 +4984,7 @@ space:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 3</p>
 
@@ -5004,7 +5004,7 @@ space:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 4</p>
 
@@ -5026,7 +5026,7 @@ space:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 10</p>
 
@@ -5039,8 +5039,8 @@ style=3D'font-family:"Courier New";mso-fareast-font-family:"Courier New"'><=
 span
 style=3D'mso-list:Ignore'>o<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;
-</span></span></span><![endif]>Information when “Discover” or “Load from Fi=
-le”
+</span></span></span><![endif]>Information when ï¿½Discoverï¿½ or ï¿½Load from Fi=
+leï¿½
 is started on any Targets tab</p>
 
 <p class=3DMsoListParagraphCxSpMiddle style=3D'margin-bottom:7.5pt;mso-add-=
@@ -5048,7 +5048,7 @@ space:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 11</p>
 
@@ -5061,8 +5061,8 @@ style=3D'font-family:"Courier New";mso-fareast-font-family:"Courier New"'><=
 span
 style=3D'mso-list:Ignore'>o<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;
-</span></span></span><![endif]>Information when “Discover” or “Load from Fi=
-le”
+</span></span></span><![endif]>Information when ï¿½Discoverï¿½ or ï¿½Load from Fi=
+leï¿½
 completes on any Targets tab</p>
 
 <p class=3DMsoListParagraphCxSpMiddle style=3D'margin-bottom:7.5pt;mso-add-=
@@ -5070,7 +5070,7 @@ space:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 12</p>
 
@@ -5091,7 +5091,7 @@ space:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 20</p>
 
@@ -5104,7 +5104,7 @@ style=3D'font-family:"Courier New";mso-fareast-font-family:"Courier New"'><=
 span
 style=3D'mso-list:Ignore'>o<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;
-</span></span></span><![endif]>Information when “Load from File” is started=
+</span></span></span><![endif]>Information when ï¿½Load from Fileï¿½ is started=
  on
 any Targets tab</p>
 
@@ -5113,7 +5113,7 @@ space:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 21</p>
 
@@ -5126,7 +5126,7 @@ style=3D'font-family:"Courier New";mso-fareast-font-family:"Courier New"'><=
 span
 style=3D'mso-list:Ignore'>o<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;
-</span></span></span><![endif]>Information when “Load from File” completes =
+</span></span></span><![endif]>Information when ï¿½Load from Fileï¿½ completes =
 on
 any Targets tab</p>
 
@@ -5135,7 +5135,7 @@ space:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 30</p>
 
@@ -5148,7 +5148,7 @@ style=3D'font-family:"Courier New";mso-fareast-font-family:"Courier New"'><=
 span
 style=3D'mso-list:Ignore'>o<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;
-</span></span></span><![endif]>Information when “Execute” is started on the
+</span></span></span><![endif]>Information when ï¿½Executeï¿½ is started on the
 Tests tab</p>
 
 <p class=3DMsoListParagraphCxSpMiddle style=3D'margin-bottom:7.5pt;mso-add-=
@@ -5156,7 +5156,7 @@ space:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 31</p>
 
@@ -5169,7 +5169,7 @@ style=3D'font-family:"Courier New";mso-fareast-font-family:"Courier New"'><=
 span
 style=3D'mso-list:Ignore'>o<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;
-</span></span></span><![endif]>Information when “Execute” completes on the
+</span></span></span><![endif]>Information when ï¿½Executeï¿½ completes on the
 Tests tab</p>
 
 <p class=3DMsoListParagraphCxSpMiddle style=3D'margin-bottom:7.5pt;mso-add-=
@@ -5177,7 +5177,7 @@ space:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 35</p>
 
@@ -5191,7 +5191,7 @@ span
 style=3D'mso-list:Ignore'>o<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;
 </span></span></span><![endif]>Information when job completes.<span
-style=3D'mso-spacerun:yes'>  </span>This event contains some data about the
+style=3D'mso-spacerun:yes'>ï¿½ </span>This event contains some data about the
 memory usage of the job as well as the process run time in seconds.</p>
 
 <p class=3DMsoListParagraphCxSpMiddle style=3D'margin-bottom:7.5pt;mso-add-=
@@ -5199,7 +5199,7 @@ space:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 40</p>
 
@@ -5212,7 +5212,7 @@ style=3D'font-family:"Courier New";mso-fareast-font-family:"Courier New"'><=
 span
 style=3D'mso-list:Ignore'>o<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;
-</span></span></span><![endif]>Information when “Execute” is started on the
+</span></span></span><![endif]>Information when ï¿½Executeï¿½ is started on the
 Reporting tab</p>
 
 <p class=3DMsoListParagraphCxSpMiddle style=3D'margin-bottom:7.5pt;mso-add-=
@@ -5220,7 +5220,7 @@ space:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 41</p>
 
@@ -5233,7 +5233,7 @@ style=3D'font-family:"Courier New";mso-fareast-font-family:"Courier New"'><=
 span
 style=3D'mso-list:Ignore'>o<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;
-</span></span></span><![endif]>Information when “Execute” completes on the
+</span></span></span><![endif]>Information when ï¿½Executeï¿½ completes on the
 Reporting tab</p>
 
 <p class=3DMsoListParagraphCxSpMiddle style=3D'margin-bottom:7.5pt;mso-add-=
@@ -5241,7 +5241,7 @@ space:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 42</p>
 
@@ -5263,7 +5263,7 @@ space:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 43</p>
 
@@ -5285,7 +5285,7 @@ space:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 49</p>
 
@@ -5298,7 +5298,7 @@ style=3D'font-family:"Courier New";mso-fareast-font-family:"Courier New"'><=
 span
 style=3D'mso-list:Ignore'>o<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;
-</span></span></span><![endif]>Warning when “Execute” is started on the
+</span></span></span><![endif]>Warning when ï¿½Executeï¿½ is started on the
 Reporting tab but Excel is not installed</p>
 
 <p class=3DMsoListParagraphCxSpMiddle style=3D'margin-bottom:7.5pt;mso-add-=
@@ -5306,7 +5306,7 @@ space:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 100</p>
 
@@ -5320,7 +5320,7 @@ span
 style=3D'mso-list:Ignore'>o<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;
 </span></span></span><![endif]>Error when Trap is hit.<span
-style=3D'mso-spacerun:yes'>  </span>If the trap is hit in the job, this eve=
+style=3D'mso-spacerun:yes'>ï¿½ </span>If the trap is hit in the job, this eve=
 nt
 should contain the details of the error encountered.</p>
 
@@ -5329,7 +5329,7 @@ space:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 400</p>
 
@@ -5349,7 +5349,7 @@ space:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 500</p>
 
@@ -5369,7 +5369,7 @@ space:
 auto;text-indent:-.25in;line-height:normal;mso-list:l15 level1 lfo32;
 vertical-align:top'><![if !supportLists]><span style=3D'font-family:Symbol;
 mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
-style=3D'mso-list:Ignore'>·<span style=3D'font:7.0pt "Times New Roman"'>&nb=
+style=3D'mso-list:Ignore'>ï¿½<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>Event ID: 600</p>
 
@@ -5384,7 +5384,7 @@ style=3D'mso-list:Ignore'>o<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;
 </span></span></span><![endif]>Error when job process is killed because job=
  has
-exceeded the timeout value<span style=3D'mso-tab-count:1'>        </span></=
+exceeded the timeout value<span style=3D'mso-tab-count:1'>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ </span></=
 p>
 
 <p class=3DMsoListParagraphCxSpLast style=3D'margin-bottom:7.5pt;mso-add-sp=
