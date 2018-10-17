@@ -171,11 +171,11 @@ $tab_Step3_ClientAccess = New-Object System.Windows.Forms.TabPage
 $bx_ClientAccess_Functions = New-Object System.Windows.Forms.GroupBox
 $btn_Step3_ClientAccess_CheckAll = New-Object System.Windows.Forms.Button
 $btn_Step3_ClientAccess_UncheckAll = New-Object System.Windows.Forms.Button
-$chk_Org_Get_ActiveSyncOrgSettings = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_MobileDevice = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_MobileDevicePolicy = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_AvailabilityAddressSpace = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_OWAMailboxPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_ActiveSyncOrgSettings = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_MobileDevice = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_MobileDevicePolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_AvailabilityAddressSpace = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_OWAMailboxPolicy = New-Object System.Windows.Forms.CheckBox
 
 #endregion Step3 Client Access tab
 
@@ -184,20 +184,20 @@ $tab_Step3_Global = New-Object System.Windows.Forms.TabPage
 $bx_Global_Functions = New-Object System.Windows.Forms.GroupBox
 $btn_Step3_Global_CheckAll = New-Object System.Windows.Forms.Button
 $btn_Step3_Global_UncheckAll = New-Object System.Windows.Forms.Button
-$chk_Org_Get_AddressBookPolicy  = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_AddressList  = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_AntiPhishPolicy = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_AntiSpoofingPolicy = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_AtpPolicyForO365 = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_EmailAddressPolicy = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_GlobalAddressList = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_OfflineAddressBook = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_OnPremisesOrganization = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_OrgConfig = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_Rbac = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_RetentionPolicy = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_RetentionPolicyTag = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_SmimeConfig = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_AddressBookPolicy  = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_AddressList  = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_AntiPhishPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_AntiSpoofingPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_AtpPolicyForO365 = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_EmailAddressPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_GlobalAddressList = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_OfflineAddressBook = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_OnPremisesOrganization = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_OrgConfig = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_Rbac = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_RetentionPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_RetentionPolicyTag = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_SmimeConfig = New-Object System.Windows.Forms.CheckBox
 #endregion Step3 Global tab
 
 #region Step3 Exchange - Recipient Tab
@@ -205,21 +205,21 @@ $tab_Step3_Recipient = New-Object System.Windows.Forms.TabPage
 $bx_Recipient_Functions = New-Object System.Windows.Forms.GroupBox
 $btn_Step3_Recipient_CheckAll = New-Object System.Windows.Forms.Button
 $btn_Step3_Recipient_UncheckAll = New-Object System.Windows.Forms.Button
-$chk_Org_Get_CalendarProcessing = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_CASMailbox = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_CASMailboxPlan = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_Contact = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_DistributionGroup = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_DynamicDistributionGroup = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_Mailbox = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_MailboxFolderStatistics = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_MailboxPermission = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_MailboxPlan = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_MailboxStatistics = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_MailUser = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_PublicFolder = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_PublicFolderStatistics = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_UnifiedGroup = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_CalendarProcessing = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_CASMailbox = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_CASMailboxPlan = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_Contact = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_DistributionGroup = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_DynamicDistributionGroup = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_Mailbox = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_MailboxFolderStatistics = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_MailboxPermission = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_MailboxPlan = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_MailboxStatistics = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_MailUser = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_PublicFolder = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_PublicFolderStatistics = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_UnifiedGroup = New-Object System.Windows.Forms.CheckBox
 $chk_Org_Quota = New-Object System.Windows.Forms.CheckBox
 #endregion Step3 Recipient Tab
 
@@ -228,13 +228,13 @@ $tab_Step3_Transport = New-Object System.Windows.Forms.TabPage
 $bx_Transport_Functions = New-Object System.Windows.Forms.GroupBox
 $btn_Step3_Transport_CheckAll = New-Object System.Windows.Forms.Button
 $btn_Step3_Transport_UncheckAll = New-Object System.Windows.Forms.Button
-$chk_Org_Get_AcceptedDomain = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_DkimSigningConfig = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_InboundConnector = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_RemoteDomain = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_OutboundConnector = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_TransportConfig = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_TransportRule = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_AcceptedDomain = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_DkimSigningConfig = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_InboundConnector = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_RemoteDomain = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_OutboundConnector = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_TransportConfig = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_TransportRule = New-Object System.Windows.Forms.CheckBox
 #endregion Step3 Transport Tab
 
 #region Step3 Exchange - Unified Messaging tab
@@ -242,13 +242,13 @@ $tab_Step3_UM = New-Object System.Windows.Forms.TabPage
 $bx_UM_Functions = New-Object System.Windows.Forms.GroupBox
 $btn_Step3_UM_CheckAll = New-Object System.Windows.Forms.Button
 $btn_Step3_UM_UncheckAll = New-Object System.Windows.Forms.Button
-$chk_Org_Get_UmAutoAttendant = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_UmDialPlan = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_UmIpGateway = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_UmMailbox = New-Object System.Windows.Forms.CheckBox
-#$chk_Org_Get_UmMailboxConfiguration = New-Object System.Windows.Forms.CheckBox
-#$chk_Org_Get_UmMailboxPin = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_UmMailboxPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_UmAutoAttendant = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_UmDialPlan = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_UmIpGateway = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_UmMailbox = New-Object System.Windows.Forms.CheckBox
+#$chk_Exch_UmMailboxConfiguration = New-Object System.Windows.Forms.CheckBox
+#$chk_Exch_UmMailboxPin = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_UmMailboxPolicy = New-Object System.Windows.Forms.CheckBox
 #endregion Step3 Unified Messaging tab
 
 #region Step3 Exchange - Misc Tab
@@ -256,7 +256,7 @@ $tab_Step3_Misc = New-Object System.Windows.Forms.TabPage
 $bx_Misc_Functions = New-Object System.Windows.Forms.GroupBox
 $btn_Step3_Misc_CheckAll = New-Object System.Windows.Forms.Button
 $btn_Step3_Misc_UncheckAll = New-Object System.Windows.Forms.Button
-$chk_Org_Get_AdminGroups = New-Object System.Windows.Forms.CheckBox
+$chk_Exch_AdminGroups = New-Object System.Windows.Forms.CheckBox
 #endregion Step3 Misc Tab
 #endregion Step3 Exchange tabs
 
@@ -267,25 +267,25 @@ $tab_Step3_AzureAD = New-Object System.Windows.Forms.TabPage
 $bx_AzureAD_Functions = New-Object System.Windows.Forms.GroupBox
 $btn_Step3_AzureAD_CheckAll = New-Object System.Windows.Forms.Button
 $btn_Step3_AzureAD_UncheckAll = New-Object System.Windows.Forms.Button
-$chk_Azure_Get_AzureADApplication = New-Object System.Windows.Forms.CheckBox
-$chk_Azure_Get_AzureADContact = New-Object System.Windows.Forms.CheckBox
-$chk_Azure_Get_AzureADDevice = New-Object System.Windows.Forms.CheckBox
-$chk_Azure_Get_AzureADDeviceRegisteredOwner = New-Object System.Windows.Forms.CheckBox
-$chk_Azure_Get_AzureADDeviceRegisteredUser = New-Object System.Windows.Forms.CheckBox
-$chk_Azure_Get_AzureADDirectoryRole = New-Object System.Windows.Forms.CheckBox
-$chk_Azure_Get_AzureADDomain = New-Object System.Windows.Forms.CheckBox
-$chk_Azure_Get_AzureAdDomainServiceConfigurationRecord = New-Object System.Windows.Forms.CheckBox
-$chk_Azure_Get_AzureAdDomainVerificationDnsRecord = New-Object System.Windows.Forms.CheckBox
-$chk_Azure_Get_AzureADGroup = New-Object System.Windows.Forms.CheckBox
-$chk_Azure_Get_AzureADGroupMember = New-Object System.Windows.Forms.CheckBox
-$chk_Azure_Get_AzureADGroupOwner = New-Object System.Windows.Forms.CheckBox
-$chk_Azure_Get_AzureADSubscribedSku = New-Object System.Windows.Forms.CheckBox
-$chk_Azure_Get_AzureADTenantDetail = New-Object System.Windows.Forms.CheckBox
-$chk_Azure_Get_AzureADUser = New-Object System.Windows.Forms.CheckBox
-$chk_Azure_Get_AzureADUserLicenseDetail = New-Object System.Windows.Forms.CheckBox
-$chk_Azure_Get_AzureADUserMembership = New-Object System.Windows.Forms.CheckBox
-$chk_Azure_Get_AzureADUserOwnedDevice = New-Object System.Windows.Forms.CheckBox
-$chk_Azure_Get_AzureADUserRegisteredDevice = New-Object System.Windows.Forms.CheckBox
+$chk_Azure_ADApplication = New-Object System.Windows.Forms.CheckBox
+$chk_Azure_ADContact = New-Object System.Windows.Forms.CheckBox
+$chk_Azure_ADDevice = New-Object System.Windows.Forms.CheckBox
+$chk_Azure_ADDeviceRegisteredOwner = New-Object System.Windows.Forms.CheckBox
+$chk_Azure_ADDeviceRegisteredUser = New-Object System.Windows.Forms.CheckBox
+$chk_Azure_ADDirectoryRole = New-Object System.Windows.Forms.CheckBox
+$chk_Azure_ADDomain = New-Object System.Windows.Forms.CheckBox
+$chk_Azure_AdDomainServiceConfigurationRecord = New-Object System.Windows.Forms.CheckBox
+$chk_Azure_AdDomainVerificationDnsRecord = New-Object System.Windows.Forms.CheckBox
+$chk_Azure_ADGroup = New-Object System.Windows.Forms.CheckBox
+$chk_Azure_ADGroupMember = New-Object System.Windows.Forms.CheckBox
+$chk_Azure_ADGroupOwner = New-Object System.Windows.Forms.CheckBox
+$chk_Azure_ADSubscribedSku = New-Object System.Windows.Forms.CheckBox
+$chk_Azure_ADTenantDetail = New-Object System.Windows.Forms.CheckBox
+$chk_Azure_ADUser = New-Object System.Windows.Forms.CheckBox
+$chk_Azure_ADUserLicenseDetail = New-Object System.Windows.Forms.CheckBox
+$chk_Azure_ADUserMembership = New-Object System.Windows.Forms.CheckBox
+$chk_Azure_ADUserOwnedDevice = New-Object System.Windows.Forms.CheckBox
+$chk_Azure_ADUserRegisteredDevice = New-Object System.Windows.Forms.CheckBox
 #endregion Step3 Azure - AzureAD Tab
 
 #endregion Step3 Azure tabs
@@ -297,27 +297,27 @@ $tab_Step3_SPO = New-Object System.Windows.Forms.TabPage
 $bx_SPO_Functions = New-Object System.Windows.Forms.GroupBox
 $btn_Step3_SPO_CheckAll = New-Object System.Windows.Forms.Button
 $btn_Step3_SPO_UncheckAll = New-Object System.Windows.Forms.Button
-$chk_Org_Get_SPODeletedSite = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_SPOExternalUser = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_SPOGeoStorageQuota = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_SPOSite = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_SPOTenant = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_SPOTenantSyncClientRestriction = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_SPOUser = New-Object System.Windows.Forms.CheckBox
-$chk_Org_Get_SPOWebTemplate = New-Object System.Windows.Forms.CheckBox
+$chk_Spo_DeletedSite = New-Object System.Windows.Forms.CheckBox
+$chk_Spo_ExternalUser = New-Object System.Windows.Forms.CheckBox
+$chk_Spo_GeoStorageQuota = New-Object System.Windows.Forms.CheckBox
+$chk_Spo_Site = New-Object System.Windows.Forms.CheckBox
+$chk_Spo_Tenant = New-Object System.Windows.Forms.CheckBox
+$chk_Spo_TenantSyncClientRestriction = New-Object System.Windows.Forms.CheckBox
+$chk_Spo_User = New-Object System.Windows.Forms.CheckBox
+$chk_Spo_WebTemplate = New-Object System.Windows.Forms.CheckBox
 #endregion Step3 Sharepoint - SPO Tab
 
 #endregion Step3 Sharepoint tabs
 
 #region Step3 Skype tabs
 
-#region Step3 Skype - Misc Tab
-#$tab_Step3_Misc = New-Object System.Windows.Forms.TabPage
-#$bx_Misc_Functions = New-Object System.Windows.Forms.GroupBox
-#$btn_Step3_Misc_CheckAll = New-Object System.Windows.Forms.Button
-#$btn_Step3_Misc_UncheckAll = New-Object System.Windows.Forms.Button
-#$chk_Org_Get_AdminGroups = New-Object System.Windows.Forms.CheckBox
-#endregion Step3 Skype - Misc Tab
+#region Step3 Skype - Cs Tab
+$tab_Step3_Skype = New-Object System.Windows.Forms.TabPage
+$bx_Skype_Functions = New-Object System.Windows.Forms.GroupBox
+$btn_Step3_Skype_CheckAll = New-Object System.Windows.Forms.Button
+$btn_Step3_Skype_UncheckAll = New-Object System.Windows.Forms.Button
+#$chk_Skype_AdminGroups = New-Object System.Windows.Forms.CheckBox
+#endregion Step3 Skype - Cs Tab
 
 #endregion Step3 Skype tabs
 
@@ -332,6 +332,7 @@ $bx_Step4_Functions = New-Object System.Windows.Forms.GroupBox
 #$chk_Step4_Ex_Report = New-Object System.Windows.Forms.CheckBox
 $chk_Step4_Exchange_Report = New-Object System.Windows.Forms.CheckBox
 $chk_Step4_Azure_Report = New-Object System.Windows.Forms.CheckBox
+$chk_Step4_Sharepoint_Report = New-Object System.Windows.Forms.CheckBox
 #$chk_Step4_Exchange_Environment_Doc = New-Object System.Windows.Forms.CheckBox
 $Status_Step4 = New-Object System.Windows.Forms.StatusBar
 #endregion Step4 - Reporting
@@ -726,39 +727,39 @@ $handler_btn_Step3_Execute_Click=
 
 		# First we start the jobs that query the organization instead of the Exchange server
 		#Region Exchange Non-server Functions
-		If ($chk_Org_Get_AcceptedDomain.checked -eq $true)
+		If ($chk_Exch_AcceptedDomain.checked -eq $true)
 		{
 			write-host "Starting Get-AcceptedDomain" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetAcceptedDomain.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_AcceptedDomain.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_ActiveSyncOrgSettings.checked -eq $true)
+		If ($chk_Exch_ActiveSyncOrgSettings.checked -eq $true)
 		{
 			write-host "Starting Get-ActiveSyncOrgSettings" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetActiveSyncOrgSettings.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_ActiveSyncOrgSettings.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_AddressBookPolicy.checked -eq $true)
+		If ($chk_Exch_AddressBookPolicy.checked -eq $true)
 		{
 			write-host "Starting Get-AddressBookPolicy" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetAddressBookPolicy.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_AddressBookPolicy.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_AddressList.checked -eq $true)
+		If ($chk_Exch_AddressList.checked -eq $true)
 		{
 			write-host "Starting Get-AddressList" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetAddressList.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_AddressList.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_AdminGroups.checked -eq $true)
+		If ($chk_Exch_AdminGroups.checked -eq $true)
 		{
 			write-host "Starting Get-AdminGroups" -foregroundcolor green
 			try
@@ -766,253 +767,253 @@ $handler_btn_Step3_Execute_Click=
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_AntiPhishPolicy.checked -eq $true)
+		If ($chk_Exch_AntiPhishPolicy.checked -eq $true)
 		{
 			write-host "Starting Get-AntiPhishPolicy" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetAntiPhishPolicy.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_AntiPhishPolicy.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_AntiSpoofingPolicy.checked -eq $true)
+		If ($chk_Exch_AntiSpoofingPolicy.checked -eq $true)
 		{
 			write-host "Starting Get-AntiSpoofingPolicy" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetAntiSpoofingPolicy.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_AntiSpoofingPolicy.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_AtpPolicyForO365.checked -eq $true)
+		If ($chk_Exch_AtpPolicyForO365.checked -eq $true)
 		{
 			write-host "Starting Get-AtpPolicyForO365" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetAtpPolicyForO365.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_AtpPolicyForO365.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_AvailabilityAddressSpace.checked -eq $true)
+		If ($chk_Exch_AvailabilityAddressSpace.checked -eq $true)
 		{
 			write-host "Starting Get-AvailabilityAddressSpace" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetAvailabilityAddressSpace.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_AvailabilityAddressSpace.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_CalendarProcessing.checked -eq $true)
+		If ($chk_Exch_CalendarProcessing.checked -eq $true)
 		{
 			For ($i = 1;$i -lt 11;$i++)
 			{
 				write-host "Starting Get-CalendarProcessing job $i" -foregroundcolor green
 				try
-					{.\O365DC_Scripts\Exchange_GetCalendarProcessing.ps1 -location $location -i $i}
+					{.\O365DC_Scripts\Exchange_CalendarProcessing.ps1 -location $location -i $i}
 				catch [System.Management.Automation.CommandNotFoundException]
 					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 			}
 		}
-		If ($chk_Org_Get_CASMailbox.checked -eq $true)
+		If ($chk_Exch_CASMailbox.checked -eq $true)
 		{
 			For ($i = 1;$i -lt 11;$i++)
 			{
 				write-host "Starting Get-CASMailbox job $i" -foregroundcolor green
 				try
-					{.\O365DC_Scripts\Exchange_GetCASMailbox.ps1 -location $location -i $i}
+					{.\O365DC_Scripts\Exchange_CASMailbox.ps1 -location $location -i $i}
 				catch [System.Management.Automation.CommandNotFoundException]
 					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 			}
 		}
-		If ($chk_Org_Get_CasMailboxPlan.checked -eq $true)
+		If ($chk_Exch_CasMailboxPlan.checked -eq $true)
 		{
 			write-host "Starting Get-CasMailboxPlan" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetCasMailboxPlan.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_CasMailboxPlan.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_Contact.checked -eq $true)
+		If ($chk_Exch_Contact.checked -eq $true)
 		{
 			write-host "Starting Get-Contact" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetContact.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_Contact.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_DistributionGroup.checked -eq $true)
+		If ($chk_Exch_DistributionGroup.checked -eq $true)
 		{
 			write-host "Starting Get-DistributionGroup" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetDistributionGroup.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_DistributionGroup.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-	If ($chk_Org_Get_DkimSigningConfig.checked -eq $true)
+		If ($chk_Exch_DkimSigningConfig.checked -eq $true)
 		{
 			write-host "Starting Get-DkimSigningConfig" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetDkimSigningConfig.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_DkimSigningConfig.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_DynamicDistributionGroup.checked -eq $true)
+		If ($chk_Exch_DynamicDistributionGroup.checked -eq $true)
 		{
 			write-host "Starting Get-DynamicDistributionGroup" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetDynamicDistributionGroup.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_DynamicDistributionGroup.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_EmailAddressPolicy.checked -eq $true)
+		If ($chk_Exch_EmailAddressPolicy.checked -eq $true)
 		{
 			write-host "Starting Get-EmailAddressPolicy" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetEmailAddressPolicy.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_EmailAddressPolicy.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_GlobalAddressList.checked -eq $true)
+		If ($chk_Exch_GlobalAddressList.checked -eq $true)
 		{
 			write-host "Starting Get-GlobalAddressList job" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetGlobalAddressList.ps1 -location $location -i $i}
+				{.\O365DC_Scripts\Exchange_GlobalAddressList.ps1 -location $location -i $i}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_Mailbox.checked -eq $true)
+		If ($chk_Exch_Mailbox.checked -eq $true)
 		{
 			For ($i = 1;$i -lt 11;$i++)
 			{
 				write-host "Starting Get-Mailbox job $i" -foregroundcolor green
 				try
-					{.\O365DC_Scripts\Exchange_GetMbx.ps1 -location $location -i $i}
+					{.\O365DC_Scripts\Exchange_Mbx.ps1 -location $location -i $i}
 				catch [System.Management.Automation.CommandNotFoundException]
 					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 			}
 		}
-		If ($chk_Org_Get_MailboxPlan.checked -eq $true)
+		If ($chk_Exch_MailboxPlan.checked -eq $true)
 		{
 			write-host "Starting Get-MailboxPlan" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetMailboxPlan.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_MailboxPlan.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_MailUser.checked -eq $true)
+		If ($chk_Exch_MailUser.checked -eq $true)
 		{
 			write-host "Starting Get-MailUser" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetMailUser.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_MailUser.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_InboundConnector.checked -eq $true)
+		If ($chk_Exch_InboundConnector.checked -eq $true)
 		{
 			write-host "Starting Get-InboundConnector" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetInboundConnector.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_InboundConnector.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_MailboxFolderStatistics.checked -eq $true)
+		If ($chk_Exch_MailboxFolderStatistics.checked -eq $true)
 		{
 			For ($i = 1;$i -lt 11;$i++)
 			{
 				write-host "Starting Get-MailboxFolderStatistics job $i" -foregroundcolor green
 				try
-					{.\O365DC_Scripts\Exchange_GetMbxFolderStatistics.ps1 -location $location -i $i}
+					{.\O365DC_Scripts\Exchange_MbxFolderStatistics.ps1 -location $location -i $i}
 				catch [System.Management.Automation.CommandNotFoundException]
 					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 			}
 		}
-		If ($chk_Org_Get_MailboxPermission.checked -eq $true)
+		If ($chk_Exch_MailboxPermission.checked -eq $true)
 		{
 			For ($i = 1;$i -lt 11;$i++)
 			{
 				write-host "Starting Get-MailboxPermission job$i" -foregroundcolor green
 				try
-					{.\O365DC_Scripts\Exchange_GetMbxPermission.ps1 -location $location -i $i}
+					{.\O365DC_Scripts\Exchange_MbxPermission.ps1 -location $location -i $i}
 				catch [System.Management.Automation.CommandNotFoundException]
 					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 			}
 		}
-		If ($chk_Org_Get_MailboxStatistics.checked -eq $true)
+		If ($chk_Exch_MailboxStatistics.checked -eq $true)
 		{
 			For ($i = 1;$i -lt 11;$i++)
 			{
 				write-host "Starting Get-MailboxStatistics job $i" -foregroundcolor green
 				try
-					{.\O365DC_Scripts\Exchange_GetMbxStatistics.ps1 -location $location -i $i}
+					{.\O365DC_Scripts\Exchange_MbxStatistics.ps1 -location $location -i $i}
 				catch [System.Management.Automation.CommandNotFoundException]
 					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 			}
 		}
-		If ($chk_Org_Get_MobileDevice.checked -eq $true)
+		If ($chk_Exch_MobileDevice.checked -eq $true)
 		{
 			write-host "Starting Get-MobileDevice" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetMobileDevice.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_MobileDevice.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_MobileDevicePolicy.checked -eq $true)
+		If ($chk_Exch_MobileDevicePolicy.checked -eq $true)
 		{
 			write-host "Starting Get-MobileDevicePolicy" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetMobileDeviceMbxPolicy.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_MobileDeviceMbxPolicy.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_OfflineAddressBook.checked -eq $true)
+		If ($chk_Exch_OfflineAddressBook.checked -eq $true)
 		{
 			write-host "Starting Get-OfflineAddressBook" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetOfflineAddressBook.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_OfflineAddressBook.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_OnPremisesOrganization.checked -eq $true)
+		If ($chk_Exch_OnPremisesOrganization.checked -eq $true)
 		{
 			write-host "Starting Get-OnPremisesOrganization" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetOnPremisesOrganization.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_OnPremisesOrganization.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_OrgConfig.checked -eq $true)
+		If ($chk_Exch_OrgConfig.checked -eq $true)
 		{
 			write-host "Starting Get-OrgConfig" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetOrgConfig.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_OrgConfig.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_OutboundConnector.checked -eq $true)
+		If ($chk_Exch_OutboundConnector.checked -eq $true)
 		{
 			write-host "Starting Get-OutboundConnector" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetOutboundConnector.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_OutboundConnector.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_OwaMailboxPolicy.checked -eq $true)
+		If ($chk_Exch_OwaMailboxPolicy.checked -eq $true)
 		{
 			write-host "Starting Get-OwaMailboxPolicy" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetOwaMailboxPolicy.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_OwaMailboxPolicy.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_PublicFolder.checked -eq $true)
+		If ($chk_Exch_PublicFolder.checked -eq $true)
 		{
 			write-host "Starting Get-PublicFolder" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetPublicFolder.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_PublicFolder.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_PublicFolderStatistics.checked -eq $true)
+		If ($chk_Exch_PublicFolderStatistics.checked -eq $true)
 		{
 			write-host "Starting Get-PublicFolderStatistics" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetPublicFolderStats.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_PublicFolderStats.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
@@ -1027,120 +1028,120 @@ $handler_btn_Step3_Execute_Click=
 					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 			}
 		}
-		If ($chk_Org_Get_Rbac.checked -eq $true)
+		If ($chk_Exch_Rbac.checked -eq $true)
 		{
 			write-host "Starting Get-Rbac" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetRbac.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_Rbac.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_RemoteDomain.checked -eq $true)
+		If ($chk_Exch_RemoteDomain.checked -eq $true)
 		{
 			write-host "Starting Get-RemoteDomain" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetRemoteDomain.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_RemoteDomain.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_RetentionPolicy.checked -eq $true)
+		If ($chk_Exch_RetentionPolicy.checked -eq $true)
 		{
 			write-host "Starting Get-RetentionPolicy" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetRetentionPolicy.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_RetentionPolicy.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_RetentionPolicyTag.checked -eq $true)
+		If ($chk_Exch_RetentionPolicyTag.checked -eq $true)
 		{
 			write-host "Starting Get-RetentionPolicyTag" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetRetentionPolicyTag.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_RetentionPolicyTag.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_SmimeConfig.checked -eq $true)
+		If ($chk_Exch_SmimeConfig.checked -eq $true)
 		{
 			write-host "Starting Get-SmimeConfig" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetSmimeConfig.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_SmimeConfig.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_TransportConfig.checked -eq $true)
+		If ($chk_Exch_TransportConfig.checked -eq $true)
 		{
 			write-host "Starting Get-TransportConfig" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetTransportConfig.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_TransportConfig.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_TransportRule.checked -eq $true)
+		If ($chk_Exch_TransportRule.checked -eq $true)
 		{
 			write-host "Starting Get-TransportRule" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetTransportRule.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_TransportRule.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_UmAutoAttendant.checked -eq $true)
+		If ($chk_Exch_UmAutoAttendant.checked -eq $true)
 		{
 			write-host "Starting Get-UmAutoAttendant" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetUmAutoAttendant.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_UmAutoAttendant.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_UmDialPlan.checked -eq $true)
+		If ($chk_Exch_UmDialPlan.checked -eq $true)
 		{
 			write-host "Starting Get-UmDialPlan" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetUmDialPlan.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_UmDialPlan.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_UmIpGateway.checked -eq $true)
+		If ($chk_Exch_UmIpGateway.checked -eq $true)
 		{
 			write-host "Starting Get-UmIpGateway" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetUmIpGateway.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_UmIpGateway.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_UmMailbox.checked -eq $true)
+		If ($chk_Exch_UmMailbox.checked -eq $true)
 		{
 			For ($i = 1;$i -lt 11;$i++)
 			{
 				write-host "Starting Get-UmMailbox job $i" -foregroundcolor green
 				try
-					{.\O365DC_Scripts\Exchange_GetUmMailbox.ps1 -location $location -i $i}
+					{.\O365DC_Scripts\Exchange_UmMailbox.ps1 -location $location -i $i}
 				catch [System.Management.Automation.CommandNotFoundException]
 					{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 			}
 		}
-#			If ($chk_Org_Get_UmMailboxConfiguration.checked -eq $true)
+#			If ($chk_Exch_UmMailboxConfiguration.checked -eq $true)
 #			{
 #				For ($i = 1;$i -lt 11;$i++)
-#				{Start-O365DCJob -server $server -job "Get-UmMailboxConfiguration - Set $i" -JobType 0 -Location $location -JobScriptName "Exchange_GetUmMailboxConfiguration.ps1" -i $i -PSSession $session_0}
+#				{Start-O365DCJob -server $server -job "Get-UmMailboxConfiguration - Set $i" -JobType 0 -Location $location -JobScriptName "Exchange_UmMailboxConfiguration.ps1" -i $i -PSSession $session_0}
 #			}
-#			If ($chk_Org_Get_UmMailboxPin.checked -eq $true)
+#			If ($chk_Exch_UmMailboxPin.checked -eq $true)
 #			{
 #				For ($i = 1;$i -lt 11;$i++)
-#				{Start-O365DCJob -server $server -job "Get-UmMailboxPin - Set $i" -JobType 0 -Location $location -JobScriptName "Exchange_GetUmMailboxPin.ps1" -i $i -PSSession $session_0}
+#				{Start-O365DCJob -server $server -job "Get-UmMailboxPin - Set $i" -JobType 0 -Location $location -JobScriptName "Exchange_UmMailboxPin.ps1" -i $i -PSSession $session_0}
 #			}
-		If ($chk_Org_Get_UmMailboxPolicy.checked -eq $true)
+		If ($chk_Exch_UmMailboxPolicy.checked -eq $true)
 		{
 			write-host "Starting Get-UmMailboxPolicy" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetUmMailboxPolicy.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_UmMailboxPolicy.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
-		If ($chk_Org_Get_UnifiedGroup.checked -eq $true)
+		If ($chk_Exch_UnifiedGroup.checked -eq $true)
 		{
 			write-host "Starting Get-UnifiedGroup" -foregroundcolor green
 			try
-				{.\O365DC_Scripts\Exchange_GetUnifiedGroup.ps1 -location $location}
+				{.\O365DC_Scripts\Exchange_UnifiedGroup.ps1 -location $location}
 			catch [System.Management.Automation.CommandNotFoundException]
 				{write-host "Cmdlet is not available in this PSSession." -foregroundcolor red}
 		}
@@ -1169,36 +1170,31 @@ $handler_btn_Step3_Execute_Click=
 			$item.tostring() | out-file $AzureAdUser_Checked_outputfile -append -Force
 		}
 
-		If (Get-AzureAdUserBoxStatus = $true)
-		{
 			# Avoid this path if we're not running mailbox tests
 			# Splitting CheckedMailboxes file 10 times
-			Split-List10 -InputFile "CheckedAzureAdUser" -OutputFile "CheckedAzureAdUser" -Text "AzureAdUser"
+			# Split-List10 -InputFile "CheckedAzureAdUser" -OutputFile "CheckedAzureAdUser" -Text "AzureAdUser"
 
 			#Region Azure Functions
-
-			Test-CheckBoxAndRun -chkBox $chk_Azure_Get_AzureADApplication.Checked -Text "Get-AzureADApplication" -Script "Azure_GetAzureADApplication"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_Get_AzureADContact.Checked -Text "Get-AzureADContact" -Script "Azure_GetAzureADContact"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_Get_AzureADDevice.Checked -Text "Get-AzureADDevice" -Script "Azure_GetAzureADDevice"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_Get_AzureADDeviceRegisteredOwner.Checked -Text "Get-AzureADDeviceRegisteredOwner" -Script "Azure_GetAzureADDeviceRegisteredOwner"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_Get_AzureADDeviceRegisteredUser.Checked -Text "Get-AzureADDeviceRegisteredUser" -Script "Azure_GetAzureADDeviceRegisteredUser"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_Get_AzureADDirectoryRole.Checked -Text "Get-AzureADDirectoryRole" -Script "Azure_GetAzureADDirectoryRole"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_Get_AzureADDomain.Checked -Text "Get-AzureADDomain" -Script "Azure_GetAzureADDomain"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_Get_AzureADDomainServiceConfigurationRecord.Checked -Text "Get-AzureADDomainServiceConfigurationRecord" -Script "Azure_GetAzureADDomainServiceConfigurationRecord"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_Get_AzureADDomainVerificationDnsRecord.Checked -Text "Get-AzureADDomainVerificationDnsRecord" -Script "Azure_GetAzureADDomainVerificationDnsRecord"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_Get_AzureADGroup.Checked -Text "Get-AzureADGroup" -Script "Azure_GetAzureADGroup"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_Get_AzureADGroupMember.Checked -Text "Get-AzureADGroupMember" -Script "Azure_GetAzureADGroupMember"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_Get_AzureADGroupOwner.Checked -Text "Get-AzureADGroupOwner" -Script "Azure_GetAzureADGroupOwner"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_Get_AzureADSubscribedSku.Checked -Text "Get-AzureADSubscribedSku" -Script "Azure_GetAzureADSubscribedSku"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_Get_AzureADTenantDetail.Checked -Text "Get-AzureADTenantDetail" -Script "Azure_GetAzureADTenantDetail"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_Get_AzureAdUser.Checked -Text "Get-AzureADUser" -Script "Azure_GetAzureAdUser"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_Get_AzureADUserLicenseDetail.Checked -Text "Get-AzureADUserLicenseDetail" -Script "Azure_GetAzureADUserLicenseDetail"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_Get_AzureADUserMembership.Checked -Text "Get-AzureADUserMembership" -Script "Azure_GetAzureADUserMembership"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_Get_AzureADUserOwnedDevice.Checked -Text "Get-AzureADUserOwnedDevice" -Script "Azure_GetAzureADUserOwnedDevice"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_Get_AzureADUserRegisteredDevice.Checked -Text "Get-AzureADUserRegisteredDevice" -Script "Azure_GetAzureADUserRegisteredDevice"
-
-
-		}
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADApplication.Checked 						-Text "Get-AzureADApplication" 							-Script "Azure_AzureADApplication"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADContact.Checked 							-Text "Get-AzureADContact" 								-Script "Azure_AzureADContact"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDevice.Checked 							-Text "Get-AzureADDevice" 								-Script "Azure_AzureADDevice"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDeviceRegisteredOwner.Checked 				-Text "Get-AzureADDeviceRegisteredOwner" 				-Script "Azure_AzureADDeviceRegisteredOwner"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDeviceRegisteredUser.Checked 				-Text "Get-AzureADDeviceRegisteredUser" 				-Script "Azure_AzureADDeviceRegisteredUser"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDirectoryRole.Checked 						-Text "Get-AzureADDirectoryRole" 						-Script "Azure_AzureADDirectoryRole"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDomain.Checked 							-Text "Get-AzureADDomain" 								-Script "Azure_AzureADDomain"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDomainServiceConfigurationRecord.Checked 	-Text "Get-AzureADDomainServiceConfigurationRecord" 	-Script "Azure_AzureADDomainServiceConfigurationRecord"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDomainVerificationDnsRecord.Checked 		-Text "Get-AzureADDomainVerificationDnsRecord" 			-Script "Azure_AzureADDomainVerificationDnsRecord"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADGroup.Checked				 				-Text "Get-AzureADGroup" 								-Script "Azure_AzureADGroup"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADGroupMember.Checked 						-Text "Get-AzureADGroupMember" 							-Script "Azure_AzureADGroupMember"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADGroupOwner.Checked 						-Text "Get-AzureADGroupOwner" 							-Script "Azure_AzureADGroupOwner"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADSubscribedSku.Checked 						-Text "Get-AzureADSubscribedSku" 						-Script "Azure_AzureADSubscribedSku"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADTenantDetail.Checked 						-Text "Get-AzureADTenantDetail" 						-Script "Azure_AzureADTenantDetail"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_AdUser.Checked 								-Text "Get-AzureADUser" 								-Script "Azure_AzureAdUser"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADUserLicenseDetail.Checked 					-Text "Get-AzureADUserLicenseDetail" 					-Script "Azure_AzureADUserLicenseDetail"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADUserMembership.Checked 					-Text "Get-AzureADUserMembership" 						-Script "Azure_AzureADUserMembership"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADUserOwnedDevice.Checked 					-Text "Get-AzureADUserOwnedDevice" 						-Script "Azure_AzureADUserOwnedDevice"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADUserRegisteredDevice.Checked 				-Text "Get-AzureADUserRegisteredDevice" 				-Script "Azure_AzureADUserRegisteredDevice"
+			#EndRegion Azure Functions
 	}
 	else
 	{
@@ -1206,6 +1202,97 @@ $handler_btn_Step3_Execute_Click=
 	}
 	#EndRegion Executing Azure Tests
 
+	#Region Executing Spo Tests
+
+	write-host "Starting Sharepoint..." -ForegroundColor Green
+	If (Get-SpoBoxStatus = $true)
+	{
+		# Save checked mailboxes to file for use by jobs
+		#$AzureAdUser_Checked_outputfile = ".\CheckedAzureAdUser.txt"
+		#if ((Test-Path $AzureAdUser_Checked_outputfile) -eq $true)
+		#{
+		#	Remove-Item $AzureAdUser_Checked_outputfile -Force
+		#}
+		#write-host "-- Building the checked AzureAdUser list..."
+		#foreach ($item in $clb_Step1_AzureAdUser_List.checkeditems)
+		#{
+		#	$item.tostring() | out-file $AzureAdUser_Checked_outputfile -append -Force
+		#}
+
+			# Avoid this path if we're not running mailbox tests
+			# Splitting CheckedMailboxes file 10 times
+			# Split-List10 -InputFile "CheckedAzureAdUser" -OutputFile "CheckedAzureAdUser" -Text "AzureAdUser"
+
+			#Region Spo Functions
+			Test-CheckBoxAndRun -chkBox $chk_Spo_DeletedSite.Checked 					-Text "Get-SpoDeletedSite" 					-Script "Spo_SpoDeletedSite"
+			#Test-CheckBoxAndRun -chkBox $chk_Spo_ExternalUser.Checked 					-Text "Get-SpoExternalUser" 				-Script "Spo_SpoExternalUser"
+			Test-CheckBoxAndRun -chkBox $chk_Spo_GeoStorageQuota.Checked 				-Text "Get-SpoGeoStorageQuota" 				-Script "Spo_SpoGeoStorageQuota"
+			Test-CheckBoxAndRun -chkBox $chk_Spo_Site.Checked 							-Text "Get-SpoSite" 						-Script "Spo_SpoSite"
+			Test-CheckBoxAndRun -chkBox $chk_Spo_Tenant.Checked 						-Text "Get-SpoTenant" 						-Script "Spo_SpoTenant"
+			Test-CheckBoxAndRun -chkBox $chk_Spo_TenantSyncClientRestriction.Checked 	-Text "Get-SpoTenantSyncClientRestriction" 	-Script "Spo_SpoTenantSyncClientRestriction"
+			Test-CheckBoxAndRun -chkBox $chk_Spo_User.Checked 							-Text "Get-SpoUser" 						-Script "Spo_SpoUser"
+			Test-CheckBoxAndRun -chkBox $chk_Spo_WebTemplate.Checked 					-Text "Get-SpoWebTemplate" 					-Script "Spo_SpoWebTemplate"
+			#EndRegion Spo Functions
+
+
+	}
+	else
+	{
+		write-host "---- No Sharepoint Functions selected"
+	}
+	#EndRegion Executing Spo Tests
+<#
+	#Region Executing Skype Tests
+
+	write-host "Starting Skype..." -ForegroundColor Green
+	If (Get-SkypeBoxStatus = $true)
+	{
+		# Save checked mailboxes to file for use by jobs
+		$AzureAdUser_Checked_outputfile = ".\CheckedAzureAdUser.txt"
+		if ((Test-Path $AzureAdUser_Checked_outputfile) -eq $true)
+		{
+			Remove-Item $AzureAdUser_Checked_outputfile -Force
+		}
+		write-host "-- Building the checked AzureAdUser list..."
+		foreach ($item in $clb_Step1_AzureAdUser_List.checkeditems)
+		{
+			$item.tostring() | out-file $AzureAdUser_Checked_outputfile -append -Force
+		}
+
+			# Avoid this path if we're not running mailbox tests
+			# Splitting CheckedMailboxes file 10 times
+			# Split-List10 -InputFile "CheckedAzureAdUser" -OutputFile "CheckedAzureAdUser" -Text "AzureAdUser"
+
+			#Region Skype Functions
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADApplication.Checked 						-Text "Get-AzureADApplication" 							-Script "Azure_AzureADApplication"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADContact.Checked 							-Text "Get-AzureADContact" 								-Script "Azure_AzureADContact"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDevice.Checked 							-Text "Get-AzureADDevice" 								-Script "Azure_AzureADDevice"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDeviceRegisteredOwner.Checked 				-Text "Get-AzureADDeviceRegisteredOwner" 				-Script "Azure_AzureADDeviceRegisteredOwner"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDeviceRegisteredUser.Checked 				-Text "Get-AzureADDeviceRegisteredUser" 				-Script "Azure_AzureADDeviceRegisteredUser"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDirectoryRole.Checked 						-Text "Get-AzureADDirectoryRole" 						-Script "Azure_AzureADDirectoryRole"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDomain.Checked 							-Text "Get-AzureADDomain" 								-Script "Azure_AzureADDomain"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDomainServiceConfigurationRecord.Checked 	-Text "Get-AzureADDomainServiceConfigurationRecord" 	-Script "Azure_AzureADDomainServiceConfigurationRecord"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDomainVerificationDnsRecord.Checked 		-Text "Get-AzureADDomainVerificationDnsRecord" 			-Script "Azure_AzureADDomainVerificationDnsRecord"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADGroup.Checked				 				-Text "Get-AzureADGroup" 								-Script "Azure_AzureADGroup"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADGroupMember.Checked 						-Text "Get-AzureADGroupMember" 							-Script "Azure_AzureADGroupMember"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADGroupOwner.Checked 						-Text "Get-AzureADGroupOwner" 							-Script "Azure_AzureADGroupOwner"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADSubscribedSku.Checked 						-Text "Get-AzureADSubscribedSku" 						-Script "Azure_AzureADSubscribedSku"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADTenantDetail.Checked 						-Text "Get-AzureADTenantDetail" 						-Script "Azure_AzureADTenantDetail"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_AdUser.Checked 								-Text "Get-AzureADUser" 								-Script "Azure_AzureAdUser"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADUserLicenseDetail.Checked 					-Text "Get-AzureADUserLicenseDetail" 					-Script "Azure_AzureADUserLicenseDetail"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADUserMembership.Checked 					-Text "Get-AzureADUserMembership" 						-Script "Azure_AzureADUserMembership"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADUserOwnedDevice.Checked 					-Text "Get-AzureADUserOwnedDevice" 						-Script "Azure_AzureADUserOwnedDevice"
+			Test-CheckBoxAndRun -chkBox $chk_Azure_ADUserRegisteredDevice.Checked 				-Text "Get-AzureADUserRegisteredDevice" 				-Script "Azure_AzureADUserRegisteredDevice"
+			#EndRegion Skype Functions
+
+
+	}
+	else
+	{
+		write-host "---- No Skype Functions selected"
+	}
+	#EndRegion Executing Skype Tests
+#>
 
 	# Delay changing status to Idle until all jobs have finished
 	Update-O365DCJobCount 1 15
@@ -1378,6 +1465,13 @@ $handler_btn_Step4_Assemble_Click=
 				.\O365DC_Scripts\Core_assemble_Azure_Excel.ps1 -RunLocation $location
 				write-host "---- Completed the Azure Spreadsheet" -ForegroundColor Green
 		}
+		if ($chk_Step4_Sharepoint_Report.checked -eq $true)
+		{
+			write-host "-- Starting to assemble the Sharepoint Spreadsheet"
+				.\O365DC_Scripts\Core_assemble_Spo_Excel.ps1 -RunLocation $location
+				write-host "---- Completed the Sharepoint Spreadsheet" -ForegroundColor Green
+		}
+
 	}
 	else
 	{
@@ -1855,7 +1949,7 @@ $tab_Step3_Exchange.Location = $Loc_Tab_Tier3
 	$tab_Step3_Exchange.Padding = $System_Windows_Forms_Padding_Reusable
 	$tab_Step3_Exchange.Size = $Size_Tab_Small
 	$tab_Step3_Exchange.TabIndex = $TabIndex++
-	$tab_Step3_Exchange.Text = "Exchange Functions"
+	$tab_Step3_Exchange.Text = "  Exchange  "
 	$tab_Step3_Exchange.UseVisualStyleBackColor = $True
 	$tab_Step3_Master.Controls.Add($tab_Step3_Exchange)
 #EndRegion Step3 Exchange - Tier 2
@@ -1867,7 +1961,7 @@ $tab_Step3_Azure.Location = $Loc_Tab_Tier3
 	$tab_Step3_Azure.Padding = $System_Windows_Forms_Padding_Reusable
 	$tab_Step3_Azure.Size = $Size_Tab_Small
 	$tab_Step3_Azure.TabIndex = $TabIndex++
-	$tab_Step3_Azure.Text = "Azure Functions"
+	$tab_Step3_Azure.Text = "  Azure  "
 	$tab_Step3_Azure.UseVisualStyleBackColor = $True
 	$tab_Step3_Master.Controls.Add($tab_Step3_Azure)
 #EndRegion Step3 Azure - Tier 2
@@ -1879,10 +1973,22 @@ $tab_Step3_Sharepoint.Location = $Loc_Tab_Tier3
 	$tab_Step3_Sharepoint.Padding = $System_Windows_Forms_Padding_Reusable
 	$tab_Step3_Sharepoint.Size = $Size_Tab_Small
 	$tab_Step3_Sharepoint.TabIndex = $TabIndex++
-	$tab_Step3_Sharepoint.Text = "Sharepoint Functions (Not yet Enabled)"
+	$tab_Step3_Sharepoint.Text = "  Sharepoint  "
 	$tab_Step3_Sharepoint.UseVisualStyleBackColor = $True
 	$tab_Step3_Master.Controls.Add($tab_Step3_Sharepoint)
 #EndRegion Step3 Sharepoint - Tier 2
+
+#Region Step3 Skype - Tier 2
+$TabIndex = 0
+$tab_Step3_Skype.Location = $Loc_Tab_Tier3
+	$tab_Step3_Skype.Name = "tab_Step3_Skype"
+	$tab_Step3_Skype.Padding = $System_Windows_Forms_Padding_Reusable
+	$tab_Step3_Skype.Size = $Size_Tab_Small
+	$tab_Step3_Skype.TabIndex = $TabIndex++
+	$tab_Step3_Skype.Text = "  Skype Functions (Not yet Enabled)  "
+	$tab_Step3_Skype.UseVisualStyleBackColor = $True
+	$tab_Step3_Master.Controls.Add($tab_Step3_Skype)
+#EndRegion Step3 Skype - Tier 2
 
 #Region Exchange Tab Control
 $TabIndex = 0
@@ -1926,6 +2032,20 @@ $tab_Step3_Sharepoint_Tier2.Appearance = 2
 	$tab_Step3_Sharepoint.Controls.Add($tab_Step3_Sharepoint_Tier2)
 #EndRegion Sharepoint Tab Control
 
+#Region Skype Tab Control
+$TabIndex = 0
+$tab_Step3_Skype_Tier2.Appearance = 2
+	$tab_Step3_Skype_Tier2.Dock = 5
+	$tab_Step3_Skype_Tier2.Font = $font_Calibri_10pt_normal
+	$tab_Step3_Skype_Tier2.ItemSize = $Size_Tab_Control
+	$tab_Step3_Skype_Tier2.Location = $Loc_Tab_Control
+	$tab_Step3_Skype_Tier2.Name = "tab_Step3_Skype_Tier2"
+	$tab_Step3_Skype_Tier2.SelectedIndex = 0
+	$tab_Step3_Skype_Tier2.Size = $Size_Form
+	$tab_Step3_Skype_Tier2.TabIndex = $TabIndex++
+	$tab_Step3_Skype.Controls.Add($tab_Step3_Skype_Tier2)
+#EndRegion Skype Tab Control
+
 #Region Step3 Exchange - Client Access tab
 $TabIndex = 0
 $tab_Step3_ClientAccess.Location = $Loc_Tab_Tier3
@@ -1966,51 +2086,51 @@ $Col_1_loc = 35
 $Col_2_loc = 290
 $Row_1_loc = 0
 $Row_2_loc = 0
-$chk_Org_Get_ActiveSyncOrgSettings.Font = $font_Calibri_10pt_normal
+$chk_Exch_ActiveSyncOrgSettings.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_ActiveSyncOrgSettings.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_ActiveSyncOrgSettings.Name = "chk_Org_Get_ActiveSyncOrgSettings"
-	$chk_Org_Get_ActiveSyncOrgSettings.Size = $Size_Chk
-	$chk_Org_Get_ActiveSyncOrgSettings.TabIndex = $TabIndex++
-	$chk_Org_Get_ActiveSyncOrgSettings.Text = "Get-ActiveSyncOrgSettings"
-	$chk_Org_Get_ActiveSyncOrgSettings.UseVisualStyleBackColor = $True
-	$bx_ClientAccess_Functions.Controls.Add($chk_Org_Get_ActiveSyncOrgSettings)
-$chk_Org_Get_AvailabilityAddressSpace.Font = $font_Calibri_10pt_normal
+	$chk_Exch_ActiveSyncOrgSettings.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_ActiveSyncOrgSettings.Name = "chk_Exch_ActiveSyncOrgSettings"
+	$chk_Exch_ActiveSyncOrgSettings.Size = $Size_Chk
+	$chk_Exch_ActiveSyncOrgSettings.TabIndex = $TabIndex++
+	$chk_Exch_ActiveSyncOrgSettings.Text = "Get-ActiveSyncOrgSettings"
+	$chk_Exch_ActiveSyncOrgSettings.UseVisualStyleBackColor = $True
+	$bx_ClientAccess_Functions.Controls.Add($chk_Exch_ActiveSyncOrgSettings)
+$chk_Exch_AvailabilityAddressSpace.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_AvailabilityAddressSpace.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_AvailabilityAddressSpace.Name = "chk_Org_Get_AvailabilityAddressSpace"
-	$chk_Org_Get_AvailabilityAddressSpace.Size = $Size_Chk
-	$chk_Org_Get_AvailabilityAddressSpace.TabIndex = $TabIndex++
-	$chk_Org_Get_AvailabilityAddressSpace.Text = "Get-AvailabilityAddressSpace"
-	$chk_Org_Get_AvailabilityAddressSpace.UseVisualStyleBackColor = $True
-	$bx_ClientAccess_Functions.Controls.Add($chk_Org_Get_AvailabilityAddressSpace)
-$chk_Org_Get_MobileDevice.Font = $font_Calibri_10pt_normal
+	$chk_Exch_AvailabilityAddressSpace.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_AvailabilityAddressSpace.Name = "chk_Exch_AvailabilityAddressSpace"
+	$chk_Exch_AvailabilityAddressSpace.Size = $Size_Chk
+	$chk_Exch_AvailabilityAddressSpace.TabIndex = $TabIndex++
+	$chk_Exch_AvailabilityAddressSpace.Text = "Get-AvailabilityAddressSpace"
+	$chk_Exch_AvailabilityAddressSpace.UseVisualStyleBackColor = $True
+	$bx_ClientAccess_Functions.Controls.Add($chk_Exch_AvailabilityAddressSpace)
+$chk_Exch_MobileDevice.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_MobileDevice.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_MobileDevice.Name = "chk_Org_Get_MobileDevice"
-	$chk_Org_Get_MobileDevice.Size = $Size_Chk
-	$chk_Org_Get_MobileDevice.TabIndex = $TabIndex++
-	$chk_Org_Get_MobileDevice.Text = "Get-MobileDevice"
-	$chk_Org_Get_MobileDevice.UseVisualStyleBackColor = $True
-	$bx_ClientAccess_Functions.Controls.Add($chk_Org_Get_MobileDevice)
-$chk_Org_Get_MobileDevicePolicy.Font = $font_Calibri_10pt_normal
+	$chk_Exch_MobileDevice.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_MobileDevice.Name = "chk_Exch_MobileDevice"
+	$chk_Exch_MobileDevice.Size = $Size_Chk
+	$chk_Exch_MobileDevice.TabIndex = $TabIndex++
+	$chk_Exch_MobileDevice.Text = "Get-MobileDevice"
+	$chk_Exch_MobileDevice.UseVisualStyleBackColor = $True
+	$bx_ClientAccess_Functions.Controls.Add($chk_Exch_MobileDevice)
+$chk_Exch_MobileDevicePolicy.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_MobileDevicePolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_MobileDevicePolicy.Name = "chk_Org_Get_MobileDevicePolicy"
-	$chk_Org_Get_MobileDevicePolicy.Size = $Size_Chk
-	$chk_Org_Get_MobileDevicePolicy.TabIndex = $TabIndex++
-	$chk_Org_Get_MobileDevicePolicy.Text = "Get-MobileDeviceMailboxPolicy"
-	$chk_Org_Get_MobileDevicePolicy.UseVisualStyleBackColor = $True
-	$bx_ClientAccess_Functions.Controls.Add($chk_Org_Get_MobileDevicePolicy)
-$chk_Org_Get_OwaMailboxPolicy.Font = $font_Calibri_10pt_normal
+	$chk_Exch_MobileDevicePolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_MobileDevicePolicy.Name = "chk_Exch_MobileDevicePolicy"
+	$chk_Exch_MobileDevicePolicy.Size = $Size_Chk
+	$chk_Exch_MobileDevicePolicy.TabIndex = $TabIndex++
+	$chk_Exch_MobileDevicePolicy.Text = "Get-MobileDeviceMailboxPolicy"
+	$chk_Exch_MobileDevicePolicy.UseVisualStyleBackColor = $True
+	$bx_ClientAccess_Functions.Controls.Add($chk_Exch_MobileDevicePolicy)
+$chk_Exch_OwaMailboxPolicy.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_OwaMailboxPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_OwaMailboxPolicy.Name = "chk_Org_Get_OwaMailboxPolicy"
-	$chk_Org_Get_OwaMailboxPolicy.Size = $Size_Chk
-	$chk_Org_Get_OwaMailboxPolicy.TabIndex = $TabIndex++
-	$chk_Org_Get_OwaMailboxPolicy.Text = "Get-OwaMailboxPolicy"
-	$chk_Org_Get_OwaMailboxPolicy.UseVisualStyleBackColor = $True
-	$bx_ClientAccess_Functions.Controls.Add($chk_Org_Get_OwaMailboxPolicy)
+	$chk_Exch_OwaMailboxPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_OwaMailboxPolicy.Name = "chk_Exch_OwaMailboxPolicy"
+	$chk_Exch_OwaMailboxPolicy.Size = $Size_Chk
+	$chk_Exch_OwaMailboxPolicy.TabIndex = $TabIndex++
+	$chk_Exch_OwaMailboxPolicy.Text = "Get-OwaMailboxPolicy"
+	$chk_Exch_OwaMailboxPolicy.UseVisualStyleBackColor = $True
+	$bx_ClientAccess_Functions.Controls.Add($chk_Exch_OwaMailboxPolicy)
 #EndRegion Step3 Exchange - Client Access tab
 
 #Region Step3 Exchange - Global tab
@@ -2053,132 +2173,132 @@ $Col_1_loc = 35
 $Col_2_loc = 290
 $Row_1_loc = 0
 $Row_2_loc = 0
-$chk_Org_Get_AddressBookPolicy.Font = $font_Calibri_10pt_normal
+$chk_Exch_AddressBookPolicy.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_AddressBookPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_AddressBookPolicy.Name = "chk_Org_Get_AddressBookPolicy"
-	$chk_Org_Get_AddressBookPolicy.Size = $Size_Chk
-	$chk_Org_Get_AddressBookPolicy.TabIndex = $TabIndex++
-	$chk_Org_Get_AddressBookPolicy.Text = "Get-AddressBookPolicy"
-	$chk_Org_Get_AddressBookPolicy.UseVisualStyleBackColor = $True
-	$bx_Global_Functions.Controls.Add($chk_Org_Get_AddressBookPolicy)
-$chk_Org_Get_AddressList.Font = $font_Calibri_10pt_normal
+	$chk_Exch_AddressBookPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_AddressBookPolicy.Name = "chk_Exch_AddressBookPolicy"
+	$chk_Exch_AddressBookPolicy.Size = $Size_Chk
+	$chk_Exch_AddressBookPolicy.TabIndex = $TabIndex++
+	$chk_Exch_AddressBookPolicy.Text = "Get-AddressBookPolicy"
+	$chk_Exch_AddressBookPolicy.UseVisualStyleBackColor = $True
+	$bx_Global_Functions.Controls.Add($chk_Exch_AddressBookPolicy)
+$chk_Exch_AddressList.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_AddressList.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_AddressList.Name = "chk_Org_Get_AddressList"
-	$chk_Org_Get_AddressList.Size = $Size_Chk
-	$chk_Org_Get_AddressList.TabIndex = $TabIndex++
-	$chk_Org_Get_AddressList.Text = "Get-AddressList"
-	$chk_Org_Get_AddressList.UseVisualStyleBackColor = $True
-	$bx_Global_Functions.Controls.Add($chk_Org_Get_AddressList)
-$chk_Org_Get_AntiPhishPolicy.Font = $font_Calibri_10pt_normal
+	$chk_Exch_AddressList.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_AddressList.Name = "chk_Exch_AddressList"
+	$chk_Exch_AddressList.Size = $Size_Chk
+	$chk_Exch_AddressList.TabIndex = $TabIndex++
+	$chk_Exch_AddressList.Text = "Get-AddressList"
+	$chk_Exch_AddressList.UseVisualStyleBackColor = $True
+	$bx_Global_Functions.Controls.Add($chk_Exch_AddressList)
+$chk_Exch_AntiPhishPolicy.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_AntiPhishPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_AntiPhishPolicy.Name = "chk_Org_Get_AntiPhishPolicy"
-	$chk_Org_Get_AntiPhishPolicy.Size = $Size_Chk
-	$chk_Org_Get_AntiPhishPolicy.TabIndex = $TabIndex++
-	$chk_Org_Get_AntiPhishPolicy.Text = "Get-AntiPhishPolicy"
-	$chk_Org_Get_AntiPhishPolicy.UseVisualStyleBackColor = $True
-	$bx_Global_Functions.Controls.Add($chk_Org_Get_AntiPhishPolicy)
-$chk_Org_Get_AntiSpoofingPolicy.Font = $font_Calibri_10pt_normal
+	$chk_Exch_AntiPhishPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_AntiPhishPolicy.Name = "chk_Exch_AntiPhishPolicy"
+	$chk_Exch_AntiPhishPolicy.Size = $Size_Chk
+	$chk_Exch_AntiPhishPolicy.TabIndex = $TabIndex++
+	$chk_Exch_AntiPhishPolicy.Text = "Get-AntiPhishPolicy"
+	$chk_Exch_AntiPhishPolicy.UseVisualStyleBackColor = $True
+	$bx_Global_Functions.Controls.Add($chk_Exch_AntiPhishPolicy)
+$chk_Exch_AntiSpoofingPolicy.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_AntiSpoofingPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_AntiSpoofingPolicy.Name = "chk_Org_Get_AntiSpoofingPolicy"
-	$chk_Org_Get_AntiSpoofingPolicy.Size = $Size_Chk
-	$chk_Org_Get_AntiSpoofingPolicy.TabIndex = $TabIndex++
-	$chk_Org_Get_AntiSpoofingPolicy.Text = "Get-AntiSpoofingPolicy"
-	$chk_Org_Get_AntiSpoofingPolicy.UseVisualStyleBackColor = $True
-	$bx_Global_Functions.Controls.Add($chk_Org_Get_AntiSpoofingPolicy)
-$chk_Org_Get_AtpPolicyForO365.Font = $font_Calibri_10pt_normal
+	$chk_Exch_AntiSpoofingPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_AntiSpoofingPolicy.Name = "chk_Exch_AntiSpoofingPolicy"
+	$chk_Exch_AntiSpoofingPolicy.Size = $Size_Chk
+	$chk_Exch_AntiSpoofingPolicy.TabIndex = $TabIndex++
+	$chk_Exch_AntiSpoofingPolicy.Text = "Get-AntiSpoofingPolicy"
+	$chk_Exch_AntiSpoofingPolicy.UseVisualStyleBackColor = $True
+	$bx_Global_Functions.Controls.Add($chk_Exch_AntiSpoofingPolicy)
+$chk_Exch_AtpPolicyForO365.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_AtpPolicyForO365.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_AtpPolicyForO365.Name = "chk_Org_Get_AtpPolicyForO365"
-	$chk_Org_Get_AtpPolicyForO365.Size = $Size_Chk
-	$chk_Org_Get_AtpPolicyForO365.TabIndex = $TabIndex++
-	$chk_Org_Get_AtpPolicyForO365.Text = "Get-AtpPolicyForO365"
-	$chk_Org_Get_AtpPolicyForO365.UseVisualStyleBackColor = $True
-	$bx_Global_Functions.Controls.Add($chk_Org_Get_AtpPolicyForO365)
-$chk_Org_Get_EmailAddressPolicy.Font = $font_Calibri_10pt_normal
+	$chk_Exch_AtpPolicyForO365.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_AtpPolicyForO365.Name = "chk_Exch_AtpPolicyForO365"
+	$chk_Exch_AtpPolicyForO365.Size = $Size_Chk
+	$chk_Exch_AtpPolicyForO365.TabIndex = $TabIndex++
+	$chk_Exch_AtpPolicyForO365.Text = "Get-AtpPolicyForO365"
+	$chk_Exch_AtpPolicyForO365.UseVisualStyleBackColor = $True
+	$bx_Global_Functions.Controls.Add($chk_Exch_AtpPolicyForO365)
+$chk_Exch_EmailAddressPolicy.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_EmailAddressPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_EmailAddressPolicy.Name = "chk_Org_Get_EmailAddressPolicy"
-	$chk_Org_Get_EmailAddressPolicy.Size = $Size_Chk
-	$chk_Org_Get_EmailAddressPolicy.TabIndex = $TabIndex++
-	$chk_Org_Get_EmailAddressPolicy.Text = "Get-EmailAddressPolicy"
-	$chk_Org_Get_EmailAddressPolicy.UseVisualStyleBackColor = $True
-	$bx_Global_Functions.Controls.Add($chk_Org_Get_EmailAddressPolicy)
-$chk_Org_Get_GlobalAddressList.Font = $font_Calibri_10pt_normal
+	$chk_Exch_EmailAddressPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_EmailAddressPolicy.Name = "chk_Exch_EmailAddressPolicy"
+	$chk_Exch_EmailAddressPolicy.Size = $Size_Chk
+	$chk_Exch_EmailAddressPolicy.TabIndex = $TabIndex++
+	$chk_Exch_EmailAddressPolicy.Text = "Get-EmailAddressPolicy"
+	$chk_Exch_EmailAddressPolicy.UseVisualStyleBackColor = $True
+	$bx_Global_Functions.Controls.Add($chk_Exch_EmailAddressPolicy)
+$chk_Exch_GlobalAddressList.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_GlobalAddressList.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_GlobalAddressList.Name = "chk_Org_Get_GlobalAddressList"
-	$chk_Org_Get_GlobalAddressList.Size = $Size_Chk
-	$chk_Org_Get_GlobalAddressList.TabIndex = $TabIndex++
-	$chk_Org_Get_GlobalAddressList.Text = "Get-GlobalAddressList"
-	$chk_Org_Get_GlobalAddressList.UseVisualStyleBackColor = $True
-	$bx_Global_Functions.Controls.Add($chk_Org_Get_GlobalAddressList)
-$chk_Org_Get_OfflineAddressBook.Font = $font_Calibri_10pt_normal
+	$chk_Exch_GlobalAddressList.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_GlobalAddressList.Name = "chk_Exch_GlobalAddressList"
+	$chk_Exch_GlobalAddressList.Size = $Size_Chk
+	$chk_Exch_GlobalAddressList.TabIndex = $TabIndex++
+	$chk_Exch_GlobalAddressList.Text = "Get-GlobalAddressList"
+	$chk_Exch_GlobalAddressList.UseVisualStyleBackColor = $True
+	$bx_Global_Functions.Controls.Add($chk_Exch_GlobalAddressList)
+$chk_Exch_OfflineAddressBook.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Org_Get_OfflineAddressBook.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Org_Get_OfflineAddressBook.Name = "chk_Org_Get_OfflineAddressBook"
-	$chk_Org_Get_OfflineAddressBook.Size = $Size_Chk
-	$chk_Org_Get_OfflineAddressBook.TabIndex = $TabIndex++
-	$chk_Org_Get_OfflineAddressBook.Text = "Get-OfflineAddressBook"
-	$chk_Org_Get_OfflineAddressBook.UseVisualStyleBackColor = $True
-	$bx_Global_Functions.Controls.Add($chk_Org_Get_OfflineAddressBook)
-$chk_Org_Get_OnPremisesOrganization.Font = $font_Calibri_10pt_normal
+	$chk_Exch_OfflineAddressBook.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Exch_OfflineAddressBook.Name = "chk_Exch_OfflineAddressBook"
+	$chk_Exch_OfflineAddressBook.Size = $Size_Chk
+	$chk_Exch_OfflineAddressBook.TabIndex = $TabIndex++
+	$chk_Exch_OfflineAddressBook.Text = "Get-OfflineAddressBook"
+	$chk_Exch_OfflineAddressBook.UseVisualStyleBackColor = $True
+	$bx_Global_Functions.Controls.Add($chk_Exch_OfflineAddressBook)
+$chk_Exch_OnPremisesOrganization.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Org_Get_OnPremisesOrganization.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Org_Get_OnPremisesOrganization.Name = "chk_Org_Get_OnPremisesOrganization"
-	$chk_Org_Get_OnPremisesOrganization.Size = $Size_Chk
-	$chk_Org_Get_OnPremisesOrganization.TabIndex = $TabIndex++
-	$chk_Org_Get_OnPremisesOrganization.Text = "Get-OnPremisesOrganization"
-	$chk_Org_Get_OnPremisesOrganization.UseVisualStyleBackColor = $True
-	$bx_Global_Functions.Controls.Add($chk_Org_Get_OnPremisesOrganization)
-$chk_Org_Get_OrgConfig.Font = $font_Calibri_10pt_normal
+	$chk_Exch_OnPremisesOrganization.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Exch_OnPremisesOrganization.Name = "chk_Exch_OnPremisesOrganization"
+	$chk_Exch_OnPremisesOrganization.Size = $Size_Chk
+	$chk_Exch_OnPremisesOrganization.TabIndex = $TabIndex++
+	$chk_Exch_OnPremisesOrganization.Text = "Get-OnPremisesOrganization"
+	$chk_Exch_OnPremisesOrganization.UseVisualStyleBackColor = $True
+	$bx_Global_Functions.Controls.Add($chk_Exch_OnPremisesOrganization)
+$chk_Exch_OrgConfig.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Org_Get_OrgConfig.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Org_Get_OrgConfig.Name = "chk_Org_Get_OrgConfig"
-	$chk_Org_Get_OrgConfig.Size = $Size_Chk
-	$chk_Org_Get_OrgConfig.TabIndex = $TabIndex++
-	$chk_Org_Get_OrgConfig.Text = "Get-OrganizationConfig"
-	$chk_Org_Get_OrgConfig.UseVisualStyleBackColor = $True
-	$bx_Global_Functions.Controls.Add($chk_Org_Get_OrgConfig)
-$chk_Org_Get_Rbac.Font = $font_Calibri_10pt_normal
+	$chk_Exch_OrgConfig.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Exch_OrgConfig.Name = "chk_Exch_OrgConfig"
+	$chk_Exch_OrgConfig.Size = $Size_Chk
+	$chk_Exch_OrgConfig.TabIndex = $TabIndex++
+	$chk_Exch_OrgConfig.Text = "Get-OrganizationConfig"
+	$chk_Exch_OrgConfig.UseVisualStyleBackColor = $True
+	$bx_Global_Functions.Controls.Add($chk_Exch_OrgConfig)
+$chk_Exch_Rbac.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Org_Get_Rbac.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Org_Get_Rbac.Name = "chk_Org_Get_Rbac"
-	$chk_Org_Get_Rbac.Size = $Size_Chk
-	$chk_Org_Get_Rbac.TabIndex = $TabIndex++
-	$chk_Org_Get_Rbac.Text = "Get-Rbac"
-	$chk_Org_Get_Rbac.UseVisualStyleBackColor = $True
-	$bx_Global_Functions.Controls.Add($chk_Org_Get_Rbac)
-$chk_Org_Get_RetentionPolicy.Font = $font_Calibri_10pt_normal
+	$chk_Exch_Rbac.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Exch_Rbac.Name = "chk_Exch_Rbac"
+	$chk_Exch_Rbac.Size = $Size_Chk
+	$chk_Exch_Rbac.TabIndex = $TabIndex++
+	$chk_Exch_Rbac.Text = "Get-Rbac"
+	$chk_Exch_Rbac.UseVisualStyleBackColor = $True
+	$bx_Global_Functions.Controls.Add($chk_Exch_Rbac)
+$chk_Exch_RetentionPolicy.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Org_Get_RetentionPolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Org_Get_RetentionPolicy.Name = "chk_Org_Get_RetentionPolicy"
-	$chk_Org_Get_RetentionPolicy.Size = $Size_Chk
-	$chk_Org_Get_RetentionPolicy.TabIndex = $TabIndex++
-	$chk_Org_Get_RetentionPolicy.Text = "Get-RetentionPolicy"
-	$chk_Org_Get_RetentionPolicy.UseVisualStyleBackColor = $True
-	$bx_Global_Functions.Controls.Add($chk_Org_Get_RetentionPolicy)
-$chk_Org_Get_RetentionPolicyTag.Font = $font_Calibri_10pt_normal
+	$chk_Exch_RetentionPolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Exch_RetentionPolicy.Name = "chk_Exch_RetentionPolicy"
+	$chk_Exch_RetentionPolicy.Size = $Size_Chk
+	$chk_Exch_RetentionPolicy.TabIndex = $TabIndex++
+	$chk_Exch_RetentionPolicy.Text = "Get-RetentionPolicy"
+	$chk_Exch_RetentionPolicy.UseVisualStyleBackColor = $True
+	$bx_Global_Functions.Controls.Add($chk_Exch_RetentionPolicy)
+$chk_Exch_RetentionPolicyTag.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Org_Get_RetentionPolicyTag.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Org_Get_RetentionPolicyTag.Name = "chk_Org_Get_RetentionPolicyTag"
-	$chk_Org_Get_RetentionPolicyTag.Size = $Size_Chk
-	$chk_Org_Get_RetentionPolicyTag.TabIndex = $TabIndex++
-	$chk_Org_Get_RetentionPolicyTag.Text = "Get-RetentionPolicyTag"
-	$chk_Org_Get_RetentionPolicyTag.UseVisualStyleBackColor = $True
-	$bx_Global_Functions.Controls.Add($chk_Org_Get_RetentionPolicyTag)
-$chk_Org_Get_SmimeConfig.Font = $font_Calibri_10pt_normal
+	$chk_Exch_RetentionPolicyTag.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Exch_RetentionPolicyTag.Name = "chk_Exch_RetentionPolicyTag"
+	$chk_Exch_RetentionPolicyTag.Size = $Size_Chk
+	$chk_Exch_RetentionPolicyTag.TabIndex = $TabIndex++
+	$chk_Exch_RetentionPolicyTag.Text = "Get-RetentionPolicyTag"
+	$chk_Exch_RetentionPolicyTag.UseVisualStyleBackColor = $True
+	$bx_Global_Functions.Controls.Add($chk_Exch_RetentionPolicyTag)
+$chk_Exch_SmimeConfig.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Org_Get_SmimeConfig.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Org_Get_SmimeConfig.Name = "chk_Org_Get_SmimeConfig"
-	$chk_Org_Get_SmimeConfig.Size = $Size_Chk
-	$chk_Org_Get_SmimeConfig.TabIndex = $TabIndex++
-	$chk_Org_Get_SmimeConfig.Text = "Get-SmimeConfig"
-	$chk_Org_Get_SmimeConfig.UseVisualStyleBackColor = $True
-	$bx_Global_Functions.Controls.Add($chk_Org_Get_SmimeConfig)
+	$chk_Exch_SmimeConfig.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Exch_SmimeConfig.Name = "chk_Exch_SmimeConfig"
+	$chk_Exch_SmimeConfig.Size = $Size_Chk
+	$chk_Exch_SmimeConfig.TabIndex = $TabIndex++
+	$chk_Exch_SmimeConfig.Text = "Get-SmimeConfig"
+	$chk_Exch_SmimeConfig.UseVisualStyleBackColor = $True
+	$bx_Global_Functions.Controls.Add($chk_Exch_SmimeConfig)
 #EndRegion Step3 Exchange - Global tab
 
 #Region Step3 Exchange - Recipient tab
@@ -2221,141 +2341,141 @@ $Col_1_loc = 35
 $Col_2_loc = 290
 $Row_1_loc = 0
 $Row_2_loc = 0
-$chk_Org_Get_CalendarProcessing.Font = $font_Calibri_10pt_normal
+$chk_Exch_CalendarProcessing.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_CalendarProcessing.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_CalendarProcessing.Name = "chk_Org_Get_CalendarProcessing"
-	$chk_Org_Get_CalendarProcessing.Size = $Size_Chk
-	$chk_Org_Get_CalendarProcessing.TabIndex = $TabIndex++
-	$chk_Org_Get_CalendarProcessing.Text = "Get-CalendarProcessing"
-	$chk_Org_Get_CalendarProcessing.UseVisualStyleBackColor = $True
-	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_CalendarProcessing)
-$chk_Org_Get_CASMailbox.Font = $font_Calibri_10pt_normal
+	$chk_Exch_CalendarProcessing.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_CalendarProcessing.Name = "chk_Exch_CalendarProcessing"
+	$chk_Exch_CalendarProcessing.Size = $Size_Chk
+	$chk_Exch_CalendarProcessing.TabIndex = $TabIndex++
+	$chk_Exch_CalendarProcessing.Text = "Get-CalendarProcessing"
+	$chk_Exch_CalendarProcessing.UseVisualStyleBackColor = $True
+	$bx_Recipient_Functions.Controls.Add($chk_Exch_CalendarProcessing)
+$chk_Exch_CASMailbox.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_CASMailbox.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_CASMailbox.Name = "chk_Org_Get_CASMailbox"
-	$chk_Org_Get_CASMailbox.Size = $Size_Chk
-	$chk_Org_Get_CASMailbox.TabIndex = $TabIndex++
-	$chk_Org_Get_CASMailbox.Text = "Get-CASMailbox"
-	$chk_Org_Get_CASMailbox.UseVisualStyleBackColor = $True
-	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_CASMailbox)
-$chk_Org_Get_CasMailboxPlan.Font = $font_Calibri_10pt_normal
+	$chk_Exch_CASMailbox.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_CASMailbox.Name = "chk_Exch_CASMailbox"
+	$chk_Exch_CASMailbox.Size = $Size_Chk
+	$chk_Exch_CASMailbox.TabIndex = $TabIndex++
+	$chk_Exch_CASMailbox.Text = "Get-CASMailbox"
+	$chk_Exch_CASMailbox.UseVisualStyleBackColor = $True
+	$bx_Recipient_Functions.Controls.Add($chk_Exch_CASMailbox)
+$chk_Exch_CasMailboxPlan.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_CasMailboxPlan.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_CasMailboxPlan.Name = "chk_Org_Get_CasMailboxPlan"
-	$chk_Org_Get_CasMailboxPlan.Size = $Size_Chk
-	$chk_Org_Get_CasMailboxPlan.TabIndex = $TabIndex++
-	$chk_Org_Get_CasMailboxPlan.Text = "Get-CasMailboxPlan"
-	$chk_Org_Get_CasMailboxPlan.UseVisualStyleBackColor = $True
-	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_CasMailboxPlan)
-$chk_Org_Get_Contact.Font = $font_Calibri_10pt_normal
+	$chk_Exch_CasMailboxPlan.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_CasMailboxPlan.Name = "chk_Exch_CasMailboxPlan"
+	$chk_Exch_CasMailboxPlan.Size = $Size_Chk
+	$chk_Exch_CasMailboxPlan.TabIndex = $TabIndex++
+	$chk_Exch_CasMailboxPlan.Text = "Get-CasMailboxPlan"
+	$chk_Exch_CasMailboxPlan.UseVisualStyleBackColor = $True
+	$bx_Recipient_Functions.Controls.Add($chk_Exch_CasMailboxPlan)
+$chk_Exch_Contact.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_Contact.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_Contact.Name = "chk_Org_Get_Contact"
-	$chk_Org_Get_Contact.Size = $Size_Chk
-	$chk_Org_Get_Contact.TabIndex = $TabIndex++
-	$chk_Org_Get_Contact.Text = "Get-Contact"
-	$chk_Org_Get_Contact.UseVisualStyleBackColor = $True
-	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_Contact)
-$chk_Org_Get_DistributionGroup.Font = $font_Calibri_10pt_normal
+	$chk_Exch_Contact.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_Contact.Name = "chk_Exch_Contact"
+	$chk_Exch_Contact.Size = $Size_Chk
+	$chk_Exch_Contact.TabIndex = $TabIndex++
+	$chk_Exch_Contact.Text = "Get-Contact"
+	$chk_Exch_Contact.UseVisualStyleBackColor = $True
+	$bx_Recipient_Functions.Controls.Add($chk_Exch_Contact)
+$chk_Exch_DistributionGroup.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_DistributionGroup.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_DistributionGroup.Name = "chk_Org_Get_DistributionGroup"
-	$chk_Org_Get_DistributionGroup.Size = $Size_Chk
-	$chk_Org_Get_DistributionGroup.TabIndex = $TabIndex++
-	$chk_Org_Get_DistributionGroup.Text = "Get-DistributionGroup"
-	$chk_Org_Get_DistributionGroup.UseVisualStyleBackColor = $True
-	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_DistributionGroup)
-$chk_Org_Get_DynamicDistributionGroup.Font = $font_Calibri_10pt_normal
+	$chk_Exch_DistributionGroup.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_DistributionGroup.Name = "chk_Exch_DistributionGroup"
+	$chk_Exch_DistributionGroup.Size = $Size_Chk
+	$chk_Exch_DistributionGroup.TabIndex = $TabIndex++
+	$chk_Exch_DistributionGroup.Text = "Get-DistributionGroup"
+	$chk_Exch_DistributionGroup.UseVisualStyleBackColor = $True
+	$bx_Recipient_Functions.Controls.Add($chk_Exch_DistributionGroup)
+$chk_Exch_DynamicDistributionGroup.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_DynamicDistributionGroup.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_DynamicDistributionGroup.Name = "chk_Org_Get_DynamicDistributionGroup"
-	$chk_Org_Get_DynamicDistributionGroup.Size = $Size_Chk
-	$chk_Org_Get_DynamicDistributionGroup.TabIndex = $TabIndex++
-	$chk_Org_Get_DynamicDistributionGroup.Text = "Get-DynamicDistributionGroup"
-	$chk_Org_Get_DynamicDistributionGroup.UseVisualStyleBackColor = $True
-	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_DynamicDistributionGroup)
-$chk_Org_Get_Mailbox.Font = $font_Calibri_10pt_normal
+	$chk_Exch_DynamicDistributionGroup.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_DynamicDistributionGroup.Name = "chk_Exch_DynamicDistributionGroup"
+	$chk_Exch_DynamicDistributionGroup.Size = $Size_Chk
+	$chk_Exch_DynamicDistributionGroup.TabIndex = $TabIndex++
+	$chk_Exch_DynamicDistributionGroup.Text = "Get-DynamicDistributionGroup"
+	$chk_Exch_DynamicDistributionGroup.UseVisualStyleBackColor = $True
+	$bx_Recipient_Functions.Controls.Add($chk_Exch_DynamicDistributionGroup)
+$chk_Exch_Mailbox.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_Mailbox.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_Mailbox.Name = "chk_Org_Get_Mailbox"
-	$chk_Org_Get_Mailbox.Size = $Size_Chk
-	$chk_Org_Get_Mailbox.TabIndex = $TabIndex++
-	$chk_Org_Get_Mailbox.Text = "Get-Mailbox"
-	$chk_Org_Get_Mailbox.UseVisualStyleBackColor = $True
-	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_Mailbox)
-$chk_Org_Get_MailboxFolderStatistics.Font = $font_Calibri_10pt_normal
+	$chk_Exch_Mailbox.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_Mailbox.Name = "chk_Exch_Mailbox"
+	$chk_Exch_Mailbox.Size = $Size_Chk
+	$chk_Exch_Mailbox.TabIndex = $TabIndex++
+	$chk_Exch_Mailbox.Text = "Get-Mailbox"
+	$chk_Exch_Mailbox.UseVisualStyleBackColor = $True
+	$bx_Recipient_Functions.Controls.Add($chk_Exch_Mailbox)
+$chk_Exch_MailboxFolderStatistics.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_MailboxFolderStatistics.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_MailboxFolderStatistics.Name = "chk_Org_Get_MailboxFolderStatistics"
-	$chk_Org_Get_MailboxFolderStatistics.Size = $Size_Chk
-	$chk_Org_Get_MailboxFolderStatistics.TabIndex = $TabIndex++
-	$chk_Org_Get_MailboxFolderStatistics.Text = "Get-MailboxFolderStatistics"
-	$chk_Org_Get_MailboxFolderStatistics.UseVisualStyleBackColor = $True
-	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_MailboxFolderStatistics)
-$chk_Org_Get_MailboxPermission.Font = $font_Calibri_10pt_normal
+	$chk_Exch_MailboxFolderStatistics.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_MailboxFolderStatistics.Name = "chk_Exch_MailboxFolderStatistics"
+	$chk_Exch_MailboxFolderStatistics.Size = $Size_Chk
+	$chk_Exch_MailboxFolderStatistics.TabIndex = $TabIndex++
+	$chk_Exch_MailboxFolderStatistics.Text = "Get-MailboxFolderStatistics"
+	$chk_Exch_MailboxFolderStatistics.UseVisualStyleBackColor = $True
+	$bx_Recipient_Functions.Controls.Add($chk_Exch_MailboxFolderStatistics)
+$chk_Exch_MailboxPermission.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Org_Get_MailboxPermission.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Org_Get_MailboxPermission.Name = "chk_Org_Get_MailboxPermission"
-	$chk_Org_Get_MailboxPermission.Size = $Size_Chk
-	$chk_Org_Get_MailboxPermission.TabIndex = $TabIndex++
-	$chk_Org_Get_MailboxPermission.Text = "Get-MailboxPermission"
-	$chk_Org_Get_MailboxPermission.UseVisualStyleBackColor = $True
-	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_MailboxPermission)
-$chk_Org_Get_MailboxPlan.Font = $font_Calibri_10pt_normal
+	$chk_Exch_MailboxPermission.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Exch_MailboxPermission.Name = "chk_Exch_MailboxPermission"
+	$chk_Exch_MailboxPermission.Size = $Size_Chk
+	$chk_Exch_MailboxPermission.TabIndex = $TabIndex++
+	$chk_Exch_MailboxPermission.Text = "Get-MailboxPermission"
+	$chk_Exch_MailboxPermission.UseVisualStyleBackColor = $True
+	$bx_Recipient_Functions.Controls.Add($chk_Exch_MailboxPermission)
+$chk_Exch_MailboxPlan.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Org_Get_MailboxPlan.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Org_Get_MailboxPlan.Name = "chk_Org_Get_MailboxPlan"
-	$chk_Org_Get_MailboxPlan.Size = $Size_Chk
-	$chk_Org_Get_MailboxPlan.TabIndex = $TabIndex++
-	$chk_Org_Get_MailboxPlan.Text = "Get-MailboxPlan"
-	$chk_Org_Get_MailboxPlan.UseVisualStyleBackColor = $True
-	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_MailboxPlan)
-$chk_Org_Get_MailboxStatistics.Font = $font_Calibri_10pt_normal
+	$chk_Exch_MailboxPlan.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Exch_MailboxPlan.Name = "chk_Exch_MailboxPlan"
+	$chk_Exch_MailboxPlan.Size = $Size_Chk
+	$chk_Exch_MailboxPlan.TabIndex = $TabIndex++
+	$chk_Exch_MailboxPlan.Text = "Get-MailboxPlan"
+	$chk_Exch_MailboxPlan.UseVisualStyleBackColor = $True
+	$bx_Recipient_Functions.Controls.Add($chk_Exch_MailboxPlan)
+$chk_Exch_MailboxStatistics.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Org_Get_MailboxStatistics.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Org_Get_MailboxStatistics.Name = "chk_Org_Get_MailboxStatistics"
-	$chk_Org_Get_MailboxStatistics.Size = $Size_Chk
-	$chk_Org_Get_MailboxStatistics.TabIndex = $TabIndex++
-	$chk_Org_Get_MailboxStatistics.Text = "Get-MailboxStatistics"
-	$chk_Org_Get_MailboxStatistics.UseVisualStyleBackColor = $True
-	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_MailboxStatistics)
-$chk_Org_Get_MailUser.Font = $font_Calibri_10pt_normal
+	$chk_Exch_MailboxStatistics.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Exch_MailboxStatistics.Name = "chk_Exch_MailboxStatistics"
+	$chk_Exch_MailboxStatistics.Size = $Size_Chk
+	$chk_Exch_MailboxStatistics.TabIndex = $TabIndex++
+	$chk_Exch_MailboxStatistics.Text = "Get-MailboxStatistics"
+	$chk_Exch_MailboxStatistics.UseVisualStyleBackColor = $True
+	$bx_Recipient_Functions.Controls.Add($chk_Exch_MailboxStatistics)
+$chk_Exch_MailUser.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Org_Get_MailUser.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Org_Get_MailUser.Name = "chk_Org_Get_MailUser"
-	$chk_Org_Get_MailUser.Size = $Size_Chk
-	$chk_Org_Get_MailUser.TabIndex = $TabIndex++
-	$chk_Org_Get_MailUser.Text = "Get-MailUser"
-	$chk_Org_Get_MailUser.UseVisualStyleBackColor = $True
-	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_MailUser)
-$chk_Org_Get_PublicFolder.Font = $font_Calibri_10pt_normal
+	$chk_Exch_MailUser.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Exch_MailUser.Name = "chk_Exch_MailUser"
+	$chk_Exch_MailUser.Size = $Size_Chk
+	$chk_Exch_MailUser.TabIndex = $TabIndex++
+	$chk_Exch_MailUser.Text = "Get-MailUser"
+	$chk_Exch_MailUser.UseVisualStyleBackColor = $True
+	$bx_Recipient_Functions.Controls.Add($chk_Exch_MailUser)
+$chk_Exch_PublicFolder.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Org_Get_PublicFolder.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Org_Get_PublicFolder.Name = "chk_Org_Get_PublicFolder"
-	$chk_Org_Get_PublicFolder.Size = $Size_Chk
-	$chk_Org_Get_PublicFolder.TabIndex = $TabIndex++
-	$chk_Org_Get_PublicFolder.Text = "Get-PublicFolder"
-	$chk_Org_Get_PublicFolder.UseVisualStyleBackColor = $True
-	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_PublicFolder)
-$chk_Org_Get_PublicFolderStatistics.Font = $font_Calibri_10pt_normal
+	$chk_Exch_PublicFolder.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Exch_PublicFolder.Name = "chk_Exch_PublicFolder"
+	$chk_Exch_PublicFolder.Size = $Size_Chk
+	$chk_Exch_PublicFolder.TabIndex = $TabIndex++
+	$chk_Exch_PublicFolder.Text = "Get-PublicFolder"
+	$chk_Exch_PublicFolder.UseVisualStyleBackColor = $True
+	$bx_Recipient_Functions.Controls.Add($chk_Exch_PublicFolder)
+$chk_Exch_PublicFolderStatistics.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Org_Get_PublicFolderStatistics.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Org_Get_PublicFolderStatistics.Name = "chk_Org_Get_PublicFolderStatistics"
-	$chk_Org_Get_PublicFolderStatistics.Size = $Size_Chk
-	$chk_Org_Get_PublicFolderStatistics.TabIndex = $TabIndex++
-	$chk_Org_Get_PublicFolderStatistics.Text = "Get-PublicFolderStatistics"
-	$chk_Org_Get_PublicFolderStatistics.UseVisualStyleBackColor = $True
-	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_PublicFolderStatistics)
-$chk_Org_Get_UnifiedGroup.Font = $font_Calibri_10pt_normal
+	$chk_Exch_PublicFolderStatistics.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Exch_PublicFolderStatistics.Name = "chk_Exch_PublicFolderStatistics"
+	$chk_Exch_PublicFolderStatistics.Size = $Size_Chk
+	$chk_Exch_PublicFolderStatistics.TabIndex = $TabIndex++
+	$chk_Exch_PublicFolderStatistics.Text = "Get-PublicFolderStatistics"
+	$chk_Exch_PublicFolderStatistics.UseVisualStyleBackColor = $True
+	$bx_Recipient_Functions.Controls.Add($chk_Exch_PublicFolderStatistics)
+$chk_Exch_UnifiedGroup.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Org_Get_UnifiedGroup.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Org_Get_UnifiedGroup.Name = "chk_Org_Get_UnifiedGroup"
-	$chk_Org_Get_UnifiedGroup.Size = $Size_Chk
-	$chk_Org_Get_UnifiedGroup.TabIndex = $TabIndex++
-	$chk_Org_Get_UnifiedGroup.Text = "Get-UnifiedGroup"
-	$chk_Org_Get_UnifiedGroup.UseVisualStyleBackColor = $True
-	$bx_Recipient_Functions.Controls.Add($chk_Org_Get_UnifiedGroup)
+	$chk_Exch_UnifiedGroup.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Exch_UnifiedGroup.Name = "chk_Exch_UnifiedGroup"
+	$chk_Exch_UnifiedGroup.Size = $Size_Chk
+	$chk_Exch_UnifiedGroup.TabIndex = $TabIndex++
+	$chk_Exch_UnifiedGroup.Text = "Get-UnifiedGroup"
+	$chk_Exch_UnifiedGroup.UseVisualStyleBackColor = $True
+	$bx_Recipient_Functions.Controls.Add($chk_Exch_UnifiedGroup)
 $chk_Org_Quota.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
 	$chk_Org_Quota.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
@@ -2407,69 +2527,69 @@ $Col_1_loc = 35
 $Col_2_loc = 290
 $Row_1_loc = 0
 $Row_2_loc = 0
-$chk_Org_Get_AcceptedDomain.Font = $font_Calibri_10pt_normal
+$chk_Exch_AcceptedDomain.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_AcceptedDomain.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_AcceptedDomain.Name = "chk_Org_Get_AcceptedDomain"
-	$chk_Org_Get_AcceptedDomain.Size = $Size_Chk
-	$chk_Org_Get_AcceptedDomain.TabIndex = $TabIndex++
-	$chk_Org_Get_AcceptedDomain.Text = "Get-AcceptedDomain"
-	$chk_Org_Get_AcceptedDomain.UseVisualStyleBackColor = $True
-	$bx_Transport_Functions.Controls.Add($chk_Org_Get_AcceptedDomain)
-$chk_Org_Get_DkimSigningConfig.Font = $font_Calibri_10pt_normal
+	$chk_Exch_AcceptedDomain.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_AcceptedDomain.Name = "chk_Exch_AcceptedDomain"
+	$chk_Exch_AcceptedDomain.Size = $Size_Chk
+	$chk_Exch_AcceptedDomain.TabIndex = $TabIndex++
+	$chk_Exch_AcceptedDomain.Text = "Get-AcceptedDomain"
+	$chk_Exch_AcceptedDomain.UseVisualStyleBackColor = $True
+	$bx_Transport_Functions.Controls.Add($chk_Exch_AcceptedDomain)
+$chk_Exch_DkimSigningConfig.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_DkimSigningConfig.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_DkimSigningConfig.Name = "chk_Org_Get_DkimSigningConfig"
-	$chk_Org_Get_DkimSigningConfig.Size = $Size_Chk
-	$chk_Org_Get_DkimSigningConfig.TabIndex = $TabIndex++
-	$chk_Org_Get_DkimSigningConfig.Text = "Get-DkimSigningConfig"
-	$chk_Org_Get_DkimSigningConfig.UseVisualStyleBackColor = $True
-	$bx_Transport_Functions.Controls.Add($chk_Org_Get_DkimSigningConfig)
-$chk_Org_Get_InboundConnector.Font = $font_Calibri_10pt_normal
+	$chk_Exch_DkimSigningConfig.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_DkimSigningConfig.Name = "chk_Exch_DkimSigningConfig"
+	$chk_Exch_DkimSigningConfig.Size = $Size_Chk
+	$chk_Exch_DkimSigningConfig.TabIndex = $TabIndex++
+	$chk_Exch_DkimSigningConfig.Text = "Get-DkimSigningConfig"
+	$chk_Exch_DkimSigningConfig.UseVisualStyleBackColor = $True
+	$bx_Transport_Functions.Controls.Add($chk_Exch_DkimSigningConfig)
+$chk_Exch_InboundConnector.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_InboundConnector.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_InboundConnector.Name = "chk_Org_Get_InboundConnector"
-	$chk_Org_Get_InboundConnector.Size = $Size_Chk
-	$chk_Org_Get_InboundConnector.TabIndex = $TabIndex++
-	$chk_Org_Get_InboundConnector.Text = "Get-InboundConnector"
-	$chk_Org_Get_InboundConnector.UseVisualStyleBackColor = $True
-	$bx_Transport_Functions.Controls.Add($chk_Org_Get_InboundConnector)
-$chk_Org_Get_OutboundConnector.Font = $font_Calibri_10pt_normal
+	$chk_Exch_InboundConnector.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_InboundConnector.Name = "chk_Exch_InboundConnector"
+	$chk_Exch_InboundConnector.Size = $Size_Chk
+	$chk_Exch_InboundConnector.TabIndex = $TabIndex++
+	$chk_Exch_InboundConnector.Text = "Get-InboundConnector"
+	$chk_Exch_InboundConnector.UseVisualStyleBackColor = $True
+	$bx_Transport_Functions.Controls.Add($chk_Exch_InboundConnector)
+$chk_Exch_OutboundConnector.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_OutboundConnector.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_OutboundConnector.Name = "chk_Org_Get_OutboundConnector"
-	$chk_Org_Get_OutboundConnector.Size = $Size_Chk
-	$chk_Org_Get_OutboundConnector.TabIndex = $TabIndex++
-	$chk_Org_Get_OutboundConnector.Text = "Get-OutboundConnector"
-	$chk_Org_Get_OutboundConnector.UseVisualStyleBackColor = $True
-	$bx_Transport_Functions.Controls.Add($chk_Org_Get_OutboundConnector)
-$chk_Org_Get_RemoteDomain.Font = $font_Calibri_10pt_normal
+	$chk_Exch_OutboundConnector.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_OutboundConnector.Name = "chk_Exch_OutboundConnector"
+	$chk_Exch_OutboundConnector.Size = $Size_Chk
+	$chk_Exch_OutboundConnector.TabIndex = $TabIndex++
+	$chk_Exch_OutboundConnector.Text = "Get-OutboundConnector"
+	$chk_Exch_OutboundConnector.UseVisualStyleBackColor = $True
+	$bx_Transport_Functions.Controls.Add($chk_Exch_OutboundConnector)
+$chk_Exch_RemoteDomain.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_RemoteDomain.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_RemoteDomain.Name = "chk_Org_Get_RemoteDomain"
-	$chk_Org_Get_RemoteDomain.Size = $Size_Chk
-	$chk_Org_Get_RemoteDomain.TabIndex = $TabIndex++
-	$chk_Org_Get_RemoteDomain.Text = "Get-RemoteDomain"
-	$chk_Org_Get_RemoteDomain.UseVisualStyleBackColor = $True
-	$bx_Transport_Functions.Controls.Add($chk_Org_Get_RemoteDomain)
-$chk_Org_Get_TransportConfig.Font = $font_Calibri_10pt_normal
+	$chk_Exch_RemoteDomain.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_RemoteDomain.Name = "chk_Exch_RemoteDomain"
+	$chk_Exch_RemoteDomain.Size = $Size_Chk
+	$chk_Exch_RemoteDomain.TabIndex = $TabIndex++
+	$chk_Exch_RemoteDomain.Text = "Get-RemoteDomain"
+	$chk_Exch_RemoteDomain.UseVisualStyleBackColor = $True
+	$bx_Transport_Functions.Controls.Add($chk_Exch_RemoteDomain)
+$chk_Exch_TransportConfig.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_TransportConfig.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_TransportConfig.Name = "chk_Org_Get_TransportConfig"
-	$chk_Org_Get_TransportConfig.Size = $Size_Chk
-	$chk_Org_Get_TransportConfig.TabIndex = $TabIndex++
-	$chk_Org_Get_TransportConfig.Text = "Get-TransportConfig"
-	$chk_Org_Get_TransportConfig.UseVisualStyleBackColor = $True
-	$bx_Transport_Functions.Controls.Add($chk_Org_Get_TransportConfig)
-$chk_Org_Get_TransportRule.Font = $font_Calibri_10pt_normal
+	$chk_Exch_TransportConfig.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_TransportConfig.Name = "chk_Exch_TransportConfig"
+	$chk_Exch_TransportConfig.Size = $Size_Chk
+	$chk_Exch_TransportConfig.TabIndex = $TabIndex++
+	$chk_Exch_TransportConfig.Text = "Get-TransportConfig"
+	$chk_Exch_TransportConfig.UseVisualStyleBackColor = $True
+	$bx_Transport_Functions.Controls.Add($chk_Exch_TransportConfig)
+$chk_Exch_TransportRule.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_TransportRule.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_TransportRule.Name = "chk_Org_Get_TransportRule"
-	$chk_Org_Get_TransportRule.Size = $Size_Chk
-	$chk_Org_Get_TransportRule.TabIndex = $TabIndex++
-	$chk_Org_Get_TransportRule.Text = "Get-TransportRule"
-	$chk_Org_Get_TransportRule.UseVisualStyleBackColor = $True
-	$bx_Transport_Functions.Controls.Add($chk_Org_Get_TransportRule)
+	$chk_Exch_TransportRule.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_TransportRule.Name = "chk_Exch_TransportRule"
+	$chk_Exch_TransportRule.Size = $Size_Chk
+	$chk_Exch_TransportRule.TabIndex = $TabIndex++
+	$chk_Exch_TransportRule.Text = "Get-TransportRule"
+	$chk_Exch_TransportRule.UseVisualStyleBackColor = $True
+	$bx_Transport_Functions.Controls.Add($chk_Exch_TransportRule)
 #EndRegion Step3 Exchange - Transport tab
 
 #Region Step3 Exchange - UM tab
@@ -2512,75 +2632,75 @@ $Col_1_loc = 35
 $Col_2_loc = 290
 $Row_1_loc = 0
 $Row_2_loc = 0
-$chk_Org_Get_UmAutoAttendant.Font = $font_Calibri_10pt_normal
+$chk_Exch_UmAutoAttendant.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_UmAutoAttendant.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_UmAutoAttendant.Name = "chk_Org_Get_UmAutoAttendant"
-	$chk_Org_Get_UmAutoAttendant.Size = $Size_Chk
-	$chk_Org_Get_UmAutoAttendant.TabIndex = $TabIndex++
-	$chk_Org_Get_UmAutoAttendant.Text = "Get-UmAutoAttendant"
-	$chk_Org_Get_UmAutoAttendant.UseVisualStyleBackColor = $True
-	$bx_UM_Functions.Controls.Add($chk_Org_Get_UmAutoAttendant)
-$chk_Org_Get_UmDialPlan.Font = $font_Calibri_10pt_normal
+	$chk_Exch_UmAutoAttendant.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_UmAutoAttendant.Name = "chk_Exch_UmAutoAttendant"
+	$chk_Exch_UmAutoAttendant.Size = $Size_Chk
+	$chk_Exch_UmAutoAttendant.TabIndex = $TabIndex++
+	$chk_Exch_UmAutoAttendant.Text = "Get-UmAutoAttendant"
+	$chk_Exch_UmAutoAttendant.UseVisualStyleBackColor = $True
+	$bx_UM_Functions.Controls.Add($chk_Exch_UmAutoAttendant)
+$chk_Exch_UmDialPlan.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_UmDialPlan.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_UmDialPlan.Name = "chk_Org_Get_UmDialPlan"
-	$chk_Org_Get_UmDialPlan.Size = $Size_Chk
-	$chk_Org_Get_UmDialPlan.TabIndex = $TabIndex++
-	$chk_Org_Get_UmDialPlan.Text = "Get-UmDialPlan"
-	$chk_Org_Get_UmDialPlan.UseVisualStyleBackColor = $True
-	$bx_UM_Functions.Controls.Add($chk_Org_Get_UmDialPlan)
-$chk_Org_Get_UmIpGateway.Font = $font_Calibri_10pt_normal
+	$chk_Exch_UmDialPlan.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_UmDialPlan.Name = "chk_Exch_UmDialPlan"
+	$chk_Exch_UmDialPlan.Size = $Size_Chk
+	$chk_Exch_UmDialPlan.TabIndex = $TabIndex++
+	$chk_Exch_UmDialPlan.Text = "Get-UmDialPlan"
+	$chk_Exch_UmDialPlan.UseVisualStyleBackColor = $True
+	$bx_UM_Functions.Controls.Add($chk_Exch_UmDialPlan)
+$chk_Exch_UmIpGateway.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_UmIpGateway.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_UmIpGateway.Name = "chk_Org_Get_UmIpGateway"
-	$chk_Org_Get_UmIpGateway.Size = $Size_Chk
-	$chk_Org_Get_UmIpGateway.TabIndex = $TabIndex++
-	$chk_Org_Get_UmIpGateway.Text = "Get-UmIpGateway"
-	$chk_Org_Get_UmIpGateway.UseVisualStyleBackColor = $True
-	$bx_UM_Functions.Controls.Add($chk_Org_Get_UmIpGateway)
-$chk_Org_Get_UmMailbox.Font = $font_Calibri_10pt_normal
+	$chk_Exch_UmIpGateway.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_UmIpGateway.Name = "chk_Exch_UmIpGateway"
+	$chk_Exch_UmIpGateway.Size = $Size_Chk
+	$chk_Exch_UmIpGateway.TabIndex = $TabIndex++
+	$chk_Exch_UmIpGateway.Text = "Get-UmIpGateway"
+	$chk_Exch_UmIpGateway.UseVisualStyleBackColor = $True
+	$bx_UM_Functions.Controls.Add($chk_Exch_UmIpGateway)
+$chk_Exch_UmMailbox.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_UmMailbox.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_UmMailbox.Name = "chk_Org_Get_UmMailbox"
-	$chk_Org_Get_UmMailbox.Size = $Size_Chk
-	$chk_Org_Get_UmMailbox.TabIndex = $TabIndex++
-	$chk_Org_Get_UmMailbox.Text = "Get-UmMailbox"
-	$chk_Org_Get_UmMailbox.UseVisualStyleBackColor = $True
-	$bx_UM_Functions.Controls.Add($chk_Org_Get_UmMailbox)
-#	$chk_Org_Get_UmMailboxConfiguration.Font = $font_Calibri_10pt_normal
+	$chk_Exch_UmMailbox.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_UmMailbox.Name = "chk_Exch_UmMailbox"
+	$chk_Exch_UmMailbox.Size = $Size_Chk
+	$chk_Exch_UmMailbox.TabIndex = $TabIndex++
+	$chk_Exch_UmMailbox.Text = "Get-UmMailbox"
+	$chk_Exch_UmMailbox.UseVisualStyleBackColor = $True
+	$bx_UM_Functions.Controls.Add($chk_Exch_UmMailbox)
+#	$chk_Exch_UmMailboxConfiguration.Font = $font_Calibri_10pt_normal
 #		$System_Drawing_Point = New-Object System.Drawing.Point
 #		$System_Drawing_Point.X = $Col_1_loc
 #		$System_Drawing_Point.Y = $Row_1_loc
 #		$Row_1_loc += 25
-#	$chk_Org_Get_UmMailboxConfiguration.Location = $System_Drawing_Point
-#	$chk_Org_Get_UmMailboxConfiguration.Name = "chk_Org_Get_UmMailboxConfiguration"
-#	$chk_Org_Get_UmMailboxConfiguration.Size = $Size_Chk
-#	$chk_Org_Get_UmMailboxConfiguration.TabIndex = $TabIndex++
-#	$chk_Org_Get_UmMailboxConfiguration.Text = "Get-UmMailboxConfiguration"
-#	$chk_Org_Get_UmMailboxConfiguration.UseVisualStyleBackColor = $True
-#	$bx_UM_Functions.Controls.Add($chk_Org_Get_UmMailboxConfiguration)
-#	$chk_Org_Get_UmMailboxPin.Font = $font_Calibri_10pt_normal
+#	$chk_Exch_UmMailboxConfiguration.Location = $System_Drawing_Point
+#	$chk_Exch_UmMailboxConfiguration.Name = "chk_Exch_UmMailboxConfiguration"
+#	$chk_Exch_UmMailboxConfiguration.Size = $Size_Chk
+#	$chk_Exch_UmMailboxConfiguration.TabIndex = $TabIndex++
+#	$chk_Exch_UmMailboxConfiguration.Text = "Get-UmMailboxConfiguration"
+#	$chk_Exch_UmMailboxConfiguration.UseVisualStyleBackColor = $True
+#	$bx_UM_Functions.Controls.Add($chk_Exch_UmMailboxConfiguration)
+#	$chk_Exch_UmMailboxPin.Font = $font_Calibri_10pt_normal
 #		$System_Drawing_Point = New-Object System.Drawing.Point
 #		$System_Drawing_Point.X = $Col_1_loc
 #		$System_Drawing_Point.Y = $Row_1_loc
 #		$Row_1_loc += 25
-#	$chk_Org_Get_UmMailboxPin.Location = $System_Drawing_Point
-#	$chk_Org_Get_UmMailboxPin.Name = "chk_Org_Get_UmMailboxPin"
-#	$chk_Org_Get_UmMailboxPin.Size = $Size_Chk
-#	$chk_Org_Get_UmMailboxPin.TabIndex = $TabIndex++
-#	$chk_Org_Get_UmMailboxPin.Text = "Get-UmMailboxPin"
-#	$chk_Org_Get_UmMailboxPin.UseVisualStyleBackColor = $True
-#	$bx_UM_Functions.Controls.Add($chk_Org_Get_UmMailboxPin)
-$chk_Org_Get_UmMailboxPolicy.Font = $font_Calibri_10pt_normal
+#	$chk_Exch_UmMailboxPin.Location = $System_Drawing_Point
+#	$chk_Exch_UmMailboxPin.Name = "chk_Exch_UmMailboxPin"
+#	$chk_Exch_UmMailboxPin.Size = $Size_Chk
+#	$chk_Exch_UmMailboxPin.TabIndex = $TabIndex++
+#	$chk_Exch_UmMailboxPin.Text = "Get-UmMailboxPin"
+#	$chk_Exch_UmMailboxPin.UseVisualStyleBackColor = $True
+#	$bx_UM_Functions.Controls.Add($chk_Exch_UmMailboxPin)
+$chk_Exch_UmMailboxPolicy.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_UmMailboxPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_UmMailboxPolicy.Name = "chk_Org_Get_UmMailboxPolicy"
-	$chk_Org_Get_UmMailboxPolicy.Size = $Size_Chk
-	$chk_Org_Get_UmMailboxPolicy.TabIndex = $TabIndex++
-	$chk_Org_Get_UmMailboxPolicy.Text = "Get-UmMailboxPolicy"
-	$chk_Org_Get_UmMailboxPolicy.UseVisualStyleBackColor = $True
-	$bx_UM_Functions.Controls.Add($chk_Org_Get_UmMailboxPolicy)
+	$chk_Exch_UmMailboxPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_UmMailboxPolicy.Name = "chk_Exch_UmMailboxPolicy"
+	$chk_Exch_UmMailboxPolicy.Size = $Size_Chk
+	$chk_Exch_UmMailboxPolicy.TabIndex = $TabIndex++
+	$chk_Exch_UmMailboxPolicy.Text = "Get-UmMailboxPolicy"
+	$chk_Exch_UmMailboxPolicy.UseVisualStyleBackColor = $True
+	$bx_UM_Functions.Controls.Add($chk_Exch_UmMailboxPolicy)
 #EndRegion Step3 Exchange - UM tab
 
 #Region Step3 Exchange - Misc tab
@@ -2623,15 +2743,15 @@ $Col_1_loc = 35
 $Col_2_loc = 290
 $Row_1_loc = 0
 $Row_2_loc = 0
-$chk_Org_Get_AdminGroups.Font = $font_Calibri_10pt_normal
+$chk_Exch_AdminGroups.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_AdminGroups.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_AdminGroups.Name = "chk_Org_Get_AdminGroups"
-	$chk_Org_Get_AdminGroups.Size = $Size_Chk
-	$chk_Org_Get_AdminGroups.TabIndex = $TabIndex++
-	$chk_Org_Get_AdminGroups.Text = "Get memberships of admin groups"
-	$chk_Org_Get_AdminGroups.UseVisualStyleBackColor = $True
-	$bx_Misc_Functions.Controls.Add($chk_Org_Get_AdminGroups)
+	$chk_Exch_AdminGroups.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Exch_AdminGroups.Name = "chk_Exch_AdminGroups"
+	$chk_Exch_AdminGroups.Size = $Size_Chk
+	$chk_Exch_AdminGroups.TabIndex = $TabIndex++
+	$chk_Exch_AdminGroups.Text = "Get memberships of admin groups"
+	$chk_Exch_AdminGroups.UseVisualStyleBackColor = $True
+	$bx_Misc_Functions.Controls.Add($chk_Exch_AdminGroups)
 #EndRegion Step3 Exchange - Misc tab
 
 #Region Step3 Azure - AzureAD tab
@@ -2674,177 +2794,177 @@ $Col_1_loc = 35
 $Col_2_loc = 290
 $Row_1_loc = 0
 $Row_2_loc = 0
-$chk_Azure_Get_AzureADApplication.Font = $font_Calibri_10pt_normal
+$chk_Azure_ADApplication.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Azure_Get_AzureADApplication.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Azure_Get_AzureADApplication.Name = "chk_Azure_Get_AzureADApplication"
-	$chk_Azure_Get_AzureADApplication.Size = $Size_Chk
-	$chk_Azure_Get_AzureADApplication.TabIndex = $TabIndex++
-	$chk_Azure_Get_AzureADApplication.Text = "Application"
-	$chk_Azure_Get_AzureADApplication.UseVisualStyleBackColor = $True
-	$bx_AzureAd_Functions.Controls.Add($chk_Azure_Get_AzureADApplication)
-$chk_Azure_Get_AzureADContact.Font = $font_Calibri_10pt_normal
+	$chk_Azure_ADApplication.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Azure_ADApplication.Name = "chk_Azure_ADApplication"
+	$chk_Azure_ADApplication.Size = $Size_Chk
+	$chk_Azure_ADApplication.TabIndex = $TabIndex++
+	$chk_Azure_ADApplication.Text = "Application"
+	$chk_Azure_ADApplication.UseVisualStyleBackColor = $True
+	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADApplication)
+$chk_Azure_ADContact.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Azure_Get_AzureADContact.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Azure_Get_AzureADContact.Name = "chk_Azure_Get_AzureADContact"
-	$chk_Azure_Get_AzureADContact.Size = $Size_Chk
-	$chk_Azure_Get_AzureADContact.TabIndex = $TabIndex++
-	$chk_Azure_Get_AzureADContact.Text = "Contact"
-	$chk_Azure_Get_AzureADContact.UseVisualStyleBackColor = $True
-	$bx_AzureAd_Functions.Controls.Add($chk_Azure_Get_AzureADContact)
-$chk_Azure_Get_AzureADDevice.Font = $font_Calibri_10pt_normal
+	$chk_Azure_ADContact.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Azure_ADContact.Name = "chk_Azure_ADContact"
+	$chk_Azure_ADContact.Size = $Size_Chk
+	$chk_Azure_ADContact.TabIndex = $TabIndex++
+	$chk_Azure_ADContact.Text = "Contact"
+	$chk_Azure_ADContact.UseVisualStyleBackColor = $True
+	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADContact)
+$chk_Azure_ADDevice.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Azure_Get_AzureADDevice.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Azure_Get_AzureADDevice.Name = "chk_Azure_Get_AzureADDevice"
-	$chk_Azure_Get_AzureADDevice.Size = $Size_Chk
-	$chk_Azure_Get_AzureADDevice.TabIndex = $TabIndex++
-	$chk_Azure_Get_AzureADDevice.Text = "Device"
-	$chk_Azure_Get_AzureADDevice.UseVisualStyleBackColor = $True
-	$bx_AzureAd_Functions.Controls.Add($chk_Azure_Get_AzureADDevice)
-$chk_Azure_Get_AzureADDeviceRegisteredOwner.Font = $font_Calibri_10pt_normal
+	$chk_Azure_ADDevice.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Azure_ADDevice.Name = "chk_Azure_ADDevice"
+	$chk_Azure_ADDevice.Size = $Size_Chk
+	$chk_Azure_ADDevice.TabIndex = $TabIndex++
+	$chk_Azure_ADDevice.Text = "Device"
+	$chk_Azure_ADDevice.UseVisualStyleBackColor = $True
+	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADDevice)
+$chk_Azure_ADDeviceRegisteredOwner.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Azure_Get_AzureADDeviceRegisteredOwner.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Azure_Get_AzureADDeviceRegisteredOwner.Name = "chk_Azure_Get_AzureADDeviceRegisteredOwner"
-	$chk_Azure_Get_AzureADDeviceRegisteredOwner.Size = $Size_Chk
-	$chk_Azure_Get_AzureADDeviceRegisteredOwner.TabIndex = $TabIndex++
-	$chk_Azure_Get_AzureADDeviceRegisteredOwner.Text = "DeviceRegisteredOwner"
-	$chk_Azure_Get_AzureADDeviceRegisteredOwner.UseVisualStyleBackColor = $True
-	$bx_AzureAd_Functions.Controls.Add($chk_Azure_Get_AzureADDeviceRegisteredOwner)
-$chk_Azure_Get_AzureADDeviceRegisteredUser.Font = $font_Calibri_10pt_normal
+	$chk_Azure_ADDeviceRegisteredOwner.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Azure_ADDeviceRegisteredOwner.Name = "chk_Azure_ADDeviceRegisteredOwner"
+	$chk_Azure_ADDeviceRegisteredOwner.Size = $Size_Chk
+	$chk_Azure_ADDeviceRegisteredOwner.TabIndex = $TabIndex++
+	$chk_Azure_ADDeviceRegisteredOwner.Text = "DeviceRegisteredOwner"
+	$chk_Azure_ADDeviceRegisteredOwner.UseVisualStyleBackColor = $True
+	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADDeviceRegisteredOwner)
+$chk_Azure_ADDeviceRegisteredUser.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Azure_Get_AzureADDeviceRegisteredUser.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Azure_Get_AzureADDeviceRegisteredUser.Name = "chk_Azure_Get_AzureADDeviceRegisteredUser"
-	$chk_Azure_Get_AzureADDeviceRegisteredUser.Size = $Size_Chk
-	$chk_Azure_Get_AzureADDeviceRegisteredUser.TabIndex = $TabIndex++
-	$chk_Azure_Get_AzureADDeviceRegisteredUser.Text = "DeviceRegisteredUser"
-	$chk_Azure_Get_AzureADDeviceRegisteredUser.UseVisualStyleBackColor = $True
-	$bx_AzureAd_Functions.Controls.Add($chk_Azure_Get_AzureADDeviceRegisteredUser)
-$chk_Azure_Get_AzureADDirectoryRole.Font = $font_Calibri_10pt_normal
+	$chk_Azure_ADDeviceRegisteredUser.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Azure_ADDeviceRegisteredUser.Name = "chk_Azure_ADDeviceRegisteredUser"
+	$chk_Azure_ADDeviceRegisteredUser.Size = $Size_Chk
+	$chk_Azure_ADDeviceRegisteredUser.TabIndex = $TabIndex++
+	$chk_Azure_ADDeviceRegisteredUser.Text = "DeviceRegisteredUser"
+	$chk_Azure_ADDeviceRegisteredUser.UseVisualStyleBackColor = $True
+	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADDeviceRegisteredUser)
+$chk_Azure_ADDirectoryRole.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Azure_Get_AzureADDirectoryRole.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Azure_Get_AzureADDirectoryRole.Name = "chk_Azure_Get_AzureADDirectoryRole"
-	$chk_Azure_Get_AzureADDirectoryRole.Size = $Size_Chk
-	$chk_Azure_Get_AzureADDirectoryRole.TabIndex = $TabIndex++
-	$chk_Azure_Get_AzureADDirectoryRole.Text = "DirectoryRole"
-	$chk_Azure_Get_AzureADDirectoryRole.UseVisualStyleBackColor = $True
-	$bx_AzureAd_Functions.Controls.Add($chk_Azure_Get_AzureADDirectoryRole)
-$chk_Azure_Get_AzureADDomain.Font = $font_Calibri_10pt_normal
+	$chk_Azure_ADDirectoryRole.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Azure_ADDirectoryRole.Name = "chk_Azure_ADDirectoryRole"
+	$chk_Azure_ADDirectoryRole.Size = $Size_Chk
+	$chk_Azure_ADDirectoryRole.TabIndex = $TabIndex++
+	$chk_Azure_ADDirectoryRole.Text = "DirectoryRole"
+	$chk_Azure_ADDirectoryRole.UseVisualStyleBackColor = $True
+	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADDirectoryRole)
+$chk_Azure_ADDomain.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Azure_Get_AzureADDomain.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Azure_Get_AzureADDomain.Name = "chk_Azure_Get_AzureADDomain"
-	$chk_Azure_Get_AzureADDomain.Size = $Size_Chk
-	$chk_Azure_Get_AzureADDomain.TabIndex = $TabIndex++
-	$chk_Azure_Get_AzureADDomain.Text = "Domain"
-	$chk_Azure_Get_AzureADDomain.UseVisualStyleBackColor = $True
-	$bx_AzureAd_Functions.Controls.Add($chk_Azure_Get_AzureADDomain)
-$chk_Azure_Get_AzureAdDomainServiceConfigurationRecord.Font = $font_Calibri_10pt_normal
+	$chk_Azure_ADDomain.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Azure_ADDomain.Name = "chk_Azure_ADDomain"
+	$chk_Azure_ADDomain.Size = $Size_Chk
+	$chk_Azure_ADDomain.TabIndex = $TabIndex++
+	$chk_Azure_ADDomain.Text = "Domain"
+	$chk_Azure_ADDomain.UseVisualStyleBackColor = $True
+	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADDomain)
+$chk_Azure_AdDomainServiceConfigurationRecord.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Azure_Get_AzureAdDomainServiceConfigurationRecord.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Azure_Get_AzureAdDomainServiceConfigurationRecord.Name = "chk_Azure_Get_AzureAdDomainServiceConfigurationRecord"
-	$chk_Azure_Get_AzureAdDomainServiceConfigurationRecord.Size = $Size_Chk
-	$chk_Azure_Get_AzureAdDomainServiceConfigurationRecord.TabIndex = $TabIndex++
-	$chk_Azure_Get_AzureAdDomainServiceConfigurationRecord.Text = "DomainServiceConfigurationRecord"
-	$chk_Azure_Get_AzureAdDomainServiceConfigurationRecord.UseVisualStyleBackColor = $True
-	$bx_AzureAd_Functions.Controls.Add($chk_Azure_Get_AzureAdDomainServiceConfigurationRecord)
-$chk_Azure_Get_AzureAdDomainVerificationDnsRecord.Font = $font_Calibri_10pt_normal
+	$chk_Azure_AdDomainServiceConfigurationRecord.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Azure_AdDomainServiceConfigurationRecord.Name = "chk_Azure_AdDomainServiceConfigurationRecord"
+	$chk_Azure_AdDomainServiceConfigurationRecord.Size = $Size_Chk
+	$chk_Azure_AdDomainServiceConfigurationRecord.TabIndex = $TabIndex++
+	$chk_Azure_AdDomainServiceConfigurationRecord.Text = "DomainServiceConfigurationRecord"
+	$chk_Azure_AdDomainServiceConfigurationRecord.UseVisualStyleBackColor = $True
+	$bx_AzureAd_Functions.Controls.Add($chk_Azure_AdDomainServiceConfigurationRecord)
+$chk_Azure_AdDomainVerificationDnsRecord.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Azure_Get_AzureAdDomainVerificationDnsRecord.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Azure_Get_AzureAdDomainVerificationDnsRecord.Name = "chk_Azure_Get_AzureAdDomainVerificationDnsRecord"
-	$chk_Azure_Get_AzureAdDomainVerificationDnsRecord.Size = $Size_Chk
-	$chk_Azure_Get_AzureAdDomainVerificationDnsRecord.TabIndex = $TabIndex++
-	$chk_Azure_Get_AzureAdDomainVerificationDnsRecord.Text = "DomainVerificationDnsRecord"
-	$chk_Azure_Get_AzureAdDomainVerificationDnsRecord.UseVisualStyleBackColor = $True
-	$bx_AzureAd_Functions.Controls.Add($chk_Azure_Get_AzureAdDomainVerificationDnsRecord)
-$chk_Azure_Get_AzureADGroup.Font = $font_Calibri_10pt_normal
+	$chk_Azure_AdDomainVerificationDnsRecord.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Azure_AdDomainVerificationDnsRecord.Name = "chk_Azure_AdDomainVerificationDnsRecord"
+	$chk_Azure_AdDomainVerificationDnsRecord.Size = $Size_Chk
+	$chk_Azure_AdDomainVerificationDnsRecord.TabIndex = $TabIndex++
+	$chk_Azure_AdDomainVerificationDnsRecord.Text = "DomainVerificationDnsRecord"
+	$chk_Azure_AdDomainVerificationDnsRecord.UseVisualStyleBackColor = $True
+	$bx_AzureAd_Functions.Controls.Add($chk_Azure_AdDomainVerificationDnsRecord)
+$chk_Azure_ADGroup.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Azure_Get_AzureADGroup.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Azure_Get_AzureADGroup.Name = "chk_Azure_Get_AzureADGroup"
-	$chk_Azure_Get_AzureADGroup.Size = $Size_Chk
-	$chk_Azure_Get_AzureADGroup.TabIndex = $TabIndex++
-	$chk_Azure_Get_AzureADGroup.Text = "Group"
-	$chk_Azure_Get_AzureADGroup.UseVisualStyleBackColor = $True
-	$bx_AzureAd_Functions.Controls.Add($chk_Azure_Get_AzureADGroup)
-$chk_Azure_Get_AzureADGroupMember.Font = $font_Calibri_10pt_normal
+	$chk_Azure_ADGroup.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Azure_ADGroup.Name = "chk_Azure_ADGroup"
+	$chk_Azure_ADGroup.Size = $Size_Chk
+	$chk_Azure_ADGroup.TabIndex = $TabIndex++
+	$chk_Azure_ADGroup.Text = "Group"
+	$chk_Azure_ADGroup.UseVisualStyleBackColor = $True
+	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADGroup)
+$chk_Azure_ADGroupMember.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Azure_Get_AzureADGroupMember.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Azure_Get_AzureADGroupMember.Name = "chk_Azure_Get_AzureADGroupMember"
-	$chk_Azure_Get_AzureADGroupMember.Size = $Size_Chk
-	$chk_Azure_Get_AzureADGroupMember.TabIndex = $TabIndex++
-	$chk_Azure_Get_AzureADGroupMember.Text = "GroupMember"
-	$chk_Azure_Get_AzureADGroupMember.UseVisualStyleBackColor = $True
-	$bx_AzureAd_Functions.Controls.Add($chk_Azure_Get_AzureADGroupMember)
-$chk_Azure_Get_AzureADGroupOwner.Font = $font_Calibri_10pt_normal
+	$chk_Azure_ADGroupMember.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Azure_ADGroupMember.Name = "chk_Azure_ADGroupMember"
+	$chk_Azure_ADGroupMember.Size = $Size_Chk
+	$chk_Azure_ADGroupMember.TabIndex = $TabIndex++
+	$chk_Azure_ADGroupMember.Text = "GroupMember"
+	$chk_Azure_ADGroupMember.UseVisualStyleBackColor = $True
+	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADGroupMember)
+$chk_Azure_ADGroupOwner.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Azure_Get_AzureADGroupOwner.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Azure_Get_AzureADGroupOwner.Name = "chk_Azure_Get_AzureADGroupOwner"
-	$chk_Azure_Get_AzureADGroupOwner.Size = $Size_Chk
-	$chk_Azure_Get_AzureADGroupOwner.TabIndex = $TabIndex++
-	$chk_Azure_Get_AzureADGroupOwner.Text = "GroupOwner"
-	$chk_Azure_Get_AzureADGroupOwner.UseVisualStyleBackColor = $True
-	$bx_AzureAd_Functions.Controls.Add($chk_Azure_Get_AzureADGroupOwner)
-$chk_Azure_Get_AzureADSubscribedSku.Font = $font_Calibri_10pt_normal
+	$chk_Azure_ADGroupOwner.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Azure_ADGroupOwner.Name = "chk_Azure_ADGroupOwner"
+	$chk_Azure_ADGroupOwner.Size = $Size_Chk
+	$chk_Azure_ADGroupOwner.TabIndex = $TabIndex++
+	$chk_Azure_ADGroupOwner.Text = "GroupOwner"
+	$chk_Azure_ADGroupOwner.UseVisualStyleBackColor = $True
+	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADGroupOwner)
+$chk_Azure_ADSubscribedSku.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Azure_Get_AzureADSubscribedSku.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Azure_Get_AzureADSubscribedSku.Name = "chk_Azure_Get_AzureADSubscribedSku"
-	$chk_Azure_Get_AzureADSubscribedSku.Size = $Size_Chk
-	$chk_Azure_Get_AzureADSubscribedSku.TabIndex = $TabIndex++
-	$chk_Azure_Get_AzureADSubscribedSku.Text = "SubscribedSku"
-	$chk_Azure_Get_AzureADSubscribedSku.UseVisualStyleBackColor = $True
-	$bx_AzureAd_Functions.Controls.Add($chk_Azure_Get_AzureADSubscribedSku)
-$chk_Azure_Get_AzureADTenantDetail.Font = $font_Calibri_10pt_normal
+	$chk_Azure_ADSubscribedSku.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Azure_ADSubscribedSku.Name = "chk_Azure_ADSubscribedSku"
+	$chk_Azure_ADSubscribedSku.Size = $Size_Chk
+	$chk_Azure_ADSubscribedSku.TabIndex = $TabIndex++
+	$chk_Azure_ADSubscribedSku.Text = "SubscribedSku"
+	$chk_Azure_ADSubscribedSku.UseVisualStyleBackColor = $True
+	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADSubscribedSku)
+$chk_Azure_ADTenantDetail.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Azure_Get_AzureADTenantDetail.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Azure_Get_AzureADTenantDetail.Name = "chk_Azure_Get_AzureADTenantDetail"
-	$chk_Azure_Get_AzureADTenantDetail.Size = $Size_Chk
-	$chk_Azure_Get_AzureADTenantDetail.TabIndex = $TabIndex++
-	$chk_Azure_Get_AzureADTenantDetail.Text = "TenantDetail"
-	$chk_Azure_Get_AzureADTenantDetail.UseVisualStyleBackColor = $True
-	$bx_AzureAd_Functions.Controls.Add($chk_Azure_Get_AzureADTenantDetail)
-$chk_Azure_Get_AzureADUser.Font = $font_Calibri_10pt_normal
+	$chk_Azure_ADTenantDetail.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Azure_ADTenantDetail.Name = "chk_Azure_ADTenantDetail"
+	$chk_Azure_ADTenantDetail.Size = $Size_Chk
+	$chk_Azure_ADTenantDetail.TabIndex = $TabIndex++
+	$chk_Azure_ADTenantDetail.Text = "TenantDetail"
+	$chk_Azure_ADTenantDetail.UseVisualStyleBackColor = $True
+	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADTenantDetail)
+$chk_Azure_ADUser.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Azure_Get_AzureADUser.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Azure_Get_AzureADUser.Name = "chk_Azure_Get_AzureADUser"
-	$chk_Azure_Get_AzureADUser.Size = $Size_Chk
-	$chk_Azure_Get_AzureADUser.TabIndex = $TabIndex++
-	$chk_Azure_Get_AzureADUser.Text = "User"
-	$chk_Azure_Get_AzureADUser.UseVisualStyleBackColor = $True
-	$bx_AzureAd_Functions.Controls.Add($chk_Azure_Get_AzureADUser)
-$chk_Azure_Get_AzureADUserLicenseDetail.Font = $font_Calibri_10pt_normal
+	$chk_Azure_ADUser.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Azure_ADUser.Name = "chk_Azure_ADUser"
+	$chk_Azure_ADUser.Size = $Size_Chk
+	$chk_Azure_ADUser.TabIndex = $TabIndex++
+	$chk_Azure_ADUser.Text = "User"
+	$chk_Azure_ADUser.UseVisualStyleBackColor = $True
+	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADUser)
+$chk_Azure_ADUserLicenseDetail.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Azure_Get_AzureADUserLicenseDetail.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Azure_Get_AzureADUserLicenseDetail.Name = "chk_Azure_Get_AzureADUserLicenseDetail"
-	$chk_Azure_Get_AzureADUserLicenseDetail.Size = $Size_Chk
-	$chk_Azure_Get_AzureADUserLicenseDetail.TabIndex = $TabIndex++
-	$chk_Azure_Get_AzureADUserLicenseDetail.Text = "UserLicenseDetail"
-	$chk_Azure_Get_AzureADUserLicenseDetail.UseVisualStyleBackColor = $True
-	$bx_AzureAd_Functions.Controls.Add($chk_Azure_Get_AzureADUserLicenseDetail)
-$chk_Azure_Get_AzureADUserMembership.Font = $font_Calibri_10pt_normal
+	$chk_Azure_ADUserLicenseDetail.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Azure_ADUserLicenseDetail.Name = "chk_Azure_ADUserLicenseDetail"
+	$chk_Azure_ADUserLicenseDetail.Size = $Size_Chk
+	$chk_Azure_ADUserLicenseDetail.TabIndex = $TabIndex++
+	$chk_Azure_ADUserLicenseDetail.Text = "UserLicenseDetail"
+	$chk_Azure_ADUserLicenseDetail.UseVisualStyleBackColor = $True
+	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADUserLicenseDetail)
+$chk_Azure_ADUserMembership.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Azure_Get_AzureADUserMembership.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Azure_Get_AzureADUserMembership.Name = "chk_Azure_Get_AzureADUserMembership"
-	$chk_Azure_Get_AzureADUserMembership.Size = $Size_Chk
-	$chk_Azure_Get_AzureADUserMembership.TabIndex = $TabIndex++
-	$chk_Azure_Get_AzureADUserMembership.Text = "UserMembership"
-	$chk_Azure_Get_AzureADUserMembership.UseVisualStyleBackColor = $True
-	$bx_AzureAd_Functions.Controls.Add($chk_Azure_Get_AzureADUserMembership)
-$chk_Azure_Get_AzureADUserOwnedDevice.Font = $font_Calibri_10pt_normal
+	$chk_Azure_ADUserMembership.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Azure_ADUserMembership.Name = "chk_Azure_ADUserMembership"
+	$chk_Azure_ADUserMembership.Size = $Size_Chk
+	$chk_Azure_ADUserMembership.TabIndex = $TabIndex++
+	$chk_Azure_ADUserMembership.Text = "UserMembership"
+	$chk_Azure_ADUserMembership.UseVisualStyleBackColor = $True
+	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADUserMembership)
+$chk_Azure_ADUserOwnedDevice.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Azure_Get_AzureADUserOwnedDevice.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Azure_Get_AzureADUserOwnedDevice.Name = "chk_Azure_Get_AzureADUserOwnedDevice"
-	$chk_Azure_Get_AzureADUserOwnedDevice.Size = $Size_Chk
-	$chk_Azure_Get_AzureADUserOwnedDevice.TabIndex = $TabIndex++
-	$chk_Azure_Get_AzureADUserOwnedDevice.Text = "UserOwnedDevice"
-	$chk_Azure_Get_AzureADUserOwnedDevice.UseVisualStyleBackColor = $True
-	$bx_AzureAd_Functions.Controls.Add($chk_Azure_Get_AzureADUserOwnedDevice)
-$chk_Azure_Get_AzureADUserRegisteredDevice.Font = $font_Calibri_10pt_normal
+	$chk_Azure_ADUserOwnedDevice.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Azure_ADUserOwnedDevice.Name = "chk_Azure_ADUserOwnedDevice"
+	$chk_Azure_ADUserOwnedDevice.Size = $Size_Chk
+	$chk_Azure_ADUserOwnedDevice.TabIndex = $TabIndex++
+	$chk_Azure_ADUserOwnedDevice.Text = "UserOwnedDevice"
+	$chk_Azure_ADUserOwnedDevice.UseVisualStyleBackColor = $True
+	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADUserOwnedDevice)
+$chk_Azure_ADUserRegisteredDevice.Font = $font_Calibri_10pt_normal
 	$Row_2_loc += 25
-	$chk_Azure_Get_AzureADUserRegisteredDevice.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Azure_Get_AzureADUserRegisteredDevice.Name = "chk_Azure_Get_AzureADUserRegisteredDevice"
-	$chk_Azure_Get_AzureADUserRegisteredDevice.Size = $Size_Chk
-	$chk_Azure_Get_AzureADUserRegisteredDevice.TabIndex = $TabIndex++
-	$chk_Azure_Get_AzureADUserRegisteredDevice.Text = "UserRegisteredDevice"
-	$chk_Azure_Get_AzureADUserRegisteredDevice.UseVisualStyleBackColor = $True
-	$bx_AzureAd_Functions.Controls.Add($chk_Azure_Get_AzureADUserRegisteredDevice)
+	$chk_Azure_ADUserRegisteredDevice.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Azure_ADUserRegisteredDevice.Name = "chk_Azure_ADUserRegisteredDevice"
+	$chk_Azure_ADUserRegisteredDevice.Size = $Size_Chk
+	$chk_Azure_ADUserRegisteredDevice.TabIndex = $TabIndex++
+	$chk_Azure_ADUserRegisteredDevice.Text = "UserRegisteredDevice"
+	$chk_Azure_ADUserRegisteredDevice.UseVisualStyleBackColor = $True
+	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADUserRegisteredDevice)
 
 	#EndRegion Step3 Azure - AzureAd tab
 
@@ -2855,7 +2975,7 @@ $tab_Step3_Spo.Location = $Loc_Tab_Tier3
 	$tab_Step3_Spo.Padding = $System_Windows_Forms_Padding_Reusable
 	$tab_Step3_Spo.Size = $Size_Tab_Small
 	$tab_Step3_Spo.TabIndex = $TabIndex++
-	$tab_Step3_Spo.Text = "SPO"
+	$tab_Step3_Spo.Text = "Get-SPO"
 	$tab_Step3_Spo.UseVisualStyleBackColor = $True
 	$tab_Step3_Sharepoint_Tier2.Controls.Add($tab_Step3_Spo)
 $bx_Spo_Functions.Dock = 5
@@ -2888,78 +3008,78 @@ $Col_1_loc = 35
 $Col_2_loc = 290
 $Row_1_loc = 0
 $Row_2_loc = 0
-$chk_Org_Get_SPODeletedSite.Font = $font_Calibri_10pt_normal
+$chk_Spo_DeletedSite.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_SPODeletedSite.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_SPODeletedSite.Name = "chk_Org_Get_SPODeletedSite"
-	$chk_Org_Get_SPODeletedSite.Size = $Size_Chk
-	$chk_Org_Get_SPODeletedSite.TabIndex = $TabIndex++
-	$chk_Org_Get_SPODeletedSite.Text = "GetDeletedSite"
-	$chk_Org_Get_SPODeletedSite.UseVisualStyleBackColor = $True
-	$bx_Spo_Functions.Controls.Add($chk_Org_Get_SPODeletedSite)
-$chk_Org_Get_SPOExternalUser.Font = $font_Calibri_10pt_normal
+	$chk_Spo_DeletedSite.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Spo_DeletedSite.Name = "chk_Spo_DeletedSite"
+	$chk_Spo_DeletedSite.Size = $Size_Chk
+	$chk_Spo_DeletedSite.TabIndex = $TabIndex++
+	$chk_Spo_DeletedSite.Text = "DeletedSite"
+	$chk_Spo_DeletedSite.UseVisualStyleBackColor = $True
+	$bx_Spo_Functions.Controls.Add($chk_Spo_DeletedSite)
+$chk_Spo_ExternalUser.Font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_SPOExternalUser.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_SPOExternalUser.Name = "chk_Org_Get_SPOExternalUser"
-	$chk_Org_Get_SPOExternalUser.Size = $Size_Chk
-	$chk_Org_Get_SPOExternalUser.TabIndex = $TabIndex++
-	$chk_Org_Get_SPOExternalUser.Text = "Get-ExternalUser"
-	$chk_Org_Get_SPOExternalUser.UseVisualStyleBackColor = $True
-	$bx_Spo_Functions.Controls.Add($chk_Org_Get_SPOExternalUser)
-$chk_Org_Get_SPOGeoStorageQuota.font = $font_Calibri_10pt_normal
+	$chk_Spo_ExternalUser.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Spo_ExternalUser.Name = "chk_Spo_ExternalUser"
+	$chk_Spo_ExternalUser.Size = $Size_Chk
+	$chk_Spo_ExternalUser.TabIndex = $TabIndex++
+	$chk_Spo_ExternalUser.Text = "ExternalUser"
+	$chk_Spo_ExternalUser.UseVisualStyleBackColor = $True
+	$bx_Spo_Functions.Controls.Add($chk_Spo_ExternalUser)
+$chk_Spo_GeoStorageQuota.font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_SPOGeoStorageQuota.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_SPOGeoStorageQuota.Name = "chk_Org_Get_SPOGeoStorageQuota"
-	$chk_Org_Get_SPOGeoStorageQuota.Size = $Size_Chk
-	$chk_Org_Get_SPOGeoStorageQuota.TabIndex = $TabIndex++
-	$chk_Org_Get_SPOGeoStorageQuota.Text = "Get-SPOGeoStorageQuota"
-	$chk_Org_Get_SPOGeoStorageQuota.UseVisualStyleBackColor = $True
-	$bx_Spo_Functions.Controls.Add($chk_Org_Get_SPOGeoStorageQuota)
-$chk_Org_Get_SPOSite.font = $font_Calibri_10pt_normal
+	$chk_Spo_GeoStorageQuota.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Spo_GeoStorageQuota.Name = "chk_Spo_GeoStorageQuota"
+	$chk_Spo_GeoStorageQuota.Size = $Size_Chk
+	$chk_Spo_GeoStorageQuota.TabIndex = $TabIndex++
+	$chk_Spo_GeoStorageQuota.Text = "GeoStorageQuota"
+	$chk_Spo_GeoStorageQuota.UseVisualStyleBackColor = $True
+	$bx_Spo_Functions.Controls.Add($chk_Spo_GeoStorageQuota)
+$chk_Spo_Site.font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_SPOSite.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_SPOSite.Name = "chk_Org_Get_SPOSite"
-	$chk_Org_Get_SPOSite.Size = $Size_Chk
-	$chk_Org_Get_SPOSite.TabIndex = $TabIndex++
-	$chk_Org_Get_SPOSite.Text = "Get-SPOSite"
-	$chk_Org_Get_SPOSite.UseVisualStyleBackColor = $True
-	$bx_Spo_Functions.Controls.Add($chk_Org_Get_SPOSite)
-$chk_Org_Get_SPOTenant.font = $font_Calibri_10pt_normal
+	$chk_Spo_Site.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Spo_Site.Name = "chk_Spo_Site"
+	$chk_Spo_Site.Size = $Size_Chk
+	$chk_Spo_Site.TabIndex = $TabIndex++
+	$chk_Spo_Site.Text = "Site"
+	$chk_Spo_Site.UseVisualStyleBackColor = $True
+	$bx_Spo_Functions.Controls.Add($chk_Spo_Site)
+$chk_Spo_Tenant.font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_SPOTenant.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_SPOTenant.Name = "chk_Org_Get_SPOTenant"
-	$chk_Org_Get_SPOTenant.Size = $Size_Chk
-	$chk_Org_Get_SPOTenant.TabIndex = $TabIndex++
-	$chk_Org_Get_SPOTenant.Text = "Get-SPOTenant"
-	$chk_Org_Get_SPOTenant.UseVisualStyleBackColor = $True
-	$bx_Spo_Functions.Controls.Add($chk_Org_Get_SPOTenant)
-$chk_Org_Get_SPOTenantSYncClientRestriction.font = $font_Calibri_10pt_normal
+	$chk_Spo_Tenant.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Spo_Tenant.Name = "chk_Spo_Tenant"
+	$chk_Spo_Tenant.Size = $Size_Chk
+	$chk_Spo_Tenant.TabIndex = $TabIndex++
+	$chk_Spo_Tenant.Text = "Tenant"
+	$chk_Spo_Tenant.UseVisualStyleBackColor = $True
+	$bx_Spo_Functions.Controls.Add($chk_Spo_Tenant)
+$chk_Spo_TenantSyncClientRestriction.font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_SPOTenantSYncClientRestriction.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_SPOTenantSYncClientRestriction.Name = "chk_Org_Get_SPOTenantSYncClientRestriction"
-	$chk_Org_Get_SPOTenantSYncClientRestriction.Size = $Size_Chk
-	$chk_Org_Get_SPOTenantSYncClientRestriction.TabIndex = $TabIndex++
-	$chk_Org_Get_SPOTenantSYncClientRestriction.Text = "Get-SPOTenantSYncClientRestriction"
-	$chk_Org_Get_SPOTenantSYncClientRestriction.UseVisualStyleBackColor = $True
-	$bx_Spo_Functions.Controls.Add($chk_Org_Get_SPOTenantSYncClientRestriction)
-$chk_Org_Get_SPOUser.font = $font_Calibri_10pt_normal
+	$chk_Spo_TenantSyncClientRestriction.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Spo_TenantSyncClientRestriction.Name = "chk_Spo_TenantSyncClientRestriction"
+	$chk_Spo_TenantSyncClientRestriction.Size = $Size_Chk
+	$chk_Spo_TenantSyncClientRestriction.TabIndex = $TabIndex++
+	$chk_Spo_TenantSyncClientRestriction.Text = "TenantSyncClientRestriction"
+	$chk_Spo_TenantSyncClientRestriction.UseVisualStyleBackColor = $True
+	$bx_Spo_Functions.Controls.Add($chk_Spo_TenantSyncClientRestriction)
+$chk_Spo_User.font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_SPOUser.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_SPOUser.Name = "chk_Org_Get_SPOUser"
-	$chk_Org_Get_SPOUser.Size = $Size_Chk
-	$chk_Org_Get_SPOUser.TabIndex = $TabIndex++
-	$chk_Org_Get_SPOUser.Text = "Get-SPOUser"
-	$chk_Org_Get_SPOUser.UseVisualStyleBackColor = $True
-	$bx_Spo_Functions.Controls.Add($chk_Org_Get_SPOUser)
-$chk_Org_Get_SPOWebTemplate.font = $font_Calibri_10pt_normal
+	$chk_Spo_User.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Spo_User.Name = "chk_Spo_User"
+	$chk_Spo_User.Size = $Size_Chk
+	$chk_Spo_User.TabIndex = $TabIndex++
+	$chk_Spo_User.Text = "User"
+	$chk_Spo_User.UseVisualStyleBackColor = $True
+	$bx_Spo_Functions.Controls.Add($chk_Spo_User)
+$chk_Spo_WebTemplate.font = $font_Calibri_10pt_normal
 	$Row_1_loc += 25
-	$chk_Org_Get_SPOWebTemplate.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Org_Get_SPOWebTemplate.Name = "chk_Org_Get_SPOWebTemplate"
-	$chk_Org_Get_SPOWebTemplate.Size = $Size_Chk
-	$chk_Org_Get_SPOWebTemplate.TabIndex = $TabIndex++
-	$chk_Org_Get_SPOWebTemplate.Text = "Get-SPOWebTemplate"
-	$chk_Org_Get_SPOWebTemplate.UseVisualStyleBackColor = $True
-	$bx_Spo_Functions.Controls.Add($chk_Org_Get_SPOWebTemplate)
+	$chk_Spo_WebTemplate.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Spo_WebTemplate.Name = "chk_Spo_WebTemplate"
+	$chk_Spo_WebTemplate.Size = $Size_Chk
+	$chk_Spo_WebTemplate.TabIndex = $TabIndex++
+	$chk_Spo_WebTemplate.Text = "WebTemplate"
+	$chk_Spo_WebTemplate.UseVisualStyleBackColor = $True
+	$bx_Spo_Functions.Controls.Add($chk_Spo_WebTemplate)
 
 	#EndRegion Step3 Sharepoint - SPO tab
 
@@ -3050,6 +3170,17 @@ $chk_Step4_Azure_Report.Checked = $True
 	$chk_Step4_Azure_Report.Text = "Generate Excel for Azure"
 	$chk_Step4_Azure_Report.UseVisualStyleBackColor = $True
 	$bx_Step4_Functions.Controls.Add($chk_Step4_Azure_Report)
+$chk_Step4_Sharepoint_Report.Checked = $True
+	$chk_Step4_Sharepoint_Report.CheckState = 1
+	$chk_Step4_Sharepoint_Report.Font = $font_Calibri_10pt_normal
+	$chk_Step4_Sharepoint_Report.Location = New-Object System.Drawing.Point(50,75)
+	$chk_Step4_Sharepoint_Report.Name = "chk_Step4_Sharepoint_Report"
+	$chk_Step4_Sharepoint_Report.Size = $Size_Chk_long
+	$chk_Step4_Sharepoint_Report.TabIndex = $TabIndex++
+	$chk_Step4_Sharepoint_Report.Text = "Generate Excel for Sharepoint"
+	$chk_Step4_Sharepoint_Report.UseVisualStyleBackColor = $True
+	$bx_Step4_Functions.Controls.Add($chk_Step4_Sharepoint_Report)
+
 <# $chk_Step4_Exchange_Environment_Doc.Checked = $True
 	$chk_Step4_Exchange_Environment_Doc.CheckState = 1
 	$chk_Step4_Exchange_Environment_Doc.Font = $font_Calibri_10pt_normal
@@ -3536,72 +3667,72 @@ Function Update-O365DCJobCount
 
 Function Get-ExchangeBoxStatus # See if any are checked
 {
-if (($chk_Org_Get_AcceptedDomain.checked -eq $true) -or
-	($chk_Org_Get_ActiveSyncOrgSettings.checked -eq $true) -or
-	($chk_Org_Get_AntiPhishPolicy.checked -eq $true) -or
-	($chk_Org_Get_AntiSpoofingPolicy.checked -eq $true) -or
-	($chk_Org_Get_AtpPolicyForO365.checked -eq $true) -or
-	($chk_Org_Get_OnPremisesOrganization.checked -eq $true) -or
-	($chk_Org_Get_SmimeConfig.checked -eq $true) -or
-	($chk_Org_Get_CASMailboxPlan.checked -eq $true) -or
-	($chk_Org_Get_Contact.checked -eq $true) -or
-	($chk_Org_Get_MailboxPlan.checked -eq $true) -or
-	($chk_Org_Get_MailUser.checked -eq $true) -or
-	($chk_Org_Get_UnifiedGroup.checked -eq $true) -or
-	($chk_Org_Get_DkimSigningConfig.checked -eq $true) -or
-	($chk_Org_Get_MobileDevice.checked -eq $true) -or
-	($chk_Org_Get_MobileDevicePolicy.checked -eq $true) -or
-	($chk_Org_Get_AddressBookPolicy.checked -eq $true) -or
-	($chk_Org_Get_AddressList.checked -eq $true) -or
-	($chk_Org_Get_AvailabilityAddressSpace.checked -eq $true) -or
-	($chk_Org_Get_CalendarProcessing.checked -eq $true) -or
-	($chk_Org_Get_CASMailbox.checked -eq $true) -or
-	($chk_Org_Get_DistributionGroup.checked -eq $true) -or
-	($chk_Org_Get_DynamicDistributionGroup.checked -eq $true) -or
-	($chk_Org_Get_EmailAddressPolicy.checked -eq $true) -or
-	($chk_Org_Get_GlobalAddressList.checked -eq $true) -or
-	($chk_Org_Get_Mailbox.checked -eq $true) -or
-	($chk_Org_Get_MailboxFolderStatistics.checked -eq $true) -or
-	($chk_Org_Get_MailboxPermission.checked -eq $true) -or
-	($chk_Org_Get_MailboxStatistics.checked -eq $true) -or
-	($chk_Org_Get_OfflineAddressBook.checked -eq $true) -or
-	($chk_Org_Get_OrgConfig.checked -eq $true) -or
-	($chk_Org_Get_OwaMailboxPolicy.checked -eq $true) -or
-	($chk_Org_Get_PublicFolder.checked -eq $true) -or
-	($chk_Org_Get_PublicFolderStatistics.checked -eq $true) -or
-	($chk_Org_Get_InboundConnector.checked -eq $true) -or
-	($chk_Org_Get_RemoteDomain.checked -eq $true) -or
-	($chk_Org_Get_Rbac.checked -eq $true) -or
-	($chk_Org_Get_RetentionPolicy.checked -eq $true) -or
-	($chk_Org_Get_RetentionPolicyTag.checked -eq $true) -or
-	($chk_Org_Get_OutboundConnector.checked -eq $true) -or
-	($chk_Org_Get_TransportConfig.checked -eq $true) -or
-	($chk_Org_Get_TransportRule.checked -eq $true) -or
-	($chk_Org_Get_UmAutoAttendant.checked -eq $true) -or
-	($chk_Org_Get_UmDialPlan.checked -eq $true) -or
-	($chk_Org_Get_UmIpGateway.checked -eq $true) -or
-	($chk_Org_Get_UmMailbox.checked -eq $true) -or
-	#($chk_Org_Get_UmMailboxConfiguration.checked -eq $true) -or
-	#($chk_Org_Get_UmMailboxPin.checked -eq $true) -or
-	($chk_Org_Get_UmMailboxPolicy.checked -eq $true) -or
-	($chk_Org_Get_UmServer.checked -eq $true) -or
+if (($chk_Exch_AcceptedDomain.checked -eq $true) -or
+	($chk_Exch_ActiveSyncOrgSettings.checked -eq $true) -or
+	($chk_Exch_AntiPhishPolicy.checked -eq $true) -or
+	($chk_Exch_AntiSpoofingPolicy.checked -eq $true) -or
+	($chk_Exch_AtpPolicyForO365.checked -eq $true) -or
+	($chk_Exch_OnPremisesOrganization.checked -eq $true) -or
+	($chk_Exch_SmimeConfig.checked -eq $true) -or
+	($chk_Exch_CASMailboxPlan.checked -eq $true) -or
+	($chk_Exch_Contact.checked -eq $true) -or
+	($chk_Exch_MailboxPlan.checked -eq $true) -or
+	($chk_Exch_MailUser.checked -eq $true) -or
+	($chk_Exch_UnifiedGroup.checked -eq $true) -or
+	($chk_Exch_DkimSigningConfig.checked -eq $true) -or
+	($chk_Exch_MobileDevice.checked -eq $true) -or
+	($chk_Exch_MobileDevicePolicy.checked -eq $true) -or
+	($chk_Exch_AddressBookPolicy.checked -eq $true) -or
+	($chk_Exch_AddressList.checked -eq $true) -or
+	($chk_Exch_AvailabilityAddressSpace.checked -eq $true) -or
+	($chk_Exch_CalendarProcessing.checked -eq $true) -or
+	($chk_Exch_CASMailbox.checked -eq $true) -or
+	($chk_Exch_DistributionGroup.checked -eq $true) -or
+	($chk_Exch_DynamicDistributionGroup.checked -eq $true) -or
+	($chk_Exch_EmailAddressPolicy.checked -eq $true) -or
+	($chk_Exch_GlobalAddressList.checked -eq $true) -or
+	($chk_Exch_Mailbox.checked -eq $true) -or
+	($chk_Exch_MailboxFolderStatistics.checked -eq $true) -or
+	($chk_Exch_MailboxPermission.checked -eq $true) -or
+	($chk_Exch_MailboxStatistics.checked -eq $true) -or
+	($chk_Exch_OfflineAddressBook.checked -eq $true) -or
+	($chk_Exch_OrgConfig.checked -eq $true) -or
+	($chk_Exch_OwaMailboxPolicy.checked -eq $true) -or
+	($chk_Exch_PublicFolder.checked -eq $true) -or
+	($chk_Exch_PublicFolderStatistics.checked -eq $true) -or
+	($chk_Exch_InboundConnector.checked -eq $true) -or
+	($chk_Exch_RemoteDomain.checked -eq $true) -or
+	($chk_Exch_Rbac.checked -eq $true) -or
+	($chk_Exch_RetentionPolicy.checked -eq $true) -or
+	($chk_Exch_RetentionPolicyTag.checked -eq $true) -or
+	($chk_Exch_OutboundConnector.checked -eq $true) -or
+	($chk_Exch_TransportConfig.checked -eq $true) -or
+	($chk_Exch_TransportRule.checked -eq $true) -or
+	($chk_Exch_UmAutoAttendant.checked -eq $true) -or
+	($chk_Exch_UmDialPlan.checked -eq $true) -or
+	($chk_Exch_UmIpGateway.checked -eq $true) -or
+	($chk_Exch_UmMailbox.checked -eq $true) -or
+	#($chk_Exch_UmMailboxConfiguration.checked -eq $true) -or
+	#($chk_Exch_UmMailboxPin.checked -eq $true) -or
+	($chk_Exch_UmMailboxPolicy.checked -eq $true) -or
+	($chk_Exch_UmServer.checked -eq $true) -or
 	($chk_Org_Quota.checked -eq $true) -or
-	($chk_Org_Get_AdminGroups.checked -eq $true))	{
+	($chk_Exch_AdminGroups.checked -eq $true))	{
 		$true
 	}
 }
 
 Function Get-ExchangeMbxBoxStatus # See if any are checked
 {
-if (($chk_Org_Get_CalendarProcessing.checked -eq $true) -or
-	($chk_Org_Get_CASMailbox.checked -eq $true) -or
-	($chk_Org_Get_Mailbox.checked -eq $true) -or
-	($chk_Org_Get_MailboxFolderStatistics.checked -eq $true) -or
-	($chk_Org_Get_MailboxPermission.checked -eq $true) -or
-	($chk_Org_Get_MailboxStatistics.checked -eq $true) -or
-	($chk_Org_Get_UmMailbox.checked -eq $true) -or
-	#($chk_Org_Get_UmMailboxConfiguration.checked -eq $true) -or
-	#($chk_Org_Get_UmMailboxPin.checked -eq $true) -or
+if (($chk_Exch_CalendarProcessing.checked -eq $true) -or
+	($chk_Exch_CASMailbox.checked -eq $true) -or
+	($chk_Exch_Mailbox.checked -eq $true) -or
+	($chk_Exch_MailboxFolderStatistics.checked -eq $true) -or
+	($chk_Exch_MailboxPermission.checked -eq $true) -or
+	($chk_Exch_MailboxStatistics.checked -eq $true) -or
+	($chk_Exch_UmMailbox.checked -eq $true) -or
+	#($chk_Exch_UmMailboxConfiguration.checked -eq $true) -or
+	#($chk_Exch_UmMailboxPin.checked -eq $true) -or
 	($chk_Org_Quota.checked -eq $true))
 	{
 		$true
@@ -3611,25 +3742,25 @@ if (($chk_Org_Get_CalendarProcessing.checked -eq $true) -or
 Function Get-AzureBoxStatus # See if any are checked
 {
 if (
-	($chk_Azure_Get_AzureADApplication.checked -eq $true) -or
-	($chk_Azure_Get_AzureADContact.checked -eq $true) -or
-	($chk_Azure_Get_AzureADDevice.checked -eq $true) -or
-	($chk_Azure_Get_AzureADDeviceRegisteredOwner.checked -eq $true) -or
-	($chk_Azure_Get_AzureADDeviceRegisteredUser.checked -eq $true) -or
-	($chk_Azure_Get_AzureADDirectoryRole.checked -eq $true) -or
-	($chk_Azure_Get_AzureADDomain.checked -eq $true) -or
-	($chk_Azure_Get_AzureAdDomainServiceConfigurationRecord.checked -eq $true) -or
-	($chk_Azure_Get_AzureAdDomainVerificationDnsRecord.checked -eq $true) -or
-	($chk_Azure_Get_AzureADGroup.checked -eq $true) -or
-	($chk_Azure_Get_AzureADGroupMember.checked -eq $true) -or
-	($chk_Azure_Get_AzureADGroupOwner.checked -eq $true) -or
-	($chk_Azure_Get_AzureADSubscribedSku.checked -eq $true) -or
-	($chk_Azure_Get_AzureADTenantDetail.checked -eq $true) -or
-	($chk_Azure_Get_AzureADUser.checked -eq $true) -or
-	($chk_Azure_Get_AzureADUserLicenseDetail.checked -eq $true) -or
-	($chk_Azure_Get_AzureADUserMembership.checked -eq $true) -or
-	($chk_Azure_Get_AzureADUserOwnedDevice.checked -eq $true) -or
-	($chk_Azure_Get_AzureADUserRegisteredDevice.checked -eq $true)
+	($chk_Azure_ADApplication.checked -eq $true) -or
+	($chk_Azure_ADContact.checked -eq $true) -or
+	($chk_Azure_ADDevice.checked -eq $true) -or
+	($chk_Azure_ADDeviceRegisteredOwner.checked -eq $true) -or
+	($chk_Azure_ADDeviceRegisteredUser.checked -eq $true) -or
+	($chk_Azure_ADDirectoryRole.checked -eq $true) -or
+	($chk_Azure_ADDomain.checked -eq $true) -or
+	($chk_Azure_AdDomainServiceConfigurationRecord.checked -eq $true) -or
+	($chk_Azure_AdDomainVerificationDnsRecord.checked -eq $true) -or
+	($chk_Azure_ADGroup.checked -eq $true) -or
+	($chk_Azure_ADGroupMember.checked -eq $true) -or
+	($chk_Azure_ADGroupOwner.checked -eq $true) -or
+	($chk_Azure_ADSubscribedSku.checked -eq $true) -or
+	($chk_Azure_ADTenantDetail.checked -eq $true) -or
+	($chk_Azure_ADUser.checked -eq $true) -or
+	($chk_Azure_ADUserLicenseDetail.checked -eq $true) -or
+	($chk_Azure_ADUserMembership.checked -eq $true) -or
+	($chk_Azure_ADUserOwnedDevice.checked -eq $true) -or
+	($chk_Azure_ADUserRegisteredDevice.checked -eq $true)
 	)
 		{$true}
 }
@@ -3637,11 +3768,11 @@ if (
 Function Get-AzureAdUserBoxStatus # See if any are checked
 {
 if (
-	($chk_Azure_Get_AzureADUser.checked -eq $true) -or
-	($chk_Azure_Get_AzureADUserLicenseDetail.checked -eq $true) -or
-	($chk_Azure_Get_AzureADUserMembership.checked -eq $true) -or
-	($chk_Azure_Get_AzureADUserOwnedDevice.checked -eq $true) -or
-	($chk_Azure_Get_AzureADUserRegisteredDevice.checked -eq $true)
+	($chk_Azure_ADUser.checked -eq $true) -or
+	($chk_Azure_ADUserLicenseDetail.checked -eq $true) -or
+	($chk_Azure_ADUserMembership.checked -eq $true) -or
+	($chk_Azure_ADUserOwnedDevice.checked -eq $true) -or
+	($chk_Azure_ADUserRegisteredDevice.checked -eq $true)
 	)
 		{$true}
 }
@@ -3649,14 +3780,27 @@ if (
 Function Get-AzureAdDeviceBoxStatus # See if any are checked
 {
 if (
-	($chk_Azure_Get_AzureADDevice.checked -eq $true) -or
-	($chk_Azure_Get_AzureADDeviceRegisteredOwner.checked -eq $true) -or
-	($chk_Azure_Get_AzureADDeviceRegisteredUser.checked -eq $true)
+	($chk_Azure_ADDevice.checked -eq $true) -or
+	($chk_Azure_ADDeviceRegisteredOwner.checked -eq $true) -or
+	($chk_Azure_ADDeviceRegisteredUser.checked -eq $true)
 	)
 		{$true}
 }
 
-
+Function Get-SpoBoxStatus # See if any are checked
+{
+if (
+	($chk_Spo_DeletedSite.checked -eq $true) -or
+	($chk_Spo_ExternalUser.checked -eq $true) -or
+	($chk_Spo_GeoStorageQuota.checked -eq $true) -or
+	($chk_Spo_Site.checked -eq $true) -or
+	($chk_Spo_Tenant.checked -eq $true) -or
+	($chk_Spo_TenantSyncClientRestriction.checked -eq $true) -or
+	($chk_Spo_User.checked -eq $true) -or
+	($chk_Spo_WebTemplate.checked -eq $true)
+	)
+		{$true}
+}
 
 Function Import-TargetsMailboxes
 {
@@ -3772,50 +3916,50 @@ Function Disable-TargetsAzureAdUser
 Function Set-AllFunctionsClientAccess
 {
 	Param([boolean]$Check)
-	$chk_Org_Get_ActiveSyncOrgSettings.checked = $Check
-	$chk_Org_Get_MobileDevice.Checked = $Check
-	$chk_Org_Get_MobileDevicePolicy.Checked = $Check
-	$chk_Org_Get_AvailabilityAddressSpace.Checked = $Check
-	$chk_Org_Get_OwaMailboxPolicy.Checked = $Check
+	$chk_Exch_ActiveSyncOrgSettings.checked = $Check
+	$chk_Exch_MobileDevice.Checked = $Check
+	$chk_Exch_MobileDevicePolicy.Checked = $Check
+	$chk_Exch_AvailabilityAddressSpace.Checked = $Check
+	$chk_Exch_OwaMailboxPolicy.Checked = $Check
 }
 
 Function Set-AllFunctionsGlobal
 {
 	Param([boolean]$Check)
-	$chk_Org_Get_AntiPhishPolicy.checked  = $Check
-	$chk_Org_Get_AntiSpoofingPolicy.checked  = $Check
-	$chk_Org_Get_AtpPolicyForO365.checked  = $Check
-	$chk_Org_Get_OnPremisesOrganization.checked = $Check
-	$chk_Org_Get_SmimeConfig.checked  = $Check
-	$chk_Org_Get_AddressBookPolicy.Checked = $Check
-	$chk_Org_Get_AddressList.Checked = $Check
-	$chk_Org_Get_EmailAddressPolicy.Checked = $Check
-	$chk_Org_Get_GlobalAddressList.Checked = $Check
-	$chk_Org_Get_OfflineAddressBook.Checked = $Check
-	$chk_Org_Get_OrgConfig.Checked = $Check
-	$chk_Org_Get_Rbac.Checked = $Check
-	$chk_Org_Get_RetentionPolicy.Checked = $Check
-	$chk_Org_Get_RetentionPolicyTag.Checked = $Check
+	$chk_Exch_AntiPhishPolicy.checked  = $Check
+	$chk_Exch_AntiSpoofingPolicy.checked  = $Check
+	$chk_Exch_AtpPolicyForO365.checked  = $Check
+	$chk_Exch_OnPremisesOrganization.checked = $Check
+	$chk_Exch_SmimeConfig.checked  = $Check
+	$chk_Exch_AddressBookPolicy.Checked = $Check
+	$chk_Exch_AddressList.Checked = $Check
+	$chk_Exch_EmailAddressPolicy.Checked = $Check
+	$chk_Exch_GlobalAddressList.Checked = $Check
+	$chk_Exch_OfflineAddressBook.Checked = $Check
+	$chk_Exch_OrgConfig.Checked = $Check
+	$chk_Exch_Rbac.Checked = $Check
+	$chk_Exch_RetentionPolicy.Checked = $Check
+	$chk_Exch_RetentionPolicyTag.Checked = $Check
 }
 
 Function Set-AllFunctionsRecipient
 {
 	Param([boolean]$Check)
-	$chk_Org_Get_CASMailboxPlan.checked  = $Check
-	$chk_Org_Get_Contact.checked  = $Check
-	$chk_Org_Get_MailboxPlan.checked  = $Check
-	$chk_Org_Get_MailUser.checked  = $Check
-	$chk_Org_Get_UnifiedGroup.checked = $Check
-	$chk_Org_Get_CalendarProcessing.Checked = $Check
-	$chk_Org_Get_CASMailbox.Checked = $Check
-	$chk_Org_Get_DistributionGroup.Checked = $Check
-	$chk_Org_Get_DynamicDistributionGroup.Checked = $Check
-	$chk_Org_Get_Mailbox.Checked = $Check
-	$chk_Org_Get_MailboxFolderStatistics.Checked = $Check
-	$chk_Org_Get_MailboxPermission.Checked = $Check
-	$chk_Org_Get_MailboxStatistics.Checked = $Check
-	$chk_Org_Get_PublicFolder.Checked = $Check
-	$chk_Org_Get_PublicFolderStatistics.Checked = $Check
+	$chk_Exch_CASMailboxPlan.checked  = $Check
+	$chk_Exch_Contact.checked  = $Check
+	$chk_Exch_MailboxPlan.checked  = $Check
+	$chk_Exch_MailUser.checked  = $Check
+	$chk_Exch_UnifiedGroup.checked = $Check
+	$chk_Exch_CalendarProcessing.Checked = $Check
+	$chk_Exch_CASMailbox.Checked = $Check
+	$chk_Exch_DistributionGroup.Checked = $Check
+	$chk_Exch_DynamicDistributionGroup.Checked = $Check
+	$chk_Exch_Mailbox.Checked = $Check
+	$chk_Exch_MailboxFolderStatistics.Checked = $Check
+	$chk_Exch_MailboxPermission.Checked = $Check
+	$chk_Exch_MailboxStatistics.Checked = $Check
+	$chk_Exch_PublicFolder.Checked = $Check
+	$chk_Exch_PublicFolderStatistics.Checked = $Check
 	$chk_Org_Quota.Checked = $Check
 }
 
@@ -3823,68 +3967,68 @@ Function Set-AllFunctionsTransport
 {
 	Param([boolean]$Check)
 
-	$chk_Org_Get_DkimSigningConfig.checked  = $Check
-	$chk_Org_Get_AcceptedDomain.Checked = $Check
-	$chk_Org_Get_InboundConnector.Checked = $Check
-	$chk_Org_Get_RemoteDomain.Checked = $Check
-	$chk_Org_Get_OutboundConnector.Checked = $Check
-	$chk_Org_Get_TransportConfig.Checked = $Check
-	$chk_Org_Get_TransportRule.Checked = $Check
+	$chk_Exch_DkimSigningConfig.checked  = $Check
+	$chk_Exch_AcceptedDomain.Checked = $Check
+	$chk_Exch_InboundConnector.Checked = $Check
+	$chk_Exch_RemoteDomain.Checked = $Check
+	$chk_Exch_OutboundConnector.Checked = $Check
+	$chk_Exch_TransportConfig.Checked = $Check
+	$chk_Exch_TransportRule.Checked = $Check
 }
 
 Function Set-AllFunctionsUm
 {
     Param([boolean]$Check)
-	$chk_Org_Get_UmAutoAttendant.Checked = $Check
-	$chk_Org_Get_UmDialPlan.Checked = $Check
-	$chk_Org_Get_UmIpGateway.Checked = $Check
-	$chk_Org_Get_UmMailbox.Checked = $Check
-	#$chk_Org_Get_UmMailboxConfiguration.Checked = $Check
-	#$chk_Org_Get_UmMailboxPin.Checked = $Check
-	$chk_Org_Get_UmMailboxPolicy.Checked = $Check
+	$chk_Exch_UmAutoAttendant.Checked = $Check
+	$chk_Exch_UmDialPlan.Checked = $Check
+	$chk_Exch_UmIpGateway.Checked = $Check
+	$chk_Exch_UmMailbox.Checked = $Check
+	#$chk_Exch_UmMailboxConfiguration.Checked = $Check
+	#$chk_Exch_UmMailboxPin.Checked = $Check
+	$chk_Exch_UmMailboxPolicy.Checked = $Check
 }
 
 Function Set-AllFunctionsMisc
 {
     Param([boolean]$Check)
-	$chk_Org_Get_AdminGroups.Checked = $Check
+	$chk_Exch_AdminGroups.Checked = $Check
 }
 
 Function Set-AllFunctionsAzureAd
 {
     Param([boolean]$Check)
-	$chk_Azure_Get_AzureADApplication.Checked = $Check
-	$chk_Azure_Get_AzureADContact.Checked = $Check
-	$chk_Azure_Get_AzureADDevice.Checked = $Check
-	$chk_Azure_Get_AzureADDeviceRegisteredOwner.Checked = $Check
-	$chk_Azure_Get_AzureADDeviceRegisteredUser.Checked = $Check
-	$chk_Azure_Get_AzureADDirectoryRole.Checked = $Check
-	$chk_Azure_Get_AzureADDomain.Checked = $Check
-	$chk_Azure_Get_AzureAdDomainServiceConfigurationRecord.Checked = $Check
-	$chk_Azure_Get_AzureAdDomainVerificationDnsRecord.Checked = $Check
-	$chk_Azure_Get_AzureADGroup.Checked = $Check
-	$chk_Azure_Get_AzureADGroupMember.Checked = $Check
-	$chk_Azure_Get_AzureADGroupOwner.Checked = $Check
-	$chk_Azure_Get_AzureADSubscribedSku.Checked = $Check
-	$chk_Azure_Get_AzureADTenantDetail.Checked = $Check
-	$chk_Azure_Get_AzureADUser.Checked = $Check
-	$chk_Azure_Get_AzureADUserLicenseDetail.Checked = $Check
-	$chk_Azure_Get_AzureADUserMembership.Checked = $Check
-	$chk_Azure_Get_AzureADUserOwnedDevice.Checked = $Check
-	$chk_Azure_Get_AzureADUserRegisteredDevice.Checked = $Check
+	$chk_Azure_ADApplication.Checked = $Check
+	$chk_Azure_ADContact.Checked = $Check
+	$chk_Azure_ADDevice.Checked = $Check
+	$chk_Azure_ADDeviceRegisteredOwner.Checked = $Check
+	$chk_Azure_ADDeviceRegisteredUser.Checked = $Check
+	$chk_Azure_ADDirectoryRole.Checked = $Check
+	$chk_Azure_ADDomain.Checked = $Check
+	$chk_Azure_AdDomainServiceConfigurationRecord.Checked = $Check
+	$chk_Azure_AdDomainVerificationDnsRecord.Checked = $Check
+	$chk_Azure_ADGroup.Checked = $Check
+	$chk_Azure_ADGroupMember.Checked = $Check
+	$chk_Azure_ADGroupOwner.Checked = $Check
+	$chk_Azure_ADSubscribedSku.Checked = $Check
+	$chk_Azure_ADTenantDetail.Checked = $Check
+	$chk_Azure_ADUser.Checked = $Check
+	$chk_Azure_ADUserLicenseDetail.Checked = $Check
+	$chk_Azure_ADUserMembership.Checked = $Check
+	$chk_Azure_ADUserOwnedDevice.Checked = $Check
+	$chk_Azure_ADUserRegisteredDevice.Checked = $Check
 }
 
 Function Set-AllFunctionsSpo
 {
     Param([boolean]$Check)
-	$chk_Org_Get_SPODeletedSite.Checked = $Check
-	$chk_Org_Get_SPOExternalUser.Checked = $Check
-	$chk_Org_Get_SPOGeoStorageQuota.Checked = $Check
-	$chk_Org_Get_SPOSite.Checked = $Check
-	$chk_Org_Get_SPOTenant.Checked = $Check
-	$chk_Org_Get_SPOTenantSyncClientRestriction.Checked = $Check
-	$chk_Org_Get_SPOUser.Checked = $Check
-	$chk_Org_Get_SPOWebTemplate.Checked = $Check
+	$chk_Spo_DeletedSite.Checked = $Check
+	$chk_Spo_ExternalUser.Checked = $Check
+	$chk_Spo_GeoStorageQuota.Checked = $Check
+	$chk_Spo_Site.Checked = $Check
+	$chk_Spo_Tenant.Checked = $Check
+	$chk_Spo_TenantSyncClientRestriction.Checked = $Check
+	$chk_Spo_User.Checked = $Check
+	$chk_Spo_WebTemplate.Checked = $Check
 }
 
 Function Start-O365DCJob
@@ -3954,9 +4098,9 @@ Function Split-List10
 
 Function Test-CheckBoxAndRun
 {
-	Param (	$chkBox,` 	#$chk_Azure_Get_AzureAdUser.Checked
+	Param (	$chkBox,` 	#$chk_Azure_AdUser.Checked
 			$Text,`		#Get-AzureADUser
-			$Script		#Azure_GetAzureAdUser
+			$Script		#Azure_AzureAdUser
 	)
 
 	If ($chkbox -eq $true)
