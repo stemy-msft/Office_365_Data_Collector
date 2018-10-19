@@ -11,36 +11,14 @@
 	* Complete data collection requires elevated credentials for both Office 365 components
 	* Data collection does not require that Office is installed as output files are txt and xml
 	* The O365DC folder can be forklifted to a workstation with Office to generate output reports
-.PARAMETER JobCount_Exchange
-	Max number of jobs for Exchange cmdlet functions (Default = 10)
-	Caution: The OOB throttling policy sets PowershellMaxConcurrency at 18 sessions per user per server
-	Modifying this value without increasing the throttling policy can cause Exchange jobs to immediately fail.
-.PARAMETER JobPolling_Exchange
-	Polling interval for job completion for Exchange cmdlet functions (Default = 5 sec)
-.PARAMETER Timeout_Exchange_Job
-	Job timeout for Exchange functions  (Default = 3600 sec)
-	The default value is 3600 seconds but should be adjusted for organizations with a large number of mailboxes or servers over slow connections.
-.PARAMETER ServerForPSSession
-	Exchange server used for Powershell sessions
 .PARAMETER INI_Exchange
 	Specify INI file for Exchange Tests configuration
-.PARAMETER NoEMS
-	Use this switch to launch the tool in Powershell (No Exchange cmdlets)
 .PARAMETER MFA
 	Use this switch if Multi-Factor Authentication is required for the environment.
 	If is recommended that the Trusted IPs be set in Azure AD Conditional Access to allow the admin account to use traditional user name
 	and password when run from a trusted IP.  If this switch is set, multi-threading will be disabled.
 .PARAMETER ForceNewConnection
 	Use this switch to force Powershell to make a new connection to Office 365 instead of trying to re-use an existing session.
-.EXAMPLE
-	.\O365DC.v4.ps1 -JobCount_Exchange 12
-	This results in O365DC using 12 active Exchange jobs instead of the default of 10.
-.EXAMPLE
-	.\O365DC.v4.ps1 -JobPolling_Exchange 30
-	This results in O365DC polling for completed Exchange jobs every 30 seconds.
-.EXAMPLE
-	.\O365DC.v4.ps1 -Timeout_Exchange_Job 7200
-	This results in O365DC killing Exchange jobs that have exceeded 7200 seconds at the next polling interval.
 .EXAMPLE
 	.\O365DC.v4.ps1 -INI_Server ".\Templates\Template1_INI_Server.ini"
 	This results in O365DC loading the specified template on start up.
@@ -57,13 +35,12 @@
 	https://gallery.technet.microsoft.com/office/
 #>
 
-Param(	[int]$JobCount_Exchange = 2,`
-		[int]$JobPolling_Exchange = 5,`
-		[int]$Timeout_Exchange_Job = 3600,`
-		[string]$ServerForPSSession = $null,`
-		[string]$INI_Exchange,`
-		[switch]$NoEMS,`
+Param(	[string]$INI_Exchange,`
+		[string]$INI_Azure,`
+		[string]$INI_Sharepoint,`
+		[string]$INI_Skype,`
 		[switch]$MFA,`
+		[switch]$TestGUI,`
 		[switch]$ForceNewConnection)
 
 function New-O365DCForm {
@@ -420,6 +397,7 @@ $bx_Step4_Functions = New-Object System.Windows.Forms.GroupBox
 $chk_Step4_Exchange_Report = New-Object System.Windows.Forms.CheckBox
 $chk_Step4_Azure_Report = New-Object System.Windows.Forms.CheckBox
 $chk_Step4_Sharepoint_Report = New-Object System.Windows.Forms.CheckBox
+$chk_Step4_Skype_Report = New-Object System.Windows.Forms.CheckBox
 #$chk_Step4_Exchange_Environment_Doc = New-Object System.Windows.Forms.CheckBox
 $Status_Step4 = New-Object System.Windows.Forms.StatusBar
 #endregion Step4 - Reporting
@@ -673,10 +651,7 @@ $handler_rb_Step2_Template_1=
 	$rb_Step2_Template_3.Checked = $false
 	$rb_Step2_Template_4.Checked = $false
 	#Load the templates
-	if ($NoEMS -eq $false)
-	{
-		try{& ".\O365DC_Scripts\Core_Parse_Ini_File.ps1" -IniFile ".\Templates\Template1_INI_Exchange.ini"} catch{}
-	}
+	try{& ".\O365DC_Scripts\Core_Parse_Ini_File.ps1" -IniFile ".\Templates\Template1_INI_Exchange.ini"} catch{}
 }
 
 $handler_rb_Step2_Template_2=
@@ -686,10 +661,7 @@ $handler_rb_Step2_Template_2=
 	$rb_Step2_Template_3.Checked = $false
 	$rb_Step2_Template_4.Checked = $false
 	#Load the templates
-	if ($NoEMS -eq $false)
-	{
-		try{& ".\O365DC_Scripts\Core_Parse_Ini_File.ps1" -IniFile ".\Templates\Template2_INI_Exchange.ini"} catch{}
-	}
+	try{& ".\O365DC_Scripts\Core_Parse_Ini_File.ps1" -IniFile ".\Templates\Template2_INI_Exchange.ini"} catch{}
 }
 
 $handler_rb_Step2_Template_3=
@@ -699,16 +671,10 @@ $handler_rb_Step2_Template_3=
 	$rb_Step2_Template_2.Checked = $false
 	$rb_Step2_Template_4.Checked = $false
 	# Since this is the Environmental Doc template, warn if no EMS
-	if ($NoEMS -eq $true)
-	{
-		write-host "This template is designed to run with the Exchange cmdlets.  NoEMS switch detected." -foregroundcolor yellow
-		write-host "Data collection will be incomplete." -foregroundcolor yellow
-	}
+	write-host "This template is designed to run with the Exchange cmdlets.  NoEMS switch detected." -foregroundcolor yellow
+	write-host "Data collection will be incomplete." -foregroundcolor yellow
 	#Load the templates
-	if ($NoEMS -eq $false)
-	{
-		try{& ".\O365DC_Scripts\Core_Parse_Ini_File.ps1" -IniFile ".\Templates\Template3_INI_Exchange.ini"} catch {}
-	}
+	try{& ".\O365DC_Scripts\Core_Parse_Ini_File.ps1" -IniFile ".\Templates\Template3_INI_Exchange.ini"} catch {}
 }
 
 $handler_rb_Step2_Template_4=
@@ -718,10 +684,7 @@ $handler_rb_Step2_Template_4=
 	$rb_Step2_Template_2.Checked = $false
 	$rb_Step2_Template_3.Checked = $false
 	#Load the templates
-	if ($NoEMS -eq $false)
-	{
-		try{& ".\O365DC_Scripts\Core_Parse_Ini_File.ps1" -IniFile ".\Templates\Template4_INI_Exchange.ini"} catch{}
-	}
+	try{& ".\O365DC_Scripts\Core_Parse_Ini_File.ps1" -IniFile ".\Templates\Template4_INI_Exchange.ini"} catch{}
 }
 
 #Endregion "Step2" Events
@@ -1652,6 +1615,12 @@ $handler_btn_Step4_Assemble_Click=
 				.\O365DC_Scripts\Core_assemble_Sharepoint_Excel.ps1 -RunLocation $location
 				write-host "---- Completed the Sharepoint Spreadsheet" -ForegroundColor Green
 		}
+		if ($chk_Step4_Skype_Report.checked -eq $true)
+		{
+			write-host "-- Starting to assemble the Skype Spreadsheet"
+				.\O365DC_Scripts\Core_assemble_Skype_Excel.ps1 -RunLocation $location
+				write-host "---- Completed the Skype Spreadsheet" -ForegroundColor Green
+		}
 
 	}
 	else
@@ -2237,7 +2206,7 @@ $tab_Step3_ClientAccess.Location = $Loc_Tab_Tier3
 	$tab_Step3_ClientAccess.Padding = $System_Windows_Forms_Padding_Reusable
 	$tab_Step3_ClientAccess.Size = $Size_Tab_Small
 	$tab_Step3_ClientAccess.TabIndex = $TabIndex++
-	$tab_Step3_ClientAccess.Text = "Client Access"
+	$tab_Step3_ClientAccess.Text = " Client Access "
 	$tab_Step3_ClientAccess.UseVisualStyleBackColor = $True
 	$tab_Step3_Exchange_Tier2.Controls.Add($tab_Step3_ClientAccess)
 $bx_ClientAccess_Functions.Dock = 5
@@ -2323,7 +2292,7 @@ $tab_Step3_Global.Location = $Loc_Tab_Tier3
 	$tab_Step3_Global.Padding = $System_Windows_Forms_Padding_Reusable
 $tab_Step3_Global.Size = $Size_Tab_Small
 	$tab_Step3_Global.TabIndex = $TabIndex++
-	$tab_Step3_Global.Text = "Global and Database"
+	$tab_Step3_Global.Text = " Global and Database "
 	$tab_Step3_Global.UseVisualStyleBackColor = $True
 	$tab_Step3_Exchange_Tier2.Controls.Add($tab_Step3_Global)
 $bx_Global_Functions.Dock = 5
@@ -2490,7 +2459,7 @@ $tab_Step3_Recipient.Location = $Loc_Tab_Tier3
 	$tab_Step3_Recipient.Padding = $System_Windows_Forms_Padding_Reusable
 	$tab_Step3_Recipient.Size = $Size_Tab_Small
 	$tab_Step3_Recipient.TabIndex = $TabIndex++
-	$tab_Step3_Recipient.Text = "Recipient"
+	$tab_Step3_Recipient.Text = " Recipient "
 	$tab_Step3_Recipient.UseVisualStyleBackColor = $True
 	$tab_Step3_Exchange_Tier2.Controls.Add($tab_Step3_Recipient)
 $bx_Recipient_Functions.Dock = 5
@@ -2675,7 +2644,7 @@ $tab_Step3_Transport.Location = $Loc_Tab_Tier3
 	$tab_Step3_Transport.Padding = $System_Windows_Forms_Padding_Reusable
 	$tab_Step3_Transport.Size = $Size_Tab_Small
 	$tab_Step3_Transport.TabIndex = $TabIndex++
-	$tab_Step3_Transport.Text = "Transport"
+	$tab_Step3_Transport.Text = " Transport "
 	$tab_Step3_Transport.UseVisualStyleBackColor = $True
 	$tab_Step3_Exchange_Tier2.Controls.Add($tab_Step3_Transport)
 $bx_Transport_Functions.Dock = 5
@@ -2779,7 +2748,7 @@ $tab_Step3_UM.Location = $Loc_Tab_Tier3
 	$tab_Step3_UM.Padding = $System_Windows_Forms_Padding_Reusable
 	$tab_Step3_UM.Size = $Size_Tab_Small #New-Object System.Drawing.Size(300,488)
 	$tab_Step3_UM.TabIndex = $TabIndex++
-	$tab_Step3_UM.Text = "    UM"
+	$tab_Step3_UM.Text = "   UM   "
 	$tab_Step3_UM.UseVisualStyleBackColor = $True
 	$tab_Step3_Exchange_Tier2.Controls.Add($tab_Step3_UM)
 $bx_UM_Functions.Dock = 5
@@ -2889,7 +2858,7 @@ $tab_Step3_Misc.Location = $Loc_Tab_Tier3
 	$tab_Step3_Misc.Padding = $System_Windows_Forms_Padding_Reusable
 	$tab_Step3_Misc.Size = $Size_Tab_Small
 	$tab_Step3_Misc.TabIndex = $TabIndex++
-	$tab_Step3_Misc.Text = "Misc"
+	$tab_Step3_Misc.Text = "  Misc  "
 	$tab_Step3_Misc.UseVisualStyleBackColor = $True
 	$tab_Step3_Exchange_Tier2.Controls.Add($tab_Step3_Misc)
 $bx_Misc_Functions.Dock = 5
@@ -3259,192 +3228,6 @@ $chk_Spo_WebTemplate.font = $font_SegoeUI_9pt_normal
 
 #EndRegion Step3 Sharepoint - SPO tab
 
-#Region Step3 Skype - CsOnline tab
-$TabIndex = 0
-$tab_Step3_CsOnline.Location = $Loc_Tab_Tier3
-	$tab_Step3_CsOnline.Name = "tab_Step3_CsOnline"
-	$tab_Step3_CsOnline.Padding = $System_Windows_Forms_Padding_Reusable
-	$tab_Step3_CsOnline.Size = $Size_Tab_Small
-	$tab_Step3_CsOnline.TabIndex = $TabIndex++
-	$tab_Step3_CsOnline.Text = "  CsOnline  "
-	$tab_Step3_CsOnline.UseVisualStyleBackColor = $True
-	$tab_Step3_Skype_Tier2.Controls.Add($tab_Step3_CsOnline)
-$bx_CsOnline_Functions.Dock = 5
-	$bx_CsOnline_Functions.Location = $Loc_Box_1
-	$bx_CsOnline_Functions.Name = "bx_CsOnline_Functions"
-	$bx_CsOnline_Functions.Size = $Size_Box_3
-	$bx_CsOnline_Functions.TabIndex = $TabIndex++
-	$bx_CsOnline_Functions.TabStop = $False
-	$tab_Step3_CsOnline.Controls.Add($bx_CsOnline_Functions)
-$btn_Step3_CsOnline_CheckAll.Font = $font_SegoeUI_9pt_normal
-	$btn_Step3_CsOnline_CheckAll.Location = $Loc_CheckAll_3
-	$btn_Step3_CsOnline_CheckAll.Name = "btn_Step3_CsOnline_CheckAll"
-	$btn_Step3_CsOnline_CheckAll.Size = $Size_Btn_3
-	$btn_Step3_CsOnline_CheckAll.TabIndex = $TabIndex++
-	$btn_Step3_CsOnline_CheckAll.Text = "Check all on this tab"
-	$btn_Step3_CsOnline_CheckAll.UseVisualStyleBackColor = $True
-	$btn_Step3_CsOnline_CheckAll.add_Click($handler_btn_Step3_CsOnline_CheckAll_Click)
-	$bx_CsOnline_Functions.Controls.Add($btn_Step3_CsOnline_CheckAll)
-$btn_Step3_CsOnline_UncheckAll.Font = $font_SegoeUI_9pt_normal
-	$btn_Step3_CsOnline_UncheckAll.Location = $Loc_UncheckAll_3
-	$btn_Step3_CsOnline_UncheckAll.Name = "btn_Step3_CsOnline_UncheckAll"
-	$btn_Step3_CsOnline_UncheckAll.Size = $Size_Btn_3
-	$btn_Step3_CsOnline_UncheckAll.TabIndex = $TabIndex++
-	$btn_Step3_CsOnline_UncheckAll.Text = "Uncheck all on this tab"
-	$btn_Step3_CsOnline_UncheckAll.UseVisualStyleBackColor = $True
-	$btn_Step3_CsOnline_UncheckAll.add_Click($handler_btn_Step3_CsOnline_UncheckAll_Click)
-	$bx_CsOnline_Functions.Controls.Add($btn_Step3_CsOnline_UncheckAll)
-$Col_1_loc = 35
-$Col_2_loc = 290
-$Row_1_loc = 0
-$Row_2_loc = 0
-$chk_Skype_CsOnlineDialInConferencingBridge.Font = $font_SegoeUI_9pt_normal
-	$Row_1_loc += 25
-	$chk_Skype_CsOnlineDialInConferencingBridge.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Skype_CsOnlineDialInConferencingBridge.Name = "chk_Skype_CsOnlineDialInConferencingBridge"
-	$chk_Skype_CsOnlineDialInConferencingBridge.Size = $Size_Chk
-	$chk_Skype_CsOnlineDialInConferencingBridge.TabIndex = $TabIndex++
-	$chk_Skype_CsOnlineDialInConferencingBridge.Text = "DialInConferencingBridge"
-	$chk_Skype_CsOnlineDialInConferencingBridge.UseVisualStyleBackColor = $True
-	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialInConferencingBridge)
-$chk_Skype_CsOnlineDialinConferencingPolicy.Font = $font_SegoeUI_9pt_normal
-	$Row_1_loc += 25
-	$chk_Skype_CsOnlineDialinConferencingPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Skype_CsOnlineDialinConferencingPolicy.Name = "chk_Skype_CsOnlineDialinConferencingPolicy"
-	$chk_Skype_CsOnlineDialinConferencingPolicy.Size = $Size_Chk
-	$chk_Skype_CsOnlineDialinConferencingPolicy.TabIndex = $TabIndex++
-	$chk_Skype_CsOnlineDialinConferencingPolicy.Text = "DialinConferencingPolicy"
-	$chk_Skype_CsOnlineDialinConferencingPolicy.UseVisualStyleBackColor = $True
-	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialinConferencingPolicy)
-$chk_Skype_CsOnlineDialInConferencingServiceNumber.Font = $font_SegoeUI_9pt_normal
-	$Row_1_loc += 25
-	$chk_Skype_CsOnlineDialInConferencingServiceNumber.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Skype_CsOnlineDialInConferencingServiceNumber.Name = "chk_Skype_CsOnlineDialInConferencingServiceNumber"
-	$chk_Skype_CsOnlineDialInConferencingServiceNumber.Size = $Size_Chk
-	$chk_Skype_CsOnlineDialInConferencingServiceNumber.TabIndex = $TabIndex++
-	$chk_Skype_CsOnlineDialInConferencingServiceNumber.Text = "DialInConferencingServiceNumber"
-	$chk_Skype_CsOnlineDialInConferencingServiceNumber.UseVisualStyleBackColor = $True
-	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialInConferencingServiceNumber)
-$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.Font = $font_SegoeUI_9pt_normal
-	$Row_1_loc += 25
-	$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.Name = "chk_Skype_CsOnlineDialinConferencingTenantConfig"
-	$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.Size = $Size_Chk
-	$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.TabIndex = $TabIndex++
-	$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.Text = "DialinConferencingTenantConfig"
-	$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.UseVisualStyleBackColor = $True
-	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialinConferencingTenantConfiguration)
-$chk_Skype_CsOnlineDialInConferencingTenantSettings.Font = $font_SegoeUI_9pt_normal
-	$Row_1_loc += 25
-	$chk_Skype_CsOnlineDialInConferencingTenantSettings.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Skype_CsOnlineDialInConferencingTenantSettings.Name = "chk_Skype_CsOnlineDialInConferencingTenantSettings"
-	$chk_Skype_CsOnlineDialInConferencingTenantSettings.Size = $Size_Chk
-	$chk_Skype_CsOnlineDialInConferencingTenantSettings.TabIndex = $TabIndex++
-	$chk_Skype_CsOnlineDialInConferencingTenantSettings.Text = "DialInConferencingTenantSettings"
-	$chk_Skype_CsOnlineDialInConferencingTenantSettings.UseVisualStyleBackColor = $True
-	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialInConferencingTenantSettings)
-$chk_Skype_CsOnlineDialInConferencingUser.Font = $font_SegoeUI_9pt_normal
-	$Row_1_loc += 25
-	$chk_Skype_CsOnlineDialInConferencingUser.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Skype_CsOnlineDialInConferencingUser.Name = "chk_Skype_CsOnlineDialInConferencingUser"
-	$chk_Skype_CsOnlineDialInConferencingUser.Size = $Size_Chk
-	$chk_Skype_CsOnlineDialInConferencingUser.TabIndex = $TabIndex++
-	$chk_Skype_CsOnlineDialInConferencingUser.Text = "DialInConferencingUser"
-	$chk_Skype_CsOnlineDialInConferencingUser.UseVisualStyleBackColor = $True
-	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialInConferencingUser)
-$chk_Skype_CsOnlineDialInConferencingUserInfo.Font = $font_SegoeUI_9pt_normal
-	$Row_1_loc += 25
-	$chk_Skype_CsOnlineDialInConferencingUserInfo.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Skype_CsOnlineDialInConferencingUserInfo.Name = "chk_Skype_CsOnlineDialInConferencingUserInfo"
-	$chk_Skype_CsOnlineDialInConferencingUserInfo.Size = $Size_Chk
-	$chk_Skype_CsOnlineDialInConferencingUserInfo.TabIndex = $TabIndex++
-	$chk_Skype_CsOnlineDialInConferencingUserInfo.Text = "DialInConferencingUserInfo"
-	$chk_Skype_CsOnlineDialInConferencingUserInfo.UseVisualStyleBackColor = $True
-	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialInConferencingUserInfo)
-$chk_Skype_CsOnlineDialInConferencingUserState.Font = $font_SegoeUI_9pt_normal
-	$Row_1_loc += 25
-	$chk_Skype_CsOnlineDialInConferencingUserState.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
-	$chk_Skype_CsOnlineDialInConferencingUserState.Name = "chk_Skype_CsOnlineDialInConferencingUserState"
-	$chk_Skype_CsOnlineDialInConferencingUserState.Size = $Size_Chk
-	$chk_Skype_CsOnlineDialInConferencingUserState.TabIndex = $TabIndex++
-	$chk_Skype_CsOnlineDialInConferencingUserState.Text = "DialInConferencingUserState"
-	$chk_Skype_CsOnlineDialInConferencingUserState.UseVisualStyleBackColor = $True
-	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialInConferencingUserState)
-$chk_Skype_CsOnlineDialOutPolicy.Font = $font_SegoeUI_9pt_normal
-	$Row_2_loc += 25
-	$chk_Skype_CsOnlineDialOutPolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Skype_CsOnlineDialOutPolicy.Name = "chk_Skype_CsOnlineDialOutPolicy"
-	$chk_Skype_CsOnlineDialOutPolicy.Size = $Size_Chk
-	$chk_Skype_CsOnlineDialOutPolicy.TabIndex = $TabIndex++
-	$chk_Skype_CsOnlineDialOutPolicy.Text = "DialOutPolicy"
-	$chk_Skype_CsOnlineDialOutPolicy.UseVisualStyleBackColor = $True
-	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialOutPolicy)
-$chk_Skype_CsOnlineDirectoryTenant.Font = $font_SegoeUI_9pt_normal
-	$Row_2_loc += 25
-	$chk_Skype_CsOnlineDirectoryTenant.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Skype_CsOnlineDirectoryTenant.Name = "chk_Skype_CsOnlineDirectoryTenant"
-	$chk_Skype_CsOnlineDirectoryTenant.Size = $Size_Chk
-	$chk_Skype_CsOnlineDirectoryTenant.TabIndex = $TabIndex++
-	$chk_Skype_CsOnlineDirectoryTenant.Text = "DirectoryTenant"
-	$chk_Skype_CsOnlineDirectoryTenant.UseVisualStyleBackColor = $True
-	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDirectoryTenant)
-$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.Font = $font_SegoeUI_9pt_normal
-	$Row_2_loc += 25
-	$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.Name = "chk_Skype_CsOnlineTelephoneNumberInventoryTypes"
-	$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.Size = $Size_Chk
-	$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.TabIndex = $TabIndex++
-	$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.Text = "TelephoneNumberInventoryTypes"
-	$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.UseVisualStyleBackColor = $True
-	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineTelephoneNumberInventoryTypes)
-$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.Font = $font_SegoeUI_9pt_normal
-	$Row_2_loc += 25
-	$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.Name = "chk_Skype_CsOnlineTelephoneNumberReservationsInfo"
-	$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.Size = $Size_Chk
-	$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.TabIndex = $TabIndex++
-	$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.Text = "TelephoneNumberReservationsInfo"
-	$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.UseVisualStyleBackColor = $True
-	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineTelephoneNumberReservationsInformation)
-$chk_Skype_CsOnlineUser.Font = $font_SegoeUI_9pt_normal
-	$Row_2_loc += 25
-	$chk_Skype_CsOnlineUser.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Skype_CsOnlineUser.Name = "chk_Skype_CsOnlineUser"
-	$chk_Skype_CsOnlineUser.Size = $Size_Chk
-	$chk_Skype_CsOnlineUser.TabIndex = $TabIndex++
-	$chk_Skype_CsOnlineUser.Text = "User"
-	$chk_Skype_CsOnlineUser.UseVisualStyleBackColor = $True
-	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineUser)
-$chk_Skype_CsOnlineVoicemailPolicy.Font = $font_SegoeUI_9pt_normal
-	$Row_2_loc += 25
-	$chk_Skype_CsOnlineVoicemailPolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Skype_CsOnlineVoicemailPolicy.Name = "chk_Skype_CsOnlineVoicemailPolicy"
-	$chk_Skype_CsOnlineVoicemailPolicy.Size = $Size_Chk
-	$chk_Skype_CsOnlineVoicemailPolicy.TabIndex = $TabIndex++
-	$chk_Skype_CsOnlineVoicemailPolicy.Text = "VoicemailPolicy"
-	$chk_Skype_CsOnlineVoicemailPolicy.UseVisualStyleBackColor = $True
-	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineVoicemailPolicy)
-$chk_Skype_CsOnlineVoiceRoute.Font = $font_SegoeUI_9pt_normal
-	$Row_2_loc += 25
-	$chk_Skype_CsOnlineVoiceRoute.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Skype_CsOnlineVoiceRoute.Name = "chk_Skype_CsOnlineVoiceRoute"
-	$chk_Skype_CsOnlineVoiceRoute.Size = $Size_Chk
-	$chk_Skype_CsOnlineVoiceRoute.TabIndex = $TabIndex++
-	$chk_Skype_CsOnlineVoiceRoute.Text = "VoiceRoute"
-	$chk_Skype_CsOnlineVoiceRoute.UseVisualStyleBackColor = $True
-	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineVoiceRoute)
-$chk_Skype_CsOnlineVoiceRoutingPolicy.Font = $font_SegoeUI_9pt_normal
-	$Row_2_loc += 25
-	$chk_Skype_CsOnlineVoiceRoutingPolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
-	$chk_Skype_CsOnlineVoiceRoutingPolicy.Name = "chk_Skype_CsOnlineVoiceRoutingPolicy"
-	$chk_Skype_CsOnlineVoiceRoutingPolicy.Size = $Size_Chk
-	$chk_Skype_CsOnlineVoiceRoutingPolicy.TabIndex = $TabIndex++
-	$chk_Skype_CsOnlineVoiceRoutingPolicy.Text = "VoiceRoutingPolicy"
-	$chk_Skype_CsOnlineVoiceRoutingPolicy.UseVisualStyleBackColor = $True
-	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineVoiceRoutingPolicy)
-
-#EndRegion Step3 Skype - CsOnline tab
-
 #Region Step3 Skype - CsGeneral tab
 $TabIndex = 0
 $tab_Step3_CsGeneral.Location = $Loc_Tab_Tier3
@@ -3720,6 +3503,192 @@ $chk_Skype_CsVoiceRoutingPolicy.Font = $font_SegoeUI_9pt_normal
 	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsVoiceRoutingPolicy)
 
 #EndRegion Step3 Skype - CsGeneral tab
+
+#Region Step3 Skype - CsOnline tab
+$TabIndex = 0
+$tab_Step3_CsOnline.Location = $Loc_Tab_Tier3
+	$tab_Step3_CsOnline.Name = "tab_Step3_CsOnline"
+	$tab_Step3_CsOnline.Padding = $System_Windows_Forms_Padding_Reusable
+	$tab_Step3_CsOnline.Size = $Size_Tab_Small
+	$tab_Step3_CsOnline.TabIndex = $TabIndex++
+	$tab_Step3_CsOnline.Text = "  CsOnline  "
+	$tab_Step3_CsOnline.UseVisualStyleBackColor = $True
+	$tab_Step3_Skype_Tier2.Controls.Add($tab_Step3_CsOnline)
+$bx_CsOnline_Functions.Dock = 5
+	$bx_CsOnline_Functions.Location = $Loc_Box_1
+	$bx_CsOnline_Functions.Name = "bx_CsOnline_Functions"
+	$bx_CsOnline_Functions.Size = $Size_Box_3
+	$bx_CsOnline_Functions.TabIndex = $TabIndex++
+	$bx_CsOnline_Functions.TabStop = $False
+	$tab_Step3_CsOnline.Controls.Add($bx_CsOnline_Functions)
+$btn_Step3_CsOnline_CheckAll.Font = $font_SegoeUI_9pt_normal
+	$btn_Step3_CsOnline_CheckAll.Location = $Loc_CheckAll_3
+	$btn_Step3_CsOnline_CheckAll.Name = "btn_Step3_CsOnline_CheckAll"
+	$btn_Step3_CsOnline_CheckAll.Size = $Size_Btn_3
+	$btn_Step3_CsOnline_CheckAll.TabIndex = $TabIndex++
+	$btn_Step3_CsOnline_CheckAll.Text = "Check all on this tab"
+	$btn_Step3_CsOnline_CheckAll.UseVisualStyleBackColor = $True
+	$btn_Step3_CsOnline_CheckAll.add_Click($handler_btn_Step3_CsOnline_CheckAll_Click)
+	$bx_CsOnline_Functions.Controls.Add($btn_Step3_CsOnline_CheckAll)
+$btn_Step3_CsOnline_UncheckAll.Font = $font_SegoeUI_9pt_normal
+	$btn_Step3_CsOnline_UncheckAll.Location = $Loc_UncheckAll_3
+	$btn_Step3_CsOnline_UncheckAll.Name = "btn_Step3_CsOnline_UncheckAll"
+	$btn_Step3_CsOnline_UncheckAll.Size = $Size_Btn_3
+	$btn_Step3_CsOnline_UncheckAll.TabIndex = $TabIndex++
+	$btn_Step3_CsOnline_UncheckAll.Text = "Uncheck all on this tab"
+	$btn_Step3_CsOnline_UncheckAll.UseVisualStyleBackColor = $True
+	$btn_Step3_CsOnline_UncheckAll.add_Click($handler_btn_Step3_CsOnline_UncheckAll_Click)
+	$bx_CsOnline_Functions.Controls.Add($btn_Step3_CsOnline_UncheckAll)
+$Col_1_loc = 35
+$Col_2_loc = 290
+$Row_1_loc = 0
+$Row_2_loc = 0
+$chk_Skype_CsOnlineDialInConferencingBridge.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsOnlineDialInConferencingBridge.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsOnlineDialInConferencingBridge.Name = "chk_Skype_CsOnlineDialInConferencingBridge"
+	$chk_Skype_CsOnlineDialInConferencingBridge.Size = $Size_Chk
+	$chk_Skype_CsOnlineDialInConferencingBridge.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineDialInConferencingBridge.Text = "DialInConferencingBridge"
+	$chk_Skype_CsOnlineDialInConferencingBridge.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialInConferencingBridge)
+$chk_Skype_CsOnlineDialinConferencingPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsOnlineDialinConferencingPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsOnlineDialinConferencingPolicy.Name = "chk_Skype_CsOnlineDialinConferencingPolicy"
+	$chk_Skype_CsOnlineDialinConferencingPolicy.Size = $Size_Chk
+	$chk_Skype_CsOnlineDialinConferencingPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineDialinConferencingPolicy.Text = "DialinConferencingPolicy"
+	$chk_Skype_CsOnlineDialinConferencingPolicy.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialinConferencingPolicy)
+$chk_Skype_CsOnlineDialInConferencingServiceNumber.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsOnlineDialInConferencingServiceNumber.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsOnlineDialInConferencingServiceNumber.Name = "chk_Skype_CsOnlineDialInConferencingServiceNumber"
+	$chk_Skype_CsOnlineDialInConferencingServiceNumber.Size = $Size_Chk
+	$chk_Skype_CsOnlineDialInConferencingServiceNumber.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineDialInConferencingServiceNumber.Text = "DialInConferencingServiceNumber"
+	$chk_Skype_CsOnlineDialInConferencingServiceNumber.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialInConferencingServiceNumber)
+$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.Name = "chk_Skype_CsOnlineDialinConferencingTenantConfig"
+	$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.Size = $Size_Chk
+	$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.Text = "DialinConferencingTenantConfig"
+	$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialinConferencingTenantConfiguration)
+$chk_Skype_CsOnlineDialInConferencingTenantSettings.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsOnlineDialInConferencingTenantSettings.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsOnlineDialInConferencingTenantSettings.Name = "chk_Skype_CsOnlineDialInConferencingTenantSettings"
+	$chk_Skype_CsOnlineDialInConferencingTenantSettings.Size = $Size_Chk
+	$chk_Skype_CsOnlineDialInConferencingTenantSettings.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineDialInConferencingTenantSettings.Text = "DialInConferencingTenantSettings"
+	$chk_Skype_CsOnlineDialInConferencingTenantSettings.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialInConferencingTenantSettings)
+$chk_Skype_CsOnlineDialInConferencingUser.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsOnlineDialInConferencingUser.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsOnlineDialInConferencingUser.Name = "chk_Skype_CsOnlineDialInConferencingUser"
+	$chk_Skype_CsOnlineDialInConferencingUser.Size = $Size_Chk
+	$chk_Skype_CsOnlineDialInConferencingUser.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineDialInConferencingUser.Text = "DialInConferencingUser"
+	$chk_Skype_CsOnlineDialInConferencingUser.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialInConferencingUser)
+$chk_Skype_CsOnlineDialInConferencingUserInfo.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsOnlineDialInConferencingUserInfo.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsOnlineDialInConferencingUserInfo.Name = "chk_Skype_CsOnlineDialInConferencingUserInfo"
+	$chk_Skype_CsOnlineDialInConferencingUserInfo.Size = $Size_Chk
+	$chk_Skype_CsOnlineDialInConferencingUserInfo.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineDialInConferencingUserInfo.Text = "DialInConferencingUserInfo"
+	$chk_Skype_CsOnlineDialInConferencingUserInfo.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialInConferencingUserInfo)
+$chk_Skype_CsOnlineDialInConferencingUserState.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsOnlineDialInConferencingUserState.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsOnlineDialInConferencingUserState.Name = "chk_Skype_CsOnlineDialInConferencingUserState"
+	$chk_Skype_CsOnlineDialInConferencingUserState.Size = $Size_Chk
+	$chk_Skype_CsOnlineDialInConferencingUserState.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineDialInConferencingUserState.Text = "DialInConferencingUserState"
+	$chk_Skype_CsOnlineDialInConferencingUserState.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialInConferencingUserState)
+$chk_Skype_CsOnlineDialOutPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsOnlineDialOutPolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsOnlineDialOutPolicy.Name = "chk_Skype_CsOnlineDialOutPolicy"
+	$chk_Skype_CsOnlineDialOutPolicy.Size = $Size_Chk
+	$chk_Skype_CsOnlineDialOutPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineDialOutPolicy.Text = "DialOutPolicy"
+	$chk_Skype_CsOnlineDialOutPolicy.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialOutPolicy)
+$chk_Skype_CsOnlineDirectoryTenant.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsOnlineDirectoryTenant.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsOnlineDirectoryTenant.Name = "chk_Skype_CsOnlineDirectoryTenant"
+	$chk_Skype_CsOnlineDirectoryTenant.Size = $Size_Chk
+	$chk_Skype_CsOnlineDirectoryTenant.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineDirectoryTenant.Text = "DirectoryTenant"
+	$chk_Skype_CsOnlineDirectoryTenant.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDirectoryTenant)
+$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.Name = "chk_Skype_CsOnlineTelephoneNumberInventoryTypes"
+	$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.Size = $Size_Chk
+	$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.Text = "TelephoneNumberInventoryTypes"
+	$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineTelephoneNumberInventoryTypes)
+$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.Name = "chk_Skype_CsOnlineTelephoneNumberReservationsInfo"
+	$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.Size = $Size_Chk
+	$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.Text = "TelephoneNumberReservationsInfo"
+	$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineTelephoneNumberReservationsInformation)
+$chk_Skype_CsOnlineUser.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsOnlineUser.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsOnlineUser.Name = "chk_Skype_CsOnlineUser"
+	$chk_Skype_CsOnlineUser.Size = $Size_Chk
+	$chk_Skype_CsOnlineUser.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineUser.Text = "User"
+	$chk_Skype_CsOnlineUser.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineUser)
+$chk_Skype_CsOnlineVoicemailPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsOnlineVoicemailPolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsOnlineVoicemailPolicy.Name = "chk_Skype_CsOnlineVoicemailPolicy"
+	$chk_Skype_CsOnlineVoicemailPolicy.Size = $Size_Chk
+	$chk_Skype_CsOnlineVoicemailPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineVoicemailPolicy.Text = "VoicemailPolicy"
+	$chk_Skype_CsOnlineVoicemailPolicy.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineVoicemailPolicy)
+$chk_Skype_CsOnlineVoiceRoute.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsOnlineVoiceRoute.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsOnlineVoiceRoute.Name = "chk_Skype_CsOnlineVoiceRoute"
+	$chk_Skype_CsOnlineVoiceRoute.Size = $Size_Chk
+	$chk_Skype_CsOnlineVoiceRoute.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineVoiceRoute.Text = "VoiceRoute"
+	$chk_Skype_CsOnlineVoiceRoute.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineVoiceRoute)
+$chk_Skype_CsOnlineVoiceRoutingPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsOnlineVoiceRoutingPolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsOnlineVoiceRoutingPolicy.Name = "chk_Skype_CsOnlineVoiceRoutingPolicy"
+	$chk_Skype_CsOnlineVoiceRoutingPolicy.Size = $Size_Chk
+	$chk_Skype_CsOnlineVoiceRoutingPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineVoiceRoutingPolicy.Text = "VoiceRoutingPolicy"
+	$chk_Skype_CsOnlineVoiceRoutingPolicy.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineVoiceRoutingPolicy)
+
+#EndRegion Step3 Skype - CsOnline tab
 
 #Region Step3 Skype - CsTeams tab
 $TabIndex = 0
@@ -4126,6 +4095,16 @@ $chk_Step4_Sharepoint_Report.Checked = $True
 	$chk_Step4_Sharepoint_Report.Text = "Generate Excel for Sharepoint"
 	$chk_Step4_Sharepoint_Report.UseVisualStyleBackColor = $True
 	$bx_Step4_Functions.Controls.Add($chk_Step4_Sharepoint_Report)
+$chk_Step4_Skype_Report.Checked = $True
+	$chk_Step4_Skype_Report.CheckState = 1
+	$chk_Step4_Skype_Report.Font = $font_SegoeUI_9pt_normal
+	$chk_Step4_Skype_Report.Location = New-Object System.Drawing.Point(50,100)
+	$chk_Step4_Skype_Report.Name = "chk_Step4_Skype_Report"
+	$chk_Step4_Skype_Report.Size = $Size_Chk_long
+	$chk_Step4_Skype_Report.TabIndex = $TabIndex++
+	$chk_Step4_Skype_Report.Text = "Generate Excel for Skype"
+	$chk_Step4_Skype_Report.UseVisualStyleBackColor = $True
+	$bx_Step4_Functions.Controls.Add($chk_Step4_Skype_Report)
 
 <# $chk_Step4_Exchange_Environment_Doc.Checked = $True
 	$chk_Step4_Exchange_Environment_Doc.CheckState = 1
@@ -5310,7 +5289,6 @@ else
 # Exchange Online Remote Powershell that supports MFA - Hybrid blade of EAC - https://cmdletpswmodule.blob.core.windows.net/exopsmodule/Microsoft.Online.CSE.PSModule.Client.application
 # Security and Compliance Center - https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps
 
-$TestGUI = $true
 if ($TestGUI -eq $true)
 {}
 else {
@@ -5487,36 +5465,15 @@ if ($testfolder -eq $false)
 #Call the Function
 write-host "Starting Office 365 Data Collector (O365DC) v4 with the following parameters: " -ForegroundColor Cyan
 $EventText = "Starting Office 365 Data Collector (O365DC) v4 with the following parameters: `n"
-if ($NoEMS -eq $false)
-{
 	write-host "`tIni Settings`t" -ForegroundColor Cyan
 	$EventText += "`tIni Settings:`t" + $INI + "`n"
 	write-host "`t`tExchange Ini:`t" $INI_Exchange -ForegroundColor Cyan
 	$EventText += "`t`tExchange Ini:`t" + $INI_Exchange + "`n"
-	write-host "`tNon-Exchange cmdlet jobs" -ForegroundColor Cyan
-	$EventText += "`tNon-Exchange cmdlet jobs`n"
-	write-host "`tExchange cmdlet jobs" -ForegroundColor Cyan
-	$EventText += "`tExchange cmdlet jobs`n"
-	write-host "`t`tMax jobs:`t" $intExchangeJobs -ForegroundColor Cyan
-	$EventText += "`t`tMax jobs:`t" + $intExchangeJobs + "`n"
-	write-host "`t`tPolling: `t" $intExchangePolling " seconds" -ForegroundColor Cyan
-	$EventText += "`t`tPolling: `t`t" + $intExchangePolling + "`n"
-	write-host "`t`tTimeout:`t" $intExchJobTimeout " seconds" -ForegroundColor Cyan
-	$EventText += "`t`tTimeout:`t" + $intExchJobTimeout + "`n"
 
 	$EventLog = New-Object System.Diagnostics.EventLog('Application')
 	$EventLog.MachineName = "."
 	$EventLog.Source = "O365DC"
 	try{$EventLog.WriteEntry($EventText,"Information", 4)} catch{}
-}
-else
-{
-	write-host "`tNoEMS switch used" -ForegroundColor Cyan
-	$EventLog = New-Object System.Diagnostics.EventLog('Application')
-	$EventLog.MachineName = "."
-	$EventLog.Source = "O365DC"
-	try{$EventLog.WriteEntry("NoEMS switch used.","Information", 4)} catch{}
-}
 
 # Let's start the party
 New-O365DCForm

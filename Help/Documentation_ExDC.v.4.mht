@@ -4,7 +4,7 @@ Content-Type: multipart/related; boundary="----=_NextPart_01D4088A.58BD7F70"
 This document is a Single File Web Page, also known as a Web Archive file.  If you are seeing this message, your browser or editor doesn't support Web Archive files.  Please download a browser that supports Web Archive.
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4.htm
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4.htm
 Content-Transfer-Encoding: quoted-printable
 Content-Type: text/html; charset="windows-1252"
 
@@ -21,9 +21,9 @@ xmlns=3D"http://www.w3.org/TR/REC-html40">
 <meta name=3DProgId content=3DWord.Document>
 <meta name=3DGenerator content=3D"Microsoft Word 15">
 <meta name=3DOriginator content=3D"Microsoft Word 15">
-<link rel=3DFile-List href=3D"Documentation_ExDC.v.4_files/filelist.xml">
-<link rel=3DPreview href=3D"Documentation_ExDC.v.4_files/preview.wmf">
-<link rel=3DEdit-Time-Data href=3D"Documentation_ExDC.v.4_files/editdata.ms=
+<link rel=3DFile-List href=3D"Documentation_O365DC.v.4_files/filelist.xml">
+<link rel=3DPreview href=3D"Documentation_O365DC.v.4_files/preview.wmf">
+<link rel=3DEdit-Time-Data href=3D"Documentation_O365DC.v.4_files/editdata.ms=
 o">
 <!--[if !mso]>
 <style>
@@ -76,11 +76,11 @@ tring">Microsoft Azure Information Protection</o:MSIP_Label_f42aa342-8706-4=
   <o:AllowPNG/>
  </o:OfficeDocumentSettings>
 </xml><![endif]-->
-<link rel=3DdataStoreItem href=3D"Documentation_ExDC.v.4_files/item0001.xml"
-target=3D"Documentation_ExDC.v.4_files/props002.xml">
-<link rel=3DthemeData href=3D"Documentation_ExDC.v.4_files/themedata.thmx">
+<link rel=3DdataStoreItem href=3D"Documentation_O365DC.v.4_files/item0001.xml"
+target=3D"Documentation_O365DC.v.4_files/props002.xml">
+<link rel=3DthemeData href=3D"Documentation_O365DC.v.4_files/themedata.thmx">
 <link rel=3DcolorSchemeMapping
-href=3D"Documentation_ExDC.v.4_files/colorschememapping.xml">
+href=3D"Documentation_O365DC.v.4_files/colorschememapping.xml">
 <!--[if gte mso 9]><xml>
  <w:WordDocument>
   <w:SpellingState>Clean</w:SpellingState>
@@ -1676,11 +1676,11 @@ span.GramE
 	line-height:115%;}
  /* Page Definitions */
  @page
-	{mso-footnote-separator:url("Documentation_ExDC.v.4_files/header.htm") fs;
-	mso-footnote-continuation-separator:url("Documentation_ExDC.v.4_files/head=
+	{mso-footnote-separator:url("Documentation_O365DC.v.4_files/header.htm") fs;
+	mso-footnote-continuation-separator:url("Documentation_O365DC.v.4_files/head=
 er.htm") fcs;
-	mso-endnote-separator:url("Documentation_ExDC.v.4_files/header.htm") es;
-	mso-endnote-continuation-separator:url("Documentation_ExDC.v.4_files/heade=
+	mso-endnote-separator:url("Documentation_O365DC.v.4_files/header.htm") es;
+	mso-endnote-continuation-separator:url("Documentation_O365DC.v.4_files/heade=
 r.htm") ecs;}
 @page WordSection1
 	{size:8.5in 11.0in;
@@ -3411,7 +3411,7 @@ ul
 ne;
 tab-stops:.5in'><span style=3D'mso-ansi-language:EN-US'>Exchange Data Colle=
 ctor (<span
-class=3DSpellE>ExDC</span>) v4.0.1<o:p></o:p></span></p>
+class=3DSpellE>O365DC</span>) v4.0.1<o:p></o:p></span></p>
 
 <p class=3DMsoNormal><i style=3D'mso-bidi-font-style:normal'>This is writte=
 n for v4.0.1<o:p></o:p></i></p>
@@ -3434,7 +3434,7 @@ anglekx:
 0;mso-effects-shadow-angleky:0;mso-fareast-language:JA'>Overview<o:p></o:p>=
 </span></b></p>
 
-<p class=3DMsoNormal><span class=3DSpellE>ExDC</span> is used to collect a =
+<p class=3DMsoNormal><span class=3DSpellE>O365DC</span> is used to collect a =
 large amount
 of information about an Exchange environment with minimal effort by the
 PFE.<span style=3D'mso-spacerun:yes'>� </span>The data is initially collect=
@@ -3450,7 +3450,7 @@ style=3D'font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-fa=
 mily:
 Symbol'><span style=3D'mso-list:Ignore'>�<span style=3D'font:7.0pt "Times N=
 ew Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span class=3DSpellE>ExDC_DC</span> � Spread=
+</span></span></span><![endif]><span class=3DSpellE>O365DC_DC</span> � Spread=
 sheet
 of WMI and registry settings on domain controllers</p>
 
@@ -3460,7 +3460,7 @@ style=3D'font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-fa=
 mily:
 Symbol'><span style=3D'mso-list:Ignore'>�<span style=3D'font:7.0pt "Times N=
 ew Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span class=3DSpellE>ExDC_Exch</span> � Spre=
+</span></span></span><![endif]><span class=3DSpellE>O365DC_Exch</span> � Spre=
 adsheet
 of WMI and registry settings on Exchange servers</p>
 
@@ -3470,7 +3470,7 @@ style=3D'font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-fa=
 mily:
 Symbol'><span style=3D'mso-list:Ignore'>�<span style=3D'font:7.0pt "Times N=
 ew Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span class=3DSpellE>ExDC_Exchange</span> � Spr=
+</span></span></span><![endif]><span class=3DSpellE>O365DC_Exchange</span> � Spr=
 eadsheet
 of Exchange organization cmdlet output</p>
 
@@ -3480,7 +3480,7 @@ style=3D'font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-fa=
 mily:
 Symbol'><span style=3D'mso-list:Ignore'>�<span style=3D'font:7.0pt "Times N=
 ew Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]><span class=3DSpellE>ExDC_ExchangeEnvironmen=
+</span></span></span><![endif]><span class=3DSpellE>O365DC_ExchangeEnvironmen=
 talReport</span>
 � Document of the summary of Exchange environment</p>
 
@@ -3638,7 +3638,7 @@ n:
 ects-shadow-pctsy:
 0%;mso-effects-shadow-anglekx:0;mso-effects-shadow-angleky:0;mso-fareast-la=
 nguage:
-JA'>ExDC</span></b></span><b><span style=3D'font-size:14.0pt;line-height:11=
+JA'>O365DC</span></b></span><b><span style=3D'font-size:14.0pt;line-height:11=
 0%;
 mso-ascii-font-family:Calibri;mso-fareast-font-family:Arial;mso-hansi-font-=
 family:
@@ -3653,7 +3653,7 @@ anglekx:
 0;mso-effects-shadow-angleky:0;mso-fareast-language:JA'> Usage<o:p></o:p></=
 span></b></p>
 
-<p class=3DMsoNormal>The <span class=3DSpellE>ExDC</span> supports the foll=
+<p class=3DMsoNormal>The <span class=3DSpellE>O365DC</span> supports the foll=
 owing
 optional parameters:</p>
 
@@ -3662,7 +3662,7 @@ The parameter displays the supported switches</p>
 
 <p class=3DMsoNormal style=3D'text-indent:.5in'><i style=3D'mso-bidi-font-s=
 tyle:normal'>Example:
-</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
+</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>O365DC=
 .v4.ps1
 �Help<o:p></o:p></span></p>
 
@@ -3678,7 +3678,7 @@ Exchange Throttling policy may be exceeded.</p>
 
 <p class=3DMsoNormal style=3D'text-indent:.5in'><i style=3D'mso-bidi-font-s=
 tyle:normal'>Example:
-</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
+</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>O365DC=
 .v4.ps1
 �<span class=3DSpellE>JobCount_Exchange</span> 12</span><i style=3D'mso-bidi-f=
 ont-style:
@@ -3691,7 +3691,7 @@ style=3D'mso-spacerun:yes'>� </span>The default value is 5 seconds.</p>
 
 <p class=3DMsoNormal style=3D'text-indent:.5in'><i style=3D'mso-bidi-font-s=
 tyle:normal'>Example:
-</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
+</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>O365DC=
 .v4.ps1
 �<span class=3DSpellE>JobPolling_Exchange</span> 30</span></p>
 
@@ -3702,8 +3702,8 @@ style=3D'mso-spacerun:yes'>� </span>The default value is 25.</p>
 
 <p class=3DMsoNormal style=3D'text-indent:.5in'><i style=3D'mso-bidi-font-s=
 tyle:normal'>Example:
-</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
-ExDC.v4.ps1
+</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>O365DC=
+O365DC.v4.ps1
 �<span class=3DSpellE>JobCount_WMI</span> 40<o:p></o:p></span></p>
 
 <p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>-<span class=
@@ -3713,7 +3713,7 @@ style=3D'mso-spacerun:yes'>� </span>The default value is 5 seconds.</p>
 
 <p class=3DMsoNormal style=3D'text-indent:.5in'><i style=3D'mso-bidi-font-s=
 tyle:normal'>Example:
-</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
+</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>O365DC=
 .v4.ps1
 �<span class=3DSpellE>JobPolling_WMI</span> 30</span></p>
 
@@ -3730,7 +3730,7 @@ servers over slow connections.</p>
 
 <p class=3DMsoNormal style=3D'text-indent:.5in'><i style=3D'mso-bidi-font-s=
 tyle:normal'>Example:
-</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
+</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>O365DC=
 .v4.ps1
 �<span class=3DSpellE>Timeout_WMI_Job</span> 1200</span></p>
 
@@ -3747,7 +3747,7 @@ servers over slow connections.</p>
 
 <p class=3DMsoNormal style=3D'text-indent:.5in'><i style=3D'mso-bidi-font-s=
 tyle:normal'>Example:
-</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
+</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>O365DC=
 .v4.ps1
 �<span class=3DSpellE>Timeout_Exchange_Job</span> 7200</span></p>
 
@@ -3764,7 +3764,7 @@ to the specified manually.</p>
 
 <p class=3DMsoNormal style=3D'text-indent:.5in'><i style=3D'mso-bidi-font-s=
 tyle:normal'>Example:
-</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
+</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>O365DC=
 .v4.ps1
 �<span class=3DSpellE>ServerForPSSession</span> ExchangeCAS3<o:p></o:p></sp=
 an></p>
@@ -3777,7 +3777,7 @@ the Domain Controllers and Exchange Servers tests.</p>
 
 <p class=3DMsoNormal style=3D'text-indent:.5in'><i style=3D'mso-bidi-font-s=
 tyle:normal'>Example:
-</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
+</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>O365DC=
 .v4.ps1
 �<span class=3DSpellE>INI_Server</span> �.\Sample_INI_server.ini�</span></p>
 
@@ -3789,7 +3789,7 @@ for the Cluster tests.</p>
 
 <p class=3DMsoNormal style=3D'text-indent:.5in'><i style=3D'mso-bidi-font-s=
 tyle:normal'>Example:
-</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
+</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>O365DC=
 .v4.ps1
 �<span class=3DSpellE>INI_Cluster</span> �.\Sample_INI_cluster.ini�</span><=
 /p>
@@ -3802,24 +3802,24 @@ for the Exchange Functions.</p>
 
 <p class=3DMsoNormal style=3D'text-indent:.5in'><i style=3D'mso-bidi-font-s=
 tyle:normal'>Example:
-</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
+</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>O365DC=
 .v4.ps1
 �<span class=3DSpellE>INI_Exchange</span> �.\Sample_INI_Exchange.ini�</span></p>
 
 <p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>-<span class=
 =3DSpellE>NoEMS</span><br>
-</b>This switch will launch the <span class=3DSpellE>ExDC</span> GUI and by=
+</b>This switch will launch the <span class=3DSpellE>O365DC</span> GUI and by=
 pass
 the checks for Exchange Management Tools.<span style=3D'mso-spacerun:yes'>�
 </span></p>
 
 <p class=3DMsoNormal style=3D'text-indent:.5in'><i style=3D'mso-bidi-font-s=
 tyle:normal'>Example:
-</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>ExDC=
+</i><span style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>O365DC=
 .v4.ps1
 �<span class=3DSpellE>NoEMS</span><o:p></o:p></span></p>
 
-<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>ExDC.v4_NotAd=
+<p class=3DMsoNormal><b style=3D'mso-bidi-font-weight:normal'>O365DC.v4_NotAd=
 min.ps1<br>
 </b>This script is used in cases where the account does not have local admin
 permissions on the server or workstation.<span style=3D'mso-spacerun:yes'>�
@@ -3848,7 +3848,7 @@ nter;
 mso-effects-shadow-pctsx:0%;mso-effects-shadow-pctsy:0%;mso-effects-shadow-=
 anglekx:
 0;mso-effects-shadow-angleky:0;mso-fareast-language:JA'>Installing <span
-class=3DSpellE>ExDC</span> on the Data Collection Server<o:p></o:p></span><=
+class=3DSpellE>O365DC</span> on the Data Collection Server<o:p></o:p></span><=
 /b></p>
 
 <p class=3DMsoListParagraphCxSpFirst style=3D'text-indent:-.25in;mso-list:l=
@@ -3857,7 +3857,7 @@ style=3D'mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
 style=3D'mso-list:Ignore'>1.<span style=3D'font:7.0pt "Times New Roman"'>&n=
 bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>The most current version of <span class=3DSp=
-ellE>ExDC</span>
+ellE>O365DC</span>
 can be found at: <span class=3DMsoHyperlink>https://gallery.technet.microso=
 ft.com/Exchange-Data-Collector-ed48c3db</span>
 </p>
@@ -3958,7 +3958,7 @@ an><span
   <![endif]></v:textbox>
  <w:wrap type=3D"through"/>
 </v:shape><![endif]--><![if !vml]><img width=3D145 height=3D33
-src=3D"Documentation_ExDC.v.4_files/image001.png" align=3Dleft hspace=3D12
+src=3D"Documentation_O365DC.v.4_files/image001.png" align=3Dleft hspace=3D12
 alt=3D"Text Box: Figure 1: Blocked File" v:shapes=3D"Text_x0020_Box_x0020_1=
 1"><![endif]><span
 style=3D'mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id=3D"_x0000_t75"
@@ -3986,10 +3986,10 @@ style=3D'mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype id=3D"_x0000_t75"
 =3D"#_x0000_t75"
  style=3D'width:105.75pt;height:2in;visibility:visible;mso-wrap-style:squar=
 e'>
- <v:imagedata src=3D"Documentation_ExDC.v.4_files/image002.png" o:title=3D"=
+ <v:imagedata src=3D"Documentation_O365DC.v.4_files/image002.png" o:title=3D"=
 "/>
 </v:shape><![endif]--><![if !vml]><img width=3D141 height=3D192
-src=3D"Documentation_ExDC.v.4_files/image003.jpg" v:shapes=3D"Picture_x0020=
+src=3D"Documentation_O365DC.v.4_files/image003.jpg" v:shapes=3D"Picture_x0020=
 _8"><![endif]></span></p>
 
 <p class=3DMsoListParagraphCxSpMiddle><o:p>&nbsp;</o:p></p>
@@ -4013,7 +4013,7 @@ n:
 ects-shadow-pctsy:
 0%;mso-effects-shadow-anglekx:0;mso-effects-shadow-angleky:0;mso-fareast-la=
 nguage:
-JA'>ExDC</span></b></span><b><span style=3D'font-size:14.0pt;line-height:11=
+JA'>O365DC</span></b></span><b><span style=3D'font-size:14.0pt;line-height:11=
 0%;
 mso-ascii-font-family:Calibri;mso-fareast-font-family:Arial;mso-hansi-font-=
 family:
@@ -4038,10 +4038,10 @@ yes'><!--[if gte vml 1]><v:shape
  id=3D"Picture_x0020_13" o:spid=3D"_x0000_i1039" type=3D"#_x0000_t75" style=
 =3D'width:3in;
  height:233.25pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src=3D"Documentation_ExDC.v.4_files/image004.png" o:title=3D"=
+ <v:imagedata src=3D"Documentation_O365DC.v.4_files/image004.png" o:title=3D"=
 "/>
 </v:shape><![endif]--><![if !vml]><img width=3D288 height=3D311
-src=3D"Documentation_ExDC.v.4_files/image005.jpg" v:shapes=3D"Picture_x0020=
+src=3D"Documentation_O365DC.v.4_files/image005.jpg" v:shapes=3D"Picture_x0020=
 _13"><![endif]></span><span
 style=3D'font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
 mso-hansi-theme-font:minor-latin;mso-bidi-theme-font:minor-latin'><o:p></o:=
@@ -4049,7 +4049,7 @@ p></span></h3>
 
 <p class=3DMsoNormal><o:p>&nbsp;</o:p></p>
 
-<p class=3DMsoNormal>The <span class=3DSpellE>ExDC</span> GUI consists of 4=
+<p class=3DMsoNormal>The <span class=3DSpellE>O365DC</span> GUI consists of 4=
  main
 sections � the menu, the main tab group, the activity area, and the status =
 bar.</p>
@@ -4078,15 +4078,15 @@ application log<o:p></o:p></b></p>
 
 <p class=3DMsoNormal style=3D'margin-left:.5in'>This selection will save al=
 l �<span
-class=3DSpellE>ExDC</span>� events from the application log to an <span
-class=3DSpellE>ExDC_Events</span>_&lt;<span class=3DSpellE>TimeStamp</span>=
+class=3DSpellE>O365DC</span>� events from the application log to an <span
+class=3DSpellE>O365DC_Events</span>_&lt;<span class=3DSpellE>TimeStamp</span>=
 &gt;.txt
 file.<span style=3D'mso-spacerun:yes'>� </span>After the application events=
  have
 been saved to the text file, it will create a zip file called <span
-class=3DSpellE>ExDCPackagedLogs</span>_&lt;<span class=3DSpellE>TimeStamp</=
+class=3DSpellE>O365DCPackagedLogs</span>_&lt;<span class=3DSpellE>TimeStamp</=
 span>&gt;.zip
-containing all ExDC_Events*.txt files, all ExDC_Step3_Transcript.txt files,=
+containing all O365DC_Events*.txt files, all O365DC_Step3_Transcript.txt files,=
  and
 all FailedPing*.txt files.</p>
 
@@ -4134,7 +4134,7 @@ out<o:p></o:p></b></p>
 
 <p class=3DMsoNormal style=3D'margin-left:.5in'>This will display version a=
 nd
-release date information on this build of <span class=3DSpellE>ExDC</span><=
+release date information on this build of <span class=3DSpellE>O365DC</span><=
 /p>
 
 <h3><span style=3D'font-family:"Calibri",sans-serif;mso-ascii-theme-font:mi=
@@ -4155,7 +4155,7 @@ ity
 Area<o:p></o:p></span></h3>
 
 <p class=3DMsoListParagraph style=3D'margin-left:0in;mso-add-space:auto'>The
-Activity Area takes up most of the area of the <span class=3DSpellE>ExDC</s=
+Activity Area takes up most of the area of the <span class=3DSpellE>O365DC</s=
 pan>
 GUI.<span style=3D'mso-spacerun:yes'>� </span>When Targets is selected, the
 Activity Area will have tabs for Domain Controllers and Exchange Servers.<s=
@@ -4203,7 +4203,7 @@ nter;
 mso-effects-shadow-pctsx:0%;mso-effects-shadow-pctsy:0%;mso-effects-shadow-=
 anglekx:
 0;mso-effects-shadow-angleky:0;mso-fareast-language:JA'>Using <span
-class=3DSpellE>ExDC</span> to Collect Data<o:p></o:p></span></b></p>
+class=3DSpellE>O365DC</span> to Collect Data<o:p></o:p></span></b></p>
 
 <h3><a name=3D"_Hlk517257004"><span style=3D'font-family:"Calibri",sans-ser=
 if;
@@ -4243,7 +4243,7 @@ style=3D'mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
 style=3D'mso-list:Ignore'>3.<span style=3D'font:7.0pt "Times New Roman"'>&n=
 bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>In the <span class=3DSpellE>Powershell</span>
-window, navigate to the working path of the <span class=3DSpellE>ExDC</span>
+window, navigate to the working path of the <span class=3DSpellE>O365DC</span>
 files</p>
 
 <p class=3DMsoListParagraphCxSpLast style=3D'text-indent:-.25in;mso-list:l6=
@@ -4251,12 +4251,12 @@ files</p>
 style=3D'mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
 style=3D'mso-list:Ignore'>4.<span style=3D'font:7.0pt "Times New Roman"'>&n=
 bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Run <span class=3DSpellE>ExDC</span> with th=
+</span></span></span><![endif]>Run <span class=3DSpellE>O365DC</span> with th=
 e following
 command:</p>
 
 <p class=3DMsoNormal style=3D'margin-left:.25in;text-indent:.25in'><span
-style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>.\ExDC.v4.ps1<=
+style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>.\O365DC.v4.ps1<=
 o:p></o:p></span></p>
 
 <p class=3DMsoListParagraphCxSpFirst style=3D'text-indent:-.25in;mso-list:l=
@@ -4275,10 +4275,10 @@ mso-add-space:auto;text-align:center'><span style=3D'mso-no-proof:yes'><!--=
  id=3D"Picture_x0020_14" o:spid=3D"_x0000_i1038" type=3D"#_x0000_t75" style=
 =3D'width:3in;
  height:36.75pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src=3D"Documentation_ExDC.v.4_files/image006.png" o:title=3D"=
+ <v:imagedata src=3D"Documentation_O365DC.v.4_files/image006.png" o:title=3D"=
 "/>
 </v:shape><![endif]--><![if !vml]><img width=3D288 height=3D49
-src=3D"Documentation_ExDC.v.4_files/image007.jpg" v:shapes=3D"Picture_x0020=
+src=3D"Documentation_O365DC.v.4_files/image007.jpg" v:shapes=3D"Picture_x0020=
 _14"><![endif]></span></p>
 
 <p class=3DMsoListParagraphCxSpLast style=3D'text-indent:-.25in;mso-list:l6=
@@ -4305,10 +4305,10 @@ style=3D'mso-no-proof:yes'><!--[if gte vml 1]><v:shape id=3D"Picture_x0020_=
  o:spid=3D"_x0000_i1037" type=3D"#_x0000_t75" style=3D'width:3in;height:233=
 .25pt;
  visibility:visible;mso-wrap-style:square'>
- <v:imagedata src=3D"Documentation_ExDC.v.4_files/image008.png" o:title=3D"=
+ <v:imagedata src=3D"Documentation_O365DC.v.4_files/image008.png" o:title=3D"=
 "/>
 </v:shape><![endif]--><![if !vml]><img width=3D288 height=3D311
-src=3D"Documentation_ExDC.v.4_files/image009.png" v:shapes=3D"Picture_x0020=
+src=3D"Documentation_O365DC.v.4_files/image009.png" v:shapes=3D"Picture_x0020=
 _21"><![endif]></span></p>
 
 <p class=3DMsoListParagraphCxSpFirst style=3D'text-indent:-.25in;mso-list:l=
@@ -4335,10 +4335,10 @@ mso-add-space:auto;text-align:center'><span style=3D'mso-no-proof:yes'><!--=
  id=3D"Picture_x0020_23" o:spid=3D"_x0000_i1036" type=3D"#_x0000_t75" style=
 =3D'width:3in;
  height:234.75pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src=3D"Documentation_ExDC.v.4_files/image010.png" o:title=3D"=
+ <v:imagedata src=3D"Documentation_O365DC.v.4_files/image010.png" o:title=3D"=
 "/>
 </v:shape><![endif]--><![if !vml]><img width=3D288 height=3D313
-src=3D"Documentation_ExDC.v.4_files/image011.png" v:shapes=3D"Picture_x0020=
+src=3D"Documentation_O365DC.v.4_files/image011.png" v:shapes=3D"Picture_x0020=
 _23"><![endif]></span></p>
 
 <p class=3DMsoListParagraphCxSpMiddle><o:p>&nbsp;</o:p></p>
@@ -4369,10 +4369,10 @@ mso-add-space:auto;text-align:center'><span style=3D'mso-no-proof:yes'><!--=
  id=3D"Picture_x0020_24" o:spid=3D"_x0000_i1035" type=3D"#_x0000_t75" style=
 =3D'width:3in;
  height:234pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src=3D"Documentation_ExDC.v.4_files/image012.png" o:title=3D"=
+ <v:imagedata src=3D"Documentation_O365DC.v.4_files/image012.png" o:title=3D"=
 "/>
 </v:shape><![endif]--><![if !vml]><img width=3D288 height=3D312
-src=3D"Documentation_ExDC.v.4_files/image013.png" v:shapes=3D"Picture_x0020=
+src=3D"Documentation_O365DC.v.4_files/image013.png" v:shapes=3D"Picture_x0020=
 _24"><![endif]></span></p>
 
 <p class=3DMsoListParagraphCxSpMiddle><o:p>&nbsp;</o:p></p>
@@ -4403,10 +4403,10 @@ style=3D'mso-no-proof:yes'><!--[if gte vml 1]><v:shape id=3D"Picture_x0020_=
  o:spid=3D"_x0000_i1034" type=3D"#_x0000_t75" style=3D'width:3in;height:235=
 .5pt;
  visibility:visible;mso-wrap-style:square'>
- <v:imagedata src=3D"Documentation_ExDC.v.4_files/image014.png" o:title=3D"=
+ <v:imagedata src=3D"Documentation_O365DC.v.4_files/image014.png" o:title=3D"=
 "/>
 </v:shape><![endif]--><![if !vml]><img width=3D288 height=3D314
-src=3D"Documentation_ExDC.v.4_files/image015.jpg" v:shapes=3D"Picture_x0020=
+src=3D"Documentation_O365DC.v.4_files/image015.jpg" v:shapes=3D"Picture_x0020=
 _26"><![endif]></span></p>
 
 <p class=3DMsoListParagraph style=3D'text-indent:-.25in;mso-list:l6 level1 =
@@ -4425,10 +4425,10 @@ style=3D'mso-no-proof:yes'><!--[if gte vml 1]><v:shape id=3D"Picture_x0020_=
  o:spid=3D"_x0000_i1033" type=3D"#_x0000_t75" style=3D'width:3in;height:232=
 .5pt;
  visibility:visible;mso-wrap-style:square'>
- <v:imagedata src=3D"Documentation_ExDC.v.4_files/image016.png" o:title=3D"=
+ <v:imagedata src=3D"Documentation_O365DC.v.4_files/image016.png" o:title=3D"=
 "/>
 </v:shape><![endif]--><![if !vml]><img width=3D288 height=3D310
-src=3D"Documentation_ExDC.v.4_files/image017.jpg" v:shapes=3D"Picture_x0020=
+src=3D"Documentation_O365DC.v.4_files/image017.jpg" v:shapes=3D"Picture_x0020=
 _27"><![endif]></span></p>
 
 <p class=3DMsoListParagraph style=3D'text-indent:-.25in;mso-list:l6 level1 =
@@ -4446,10 +4446,10 @@ style=3D'mso-no-proof:yes'><!--[if gte vml 1]><v:shape id=3D"Picture_x0020_=
  o:spid=3D"_x0000_i1032" type=3D"#_x0000_t75" style=3D'width:3in;height:234=
 pt;
  visibility:visible;mso-wrap-style:square'>
- <v:imagedata src=3D"Documentation_ExDC.v.4_files/image018.png" o:title=3D"=
+ <v:imagedata src=3D"Documentation_O365DC.v.4_files/image018.png" o:title=3D"=
 "/>
 </v:shape><![endif]--><![if !vml]><img width=3D288 height=3D312
-src=3D"Documentation_ExDC.v.4_files/image019.jpg" v:shapes=3D"Picture_x0020=
+src=3D"Documentation_O365DC.v.4_files/image019.jpg" v:shapes=3D"Picture_x0020=
 _28"><![endif]></span></p>
 
 <p class=3DMsoListParagraph style=3D'text-indent:-.25in;mso-list:l6 level1 =
@@ -4466,10 +4466,10 @@ style=3D'mso-no-proof:yes'><!--[if gte vml 1]><v:shape id=3D"Picture_x0020_=
  o:spid=3D"_x0000_i1031" type=3D"#_x0000_t75" style=3D'width:3in;height:234=
 pt;
  visibility:visible;mso-wrap-style:square'>
- <v:imagedata src=3D"Documentation_ExDC.v.4_files/image020.png" o:title=3D"=
+ <v:imagedata src=3D"Documentation_O365DC.v.4_files/image020.png" o:title=3D"=
 "/>
 </v:shape><![endif]--><![if !vml]><img width=3D288 height=3D312
-src=3D"Documentation_ExDC.v.4_files/image021.jpg" v:shapes=3D"Picture_x0020=
+src=3D"Documentation_O365DC.v.4_files/image021.jpg" v:shapes=3D"Picture_x0020=
 _29"><![endif]></span></p>
 
 <p class=3DMsoListParagraph style=3D'text-indent:-.25in;mso-list:l6 level1 =
@@ -4487,10 +4487,10 @@ style=3D'mso-no-proof:yes'><!--[if gte vml 1]><v:shape id=3D"Picture_x0020_=
  o:spid=3D"_x0000_i1030" type=3D"#_x0000_t75" style=3D'width:3in;height:234=
 pt;
  visibility:visible;mso-wrap-style:square'>
- <v:imagedata src=3D"Documentation_ExDC.v.4_files/image022.png" o:title=3D"=
+ <v:imagedata src=3D"Documentation_O365DC.v.4_files/image022.png" o:title=3D"=
 "/>
 </v:shape><![endif]--><![if !vml]><img width=3D288 height=3D312
-src=3D"Documentation_ExDC.v.4_files/image023.jpg" v:shapes=3D"Picture_x0020=
+src=3D"Documentation_O365DC.v.4_files/image023.jpg" v:shapes=3D"Picture_x0020=
 _30"><![endif]></span></p>
 
 <p class=3DMsoListParagraph style=3D'text-indent:-.25in;mso-list:l6 level1 =
@@ -4508,10 +4508,10 @@ style=3D'mso-no-proof:yes'><!--[if gte vml 1]><v:shape id=3D"Picture_x0020_=
  o:spid=3D"_x0000_i1029" type=3D"#_x0000_t75" style=3D'width:3in;height:232=
 .5pt;
  visibility:visible;mso-wrap-style:square'>
- <v:imagedata src=3D"Documentation_ExDC.v.4_files/image024.png" o:title=3D"=
+ <v:imagedata src=3D"Documentation_O365DC.v.4_files/image024.png" o:title=3D"=
 "/>
 </v:shape><![endif]--><![if !vml]><img width=3D288 height=3D310
-src=3D"Documentation_ExDC.v.4_files/image025.jpg" v:shapes=3D"Picture_x0020=
+src=3D"Documentation_O365DC.v.4_files/image025.jpg" v:shapes=3D"Picture_x0020=
 _37"><![endif]></span></p>
 
 <p class=3DMsoListParagraphCxSpFirst style=3D'text-indent:-.25in;mso-list:l=
@@ -4530,10 +4530,10 @@ x0020_38"
  o:spid=3D"_x0000_i1028" type=3D"#_x0000_t75" style=3D'width:3in;height:233=
 .25pt;
  visibility:visible;mso-wrap-style:square'>
- <v:imagedata src=3D"Documentation_ExDC.v.4_files/image026.png" o:title=3D"=
+ <v:imagedata src=3D"Documentation_O365DC.v.4_files/image026.png" o:title=3D"=
 "/>
 </v:shape><![endif]--><![if !vml]><img width=3D288 height=3D311
-src=3D"Documentation_ExDC.v.4_files/image027.jpg" v:shapes=3D"Picture_x0020=
+src=3D"Documentation_O365DC.v.4_files/image027.jpg" v:shapes=3D"Picture_x0020=
 _38"><![endif]></span></p>
 
 <p class=3DMsoListParagraphCxSpMiddle style=3D'text-indent:-.25in;mso-list:=
@@ -4553,10 +4553,10 @@ style=3D'mso-no-proof:yes'><!--[if gte vml 1]><v:shape id=3D"Picture_x0020_=
  o:spid=3D"_x0000_i1027" type=3D"#_x0000_t75" style=3D'width:3in;height:233=
 .25pt;
  visibility:visible;mso-wrap-style:square'>
- <v:imagedata src=3D"Documentation_ExDC.v.4_files/image028.png" o:title=3D"=
+ <v:imagedata src=3D"Documentation_O365DC.v.4_files/image028.png" o:title=3D"=
 "/>
 </v:shape><![endif]--><![if !vml]><img width=3D288 height=3D311
-src=3D"Documentation_ExDC.v.4_files/image029.jpg" v:shapes=3D"Picture_x0020=
+src=3D"Documentation_O365DC.v.4_files/image029.jpg" v:shapes=3D"Picture_x0020=
 _39"><![endif]></span><o:p></o:p></p>
 
 <p class=3DMsoListParagraphCxSpMiddle style=3D'text-indent:-.25in;mso-list:=
@@ -4590,7 +4590,7 @@ nter;
 mso-effects-shadow-pctsx:0%;mso-effects-shadow-pctsy:0%;mso-effects-shadow-=
 anglekx:
 0;mso-effects-shadow-angleky:0;mso-fareast-language:JA'>Assembling <span
-class=3DSpellE>ExDC</span> Data into Reports<o:p></o:p></span></b></p>
+class=3DSpellE>O365DC</span> Data into Reports<o:p></o:p></span></b></p>
 
 <p class=3DMsoListParagraph><span class=3DMsoSubtleEmphasis>Note:<span
 style=3D'mso-spacerun:yes'>� </span>When the report generation completes, e=
@@ -4629,10 +4629,10 @@ mso-add-space:auto;text-align:center'><span style=3D'mso-no-proof:yes'><!--=
  id=3D"Picture_x0020_1" o:spid=3D"_x0000_i1026" type=3D"#_x0000_t75" style=
 =3D'width:3in;
  height:233.25pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src=3D"Documentation_ExDC.v.4_files/image030.png" o:title=3D"=
+ <v:imagedata src=3D"Documentation_O365DC.v.4_files/image030.png" o:title=3D"=
 "/>
 </v:shape><![endif]--><![if !vml]><img width=3D288 height=3D311
-src=3D"Documentation_ExDC.v.4_files/image031.jpg" v:shapes=3D"Picture_x0020=
+src=3D"Documentation_O365DC.v.4_files/image031.jpg" v:shapes=3D"Picture_x0020=
 _1"><![endif]></span></p>
 
 <p class=3DMsoListParagraphCxSpMiddle style=3D'margin-left:0in;mso-add-spac=
@@ -4711,7 +4711,7 @@ style=3D'mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
 style=3D'mso-list:Ignore'>4.<span style=3D'font:7.0pt "Times New Roman"'>&n=
 bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </span></span></span><![endif]>In the <span class=3DSpellE>Powershell</span>
-window, navigate to the working path of the <span class=3DSpellE>ExDC</span>
+window, navigate to the working path of the <span class=3DSpellE>O365DC</span>
 files</p>
 
 <p class=3DMsoListParagraphCxSpLast style=3D'text-indent:-.25in;mso-list:l1=
@@ -4719,11 +4719,11 @@ files</p>
 style=3D'mso-bidi-font-family:Calibri;mso-bidi-theme-font:minor-latin'><span
 style=3D'mso-list:Ignore'>5.<span style=3D'font:7.0pt "Times New Roman"'>&n=
 bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span></span><![endif]>Run <span class=3DSpellE>ExDC</span> with the
+</span></span></span><![endif]>Run <span class=3DSpellE>O365DC</span> with the
 following command:</p>
 
 <p class=3DMsoNormal style=3D'margin-left:.25in;text-indent:.25in'><span
-style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>.\ExDC.v4.ps1 =
+style=3D'font-family:Consolas;mso-bidi-font-family:Consolas'>.\O365DC.v4.ps1 =
 -<span
 class=3DSpellE>NoEMS</span><o:p></o:p></span></p>
 
@@ -4746,10 +4746,10 @@ mso-add-space:auto;text-align:center'><span style=3D'mso-no-proof:yes'><!--=
  id=3D"Picture_x0020_52" o:spid=3D"_x0000_i1025" type=3D"#_x0000_t75" style=
 =3D'width:3in;
  height:36.75pt;visibility:visible;mso-wrap-style:square'>
- <v:imagedata src=3D"Documentation_ExDC.v.4_files/image006.png" o:title=3D"=
+ <v:imagedata src=3D"Documentation_O365DC.v.4_files/image006.png" o:title=3D"=
 "/>
 </v:shape><![endif]--><![if !vml]><img width=3D288 height=3D49
-src=3D"Documentation_ExDC.v.4_files/image032.jpg" v:shapes=3D"Picture_x0020=
+src=3D"Documentation_O365DC.v.4_files/image032.jpg" v:shapes=3D"Picture_x0020=
 _52"><![endif]></span></p>
 
 <p class=3DMsoListParagraphCxSpMiddle style=3D'text-indent:-.25in;mso-list:=
@@ -4794,7 +4794,7 @@ mso-effects-shadow-pctsx:0%;mso-effects-shadow-pctsy:0%;mso-effects-shadow-=
 anglekx:
 0;mso-effects-shadow-angleky:0;mso-fareast-language:JA'>Troubleshooting <sp=
 an
-class=3DSpellE>ExDC</span><o:p></o:p></span></b></p>
+class=3DSpellE>O365DC</span><o:p></o:p></span></b></p>
 
 <h3><span class=3DSpellE><span style=3D'font-family:"Calibri",sans-serif;
 mso-ascii-theme-font:minor-latin;mso-hansi-theme-font:minor-latin;mso-bidi-=
@@ -4817,7 +4817,7 @@ reviewing the progress at a high level but does not contain much
 troubleshooting information.</p>
 
 <p class=3DMsoListParagraph><span class=3DMsoSubtleEmphasis>Note:<span
-style=3D'mso-spacerun:yes'>� </span>If <span class=3DSpellE>ExDC</span> fai=
+style=3D'mso-spacerun:yes'>� </span>If <span class=3DSpellE>ExO365DCspan> fai=
 ls during
 the Tests phase of a run and causes the form to crash with an unhandled
 exception, Stop-Transcript must be manually run from the <span class=3DSpel=
@@ -4838,7 +4838,7 @@ minor-latin'> text file<o:p></o:p></span></h3>
 <p class=3DMsoNormal style=3D'margin-bottom:7.5pt;line-height:normal;vertic=
 al-align:
 top'>The <span class=3DSpellE>FailedJobs</span> text file is created in the
-working path folder if any jobs fail during an <span class=3DSpellE>ExDC</s=
+working path folder if any jobs fail during an <span class=3DSpellE>O365DC</s=
 pan>
 run.<span style=3D'mso-spacerun:yes'>� </span>This file is designed to be a=
  quick
@@ -4860,7 +4860,7 @@ minor-latin'> text file<o:p></o:p></span></h3>
 
 <p class=3DMsoNormal style=3D'margin-bottom:7.5pt;line-height:normal;vertic=
 al-align:
-top'>While an <span class=3DSpellE>ExDC</span> run is underway, the <span
+top'>While an <span class=3DSpellE>O365DC</span> run is underway, the <span
 class=3DSpellE>RunningJobs</span> text file will be created.<span
 style=3D'mso-spacerun:yes'>� </span>This file is updated at the polling int=
 erval
@@ -4928,12 +4928,12 @@ Log<o:p></o:p></span></h3>
 
 <p class=3DMsoNormal style=3D'margin-bottom:7.5pt;line-height:normal;vertic=
 al-align:
-top'>The core of the troubleshooting for <span class=3DSpellE>ExDC</span> is
+top'>The core of the troubleshooting for <span class=3DSpellE>O365DC</span> is
 contained in the application log.<span style=3D'mso-spacerun:yes'>� </span>=
 During
-the run, <span class=3DSpellE>ExDC</span> will add events with a source of =
+the run, <span class=3DSpellE>O365DC</span> will add events with a source of =
 �<span
-class=3DSpellE>ExDC</span>� to the application log on the data collection
+class=3DSpellE>O365DC</span>� to the application log on the data collection
 server.<span style=3D'mso-spacerun:yes'>� </span>Events are logged:</p>
 
 <p class=3DMsoListParagraphCxSpFirst style=3D'margin-bottom:7.5pt;mso-add-s=
@@ -4954,7 +4954,7 @@ style=3D'font-family:"Courier New";mso-fareast-font-family:"Courier New"'><=
 span
 style=3D'mso-list:Ignore'>o<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;
-</span></span></span><![endif]>Information when <span class=3DSpellE>ExDC</=
+</span></span></span><![endif]>Information when <span class=3DSpellE>O365DC</=
 span>
 starts</p>
 
@@ -5017,7 +5017,7 @@ style=3D'font-family:"Courier New";mso-fareast-font-family:"Courier New"'><=
 span
 style=3D'mso-list:Ignore'>o<span style=3D'font:7.0pt "Times New Roman"'>&nb=
 sp;&nbsp;
-</span></span></span><![endif]>Information the <span class=3DSpellE>ExDC</s=
+</span></span></span><![endif]>Information the <span class=3DSpellE>O365DC</s=
 pan>
 run parameters</p>
 
@@ -5398,7 +5398,7 @@ auto;line-height:normal;vertical-align:top'><o:p>&nbsp;</o:p></p>
 </html>
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/preview.wmf
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/preview.wmf
 Content-Transfer-Encoding: base64
 Content-Type: image/x-wmf
 
@@ -5720,7 +5720,7 @@ EwIBAAEABQAAABQCAgACAAUAAAATAh4EAgAFAAAAEwIeBC4DBQAAABMCAgAuAwUAAAATAgIAAgAD
 AAAAAAA=
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/item0001.xml
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/item0001.xml
 Content-Transfer-Encoding: quoted-printable
 Content-Type: text/xml
 
@@ -5729,7 +5729,7 @@ ctedStyle=3D"\APA.XSL" StyleName=3D"APA" xmlns:b=3D"http://schemas.openxmlf=
 ormats.org/officeDocument/2006/bibliography" xmlns=3D"http://schemas.openxm=
 lformats.org/officeDocument/2006/bibliography"></b:Sources>
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/props002.xml
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/props002.xml
 Content-Transfer-Encoding: quoted-printable
 Content-Type: text/xml
 
@@ -5739,7 +5739,7 @@ s:ds=3D"http://schemas.openxmlformats.org/officeDocument/2006/customXml"><d=
 s:schemaRefs><ds:schemaRef ds:uri=3D"http://schemas.openxmlformats.org/offi=
 ceDocument/2006/bibliography"/></ds:schemaRefs></ds:datastoreItem>
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/themedata.thmx
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/themedata.thmx
 Content-Transfer-Encoding: base64
 Content-Type: application/vnd.ms-officetheme
 
@@ -5800,7 +5800,7 @@ GwEAACcAAAAAAAAAAAAAAAAAsgkAAHRoZW1lL3RoZW1lL19yZWxzL3RoZW1lTWFuYWdlci54bWwu
 cmVsc1BLBQYAAAAABQAFAF0BAACtCgAAAAA=
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/colorschememapping.xml
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/colorschememapping.xml
 Content-Transfer-Encoding: quoted-printable
 Content-Type: text/xml
 
@@ -5810,7 +5810,7 @@ Content-Type: text/xml
 2=3D"accent2" accent3=3D"accent3" accent4=3D"accent4" accent5=3D"accent5" a=
 ccent6=3D"accent6" hlink=3D"hlink" folHlink=3D"folHlink"/>
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image001.png
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image001.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -5827,7 +5827,7 @@ eiEoI0o9yqT2ENlhPq7YdSJSYHKiNEehRzqi064Zi8eK4/XiroG5hwh7hG3GyXzrmIhGF9LslHNE
 AAAAAElFTkSuQmCC
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image002.png
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image002.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -6053,7 +6053,7 @@ zeyFkUgTcqw/+pJxH1VuYz5Txi2qlNfyCf3Qg5P1Uu/Qd3nH9hNSfX71mjWrP7v/5tG2RFRpw6Qf
 XPPmymDW+SCrCBwGKBEmnHguyYasHXs6tooILZK7AJG0JR3GQwSktyPnPFRUc1BCJLLUsKssPyu/
 jM95y7v4G4hFzoWb30OGgSDmkAAiqtHdkFBHENuevjpj2tv8ztuvLxt+ar/+F2QPX/Y63aPHcMf4
 /SIe6u1pGVc/HTx50MdbtlO07Vs+FmNOOTCQh4qxO0A2y265ZVP2Bf2to5cw9hocaYjQ254u+P2g
-22/o7xRMCWYYg06m9C3yYDqsFFc/vS04umj1/cM3bd1mEUNFyCqfKgM9EXdcJIGnCNMtvzd4QTGw
+22/o7xRMCWYYg06m9C3yYDqsFFc/vS04umj1/cM3bd1mEUNFyCqfKgM9O365DCJIGnCNMtvzd4QTGw
 At22Nas+Bhn7O6ALKx4lu+pP8DZC/MKAYEtnewgBLNiGw8fDXqSTCokADZ0ULnFdX5OsAKrv9X7j
 n18YvHUgXbcGFz4/vl9AuXfZqqx/zvyxeocH+vFN923i0Z7YNBxpgZEDvjrZl34DBn78+8sGTnub
 Zfbji3OM4fxlb1EqePdFWrE9MFh0ui6ruu0zEALUE1NYEszMRZHn1mVEU+bffuMfvs/A5CDaw1BC
@@ -6623,7 +6623,7 @@ CCSxMXbD3FFdU4jASjFO4BX6UEWyFlxUl1ljtv5N7MOZWhVAlcQkHWIfJ7mImPypyViWylH4zZok
 FYDLIpnQPn5Uigmk03dYl/5DQLNlRJPa4f8DDOh2bGUT0hQAAAAASUVORK5CYIJ=
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image003.jpg
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image003.jpg
 Content-Transfer-Encoding: base64
 Content-Type: image/jpeg
 
@@ -6749,7 +6749,7 @@ f++1/wAaXsan8ovrNH+ZG26lUZhI+QO+K5PxNJi7C+jt/Ja1P+EksWGCZCD2Mi/41zniDUraW6Eg
 kA3sTtByRwOuPpWtKnJS1Rz4itCUUou+v6M//9k=
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image004.png
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image004.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -7102,7 +7102,7 @@ CBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAgQIAAAQIECBAoQeD/B7zxSEvyaSZ1AAAAAElF
 TkSuQmCC
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image005.jpg
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image005.jpg
 Content-Transfer-Encoding: base64
 Content-Type: image/jpeg
 
@@ -7278,7 +7278,7 @@ C2Z/+gLB/wB/j/hR/wALZn/6AsH/AH+P+FFFHt6ncPqlD+UP+Fsz/wDQFg/7/H/Cj/hbM/8A0BYP
 k3rIW6AjGMe9FFJ1ptWbKjhqUXzJan//2X==
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image006.png
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image006.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -7407,7 +7407,7 @@ gAAIxIMAlD4e/QQvQQAEQAAEQECOAJRejhtqgQAIgAAIgEA8CEDp49FP8BIEQAAEQAAE5AhA6eW4
 oRYIgAAIgAAIxIPA/wPMPBD2j3W5igAAAABJRU5ErkJggk==
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image007.jpg
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image007.jpg
 Content-Transfer-Encoding: base64
 Content-Type: image/jpeg
 
@@ -7469,7 +7469,7 @@ FFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAV5D8YP+QK//X8P5NRRW1L4Zehy1/jp+p//
 2Z==
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image008.png
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image008.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -7759,7 +7759,7 @@ FACA5IRQAACSE0IBAEhu2X1CAQBglFa8WT0AAKSgOR4AgOSEUAAAkhNCAQBITggFACCxEP5/XcHX
 p8ncr4YAAAAASUVORK5CYIJ=
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image009.png
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image009.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -8150,7 +8150,7 @@ BehXCVDt8VLs+dn/gffKULsQFAJCQAj0PAEjbd1csXPj1QJ0Ys8O8I8EISAEhEBvEtA8D6g3Myv3
 EgJC4M4i8P8BnoPkmmbwMXoAAAAASUVORK5CYIJ=
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image010.png
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image010.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -8446,7 +8446,7 @@ AEhB8zoAAMkJnQAAJCd0AgCQnNAJAEByQicAAMkJnQAAJBbC/w9Pqm9yuxU+FQAAAABJRU5ErkJg
 gk==
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image011.png
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image011.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -8848,7 +8848,7 @@ CCgEFAJXCwHNOM2XKe/hqwW5eo9CQCGgI0DeuexmVAWXQkAhoBC4Ugj8f8lCLpynb6stAAAAAElF
 TkSuQmCC
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image012.png
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image012.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -9186,7 +9186,7 @@ rB4AAEpwOB4AgOKEUAAAihNCAQAoTggFAKA4IRQAgOKEUAAACgvh/wfwVM3iOEbpRwAAAABJRU5E
 rkJggk==
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image013.png
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image013.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -9651,7 +9651,7 @@ WQg08siV0oAoArJG2mCPFydCK1XW2pOms4ZGP0cj0NMQsEu4VYQIOEZRBFRz5gSOvPhneN11PQ0P
 UcOqEdAIaATaisD/B3k4+yegtIRxAAAAAElFTkSuQmCC
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image014.png
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image014.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -10142,7 +10142,7 @@ CEAAAhCAAAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAAAhCAAAQgAAEIQAACEIAABCAAAQhA
 AAIQgAAEIAABCEAAAp0h8P8DYA4Bbr0w+30AAAAASUVORK5CYIJ=
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image015.jpg
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image015.jpg
 Content-Transfer-Encoding: base64
 Content-Type: image/jpeg
 
@@ -10374,7 +10374,7 @@ hL/n4z6H/wCFkaX/ANBvT6P+FkaX/wBBvT6+eKKPax/lQewl/wA/GfQ//CyNL/6Den0f8LI0v/oN
 b0/86yvEHjPRtS0q8U6xZvK1rIiKjYySpwPzrw2imqyW0UJ4Zy0lNs//2c==
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image016.png
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image016.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -10847,7 +10847,7 @@ CECgFwTQ+F6EmUlCAAIQgEAPCUx8Pr6H82fKEIAABCAAgc4QePXCK52ZCxOBAAQgAAEIQAACEIAA
 BCAAAQhAAAIQgAAEIAABCHSAwP8PwMObE6a2CdUAAAAASUVORK5CYIJ=
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image017.jpg
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image017.jpg
 Content-Transfer-Encoding: base64
 Content-Type: image/jpeg
 
@@ -11070,7 +11070,7 @@ vxYf8Lctf+gZdf8AgQP8KP8Ahblr/wBAy6/8CB/hRRR7aYfVqXb8WH/C3LX/AKBl1/4ED/CsbxT4
 /tvEOiSafHYTQu8ivveQN0/CiilKrNq1yo4empJpfiz/2S==
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image018.png
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image018.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -11578,7 +11578,7 @@ gUAAAhCAAAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAAAhCAAAQgAAEIQAACEIAABCAAAQhA
 AAIQgAAEIAABCEAAAhCAAARiCPz/spymYzxWULkAAAAASUVORK5CYIJ=
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image019.jpg
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image019.jpg
 Content-Transfer-Encoding: base64
 Content-Type: image/jpeg
 
@@ -11834,7 +11834,7 @@ Pbz/AKQfVKfn97D/AIW9Yf8APpqH/f0f41h+LfH1j4h0OSwhtLmOV5FffKwI4ooodabVhrC0009d
 PM//2c==
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image020.png
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image020.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -12350,7 +12350,7 @@ LAQgAAEIQKBnBN68+HrPIiIcCEAAAhCAAAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAAAhCA
 AAQgAAEIQAACEIBAaQL/Px/oiNn88wJJAAAAAElFTkSuQmCC
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image021.jpg
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image021.jpg
 Content-Transfer-Encoding: base64
 Content-Type: image/jpeg
 
@@ -12603,7 +12603,7 @@ Eb3/AL80f8Lb0j/oI3v/AH5ooo9s+y+4Pqy/ml94f8Lb0j/oI3v/AH5o/wCFt6R/0Eb3/vzRRR7Z
 M8jv+FFFHtnbZB9VjdNybt5n/9l=
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image022.png
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image022.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -13075,7 +13075,7 @@ r/YmFgKBAAQgAAEIQAACEIAABCAAAQhAAAIQgAAEIAABCEAAAhCAAAQgAAEIQAACEIAABCAAAQhA
 AAIQgAAEIAABCEAAAhCAAAQgAAEIJBD4/wGvGAmgIdUzugAAAABJRU5ErkJggk==
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image023.jpg
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image023.jpg
 Content-Transfer-Encoding: base64
 Content-Type: image/jpeg
 
@@ -13305,7 +13305,7 @@ ew/4W9Yf8+mof9/R/jR/wt6w/wCfTUP+/o/xooo9vP8ApB9Up+f3sP8Ahb1h/wA+mof9/R/jR/wt
 p+f3sP8Ahb1h/wA+mof9/R/jWH4t8fWPiHQ5LCG0uY5XkV98rAjiiih1ptWGsLTTT108z//Z
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image024.png
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image024.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -13765,7 +13765,7 @@ LiOAAAIIINAagTcvvd6avtARBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQRaIPD/A8QI0ILifc7z
 AAAAAElFTkSuQmCC
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image025.jpg
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image025.jpg
 Content-Transfer-Encoding: base64
 Content-Type: image/jpeg
 
@@ -13989,7 +13989,7 @@ aYfVqXb8WH/C3LX/AKBl1/4ED/Cj/hblr/0DLr/wIH+FFFHtph9WpdvxYf8AC3LX/oGXX/gQP8Kx
 vFPj+28Q6JJp8dhNC7yK+95A3T8KKKUqs2rXKjh6akml+LP/2b==
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image026.png
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image026.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -14410,7 +14410,7 @@ BLok8MrFl7rUHfqCAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCA
 QC0C/x/MBCykXXc/kgAAAABJRU5ErkJggk==
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image027.jpg
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image027.jpg
 Content-Transfer-Encoding: base64
 Content-Type: image/jpeg
 
@@ -14490,7 +14490,7 @@ g8nexJ2DnJAJ75/SluNCa4lYtqEwiIO2PJyDgDJOecEAigDTaOBcboo1z0yoGacIYweIFBH+yKxj
 yzN2FAmjMYk3AKRkEnH6GoZ7JbrTWsZpCyvEI3cAAn3x0/CqZ8PWpujdGWXzWKljhdp2jaPlxgcE
 9P6UAaMdxDNEkkciMjruU7uop3mx/wDPROmfvjp6/SshvC2nsyYaZUTOIwQFOV2njHcdfWoP+ESt
 2uZ2eYm3lA2oF+ZMEHGem3jp9PSgDb+0w/aTb7x5qqGK4PAPTJ6djTjLGoLNIgC9SXHFUp9GtZyz
-7pEkaNIw6nlQmcYzx371AnhqwjZGTzBtG052ncOc5yOvzdetAGlHcwTLujljdexDcHgHj14IpZJl
+7pEkaNIw6nlQmcYzx371AnhqwjZGTzBtG052ncOc5yOvzdetAGlHcwTLujljdO365DCHgHj14IpZJl
 WJ3UqxVC4AbqMfyrK/4RixIVWeVgqhSPl5wMDtxx6Yz3zU8OjwWIuZLYvmWFk2cY7kdB74HtQBfi
 fzIY5MY3qGx6ZGafUduCtrCrcERqCD2OKk/EUAFFH4ij8RQAUUfiKPxFABRRS7T6UAJRS7T6UmCK
 ACij8RR+IoAKKPxFH4igAoo/EU0OhdowwLKAWHpnp/I0AOooooAK81+LH/Ivap9Yv/Qlr0qvNfix
@@ -14615,7 +14615,7 @@ D6pS8/vYf8Ldsv8Anwvf+/wo/wCFu2X/AD4Xv/f4UUUe3mH1Sl5/ew/4W7Zf8+F7/wB/hR/wt2y/
 MMD/AEooodabVhrC0k0+3mz/2W==
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image028.png
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image028.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -15030,7 +15030,7 @@ QAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAA
 AQQQ0CDw/wGqMcfsk/ck/AAAAABJRU5ErkJggk==
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image029.jpg
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image029.jpg
 Content-Transfer-Encoding: base64
 Content-Type: image/jpeg
 
@@ -15236,7 +15236,7 @@ j/hbM/8A0BYP+/x/wooo9vU7h9Uofyh/wtmf/oCwf9/j/hWR4m8dS+JNMWxfT47cLKJN6yFugIxj
 HvRRSdabVmyo4alF8yWp/9m=
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image030.png
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image030.png
 Content-Transfer-Encoding: base64
 Content-Type: image/png
 
@@ -15612,7 +15612,7 @@ EQIyfiOW2SQJECBAYAMF9vx+/AbO35QJECBAgMDaCDz7zJNrMxcTIUCAAAECBAgQIECAAAECBAgQ
 IECAAAECBAgQIECAAAECBAgQIECAAAECBAgQIECAAAECKwr8/xMMDAP9JANSAAAAAElFTkSuQmCC
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image031.jpg
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image031.jpg
 Content-Transfer-Encoding: base64
 Content-Type: image/jpeg
 
@@ -15787,7 +15787,7 @@ bcf/AEB3/wDAj/7Gj/hbcf8A0B3/APAj/wCxooo9vU7h9Uo9vxYf8Lbj/wCgO/8A4Ef/AGNH/C24
 iiik602rNjjhaUWml+LP/9n=
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/image032.jpg
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/image032.jpg
 Content-Transfer-Encoding: base64
 Content-Type: image/jpeg
 
@@ -15849,7 +15849,7 @@ UUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABXkPxg/wCQK/8A1/D+TUUVtS+GXoctf46f
 qf/Z
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/header.htm
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/header.htm
 Content-Transfer-Encoding: quoted-printable
 Content-Type: text/html; charset="windows-1252"
 
@@ -15866,9 +15866,9 @@ xmlns=3D"http://www.w3.org/TR/REC-html40">
 <meta name=3DProgId content=3DWord.Document>
 <meta name=3DGenerator content=3D"Microsoft Word 15">
 <meta name=3DOriginator content=3D"Microsoft Word 15">
-<link id=3DMain-File rel=3DMain-File href=3D"../Documentation_ExDC.v.4.htm">
+<link id=3DMain-File rel=3DMain-File href=3D"../Documentation_O365DC.v.4.htm">
 <![if IE]>
-<base href=3D"file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/header.htm"
+<base href=3D"file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/header.htm"
 id=3D"webarch_temp_base_tag">
 <![endif]><!--[if gte mso 9]><xml>
  <o:shapedefaults v:ext=3D"edit" spidmax=3D"2049"/>
@@ -15934,12 +15934,12 @@ r'><![if !supportFootnotes]>
 </html>
 
 ------=_NextPart_01D4088A.58BD7F70
-Content-Location: file:///C:/8C48DDF4/Documentation_ExDC.v.4_files/filelist.xml
+Content-Location: file:///C:/8C48DDF4/Documentation_O365DC.v.4_files/filelist.xml
 Content-Transfer-Encoding: quoted-printable
 Content-Type: text/xml; charset="utf-8"
 
 <xml xmlns:o=3D"urn:schemas-microsoft-com:office:office">
- <o:MainFile HRef=3D"../Documentation_ExDC.v.4.htm"/>
+ <o:MainFile HRef=3D"../Documentation_O365DC.v.4.htm"/>
  <o:File HRef=3D"preview.wmf"/>
  <o:File HRef=3D"item0001.xml"/>
  <o:File HRef=3D"props002.xml"/>
