@@ -311,13 +311,100 @@ $chk_Spo_WebTemplate = New-Object System.Windows.Forms.CheckBox
 
 #region Step3 Skype tabs
 
-#region Step3 Skype - Cs Tab
-$tab_Step3_Skype = New-Object System.Windows.Forms.TabPage
-$bx_Skype_Functions = New-Object System.Windows.Forms.GroupBox
-$btn_Step3_Skype_CheckAll = New-Object System.Windows.Forms.Button
-$btn_Step3_Skype_UncheckAll = New-Object System.Windows.Forms.Button
-#$chk_Skype_AdminGroups = New-Object System.Windows.Forms.CheckBox
-#endregion Step3 Skype - Cs Tab
+#region Step3 Skype - CsOnline Tab
+$tab_Step3_CsOnline = New-Object System.Windows.Forms.TabPage
+$bx_CsOnline_Functions = New-Object System.Windows.Forms.GroupBox
+$btn_Step3_CsOnline_CheckAll = New-Object System.Windows.Forms.Button
+$btn_Step3_CsOnline_UncheckAll = New-Object System.Windows.Forms.Button
+$chk_Skype_CsOnlineDialInConferencingBridge  = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsOnlineDialinConferencingPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsOnlineDialInConferencingServiceNumber = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsOnlineDialinConferencingTenantConfiguration  = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsOnlineDialInConferencingTenantSettings = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsOnlineDialInConferencingUser = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsOnlineDialInConferencingUserInfo = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsOnlineDialInConferencingUserState = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsOnlineDialOutPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsOnlineDirectoryTenant = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsOnlineTelephoneNumberInventoryTypes = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsOnlineTelephoneNumberReservationsInformation  = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsOnlineUser = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsOnlineVoicemailPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsOnlineVoiceRoute = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsOnlineVoiceRoutingPolicy = New-Object System.Windows.Forms.CheckBox
+#endregion Step3 Skype - CsOnline Tab
+
+#region Step3 Skype - CsGeneral Tab
+$tab_Step3_CsGeneral = New-Object System.Windows.Forms.TabPage
+$bx_CsGeneral_Functions = New-Object System.Windows.Forms.GroupBox
+$btn_Step3_CsGeneral_CheckAll = New-Object System.Windows.Forms.Button
+$btn_Step3_CsGeneral_UncheckAll = New-Object System.Windows.Forms.Button
+$chk_Skype_CsAudioConferencingProvider = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsBroadcastMeetingConfiguration = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsBroadcastMeetingPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsCallerIdPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsCallingLineIdentity = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsClientPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsCloudMeetingPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsConferencingPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsDialPlan = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsExternalAccessPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsExternalUserCommunicationPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsGraphPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsHostedVoicemailPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsHostingProvider = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsImFilterConfiguration = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsIPPhonePolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsMeetingConfiguration = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsMeetingMigrationStatus = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsMobilityPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsPresencePolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsPrivacyConfiguration = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsPushNotificationConfiguration = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsUCPhoneConfiguration = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsUserServicesPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsVoicePolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsVoiceRoutingPolicy = New-Object System.Windows.Forms.CheckBox
+#EndRegion Step3 Skype - CsGeneral Tab
+
+#region Step3 Skype - CsTeams Tab
+$tab_Step3_CsTeams = New-Object System.Windows.Forms.TabPage
+$bx_CsTeams_Functions = New-Object System.Windows.Forms.GroupBox
+$btn_Step3_CsTeams_CheckAll = New-Object System.Windows.Forms.Button
+$btn_Step3_CsTeams_UncheckAll = New-Object System.Windows.Forms.Button
+$chk_Skype_CsTeamsCallingPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTeamsClientConfiguration = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTeamsGuestCallingConfiguration = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTeamsGuestMeetingConfiguration = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTeamsGuestMessagingConfiguration = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTeamsInteropPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTeamsMeetingBroadcastConfiguration = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTeamsMeetingBroadcastPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTeamsMeetingConfiguration = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTeamsMeetingPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTeamsMessagingPolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTeamsMigrationConfiguration = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTeamsUpgradeConfiguration = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTeamsUpgradePolicy = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTeamsUpgradeStatus = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTeamsVideoInteropServicePolicy = New-Object System.Windows.Forms.CheckBox
+#EndRegion Step3 Skype - CsTeams Tab
+
+#region Step3 Skype - CsTenant Tab
+$tab_Step3_CsTenant = New-Object System.Windows.Forms.TabPage
+$bx_CsTenant_Functions = New-Object System.Windows.Forms.GroupBox
+$btn_Step3_CsTenant_CheckAll = New-Object System.Windows.Forms.Button
+$btn_Step3_CsTenant_UncheckAll = New-Object System.Windows.Forms.Button
+$chk_Skype_CsTenant = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTenantBlockedCallingNumbers = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTenantDialPlan = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTenantFederationConfiguration = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTenantHybridConfiguration = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTenantLicensingConfiguration = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTenantMigrationConfiguration = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTenantPublicProvider = New-Object System.Windows.Forms.CheckBox
+$chk_Skype_CsTenantUpdateTimeWindow = New-Object System.Windows.Forms.CheckBox
+#EndRegion Step3 Skype - CsTenant Tab
 
 #endregion Step3 Skype tabs
 
@@ -379,6 +466,10 @@ $handler_Submenu_Tests_CheckAll=
 	Set-AllFunctionsUm -Check $true
 	Set-AllFunctionsAzureAd -Check $true
 	Set-AllFunctionsSpo -Check $true
+	Set-AllFunctionsCsGeneral -Check $true
+	Set-AllFunctionsCsOnline -Check $true
+	Set-AllFunctionsCsTeams -check $true
+	Set-AllFunctionsCsTenant -check $true
 }
 
 $handler_Submenu_Tests_UnCheckAll=
@@ -392,6 +483,10 @@ $handler_Submenu_Tests_UnCheckAll=
 	Set-AllFunctionsUm -Check $False
 	Set-AllFunctionsAzureAd -Check $False
 	Set-AllFunctionsSpo -Check $False
+	Set-AllFunctionsCsGeneral -Check $False
+	Set-AllFunctionsCsOnline -Check $False
+	Set-AllFunctionsCsTeams -check $False
+	Set-AllFunctionsCsTenant -check $False
 }
 
 $handler_Submenu_Help=
@@ -1241,58 +1336,104 @@ $handler_btn_Step3_Execute_Click=
 		write-host "---- No Sharepoint Functions selected"
 	}
 	#EndRegion Executing Spo Tests
-<#
+
 	#Region Executing Skype Tests
 
 	write-host "Starting Skype..." -ForegroundColor Green
 	If (Get-SkypeBoxStatus = $true)
 	{
 		# Save checked mailboxes to file for use by jobs
-		$AzureAdUser_Checked_outputfile = ".\CheckedAzureAdUser.txt"
-		if ((Test-Path $AzureAdUser_Checked_outputfile) -eq $true)
-		{
-			Remove-Item $AzureAdUser_Checked_outputfile -Force
-		}
-		write-host "-- Building the checked AzureAdUser list..."
-		foreach ($item in $clb_Step1_AzureAdUser_List.checkeditems)
-		{
-			$item.tostring() | out-file $AzureAdUser_Checked_outputfile -append -Force
-		}
+		#$AzureAdUser_Checked_outputfile = ".\CheckedAzureAdUser.txt"
+		#if ((Test-Path $AzureAdUser_Checked_outputfile) -eq $true)
+		#{
+		#	Remove-Item $AzureAdUser_Checked_outputfile -Force
+		#}
+		#write-host "-- Building the checked AzureAdUser list..."
+		#foreach ($item in $clb_Step1_AzureAdUser_List.checkeditems)
+		#{
+		#	$item.tostring() | out-file $AzureAdUser_Checked_outputfile -append -Force
+		#}
 
 			# Avoid this path if we're not running mailbox tests
 			# Splitting CheckedMailboxes file 10 times
 			# Split-List10 -InputFile "CheckedAzureAdUser" -OutputFile "CheckedAzureAdUser" -Text "AzureAdUser"
 
 			#Region Skype Functions
-			Test-CheckBoxAndRun -chkBox $chk_Azure_ADApplication.Checked 						-Text "Get-AzureADApplication" 							-Script "Azure_AzureADApplication"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_ADContact.Checked 							-Text "Get-AzureADContact" 								-Script "Azure_AzureADContact"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDevice.Checked 							-Text "Get-AzureADDevice" 								-Script "Azure_AzureADDevice"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDeviceRegisteredOwner.Checked 				-Text "Get-AzureADDeviceRegisteredOwner" 				-Script "Azure_AzureADDeviceRegisteredOwner"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDeviceRegisteredUser.Checked 				-Text "Get-AzureADDeviceRegisteredUser" 				-Script "Azure_AzureADDeviceRegisteredUser"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDirectoryRole.Checked 						-Text "Get-AzureADDirectoryRole" 						-Script "Azure_AzureADDirectoryRole"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDomain.Checked 							-Text "Get-AzureADDomain" 								-Script "Azure_AzureADDomain"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDomainServiceConfigurationRecord.Checked 	-Text "Get-AzureADDomainServiceConfigurationRecord" 	-Script "Azure_AzureADDomainServiceConfigurationRecord"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_ADDomainVerificationDnsRecord.Checked 		-Text "Get-AzureADDomainVerificationDnsRecord" 			-Script "Azure_AzureADDomainVerificationDnsRecord"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_ADGroup.Checked				 				-Text "Get-AzureADGroup" 								-Script "Azure_AzureADGroup"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_ADGroupMember.Checked 						-Text "Get-AzureADGroupMember" 							-Script "Azure_AzureADGroupMember"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_ADGroupOwner.Checked 						-Text "Get-AzureADGroupOwner" 							-Script "Azure_AzureADGroupOwner"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_ADSubscribedSku.Checked 						-Text "Get-AzureADSubscribedSku" 						-Script "Azure_AzureADSubscribedSku"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_ADTenantDetail.Checked 						-Text "Get-AzureADTenantDetail" 						-Script "Azure_AzureADTenantDetail"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_AdUser.Checked 								-Text "Get-AzureADUser" 								-Script "Azure_AzureAdUser"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_ADUserLicenseDetail.Checked 					-Text "Get-AzureADUserLicenseDetail" 					-Script "Azure_AzureADUserLicenseDetail"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_ADUserMembership.Checked 					-Text "Get-AzureADUserMembership" 						-Script "Azure_AzureADUserMembership"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_ADUserOwnedDevice.Checked 					-Text "Get-AzureADUserOwnedDevice" 						-Script "Azure_AzureADUserOwnedDevice"
-			Test-CheckBoxAndRun -chkBox $chk_Azure_ADUserRegisteredDevice.Checked 				-Text "Get-AzureADUserRegisteredDevice" 				-Script "Azure_AzureADUserRegisteredDevice"
-			#EndRegion Skype Functions
-
-
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsAudioConferencingProvider.Checked 						-Text "Get-CsAudioConferencingProvider" 						-Script "Skype_CsAudioConferencingProvider"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsBroadcastMeetingConfiguration.Checked 					-Text "Get-CsBroadcastMeetingConfiguration" 					-Script "Skype_CsBroadcastMeetingConfiguration"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsBroadcastMeetingPolicy.Checked 						-Text "Get-CsBroadcastMeetingPolicy" 							-Script "Skype_CsBroadcastMeetingPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsCallerIdPolicy.Checked 								-Text "Get-CsCallerIdPolicy" 									-Script "Skype_CsCallerIdPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsCallingLineIdentity.Checked 							-Text "Get-CsCallingLineIdentity" 								-Script "Skype_CsCallingLineIdentity"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsClientPolicy.Checked 									-Text "Get-CsClientPolicy" 										-Script "Skype_CsClientPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsCloudMeetingPolicy.Checked 							-Text "Get-CsCloudMeetingPolicy" 								-Script "Skype_CsCloudMeetingPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsConferencingPolicy.Checked 							-Text "Get-CsConferencingPolicy" 								-Script "Skype_CsConferencingPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsDialPlan.Checked 										-Text "Get-CsDialPlan" 											-Script "Skype_CsDialPlan"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsExternalAccessPolicy.Checked 							-Text "Get-CsExternalAccessPolicy" 								-Script "Skype_CsExternalAccessPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsExternalUserCommunicationPolicy.Checked 				-Text "Get-CsExternalUserCommunicationPolicy" 					-Script "Skype_CsExternalUserCommunicationPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsGraphPolicy.Checked 									-Text "Get-CsGraphPolicy" 										-Script "Skype_CsGraphPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsHostedVoicemailPolicy.Checked 							-Text "Get-CsHostedVoicemailPolicy" 							-Script "Skype_CsHostedVoicemailPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsHostingProvider.Checked 								-Text "Get-CsHostingProvider" 									-Script "Skype_CsHostingProvider"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsImFilterConfiguration.Checked 							-Text "Get-CsImFilterConfiguration" 							-Script "Skype_CsImFilterConfiguration"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsIPPhonePolicy.Checked 									-Text "Get-CsIPPhonePolicy" 									-Script "Skype_CsIPPhonePolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsMeetingConfiguration.Checked 							-Text "Get-CsMeetingConfiguration" 								-Script "Skype_CsMeetingConfiguration"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsMeetingMigrationStatus.Checked 						-Text "Get-CsMeetingMigrationStatus" 							-Script "Skype_CsMeetingMigrationStatus"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsMobilityPolicy.Checked 								-Text "Get-CsMobilityPolicy" 									-Script "Skype_CsMobilityPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsPresencePolicy.Checked 								-Text "Get-CsPresencePolicy" 									-Script "Skype_CsPresencePolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsPrivacyConfiguration.Checked 							-Text "Get-CsPrivacyConfiguration" 								-Script "Skype_CsPrivacyConfiguration"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsPushNotificationConfiguration.Checked 					-Text "Get-CsPushNotificationConfiguration" 					-Script "Skype_CsPushNotificationConfiguration"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsUCPhoneConfiguration.Checked 							-Text "Get-CsUCPhoneConfiguration" 								-Script "Skype_CsUCPhoneConfiguration"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsUserServicesPolicy.Checked						 		-Text "Get-CsUserServicesPolicy" 								-Script "Skype_CsUserServicesPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsVoicePolicy.Checked							 		-Text "Get-CsVoicePolicy" 										-Script "Skype_CsVoicePolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsVoiceRoutingPolicy.Checked						 		-Text "Get-CsVoiceRoutingPolicy" 								-Script "Skype_CsVoiceRoutingPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsOnlineDialInConferencingBridge.Checked			 		-Text "Get-CsOnlineDialInConferencingBridge" 					-Script "Skype_CsOnlineDialInConferencingBridge"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsOnlineDialinConferencingPolicy.Checked			 		-Text "Get-CsOnlineDialinConferencingPolicy" 					-Script "Skype_CsOnlineDialinConferencingPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsOnlineDialInConferencingServiceNumber.Checked	 		-Text "Get-CsOnlineDialInConferencingServiceNumber" 			-Script "Skype_CsOnlineDialInConferencingServiceNumber"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsOnlineDialinConferencingTenantConfiguration.Checked	-Text "Get-CsOnlineDialinConferencingTenantConfiguration" 		-Script "Skype_CsOnlineDialinConferencingTenantConfiguration"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsOnlineDialInConferencingTenantSettings.Checked 		-Text "Get-CsOnlineDialInConferencingTenantSettings" 			-Script "Skype_CsOnlineDialInConferencingTenantSettings"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsOnlineDialInConferencingUser.Checked			 		-Text "Get-CsOnlineDialInConferencingUser" 						-Script "Skype_CsOnlineDialInConferencingUser"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsOnlineDialInConferencingUserInfo.Checked		 		-Text "Get-CsOnlineDialInConferencingUserInfo" 					-Script "Skype_CsOnlineDialInConferencingUserInfo"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsOnlineDialInConferencingUserState.Checked		 		-Text "Get-CsOnlineDialInConferencingUserState" 				-Script "Skype_CsOnlineDialInConferencingUserState"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsOnlineDialOutPolicy.Checked 							-Text "Get-CsOnlineDialOutPolicy" 								-Script "Skype_CsOnlineDialOutPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsOnlineDirectoryTenant.Checked 							-Text "Get-CsOnlineDirectoryTenant" 							-Script "Skype_CsOnlineDirectoryTenant"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsOnlineTelephoneNumberInventoryTypes.Checked 			-Text "Get-CsOnlineTelephoneNumberInventoryTypes" 				-Script "Skype_CsOnlineTelephoneNumberInventoryTypes"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsOnlineTelephoneNumberReservationsInformation.Checked 	-Text "Get-CsOnlineTelephoneNumberReservationsInformation" 		-Script "Skype_CsOnlineTelephoneNumberReservationsInformation"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsOnlineUser.Checked 									-Text "Get-CsOnlineUser" 										-Script "Skype_CsOnlineUser"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsOnlineVoicemailPolicy.Checked 							-Text "Get-CsOnlineVoicemailPolicy" 							-Script "Skype_CsOnlineVoicemailPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsOnlineVoiceRoute.Checked 								-Text "Get-CsOnlineVoiceRoute" 									-Script "Skype_CsOnlineVoiceRoute"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsOnlineVoiceRoutingPolicy.Checked 						-Text "Get-CsOnlineVoiceRoutingPolicy" 							-Script "Skype_CsOnlineVoiceRoutingPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTeamsCallingPolicy.Checked 							-Text "Get-CsTeamsCallingPolicy" 								-Script "Skype_CsTeamsCallingPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTeamsClientConfiguration.Checked 						-Text "Get-CsTeamsClientConfiguration" 							-Script "Skype_CsTeamsClientConfiguration"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTeamsGuestCallingConfiguration.Checked 				-Text "Get-CsTeamsGuestCallingConfiguration" 					-Script "Skype_CsTeamsGuestCallingConfiguration"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTeamsGuestMeetingConfiguration.Checked 				-Text "Get-CsTeamsGuestMeetingConfiguration" 					-Script "Skype_CsTeamsGuestMeetingConfiguration"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTeamsGuestMessagingConfiguration.Checked 				-Text "Get-CsTeamsGuestMessagingConfiguration" 					-Script "Skype_CsTeamsGuestMessagingConfiguration"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTeamsInteropPolicy.Checked 							-Text "Get-CsTeamsInteropPolicy" 								-Script "Skype_CsTeamsInteropPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTeamsMeetingBroadcastConfiguration.Checked 			-Text "Get-CsTeamsMeetingBroadcastConfiguration" 				-Script "Skype_CsTeamsMeetingBroadcastConfiguration"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTeamsMeetingBroadcastPolicy.Checked 					-Text "Get-CsTeamsMeetingBroadcastPolicy" 						-Script "Skype_CsTeamsMeetingBroadcastPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTeamsMeetingConfiguration.Checked 						-Text "Get-CsTeamsMeetingConfiguration" 						-Script "Skype_CsTeamsMeetingConfiguration"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTeamsMeetingPolicy.Checked 							-Text "Get-CsTeamsMeetingPolicy" 								-Script "Skype_CsTeamsMeetingPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTeamsMessagingPolicy.Checked 							-Text "Get-CsTeamsMessagingPolicy" 								-Script "Skype_CsTeamsMessagingPolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTeamsMigrationConfiguration.Checked 					-Text "Get-CsTeamsMigrationConfiguration" 						-Script "Skype_CsTeamsMigrationConfiguration"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTeamsUpgradeConfiguration.Checked 						-Text "Get-CsTeamsUpgradeConfiguration" 						-Script "Skype_CsTeamsUpgradeConfiguration"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTeamsUpgradePolicy.Checked 							-Text "Get-CsTeamsUpgradePolicy" 								-Script "Skype_CsTeamsUpgradePolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTeamsUpgradeStatus.Checked 							-Text "Get-CsTeamsUpgradeStatus" 								-Script "Skype_CsTeamsUpgradeStatus"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTeamsVideoInteropServicePolicy.Checked 				-Text "Get-CsTeamsVideoInteropServicePolicy" 					-Script "Skype_CsTeamsVideoInteropServicePolicy"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTenant.Checked 										-Text "Get-CsTenant" 											-Script "Skype_CsTenant"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTenantBlockedCallingNumbers.Checked 					-Text "Get-CsTenantBlockedCallingNumbers" 						-Script "Skype_CsTenantBlockedCallingNumbers"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTenantDialPlan.Checked 								-Text "Get-CsTenantDialPlan" 									-Script "Skype_CsTenantDialPlan"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTenantFederationConfiguration.Checked 					-Text "Get-CsTenantFederationConfiguration" 					-Script "Skype_CsTenantFederationConfiguration"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTenantHybridConfiguration.Checked 						-Text "Get-CsTenantHybridConfiguration" 						-Script "Skype_CsTenantHybridConfiguration"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTenantLicensingConfiguration.Checked 					-Text "Get-CsTenantLicensingConfiguration" 						-Script "Skype_CsTenantLicensingConfiguration"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTenantMigrationConfiguration.Checked 					-Text "Get-CsTenantMigrationConfiguration" 						-Script "Skype_CsTenantMigrationConfiguration"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTenantPublicProvider.Checked 							-Text "Get-CsTenantPublicProvider" 								-Script "Skype_CsTenantPublicProvider"
+			Test-CheckBoxAndRun -chkBox $chk_Skype_CsTenantUpdateTimeWindow.Checked 						-Text "Get-CsTenantUpdateTimeWindow" 							-Script "Skype_CsTenantUpdateTimeWindow"
+				#EndRegion Skype Functions
 	}
 	else
 	{
 		write-host "---- No Skype Functions selected"
 	}
 	#EndRegion Executing Skype Tests
-#>
+
 
 	# Delay changing status to Idle until all jobs have finished
 	Update-O365DCJobCount 1 15
@@ -1424,6 +1565,46 @@ $handler_btn_Step3_Spo_UncheckAll_Click=
 	Set-AllFunctionsSpo -Check $False
 }
 
+$handler_btn_Step3_CsOnline_CheckAll_Click=
+{
+	Set-AllFunctionsCsOnline -check $True
+}
+
+$handler_btn_Step3_CsOnline_UncheckAll_Click=
+{
+	Set-AllFunctionsCsOnline -Check $False
+}
+
+$handler_btn_Step3_CsGeneral_CheckAll_Click=
+{
+	Set-AllFunctionsCsGeneral -Check $true
+}
+
+$handler_btn_Step3_CsGeneral_UncheckAll_Click=
+{
+	Set-AllFunctionsCsGeneral -Check $False
+}
+
+$handler_btn_Step3_CsTeams_CheckAll_Click=
+{
+	Set-AllFunctionsCsTeams -Check $True
+}
+
+$handler_btn_Step3_CsTeams_UncheckAll_Click=
+{
+	Set-AllFunctionsCsTeams -Check $False
+}
+
+$handler_btn_Step3_CsTenant_CheckAll_Click=
+{
+	Set-AllFunctionsCsTenant -Check $True
+}
+
+$handler_btn_Step3_CsTenant_UncheckAll_Click=
+{
+	Set-AllFunctionsCsTenant -Check $False
+}
+
 #endregion "Step3 - Tests" Events
 
 #region "Step4 - Reporting" Events
@@ -1521,11 +1702,16 @@ $OnLoadForm_StateCorrection=
 #Region Form Main
 #Region Reusable
 # Reusable fonts
-	$font_Calibri_8pt_normal = 	New-Object System.Drawing.Font("Calibri",7.8,0,3,0)
-	$font_Calibri_10pt_normal = New-Object System.Drawing.Font("Calibri",9.75,0,3,1)
-	$font_Calibri_12pt_normal = New-Object System.Drawing.Font("Calibri",12,0,3,1)
-	$font_Calibri_14pt_normal = New-Object System.Drawing.Font("Calibri",14.25,0,3,1)
-	$font_Calibri_10pt_bold = 	New-Object System.Drawing.Font("Calibri",9.75,1,3,1)
+	$font_SegoeUI_9pt_normal = New-Object System.Drawing.Font("SegoeUI",9,0,3,0)
+	$font_SegoeUI_10pt_Normal = New-Object System.Drawing.Font("SegoeUI",10,0,3,1)
+	$font_SegoeUI_12pt_normal = New-Object System.Drawing.Font("SegoeUI",12,0,3,1)
+	$font_SegoeUI_14pt_normal = New-Object System.Drawing.Font("SegoeUI",14.25,0,3,1)
+	$font_SegoeUI_12pt_bold = 	New-Object System.Drawing.Font("SegoeUI",12,1,3,1)
+	#$font_Calibri_8pt_normal = 	New-Object System.Drawing.Font("Calibri",7.8,0,3,0)
+	#$font_Calibri_10pt_normal = New-Object System.Drawing.Font("Calibri",9.75,0,3,1)
+	#$font_Calibri_12pt_normal = New-Object System.Drawing.Font("Calibri",12,0,3,1)
+	#$font_Calibri_14pt_normal = New-Object System.Drawing.Font("Calibri",14.25,0,3,1)
+	#$font_Calibri_10pt_bold = 	New-Object System.Drawing.Font("Calibri",9.75,1,3,1)
 # Reusable padding
 	$System_Windows_Forms_Padding_Reusable = New-Object System.Windows.Forms.Padding
 	$System_Windows_Forms_Padding_Reusable.All = 3
@@ -1583,7 +1769,7 @@ $OnLoadForm_StateCorrection=
 $form1.BackColor = [System.Drawing.Color]::FromArgb(255,169,169,169)
 	$form1.ClientSize = $Size_Form
 	$form1.MaximumSize = $Size_Form
-	$form1.Font = $font_Calibri_10pt_normal
+	$form1.Font = $font_SegoeUI_9pt_normal
 	$form1.FormBorderStyle = 2
 	$form1.MaximizeBox = $False
 	$form1.Name = "form1"
@@ -1596,7 +1782,7 @@ $form1.BackColor = [System.Drawing.Color]::FromArgb(255,169,169,169)
 $TabIndex = 0
 $tab_Master.Appearance = 2
 	$tab_Master.Dock = 5
-	$tab_Master.Font = $font_Calibri_14pt_normal
+	$tab_Master.Font = $font_SegoeUI_14pt_normal
 	$tab_Master.ItemSize = $Size_Tab_Control
 	$tab_Master.Location = $Loc_Tab_Control
 	$tab_Master.Name = "tab_Master"
@@ -1649,7 +1835,7 @@ $tab_Step1.BackColor = [System.Drawing.Color]::FromArgb(0,255,255,255)
 	$tab_Step1.Text = "  Targets  "
 	$tab_Step1.Size = $Size_Tab_1
 	$tab_Master.Controls.Add($tab_Step1)
-$btn_Step1_Discover.Font = $font_Calibri_14pt_normal
+$btn_Step1_Discover.Font = $font_SegoeUI_14pt_normal
 	$btn_Step1_Discover.ForeColor = [System.Drawing.Color]::FromArgb(255,0,0,0)
 	$btn_Step1_Discover.Location = $Loc_Btn_1
 	$btn_Step1_Discover.Name = "btn_Step1_Discover"
@@ -1660,7 +1846,7 @@ $btn_Step1_Discover.Font = $font_Calibri_14pt_normal
 	$btn_Step1_Discover.UseVisualStyleBackColor = $True
 	$btn_Step1_Discover.add_Click($handler_btn_Step1_Discover_Click)
 	$tab_Step1.Controls.Add($btn_Step1_Discover)
-$btn_Step1_Populate.Font = $font_Calibri_14pt_normal
+$btn_Step1_Populate.Font = $font_SegoeUI_14pt_normal
 	$btn_Step1_Populate.Location = New-Object System.Drawing.Point(200,15)
 	$btn_Step1_Populate.Name = "btn_Step1_Populate"
 	$btn_Step1_Populate.Size = $Size_Buttons
@@ -1670,14 +1856,14 @@ $btn_Step1_Populate.Font = $font_Calibri_14pt_normal
 	$btn_Step1_Populate.UseVisualStyleBackColor = $True
 	$btn_Step1_Populate.add_Click($handler_btn_Step1_Populate_Click)
 	$tab_Step1.Controls.Add($btn_Step1_Populate)
-$tab_Step1_Master.Font = $font_Calibri_12pt_normal
+$tab_Step1_Master.Font = $font_SegoeUI_12pt_normal
 	$tab_Step1_Master.Location = New-Object System.Drawing.Point(20,60)
 	$tab_Step1_Master.Name = "tab_Step1_Master"
 	$tab_Step1_Master.SelectedIndex = 0
 	$tab_Step1_Master.Size = New-Object System.Drawing.Size(550,525)
 	$tab_Step1_Master.TabIndex = $TabIndex++
 	$tab_Step1.Controls.Add($tab_Step1_Master)
-$status_Step1.Font = $font_Calibri_10pt_normal
+$status_Step1.Font = $font_SegoeUI_9pt_normal
 	$status_Step1.Location = $Loc_Status
 	$status_Step1.Name = "status_Step1"
 	$status_Step1.Size = $Size_Status
@@ -1696,7 +1882,7 @@ $tab_Step1_Mailboxes.Location = $Loc_Tab_Tier3
 	$tab_Step1_Mailboxes.Text = "Mailboxes"
 	$tab_Step1_Mailboxes.UseVisualStyleBackColor = $True
 	$tab_Step1_Master.Controls.Add($tab_Step1_Mailboxes)
-$btn_Step1_Mailboxes_Discover.Font = $font_Calibri_10pt_normal
+$btn_Step1_Mailboxes_Discover.Font = $font_SegoeUI_9pt_normal
 	$btn_Step1_Mailboxes_Discover.Location = $Loc_Discover
 	$btn_Step1_Mailboxes_Discover.Name = "btn_Step1_Mailboxes_Discover"
 	$btn_Step1_Mailboxes_Discover.Size = $Size_Btn_1
@@ -1705,7 +1891,7 @@ $btn_Step1_Mailboxes_Discover.Font = $font_Calibri_10pt_normal
 	$btn_Step1_Mailboxes_Discover.UseVisualStyleBackColor = $True
 	$btn_Step1_Mailboxes_Discover.add_Click($handler_btn_Step1_Mailboxes_Discover)
 	$bx_Mailboxes_List.Controls.Add($btn_Step1_Mailboxes_Discover)
-$btn_Step1_Mailboxes_Populate.Font = $font_Calibri_10pt_normal
+$btn_Step1_Mailboxes_Populate.Font = $font_SegoeUI_9pt_normal
 	$btn_Step1_Mailboxes_Populate.Location = $Loc_Populate
 	$btn_Step1_Mailboxes_Populate.Name = "btn_Step1_Mailboxes_Populate"
 	$btn_Step1_Mailboxes_Populate.Size = $Size_Btn_1
@@ -1715,14 +1901,13 @@ $btn_Step1_Mailboxes_Populate.Font = $font_Calibri_10pt_normal
 	$btn_Step1_Mailboxes_Populate.add_Click($handler_btn_Step1_Mailboxes_Populate)
 $bx_Mailboxes_List.Controls.Add($btn_Step1_Mailboxes_Populate)
 	$bx_Mailboxes_List.Dock = 5
-	$bx_Mailboxes_List.Font = $font_Calibri_10pt_bold
 	$bx_Mailboxes_List.Location = $Loc_Box_1
 	$bx_Mailboxes_List.Name = "bx_Mailboxes_List"
 	$bx_Mailboxes_List.Size = $Size_Box_1
 	$bx_Mailboxes_List.TabIndex = $TabIndex++
 	$bx_Mailboxes_List.TabStop = $False
 	$tab_Step1_Mailboxes.Controls.Add($bx_Mailboxes_List)
-$clb_Step1_Mailboxes_List.Font = $font_Calibri_10pt_normal
+$clb_Step1_Mailboxes_List.Font = $font_SegoeUI_9pt_normal
 	$clb_Step1_Mailboxes_List.Location = $Loc_Clb_1
 	$clb_Step1_Mailboxes_List.Name = "clb_Step1_Mailboxes_List"
 	$clb_Step1_Mailboxes_List.Size = $Size_Clb_1
@@ -1730,14 +1915,14 @@ $clb_Step1_Mailboxes_List.Font = $font_Calibri_10pt_normal
 	$clb_Step1_Mailboxes_List.horizontalscrollbar = $true
 	$clb_Step1_Mailboxes_List.CheckOnClick = $true
 	$bx_Mailboxes_List.Controls.Add($clb_Step1_Mailboxes_List)
-$txt_MailboxesTotal.Font = $font_Calibri_10pt_normal
+$txt_MailboxesTotal.Font = $font_SegoeUI_9pt_normal
 	$txt_MailboxesTotal.Location = New-Object System.Drawing.Point(50,410)
 	$txt_MailboxesTotal.Name = "txt_MailboxesTotal"
 	$txt_MailboxesTotal.Size = $Size_TextBox
 	$txt_MailboxesTotal.TabIndex = $TabIndex++
 	$txt_MailboxesTotal.Visible = $False
 	$bx_Mailboxes_List.Controls.Add($txt_MailboxesTotal)
-$btn_Step1_Mailboxes_CheckAll.Font = $font_Calibri_10pt_normal
+$btn_Step1_Mailboxes_CheckAll.Font = $font_SegoeUI_9pt_normal
 	$btn_Step1_Mailboxes_CheckAll.Location = $Loc_CheckAll_1
 	$btn_Step1_Mailboxes_CheckAll.Name = "btn_Step1_Mailboxes_CheckAll"
 	$btn_Step1_Mailboxes_CheckAll.Size = $Size_Btn_1
@@ -1746,7 +1931,7 @@ $btn_Step1_Mailboxes_CheckAll.Font = $font_Calibri_10pt_normal
 	$btn_Step1_Mailboxes_CheckAll.UseVisualStyleBackColor = $True
 	$btn_Step1_Mailboxes_CheckAll.add_Click($handler_btn_Step1_Mailboxes_CheckAll)
 	$bx_Mailboxes_List.Controls.Add($btn_Step1_Mailboxes_CheckAll)
-$btn_Step1_Mailboxes_UncheckAll.Font = $font_Calibri_10pt_normal
+$btn_Step1_Mailboxes_UncheckAll.Font = $font_SegoeUI_9pt_normal
 	$btn_Step1_Mailboxes_UncheckAll.Location = $Loc_UncheckAll_1
 	$btn_Step1_Mailboxes_UncheckAll.Name = "btn_Step1_Mailboxes_UncheckAll"
 	$btn_Step1_Mailboxes_UncheckAll.Size = $Size_Btn_1
@@ -1767,7 +1952,7 @@ $tab_Step1_AzureAdUser.Location = $Loc_Tab_Tier3
 	$tab_Step1_AzureAdUser.Text = "AzureAD Users"
 	$tab_Step1_AzureAdUser.UseVisualStyleBackColor = $True
 	$tab_Step1_Master.Controls.Add($tab_Step1_AzureAdUser)
-$btn_Step1_AzureAdUser_Discover.Font = $font_Calibri_10pt_normal
+$btn_Step1_AzureAdUser_Discover.Font = $font_SegoeUI_9pt_normal
 	$btn_Step1_AzureAdUser_Discover.Location = $Loc_Discover
 	$btn_Step1_AzureAdUser_Discover.Name = "btn_Step1_AzureAdUser_Discover"
 	$btn_Step1_AzureAdUser_Discover.Size = $Size_Btn_1
@@ -1776,7 +1961,7 @@ $btn_Step1_AzureAdUser_Discover.Font = $font_Calibri_10pt_normal
 	$btn_Step1_AzureAdUser_Discover.UseVisualStyleBackColor = $True
 	$btn_Step1_AzureAdUser_Discover.add_Click($handler_btn_Step1_AzureAdUser_Discover)
 	$bx_AzureAdUser_List.Controls.Add($btn_Step1_AzureAdUser_Discover)
-$btn_Step1_AzureAdUser_Populate.Font = $font_Calibri_10pt_normal
+$btn_Step1_AzureAdUser_Populate.Font = $font_SegoeUI_9pt_normal
 	$btn_Step1_AzureAdUser_Populate.Location = $Loc_Populate
 	$btn_Step1_AzureAdUser_Populate.Name = "btn_Step1_AzureAdUser_Populate"
 	$btn_Step1_AzureAdUser_Populate.Size = $Size_Btn_1
@@ -1784,16 +1969,15 @@ $btn_Step1_AzureAdUser_Populate.Font = $font_Calibri_10pt_normal
 	$btn_Step1_AzureAdUser_Populate.Text = "Load from File"
 	$btn_Step1_AzureAdUser_Populate.UseVisualStyleBackColor = $True
 	$btn_Step1_AzureAdUser_Populate.add_Click($handler_btn_Step1_AzureAdUser_Populate)
-$bx_AzureAdUser_List.Controls.Add($btn_Step1_AzureAdUser_Populate)
-	$bx_AzureAdUser_List.Dock = 5
-	$bx_AzureAdUser_List.Font = $font_Calibri_10pt_bold
+	$bx_AzureAdUser_List.Controls.Add($btn_Step1_AzureAdUser_Populate)
+$bx_AzureAdUser_List.Dock = 5
 	$bx_AzureAdUser_List.Location = $Loc_Box_1
 	$bx_AzureAdUser_List.Name = "bx_AzureAdUser_List"
 	$bx_AzureAdUser_List.Size = $Size_Box_1
 	$bx_AzureAdUser_List.TabIndex = $TabIndex++
 	$bx_AzureAdUser_List.TabStop = $False
 	$tab_Step1_AzureAdUser.Controls.Add($bx_AzureAdUser_List)
-$clb_Step1_AzureAdUser_List.Font = $font_Calibri_10pt_normal
+$clb_Step1_AzureAdUser_List.Font = $font_SegoeUI_9pt_normal
 	$clb_Step1_AzureAdUser_List.Location = $Loc_Clb_1
 	$clb_Step1_AzureAdUser_List.Name = "clb_Step1_AzureAdUser_List"
 	$clb_Step1_AzureAdUser_List.Size = $Size_Clb_1
@@ -1801,14 +1985,14 @@ $clb_Step1_AzureAdUser_List.Font = $font_Calibri_10pt_normal
 	$clb_Step1_AzureAdUser_List.horizontalscrollbar = $true
 	$clb_Step1_AzureAdUser_List.CheckOnClick = $true
 	$bx_AzureAdUser_List.Controls.Add($clb_Step1_AzureAdUser_List)
-$txt_AzureAdUserTotal.Font = $font_Calibri_10pt_normal
+$txt_AzureAdUserTotal.Font = $font_SegoeUI_9pt_normal
 	$txt_AzureAdUserTotal.Location = New-Object System.Drawing.Point(50,410)
 	$txt_AzureAdUserTotal.Name = "txt_AzureAdUserTotal"
 	$txt_AzureAdUserTotal.Size = $Size_TextBox
 	$txt_AzureAdUserTotal.TabIndex = $TabIndex++
 	$txt_AzureAdUserTotal.Visible = $False
 	$bx_AzureAdUser_List.Controls.Add($txt_AzureAdUserTotal)
-$btn_Step1_AzureAdUser_CheckAll.Font = $font_Calibri_10pt_normal
+$btn_Step1_AzureAdUser_CheckAll.Font = $font_SegoeUI_9pt_normal
 	$btn_Step1_AzureAdUser_CheckAll.Location = $Loc_CheckAll_1
 	$btn_Step1_AzureAdUser_CheckAll.Name = "btn_Step1_AzureAdUser_CheckAll"
 	$btn_Step1_AzureAdUser_CheckAll.Size = $Size_Btn_1
@@ -1817,7 +2001,7 @@ $btn_Step1_AzureAdUser_CheckAll.Font = $font_Calibri_10pt_normal
 	$btn_Step1_AzureAdUser_CheckAll.UseVisualStyleBackColor = $True
 	$btn_Step1_AzureAdUser_CheckAll.add_Click($handler_btn_Step1_AzureAdUser_CheckAll)
 	$bx_AzureAdUser_List.Controls.Add($btn_Step1_AzureAdUser_CheckAll)
-$btn_Step1_AzureAdUser_UncheckAll.Font = $font_Calibri_10pt_normal
+$btn_Step1_AzureAdUser_UncheckAll.Font = $font_SegoeUI_9pt_normal
 	$btn_Step1_AzureAdUser_UncheckAll.Location = $Loc_UncheckAll_1
 	$btn_Step1_AzureAdUser_UncheckAll.Name = "btn_Step1_AzureAdUser_UncheckAll"
 	$btn_Step1_AzureAdUser_UncheckAll.Size = $Size_Btn_1
@@ -1833,7 +2017,7 @@ $btn_Step1_AzureAdUser_UncheckAll.Font = $font_Calibri_10pt_normal
 #Region "Step2"
 $TabIndex = 0
 $tab_Step2.BackColor = [System.Drawing.Color]::FromArgb(0,255,255,255)
-	$tab_Step2.Font = $font_Calibri_8pt_normal
+	$tab_Step2.Font = $font_SegoeUI_9pt_normal
 	$tab_Step2.Location = $Loc_Tab_Tier1
 	$tab_Step2.Name = "tab_Step2"
 	$tab_Step2.Padding = $System_Windows_Forms_Padding_Reusable
@@ -1841,7 +2025,7 @@ $tab_Step2.BackColor = [System.Drawing.Color]::FromArgb(0,255,255,255)
 	$tab_Step2.Text = "  Templates  "
 	$tab_Step2.Size = $Size_Tab_1
 	$tab_Master.Controls.Add($tab_Step2)
-$bx_Step2_Templates.Font = $font_Calibri_10pt_bold
+$bx_Step2_Templates.Font = $font_SegoeUI_12pt_normal
 	$bx_Step2_Templates.Location = New-Object System.Drawing.Point(27,91)
 	$bx_Step2_Templates.Name = "bx_Step2_Templates"
 	$bx_Step2_Templates.Size = $Size_Box_1  #New-Object System.Drawing.Size(536,487)
@@ -1850,7 +2034,7 @@ $bx_Step2_Templates.Font = $font_Calibri_10pt_bold
 	$bx_Step2_Templates.Text = "Select a data collection template"
 	$tab_Step2.Controls.Add($bx_Step2_Templates)
 $rb_Step2_Template_1.Checked = $False
-	$rb_Step2_Template_1.Font = $font_Calibri_10pt_normal
+	$rb_Step2_Template_1.Font = $font_SegoeUI_9pt_normal
 	$rb_Step2_Template_1.Location = New-Object System.Drawing.Point(50,25)
 	$rb_Step2_Template_1.Name = "rb_Step2_Template_1"
 	$rb_Step2_Template_1.Size = $Size_Chk_long
@@ -1860,7 +2044,7 @@ $rb_Step2_Template_1.Checked = $False
 	$rb_Step2_Template_1.add_Click($handler_rb_Step2_Template_1)
 	$bx_Step2_Templates.Controls.Add($rb_Step2_Template_1)
 $rb_Step2_Template_2.Checked = $False
-	$rb_Step2_Template_2.Font = $font_Calibri_10pt_normal
+	$rb_Step2_Template_2.Font = $font_SegoeUI_9pt_normal
 	$rb_Step2_Template_2.Location = New-Object System.Drawing.Point(50,50)
 	$rb_Step2_Template_2.Name = "rb_Step2_Template_2"
 	$rb_Step2_Template_2.Size = $Size_Chk_long
@@ -1870,7 +2054,7 @@ $rb_Step2_Template_2.Checked = $False
 	$rb_Step2_Template_2.add_Click($handler_rb_Step2_Template_2)
 	$bx_Step2_Templates.Controls.Add($rb_Step2_Template_2)
 $rb_Step2_Template_3.Checked = $False
-	$rb_Step2_Template_3.Font = $font_Calibri_10pt_normal
+	$rb_Step2_Template_3.Font = $font_SegoeUI_9pt_normal
 	$rb_Step2_Template_3.Location = New-Object System.Drawing.Point(50,75)
 	$rb_Step2_Template_3.Name = "rb_Step2_Template_3"
 	$rb_Step2_Template_3.Size = $Size_Chk_long
@@ -1880,7 +2064,7 @@ $rb_Step2_Template_3.Checked = $False
 	$rb_Step2_Template_3.add_Click($handler_rb_Step2_Template_3)
 	$bx_Step2_Templates.Controls.Add($rb_Step2_Template_3)
 $rb_Step2_Template_4.Checked = $False
-	$rb_Step2_Template_4.Font = $font_Calibri_10pt_normal
+	$rb_Step2_Template_4.Font = $font_SegoeUI_9pt_normal
 	$rb_Step2_Template_4.Location = New-Object System.Drawing.Point(50,100)
 	$rb_Step2_Template_4.Name = "rb_Step2_Template_4"
 	$rb_Step2_Template_4.Size = $Size_Chk_long
@@ -1889,7 +2073,7 @@ $rb_Step2_Template_4.Checked = $False
 	$rb_Step2_Template_4.UseVisualStyleBackColor = $True
 	$rb_Step2_Template_4.add_Click($handler_rb_Step2_Template_4)
 	$bx_Step2_Templates.Controls.Add($rb_Step2_Template_4)
-$Status_Step2.Font = $font_Calibri_10pt_normal
+$Status_Step2.Font = $font_SegoeUI_9pt_normal
 	$Status_Step2.Location = $Loc_Status
 	$Status_Step2.Name = "Status_Step2"
 	$Status_Step2.Size = $Size_Status
@@ -1908,14 +2092,14 @@ $tab_Step3.Location = $Loc_Tab_Tier1
 	$tab_Step3.Text = "   Tests   "
 	$tab_Step3.Size = $Size_Tab_1
 	$tab_Master.Controls.Add($tab_Step3)
-$tab_Step3_Master.Font = $font_Calibri_12pt_normal
+$tab_Step3_Master.Font = $font_SegoeUI_12pt_normal
 	$tab_Step3_Master.Location = New-Object System.Drawing.Point(20,60)
 	$tab_Step3_Master.Name = "tab_Step3_Master"
 	$tab_Step3_Master.SelectedIndex = 0
 	$tab_Step3_Master.Size = New-Object System.Drawing.Size(550,525)
 	$tab_Step3_Master.TabIndex = $TabIndex++
 	$tab_Step3.Controls.Add($tab_Step3_Master)
-$btn_Step3_Execute.Font = $font_Calibri_14pt_normal
+$btn_Step3_Execute.Font = $font_SegoeUI_14pt_normal
 	$btn_Step3_Execute.Location = $Loc_Btn_1
 	$btn_Step3_Execute.Name = "btn_Step3_Execute"
 	$btn_Step3_Execute.Size = $Size_Buttons
@@ -1925,7 +2109,7 @@ $btn_Step3_Execute.Font = $font_Calibri_14pt_normal
 	$btn_Step3_Execute.add_Click($handler_btn_Step3_Execute_Click)
 	$tab_Step3.Controls.Add($btn_Step3_Execute)
 $lbl_Step3_Execute.BackColor = [System.Drawing.Color]::FromArgb(0,255,255,255)
-	$lbl_Step3_Execute.Font = $font_Calibri_10pt_normal
+	$lbl_Step3_Execute.Font = $font_SegoeUI_9pt_normal
 	$lbl_Step3_Execute.Location = $Loc_Lbl_1
 	$lbl_Step3_Execute.Name = "lbl_Step3"
 	$lbl_Step3_Execute.Size = New-Object System.Drawing.Size(510,38)
@@ -1933,7 +2117,7 @@ $lbl_Step3_Execute.BackColor = [System.Drawing.Color]::FromArgb(0,255,255,255)
 	$lbl_Step3_Execute.Text = "Select the functions below and click on the Execute button."
 	$lbl_Step3_Execute.TextAlign = 16
 	$tab_Step3.Controls.Add($lbl_Step3_Execute)
-$status_Step3.Font = $font_Calibri_10pt_normal
+$status_Step3.Font = $font_SegoeUI_9pt_normal
 	$status_Step3.Location = $Loc_Status
 	$status_Step3.Name = "status_Step3"
 	$status_Step3.Size = $Size_Status
@@ -1985,7 +2169,7 @@ $tab_Step3_Skype.Location = $Loc_Tab_Tier3
 	$tab_Step3_Skype.Padding = $System_Windows_Forms_Padding_Reusable
 	$tab_Step3_Skype.Size = $Size_Tab_Small
 	$tab_Step3_Skype.TabIndex = $TabIndex++
-	$tab_Step3_Skype.Text = "  Skype Functions (Not yet Enabled)  "
+	$tab_Step3_Skype.Text = "  Skype Functions  "
 	$tab_Step3_Skype.UseVisualStyleBackColor = $True
 	$tab_Step3_Master.Controls.Add($tab_Step3_Skype)
 #EndRegion Step3 Skype - Tier 2
@@ -1994,7 +2178,7 @@ $tab_Step3_Skype.Location = $Loc_Tab_Tier3
 $TabIndex = 0
 $tab_Step3_Exchange_Tier2.Appearance = 2
 	$tab_Step3_Exchange_Tier2.Dock = 5
-	$tab_Step3_Exchange_Tier2.Font = $font_Calibri_10pt_normal
+	$tab_Step3_Exchange_Tier2.Font = $font_SegoeUI_9pt_normal
 	$tab_Step3_Exchange_Tier2.ItemSize = $Size_Tab_Control
 	$tab_Step3_Exchange_Tier2.Location = $Loc_Tab_Control
 	$tab_Step3_Exchange_Tier2.Name = "tab_Step3_Exchange_Tier2"
@@ -2008,7 +2192,7 @@ $tab_Step3_Exchange_Tier2.Appearance = 2
 $TabIndex = 0
 $tab_Step3_Azure_Tier2.Appearance = 2
 	$tab_Step3_Azure_Tier2.Dock = 5
-	$tab_Step3_Azure_Tier2.Font = $font_Calibri_10pt_normal
+	$tab_Step3_Azure_Tier2.Font = $font_SegoeUI_9pt_normal
 	$tab_Step3_Azure_Tier2.ItemSize = $Size_Tab_Control
 	$tab_Step3_Azure_Tier2.Location = $Loc_Tab_Control
 	$tab_Step3_Azure_Tier2.Name = "tab_Step3_Azure_Tier2"
@@ -2022,7 +2206,7 @@ $tab_Step3_Azure_Tier2.Appearance = 2
 $TabIndex = 0
 $tab_Step3_Sharepoint_Tier2.Appearance = 2
 	$tab_Step3_Sharepoint_Tier2.Dock = 5
-	$tab_Step3_Sharepoint_Tier2.Font = $font_Calibri_10pt_normal
+	$tab_Step3_Sharepoint_Tier2.Font = $font_SegoeUI_9pt_normal
 	$tab_Step3_Sharepoint_Tier2.ItemSize = $Size_Tab_Control
 	$tab_Step3_Sharepoint_Tier2.Location = $Loc_Tab_Control
 	$tab_Step3_Sharepoint_Tier2.Name = "tab_Step3_Sharepoint_Tier2"
@@ -2036,7 +2220,7 @@ $tab_Step3_Sharepoint_Tier2.Appearance = 2
 $TabIndex = 0
 $tab_Step3_Skype_Tier2.Appearance = 2
 	$tab_Step3_Skype_Tier2.Dock = 5
-	$tab_Step3_Skype_Tier2.Font = $font_Calibri_10pt_normal
+	$tab_Step3_Skype_Tier2.Font = $font_SegoeUI_9pt_normal
 	$tab_Step3_Skype_Tier2.ItemSize = $Size_Tab_Control
 	$tab_Step3_Skype_Tier2.Location = $Loc_Tab_Control
 	$tab_Step3_Skype_Tier2.Name = "tab_Step3_Skype_Tier2"
@@ -2057,14 +2241,13 @@ $tab_Step3_ClientAccess.Location = $Loc_Tab_Tier3
 	$tab_Step3_ClientAccess.UseVisualStyleBackColor = $True
 	$tab_Step3_Exchange_Tier2.Controls.Add($tab_Step3_ClientAccess)
 $bx_ClientAccess_Functions.Dock = 5
-	$bx_ClientAccess_Functions.Font = $font_Calibri_10pt_bold
 	$bx_ClientAccess_Functions.Location = $Loc_Box_1
 	$bx_ClientAccess_Functions.Name = "bx_ClientAccess_Functions"
 	$bx_ClientAccess_Functions.Size = $Size_Box_3
 	$bx_ClientAccess_Functions.TabIndex = $TabIndex++
 	$bx_ClientAccess_Functions.TabStop = $False
 	$tab_Step3_ClientAccess.Controls.Add($bx_ClientAccess_Functions)
-$btn_Step3_ClientAccess_CheckAll.Font = $font_Calibri_10pt_normal
+$btn_Step3_ClientAccess_CheckAll.Font = $font_SegoeUI_9pt_normal
 	$btn_Step3_ClientAccess_CheckAll.Location = $Loc_CheckAll_3
 	$btn_Step3_ClientAccess_CheckAll.Name = "btn_Step3_ClientAccess_CheckAll"
 	$btn_Step3_ClientAccess_CheckAll.Size = $Size_Btn_3
@@ -2073,7 +2256,7 @@ $btn_Step3_ClientAccess_CheckAll.Font = $font_Calibri_10pt_normal
 	$btn_Step3_ClientAccess_CheckAll.UseVisualStyleBackColor = $True
 	$btn_Step3_ClientAccess_CheckAll.add_Click($handler_btn_Step3_ClientAccess_CheckAll_Click)
 	$bx_ClientAccess_Functions.Controls.Add($btn_Step3_ClientAccess_CheckAll)
-$btn_Step3_ClientAccess_UncheckAll.Font = $font_Calibri_10pt_normal
+$btn_Step3_ClientAccess_UncheckAll.Font = $font_SegoeUI_9pt_normal
 	$btn_Step3_ClientAccess_UncheckAll.Location = $Loc_UncheckAll_3
 	$btn_Step3_ClientAccess_UncheckAll.Name = "btn_Step3_ClientAccess_UncheckAll"
 	$btn_Step3_ClientAccess_UncheckAll.Size = $Size_Btn_3
@@ -2086,7 +2269,7 @@ $Col_1_loc = 35
 $Col_2_loc = 290
 $Row_1_loc = 0
 $Row_2_loc = 0
-$chk_Exch_ActiveSyncOrgSettings.Font = $font_Calibri_10pt_normal
+$chk_Exch_ActiveSyncOrgSettings.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_ActiveSyncOrgSettings.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_ActiveSyncOrgSettings.Name = "chk_Exch_ActiveSyncOrgSettings"
@@ -2095,7 +2278,7 @@ $chk_Exch_ActiveSyncOrgSettings.Font = $font_Calibri_10pt_normal
 	$chk_Exch_ActiveSyncOrgSettings.Text = "Get-ActiveSyncOrgSettings"
 	$chk_Exch_ActiveSyncOrgSettings.UseVisualStyleBackColor = $True
 	$bx_ClientAccess_Functions.Controls.Add($chk_Exch_ActiveSyncOrgSettings)
-$chk_Exch_AvailabilityAddressSpace.Font = $font_Calibri_10pt_normal
+$chk_Exch_AvailabilityAddressSpace.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_AvailabilityAddressSpace.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_AvailabilityAddressSpace.Name = "chk_Exch_AvailabilityAddressSpace"
@@ -2104,7 +2287,7 @@ $chk_Exch_AvailabilityAddressSpace.Font = $font_Calibri_10pt_normal
 	$chk_Exch_AvailabilityAddressSpace.Text = "Get-AvailabilityAddressSpace"
 	$chk_Exch_AvailabilityAddressSpace.UseVisualStyleBackColor = $True
 	$bx_ClientAccess_Functions.Controls.Add($chk_Exch_AvailabilityAddressSpace)
-$chk_Exch_MobileDevice.Font = $font_Calibri_10pt_normal
+$chk_Exch_MobileDevice.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_MobileDevice.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_MobileDevice.Name = "chk_Exch_MobileDevice"
@@ -2113,7 +2296,7 @@ $chk_Exch_MobileDevice.Font = $font_Calibri_10pt_normal
 	$chk_Exch_MobileDevice.Text = "Get-MobileDevice"
 	$chk_Exch_MobileDevice.UseVisualStyleBackColor = $True
 	$bx_ClientAccess_Functions.Controls.Add($chk_Exch_MobileDevice)
-$chk_Exch_MobileDevicePolicy.Font = $font_Calibri_10pt_normal
+$chk_Exch_MobileDevicePolicy.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_MobileDevicePolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_MobileDevicePolicy.Name = "chk_Exch_MobileDevicePolicy"
@@ -2122,7 +2305,7 @@ $chk_Exch_MobileDevicePolicy.Font = $font_Calibri_10pt_normal
 	$chk_Exch_MobileDevicePolicy.Text = "Get-MobileDeviceMailboxPolicy"
 	$chk_Exch_MobileDevicePolicy.UseVisualStyleBackColor = $True
 	$bx_ClientAccess_Functions.Controls.Add($chk_Exch_MobileDevicePolicy)
-$chk_Exch_OwaMailboxPolicy.Font = $font_Calibri_10pt_normal
+$chk_Exch_OwaMailboxPolicy.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_OwaMailboxPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_OwaMailboxPolicy.Name = "chk_Exch_OwaMailboxPolicy"
@@ -2144,14 +2327,13 @@ $tab_Step3_Global.Size = $Size_Tab_Small
 	$tab_Step3_Global.UseVisualStyleBackColor = $True
 	$tab_Step3_Exchange_Tier2.Controls.Add($tab_Step3_Global)
 $bx_Global_Functions.Dock = 5
-	$bx_Global_Functions.Font = $font_Calibri_10pt_bold
 	$bx_Global_Functions.Location = $Loc_Box_1
 	$bx_Global_Functions.Name = "bx_Global_Functions"
 	$bx_Global_Functions.Size = $Size_Box_3
 	$bx_Global_Functions.TabIndex = $TabIndex++
 	$bx_Global_Functions.TabStop = $False
 	$tab_Step3_Global.Controls.Add($bx_Global_Functions)
-$btn_Step3_Global_CheckAll.Font = $font_Calibri_10pt_normal
+$btn_Step3_Global_CheckAll.Font = $font_SegoeUI_9pt_normal
 	$btn_Step3_Global_CheckAll.Location = $Loc_CheckAll_3
 	$btn_Step3_Global_CheckAll.Name = "btn_Step3_Global_CheckAll"
 	$btn_Step3_Global_CheckAll.Size = $Size_Btn_3
@@ -2160,7 +2342,7 @@ $btn_Step3_Global_CheckAll.Font = $font_Calibri_10pt_normal
 	$btn_Step3_Global_CheckAll.UseVisualStyleBackColor = $True
 	$btn_Step3_Global_CheckAll.add_Click($handler_btn_Step3_Global_CheckAll_Click)
 	$bx_Global_Functions.Controls.Add($btn_Step3_Global_CheckAll)
-$btn_Step3_Global_UncheckAll.Font = $font_Calibri_10pt_normal
+$btn_Step3_Global_UncheckAll.Font = $font_SegoeUI_9pt_normal
 	$btn_Step3_Global_UncheckAll.Location = $Loc_UncheckAll_3
 	$btn_Step3_Global_UncheckAll.Name = "btn_Step3_Global_UncheckAll"
 	$btn_Step3_Global_UncheckAll.Size = $Size_Btn_3
@@ -2173,7 +2355,7 @@ $Col_1_loc = 35
 $Col_2_loc = 290
 $Row_1_loc = 0
 $Row_2_loc = 0
-$chk_Exch_AddressBookPolicy.Font = $font_Calibri_10pt_normal
+$chk_Exch_AddressBookPolicy.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_AddressBookPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_AddressBookPolicy.Name = "chk_Exch_AddressBookPolicy"
@@ -2182,7 +2364,7 @@ $chk_Exch_AddressBookPolicy.Font = $font_Calibri_10pt_normal
 	$chk_Exch_AddressBookPolicy.Text = "Get-AddressBookPolicy"
 	$chk_Exch_AddressBookPolicy.UseVisualStyleBackColor = $True
 	$bx_Global_Functions.Controls.Add($chk_Exch_AddressBookPolicy)
-$chk_Exch_AddressList.Font = $font_Calibri_10pt_normal
+$chk_Exch_AddressList.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_AddressList.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_AddressList.Name = "chk_Exch_AddressList"
@@ -2191,7 +2373,7 @@ $chk_Exch_AddressList.Font = $font_Calibri_10pt_normal
 	$chk_Exch_AddressList.Text = "Get-AddressList"
 	$chk_Exch_AddressList.UseVisualStyleBackColor = $True
 	$bx_Global_Functions.Controls.Add($chk_Exch_AddressList)
-$chk_Exch_AntiPhishPolicy.Font = $font_Calibri_10pt_normal
+$chk_Exch_AntiPhishPolicy.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_AntiPhishPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_AntiPhishPolicy.Name = "chk_Exch_AntiPhishPolicy"
@@ -2200,7 +2382,7 @@ $chk_Exch_AntiPhishPolicy.Font = $font_Calibri_10pt_normal
 	$chk_Exch_AntiPhishPolicy.Text = "Get-AntiPhishPolicy"
 	$chk_Exch_AntiPhishPolicy.UseVisualStyleBackColor = $True
 	$bx_Global_Functions.Controls.Add($chk_Exch_AntiPhishPolicy)
-$chk_Exch_AntiSpoofingPolicy.Font = $font_Calibri_10pt_normal
+$chk_Exch_AntiSpoofingPolicy.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_AntiSpoofingPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_AntiSpoofingPolicy.Name = "chk_Exch_AntiSpoofingPolicy"
@@ -2209,7 +2391,7 @@ $chk_Exch_AntiSpoofingPolicy.Font = $font_Calibri_10pt_normal
 	$chk_Exch_AntiSpoofingPolicy.Text = "Get-AntiSpoofingPolicy"
 	$chk_Exch_AntiSpoofingPolicy.UseVisualStyleBackColor = $True
 	$bx_Global_Functions.Controls.Add($chk_Exch_AntiSpoofingPolicy)
-$chk_Exch_AtpPolicyForO365.Font = $font_Calibri_10pt_normal
+$chk_Exch_AtpPolicyForO365.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_AtpPolicyForO365.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_AtpPolicyForO365.Name = "chk_Exch_AtpPolicyForO365"
@@ -2218,7 +2400,7 @@ $chk_Exch_AtpPolicyForO365.Font = $font_Calibri_10pt_normal
 	$chk_Exch_AtpPolicyForO365.Text = "Get-AtpPolicyForO365"
 	$chk_Exch_AtpPolicyForO365.UseVisualStyleBackColor = $True
 	$bx_Global_Functions.Controls.Add($chk_Exch_AtpPolicyForO365)
-$chk_Exch_EmailAddressPolicy.Font = $font_Calibri_10pt_normal
+$chk_Exch_EmailAddressPolicy.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_EmailAddressPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_EmailAddressPolicy.Name = "chk_Exch_EmailAddressPolicy"
@@ -2227,7 +2409,7 @@ $chk_Exch_EmailAddressPolicy.Font = $font_Calibri_10pt_normal
 	$chk_Exch_EmailAddressPolicy.Text = "Get-EmailAddressPolicy"
 	$chk_Exch_EmailAddressPolicy.UseVisualStyleBackColor = $True
 	$bx_Global_Functions.Controls.Add($chk_Exch_EmailAddressPolicy)
-$chk_Exch_GlobalAddressList.Font = $font_Calibri_10pt_normal
+$chk_Exch_GlobalAddressList.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_GlobalAddressList.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_GlobalAddressList.Name = "chk_Exch_GlobalAddressList"
@@ -2236,7 +2418,7 @@ $chk_Exch_GlobalAddressList.Font = $font_Calibri_10pt_normal
 	$chk_Exch_GlobalAddressList.Text = "Get-GlobalAddressList"
 	$chk_Exch_GlobalAddressList.UseVisualStyleBackColor = $True
 	$bx_Global_Functions.Controls.Add($chk_Exch_GlobalAddressList)
-$chk_Exch_OfflineAddressBook.Font = $font_Calibri_10pt_normal
+$chk_Exch_OfflineAddressBook.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Exch_OfflineAddressBook.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Exch_OfflineAddressBook.Name = "chk_Exch_OfflineAddressBook"
@@ -2245,7 +2427,7 @@ $chk_Exch_OfflineAddressBook.Font = $font_Calibri_10pt_normal
 	$chk_Exch_OfflineAddressBook.Text = "Get-OfflineAddressBook"
 	$chk_Exch_OfflineAddressBook.UseVisualStyleBackColor = $True
 	$bx_Global_Functions.Controls.Add($chk_Exch_OfflineAddressBook)
-$chk_Exch_OnPremisesOrganization.Font = $font_Calibri_10pt_normal
+$chk_Exch_OnPremisesOrganization.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Exch_OnPremisesOrganization.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Exch_OnPremisesOrganization.Name = "chk_Exch_OnPremisesOrganization"
@@ -2254,7 +2436,7 @@ $chk_Exch_OnPremisesOrganization.Font = $font_Calibri_10pt_normal
 	$chk_Exch_OnPremisesOrganization.Text = "Get-OnPremisesOrganization"
 	$chk_Exch_OnPremisesOrganization.UseVisualStyleBackColor = $True
 	$bx_Global_Functions.Controls.Add($chk_Exch_OnPremisesOrganization)
-$chk_Exch_OrgConfig.Font = $font_Calibri_10pt_normal
+$chk_Exch_OrgConfig.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Exch_OrgConfig.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Exch_OrgConfig.Name = "chk_Exch_OrgConfig"
@@ -2263,7 +2445,7 @@ $chk_Exch_OrgConfig.Font = $font_Calibri_10pt_normal
 	$chk_Exch_OrgConfig.Text = "Get-OrganizationConfig"
 	$chk_Exch_OrgConfig.UseVisualStyleBackColor = $True
 	$bx_Global_Functions.Controls.Add($chk_Exch_OrgConfig)
-$chk_Exch_Rbac.Font = $font_Calibri_10pt_normal
+$chk_Exch_Rbac.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Exch_Rbac.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Exch_Rbac.Name = "chk_Exch_Rbac"
@@ -2272,7 +2454,7 @@ $chk_Exch_Rbac.Font = $font_Calibri_10pt_normal
 	$chk_Exch_Rbac.Text = "Get-Rbac"
 	$chk_Exch_Rbac.UseVisualStyleBackColor = $True
 	$bx_Global_Functions.Controls.Add($chk_Exch_Rbac)
-$chk_Exch_RetentionPolicy.Font = $font_Calibri_10pt_normal
+$chk_Exch_RetentionPolicy.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Exch_RetentionPolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Exch_RetentionPolicy.Name = "chk_Exch_RetentionPolicy"
@@ -2281,7 +2463,7 @@ $chk_Exch_RetentionPolicy.Font = $font_Calibri_10pt_normal
 	$chk_Exch_RetentionPolicy.Text = "Get-RetentionPolicy"
 	$chk_Exch_RetentionPolicy.UseVisualStyleBackColor = $True
 	$bx_Global_Functions.Controls.Add($chk_Exch_RetentionPolicy)
-$chk_Exch_RetentionPolicyTag.Font = $font_Calibri_10pt_normal
+$chk_Exch_RetentionPolicyTag.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Exch_RetentionPolicyTag.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Exch_RetentionPolicyTag.Name = "chk_Exch_RetentionPolicyTag"
@@ -2290,7 +2472,7 @@ $chk_Exch_RetentionPolicyTag.Font = $font_Calibri_10pt_normal
 	$chk_Exch_RetentionPolicyTag.Text = "Get-RetentionPolicyTag"
 	$chk_Exch_RetentionPolicyTag.UseVisualStyleBackColor = $True
 	$bx_Global_Functions.Controls.Add($chk_Exch_RetentionPolicyTag)
-$chk_Exch_SmimeConfig.Font = $font_Calibri_10pt_normal
+$chk_Exch_SmimeConfig.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Exch_SmimeConfig.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Exch_SmimeConfig.Name = "chk_Exch_SmimeConfig"
@@ -2312,14 +2494,13 @@ $tab_Step3_Recipient.Location = $Loc_Tab_Tier3
 	$tab_Step3_Recipient.UseVisualStyleBackColor = $True
 	$tab_Step3_Exchange_Tier2.Controls.Add($tab_Step3_Recipient)
 $bx_Recipient_Functions.Dock = 5
-	$bx_Recipient_Functions.Font = $font_Calibri_10pt_bold
 	$bx_Recipient_Functions.Location = $Loc_Box_1
 	$bx_Recipient_Functions.Name = "bx_Recipient_Functions"
 	$bx_Recipient_Functions.Size = $Size_Box_3
 	$bx_Recipient_Functions.TabIndex = $TabIndex++
 	$bx_Recipient_Functions.TabStop = $False
 	$tab_Step3_Recipient.Controls.Add($bx_Recipient_Functions)
-$btn_Step3_Recipient_CheckAll.Font = $font_Calibri_10pt_normal
+$btn_Step3_Recipient_CheckAll.Font = $font_SegoeUI_9pt_normal
 	$btn_Step3_Recipient_CheckAll.Location = $Loc_CheckAll_3
 	$btn_Step3_Recipient_CheckAll.Name = "btn_Step3_Recipient_CheckAll"
 	$btn_Step3_Recipient_CheckAll.Size = $Size_Btn_3
@@ -2328,7 +2509,7 @@ $btn_Step3_Recipient_CheckAll.Font = $font_Calibri_10pt_normal
 	$btn_Step3_Recipient_CheckAll.UseVisualStyleBackColor = $True
 	$btn_Step3_Recipient_CheckAll.add_Click($handler_btn_Step3_Recipient_CheckAll_Click)
 	$bx_Recipient_Functions.Controls.Add($btn_Step3_Recipient_CheckAll)
-$btn_Step3_Recipient_UncheckAll.Font = $font_Calibri_10pt_normal
+$btn_Step3_Recipient_UncheckAll.Font = $font_SegoeUI_9pt_normal
 	$btn_Step3_Recipient_UncheckAll.Location = $Loc_UncheckAll_3
 	$btn_Step3_Recipient_UncheckAll.Name = "btn_Step3_Recipient_UncheckAll"
 	$btn_Step3_Recipient_UncheckAll.Size = $Size_Btn_3
@@ -2341,7 +2522,7 @@ $Col_1_loc = 35
 $Col_2_loc = 290
 $Row_1_loc = 0
 $Row_2_loc = 0
-$chk_Exch_CalendarProcessing.Font = $font_Calibri_10pt_normal
+$chk_Exch_CalendarProcessing.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_CalendarProcessing.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_CalendarProcessing.Name = "chk_Exch_CalendarProcessing"
@@ -2350,7 +2531,7 @@ $chk_Exch_CalendarProcessing.Font = $font_Calibri_10pt_normal
 	$chk_Exch_CalendarProcessing.Text = "Get-CalendarProcessing"
 	$chk_Exch_CalendarProcessing.UseVisualStyleBackColor = $True
 	$bx_Recipient_Functions.Controls.Add($chk_Exch_CalendarProcessing)
-$chk_Exch_CASMailbox.Font = $font_Calibri_10pt_normal
+$chk_Exch_CASMailbox.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_CASMailbox.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_CASMailbox.Name = "chk_Exch_CASMailbox"
@@ -2359,7 +2540,7 @@ $chk_Exch_CASMailbox.Font = $font_Calibri_10pt_normal
 	$chk_Exch_CASMailbox.Text = "Get-CASMailbox"
 	$chk_Exch_CASMailbox.UseVisualStyleBackColor = $True
 	$bx_Recipient_Functions.Controls.Add($chk_Exch_CASMailbox)
-$chk_Exch_CasMailboxPlan.Font = $font_Calibri_10pt_normal
+$chk_Exch_CasMailboxPlan.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_CasMailboxPlan.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_CasMailboxPlan.Name = "chk_Exch_CasMailboxPlan"
@@ -2368,7 +2549,7 @@ $chk_Exch_CasMailboxPlan.Font = $font_Calibri_10pt_normal
 	$chk_Exch_CasMailboxPlan.Text = "Get-CasMailboxPlan"
 	$chk_Exch_CasMailboxPlan.UseVisualStyleBackColor = $True
 	$bx_Recipient_Functions.Controls.Add($chk_Exch_CasMailboxPlan)
-$chk_Exch_Contact.Font = $font_Calibri_10pt_normal
+$chk_Exch_Contact.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_Contact.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_Contact.Name = "chk_Exch_Contact"
@@ -2377,7 +2558,7 @@ $chk_Exch_Contact.Font = $font_Calibri_10pt_normal
 	$chk_Exch_Contact.Text = "Get-Contact"
 	$chk_Exch_Contact.UseVisualStyleBackColor = $True
 	$bx_Recipient_Functions.Controls.Add($chk_Exch_Contact)
-$chk_Exch_DistributionGroup.Font = $font_Calibri_10pt_normal
+$chk_Exch_DistributionGroup.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_DistributionGroup.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_DistributionGroup.Name = "chk_Exch_DistributionGroup"
@@ -2386,7 +2567,7 @@ $chk_Exch_DistributionGroup.Font = $font_Calibri_10pt_normal
 	$chk_Exch_DistributionGroup.Text = "Get-DistributionGroup"
 	$chk_Exch_DistributionGroup.UseVisualStyleBackColor = $True
 	$bx_Recipient_Functions.Controls.Add($chk_Exch_DistributionGroup)
-$chk_Exch_DynamicDistributionGroup.Font = $font_Calibri_10pt_normal
+$chk_Exch_DynamicDistributionGroup.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_DynamicDistributionGroup.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_DynamicDistributionGroup.Name = "chk_Exch_DynamicDistributionGroup"
@@ -2395,7 +2576,7 @@ $chk_Exch_DynamicDistributionGroup.Font = $font_Calibri_10pt_normal
 	$chk_Exch_DynamicDistributionGroup.Text = "Get-DynamicDistributionGroup"
 	$chk_Exch_DynamicDistributionGroup.UseVisualStyleBackColor = $True
 	$bx_Recipient_Functions.Controls.Add($chk_Exch_DynamicDistributionGroup)
-$chk_Exch_Mailbox.Font = $font_Calibri_10pt_normal
+$chk_Exch_Mailbox.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_Mailbox.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_Mailbox.Name = "chk_Exch_Mailbox"
@@ -2404,7 +2585,7 @@ $chk_Exch_Mailbox.Font = $font_Calibri_10pt_normal
 	$chk_Exch_Mailbox.Text = "Get-Mailbox"
 	$chk_Exch_Mailbox.UseVisualStyleBackColor = $True
 	$bx_Recipient_Functions.Controls.Add($chk_Exch_Mailbox)
-$chk_Exch_MailboxFolderStatistics.Font = $font_Calibri_10pt_normal
+$chk_Exch_MailboxFolderStatistics.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_MailboxFolderStatistics.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_MailboxFolderStatistics.Name = "chk_Exch_MailboxFolderStatistics"
@@ -2413,7 +2594,7 @@ $chk_Exch_MailboxFolderStatistics.Font = $font_Calibri_10pt_normal
 	$chk_Exch_MailboxFolderStatistics.Text = "Get-MailboxFolderStatistics"
 	$chk_Exch_MailboxFolderStatistics.UseVisualStyleBackColor = $True
 	$bx_Recipient_Functions.Controls.Add($chk_Exch_MailboxFolderStatistics)
-$chk_Exch_MailboxPermission.Font = $font_Calibri_10pt_normal
+$chk_Exch_MailboxPermission.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Exch_MailboxPermission.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Exch_MailboxPermission.Name = "chk_Exch_MailboxPermission"
@@ -2422,7 +2603,7 @@ $chk_Exch_MailboxPermission.Font = $font_Calibri_10pt_normal
 	$chk_Exch_MailboxPermission.Text = "Get-MailboxPermission"
 	$chk_Exch_MailboxPermission.UseVisualStyleBackColor = $True
 	$bx_Recipient_Functions.Controls.Add($chk_Exch_MailboxPermission)
-$chk_Exch_MailboxPlan.Font = $font_Calibri_10pt_normal
+$chk_Exch_MailboxPlan.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Exch_MailboxPlan.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Exch_MailboxPlan.Name = "chk_Exch_MailboxPlan"
@@ -2431,7 +2612,7 @@ $chk_Exch_MailboxPlan.Font = $font_Calibri_10pt_normal
 	$chk_Exch_MailboxPlan.Text = "Get-MailboxPlan"
 	$chk_Exch_MailboxPlan.UseVisualStyleBackColor = $True
 	$bx_Recipient_Functions.Controls.Add($chk_Exch_MailboxPlan)
-$chk_Exch_MailboxStatistics.Font = $font_Calibri_10pt_normal
+$chk_Exch_MailboxStatistics.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Exch_MailboxStatistics.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Exch_MailboxStatistics.Name = "chk_Exch_MailboxStatistics"
@@ -2440,7 +2621,7 @@ $chk_Exch_MailboxStatistics.Font = $font_Calibri_10pt_normal
 	$chk_Exch_MailboxStatistics.Text = "Get-MailboxStatistics"
 	$chk_Exch_MailboxStatistics.UseVisualStyleBackColor = $True
 	$bx_Recipient_Functions.Controls.Add($chk_Exch_MailboxStatistics)
-$chk_Exch_MailUser.Font = $font_Calibri_10pt_normal
+$chk_Exch_MailUser.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Exch_MailUser.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Exch_MailUser.Name = "chk_Exch_MailUser"
@@ -2449,7 +2630,7 @@ $chk_Exch_MailUser.Font = $font_Calibri_10pt_normal
 	$chk_Exch_MailUser.Text = "Get-MailUser"
 	$chk_Exch_MailUser.UseVisualStyleBackColor = $True
 	$bx_Recipient_Functions.Controls.Add($chk_Exch_MailUser)
-$chk_Exch_PublicFolder.Font = $font_Calibri_10pt_normal
+$chk_Exch_PublicFolder.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Exch_PublicFolder.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Exch_PublicFolder.Name = "chk_Exch_PublicFolder"
@@ -2458,7 +2639,7 @@ $chk_Exch_PublicFolder.Font = $font_Calibri_10pt_normal
 	$chk_Exch_PublicFolder.Text = "Get-PublicFolder"
 	$chk_Exch_PublicFolder.UseVisualStyleBackColor = $True
 	$bx_Recipient_Functions.Controls.Add($chk_Exch_PublicFolder)
-$chk_Exch_PublicFolderStatistics.Font = $font_Calibri_10pt_normal
+$chk_Exch_PublicFolderStatistics.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Exch_PublicFolderStatistics.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Exch_PublicFolderStatistics.Name = "chk_Exch_PublicFolderStatistics"
@@ -2467,7 +2648,7 @@ $chk_Exch_PublicFolderStatistics.Font = $font_Calibri_10pt_normal
 	$chk_Exch_PublicFolderStatistics.Text = "Get-PublicFolderStatistics"
 	$chk_Exch_PublicFolderStatistics.UseVisualStyleBackColor = $True
 	$bx_Recipient_Functions.Controls.Add($chk_Exch_PublicFolderStatistics)
-$chk_Exch_UnifiedGroup.Font = $font_Calibri_10pt_normal
+$chk_Exch_UnifiedGroup.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Exch_UnifiedGroup.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Exch_UnifiedGroup.Name = "chk_Exch_UnifiedGroup"
@@ -2476,7 +2657,7 @@ $chk_Exch_UnifiedGroup.Font = $font_Calibri_10pt_normal
 	$chk_Exch_UnifiedGroup.Text = "Get-UnifiedGroup"
 	$chk_Exch_UnifiedGroup.UseVisualStyleBackColor = $True
 	$bx_Recipient_Functions.Controls.Add($chk_Exch_UnifiedGroup)
-$chk_Org_Quota.Font = $font_Calibri_10pt_normal
+$chk_Org_Quota.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Org_Quota.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Org_Quota.Name = "chk_Org_Quota"
@@ -2498,14 +2679,13 @@ $tab_Step3_Transport.Location = $Loc_Tab_Tier3
 	$tab_Step3_Transport.UseVisualStyleBackColor = $True
 	$tab_Step3_Exchange_Tier2.Controls.Add($tab_Step3_Transport)
 $bx_Transport_Functions.Dock = 5
-	$bx_Transport_Functions.Font = $font_Calibri_10pt_bold
 	$bx_Transport_Functions.Location = $Loc_Box_1
 	$bx_Transport_Functions.Name = "bx_Transport_Functions"
 	$bx_Transport_Functions.Size = $Size_Box_3
 	$bx_Transport_Functions.TabIndex = $TabIndex++
 	$bx_Transport_Functions.TabStop = $False
 	$tab_Step3_Transport.Controls.Add($bx_Transport_Functions)
-$btn_Step3_Transport_CheckAll.Font = $font_Calibri_10pt_normal
+$btn_Step3_Transport_CheckAll.Font = $font_SegoeUI_9pt_normal
 	$btn_Step3_Transport_CheckAll.Location = $Loc_CheckAll_3
 	$btn_Step3_Transport_CheckAll.Name = "btn_Step3_Transport_CheckAll"
 	$btn_Step3_Transport_CheckAll.Size = $Size_Btn_3
@@ -2514,7 +2694,7 @@ $btn_Step3_Transport_CheckAll.Font = $font_Calibri_10pt_normal
 	$btn_Step3_Transport_CheckAll.UseVisualStyleBackColor = $True
 	$btn_Step3_Transport_CheckAll.add_Click($handler_btn_Step3_Transport_CheckAll_Click)
 	$bx_Transport_Functions.Controls.Add($btn_Step3_Transport_CheckAll)
-$btn_Step3_Transport_UncheckAll.Font = $font_Calibri_10pt_normal
+$btn_Step3_Transport_UncheckAll.Font = $font_SegoeUI_9pt_normal
 	$btn_Step3_Transport_UncheckAll.Location = $Loc_UncheckAll_3
 	$btn_Step3_Transport_UncheckAll.Name = "btn_Step3_Transport_UncheckAll"
 	$btn_Step3_Transport_UncheckAll.Size = $Size_Btn_3
@@ -2527,7 +2707,7 @@ $Col_1_loc = 35
 $Col_2_loc = 290
 $Row_1_loc = 0
 $Row_2_loc = 0
-$chk_Exch_AcceptedDomain.Font = $font_Calibri_10pt_normal
+$chk_Exch_AcceptedDomain.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_AcceptedDomain.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_AcceptedDomain.Name = "chk_Exch_AcceptedDomain"
@@ -2536,7 +2716,7 @@ $chk_Exch_AcceptedDomain.Font = $font_Calibri_10pt_normal
 	$chk_Exch_AcceptedDomain.Text = "Get-AcceptedDomain"
 	$chk_Exch_AcceptedDomain.UseVisualStyleBackColor = $True
 	$bx_Transport_Functions.Controls.Add($chk_Exch_AcceptedDomain)
-$chk_Exch_DkimSigningConfig.Font = $font_Calibri_10pt_normal
+$chk_Exch_DkimSigningConfig.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_DkimSigningConfig.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_DkimSigningConfig.Name = "chk_Exch_DkimSigningConfig"
@@ -2545,7 +2725,7 @@ $chk_Exch_DkimSigningConfig.Font = $font_Calibri_10pt_normal
 	$chk_Exch_DkimSigningConfig.Text = "Get-DkimSigningConfig"
 	$chk_Exch_DkimSigningConfig.UseVisualStyleBackColor = $True
 	$bx_Transport_Functions.Controls.Add($chk_Exch_DkimSigningConfig)
-$chk_Exch_InboundConnector.Font = $font_Calibri_10pt_normal
+$chk_Exch_InboundConnector.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_InboundConnector.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_InboundConnector.Name = "chk_Exch_InboundConnector"
@@ -2554,7 +2734,7 @@ $chk_Exch_InboundConnector.Font = $font_Calibri_10pt_normal
 	$chk_Exch_InboundConnector.Text = "Get-InboundConnector"
 	$chk_Exch_InboundConnector.UseVisualStyleBackColor = $True
 	$bx_Transport_Functions.Controls.Add($chk_Exch_InboundConnector)
-$chk_Exch_OutboundConnector.Font = $font_Calibri_10pt_normal
+$chk_Exch_OutboundConnector.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_OutboundConnector.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_OutboundConnector.Name = "chk_Exch_OutboundConnector"
@@ -2563,7 +2743,7 @@ $chk_Exch_OutboundConnector.Font = $font_Calibri_10pt_normal
 	$chk_Exch_OutboundConnector.Text = "Get-OutboundConnector"
 	$chk_Exch_OutboundConnector.UseVisualStyleBackColor = $True
 	$bx_Transport_Functions.Controls.Add($chk_Exch_OutboundConnector)
-$chk_Exch_RemoteDomain.Font = $font_Calibri_10pt_normal
+$chk_Exch_RemoteDomain.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_RemoteDomain.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_RemoteDomain.Name = "chk_Exch_RemoteDomain"
@@ -2572,7 +2752,7 @@ $chk_Exch_RemoteDomain.Font = $font_Calibri_10pt_normal
 	$chk_Exch_RemoteDomain.Text = "Get-RemoteDomain"
 	$chk_Exch_RemoteDomain.UseVisualStyleBackColor = $True
 	$bx_Transport_Functions.Controls.Add($chk_Exch_RemoteDomain)
-$chk_Exch_TransportConfig.Font = $font_Calibri_10pt_normal
+$chk_Exch_TransportConfig.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_TransportConfig.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_TransportConfig.Name = "chk_Exch_TransportConfig"
@@ -2581,7 +2761,7 @@ $chk_Exch_TransportConfig.Font = $font_Calibri_10pt_normal
 	$chk_Exch_TransportConfig.Text = "Get-TransportConfig"
 	$chk_Exch_TransportConfig.UseVisualStyleBackColor = $True
 	$bx_Transport_Functions.Controls.Add($chk_Exch_TransportConfig)
-$chk_Exch_TransportRule.Font = $font_Calibri_10pt_normal
+$chk_Exch_TransportRule.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_TransportRule.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_TransportRule.Name = "chk_Exch_TransportRule"
@@ -2603,14 +2783,13 @@ $tab_Step3_UM.Location = $Loc_Tab_Tier3
 	$tab_Step3_UM.UseVisualStyleBackColor = $True
 	$tab_Step3_Exchange_Tier2.Controls.Add($tab_Step3_UM)
 $bx_UM_Functions.Dock = 5
-	$bx_UM_Functions.Font = $font_Calibri_10pt_bold
 	$bx_UM_Functions.Location = $Loc_Box_1
 	$bx_UM_Functions.Name = "bx_Misc_Functions"
 	$bx_UM_Functions.Size = $Size_Box_3
 	$bx_UM_Functions.TabIndex = $TabIndex++
 	$bx_UM_Functions.TabStop = $False
 	$tab_Step3_UM.Controls.Add($bx_UM_Functions)
-$btn_Step3_UM_CheckAll.Font = $font_Calibri_10pt_normal
+$btn_Step3_UM_CheckAll.Font = $font_SegoeUI_9pt_normal
 	$btn_Step3_UM_CheckAll.Location = $Loc_CheckAll_3
 	$btn_Step3_UM_CheckAll.Name = "btn_Step3_Misc_CheckAll"
 	$btn_Step3_UM_CheckAll.Size = $Size_Btn_3
@@ -2619,7 +2798,7 @@ $btn_Step3_UM_CheckAll.Font = $font_Calibri_10pt_normal
 	$btn_Step3_UM_CheckAll.UseVisualStyleBackColor = $True
 	$btn_Step3_UM_CheckAll.add_Click($handler_btn_Step3_UM_CheckAll_Click)
 	$bx_UM_Functions.Controls.Add($btn_Step3_UM_CheckAll)
-$btn_Step3_UM_UncheckAll.Font = $font_Calibri_10pt_normal
+$btn_Step3_UM_UncheckAll.Font = $font_SegoeUI_9pt_normal
 	$btn_Step3_UM_UncheckAll.Location = $Loc_UncheckAll_3
 	$btn_Step3_UM_UncheckAll.Name = "btn_Step3_Misc_UncheckAll"
 	$btn_Step3_UM_UncheckAll.Size = $Size_Btn_3
@@ -2632,7 +2811,7 @@ $Col_1_loc = 35
 $Col_2_loc = 290
 $Row_1_loc = 0
 $Row_2_loc = 0
-$chk_Exch_UmAutoAttendant.Font = $font_Calibri_10pt_normal
+$chk_Exch_UmAutoAttendant.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_UmAutoAttendant.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_UmAutoAttendant.Name = "chk_Exch_UmAutoAttendant"
@@ -2641,7 +2820,7 @@ $chk_Exch_UmAutoAttendant.Font = $font_Calibri_10pt_normal
 	$chk_Exch_UmAutoAttendant.Text = "Get-UmAutoAttendant"
 	$chk_Exch_UmAutoAttendant.UseVisualStyleBackColor = $True
 	$bx_UM_Functions.Controls.Add($chk_Exch_UmAutoAttendant)
-$chk_Exch_UmDialPlan.Font = $font_Calibri_10pt_normal
+$chk_Exch_UmDialPlan.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_UmDialPlan.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_UmDialPlan.Name = "chk_Exch_UmDialPlan"
@@ -2650,7 +2829,7 @@ $chk_Exch_UmDialPlan.Font = $font_Calibri_10pt_normal
 	$chk_Exch_UmDialPlan.Text = "Get-UmDialPlan"
 	$chk_Exch_UmDialPlan.UseVisualStyleBackColor = $True
 	$bx_UM_Functions.Controls.Add($chk_Exch_UmDialPlan)
-$chk_Exch_UmIpGateway.Font = $font_Calibri_10pt_normal
+$chk_Exch_UmIpGateway.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_UmIpGateway.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_UmIpGateway.Name = "chk_Exch_UmIpGateway"
@@ -2659,7 +2838,7 @@ $chk_Exch_UmIpGateway.Font = $font_Calibri_10pt_normal
 	$chk_Exch_UmIpGateway.Text = "Get-UmIpGateway"
 	$chk_Exch_UmIpGateway.UseVisualStyleBackColor = $True
 	$bx_UM_Functions.Controls.Add($chk_Exch_UmIpGateway)
-$chk_Exch_UmMailbox.Font = $font_Calibri_10pt_normal
+$chk_Exch_UmMailbox.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_UmMailbox.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_UmMailbox.Name = "chk_Exch_UmMailbox"
@@ -2668,7 +2847,7 @@ $chk_Exch_UmMailbox.Font = $font_Calibri_10pt_normal
 	$chk_Exch_UmMailbox.Text = "Get-UmMailbox"
 	$chk_Exch_UmMailbox.UseVisualStyleBackColor = $True
 	$bx_UM_Functions.Controls.Add($chk_Exch_UmMailbox)
-#	$chk_Exch_UmMailboxConfiguration.Font = $font_Calibri_10pt_normal
+#	$chk_Exch_UmMailboxConfiguration.Font = $font_SegoeUI_9pt_normal
 #		$System_Drawing_Point = New-Object System.Drawing.Point
 #		$System_Drawing_Point.X = $Col_1_loc
 #		$System_Drawing_Point.Y = $Row_1_loc
@@ -2680,7 +2859,7 @@ $chk_Exch_UmMailbox.Font = $font_Calibri_10pt_normal
 #	$chk_Exch_UmMailboxConfiguration.Text = "Get-UmMailboxConfiguration"
 #	$chk_Exch_UmMailboxConfiguration.UseVisualStyleBackColor = $True
 #	$bx_UM_Functions.Controls.Add($chk_Exch_UmMailboxConfiguration)
-#	$chk_Exch_UmMailboxPin.Font = $font_Calibri_10pt_normal
+#	$chk_Exch_UmMailboxPin.Font = $font_SegoeUI_9pt_normal
 #		$System_Drawing_Point = New-Object System.Drawing.Point
 #		$System_Drawing_Point.X = $Col_1_loc
 #		$System_Drawing_Point.Y = $Row_1_loc
@@ -2692,7 +2871,7 @@ $chk_Exch_UmMailbox.Font = $font_Calibri_10pt_normal
 #	$chk_Exch_UmMailboxPin.Text = "Get-UmMailboxPin"
 #	$chk_Exch_UmMailboxPin.UseVisualStyleBackColor = $True
 #	$bx_UM_Functions.Controls.Add($chk_Exch_UmMailboxPin)
-$chk_Exch_UmMailboxPolicy.Font = $font_Calibri_10pt_normal
+$chk_Exch_UmMailboxPolicy.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_UmMailboxPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_UmMailboxPolicy.Name = "chk_Exch_UmMailboxPolicy"
@@ -2714,14 +2893,13 @@ $tab_Step3_Misc.Location = $Loc_Tab_Tier3
 	$tab_Step3_Misc.UseVisualStyleBackColor = $True
 	$tab_Step3_Exchange_Tier2.Controls.Add($tab_Step3_Misc)
 $bx_Misc_Functions.Dock = 5
-	$bx_Misc_Functions.Font = $font_Calibri_10pt_bold
 	$bx_Misc_Functions.Location = $Loc_Box_1
 	$bx_Misc_Functions.Name = "bx_Misc_Functions"
 	$bx_Misc_Functions.Size = $Size_Box_3
 	$bx_Misc_Functions.TabIndex = $TabIndex++
 	$bx_Misc_Functions.TabStop = $False
 	$tab_Step3_Misc.Controls.Add($bx_Misc_Functions)
-$btn_Step3_Misc_CheckAll.Font = $font_Calibri_10pt_normal
+$btn_Step3_Misc_CheckAll.Font = $font_SegoeUI_9pt_normal
 	$btn_Step3_Misc_CheckAll.Location = $Loc_CheckAll_3
 	$btn_Step3_Misc_CheckAll.Name = "btn_Step3_Misc_CheckAll"
 	$btn_Step3_Misc_CheckAll.Size = $Size_Btn_3
@@ -2730,7 +2908,7 @@ $btn_Step3_Misc_CheckAll.Font = $font_Calibri_10pt_normal
 	$btn_Step3_Misc_CheckAll.UseVisualStyleBackColor = $True
 	$btn_Step3_Misc_CheckAll.add_Click($handler_btn_Step3_Misc_CheckAll_Click)
 	$bx_Misc_Functions.Controls.Add($btn_Step3_Misc_CheckAll)
-$btn_Step3_Misc_UncheckAll.Font = $font_Calibri_10pt_normal
+$btn_Step3_Misc_UncheckAll.Font = $font_SegoeUI_9pt_normal
 	$btn_Step3_Misc_UncheckAll.Location = $Loc_UncheckAll_3
 	$btn_Step3_Misc_UncheckAll.Name = "btn_Step3_Misc_UncheckAll"
 	$btn_Step3_Misc_UncheckAll.Size = $Size_Btn_3
@@ -2743,7 +2921,7 @@ $Col_1_loc = 35
 $Col_2_loc = 290
 $Row_1_loc = 0
 $Row_2_loc = 0
-$chk_Exch_AdminGroups.Font = $font_Calibri_10pt_normal
+$chk_Exch_AdminGroups.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Exch_AdminGroups.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Exch_AdminGroups.Name = "chk_Exch_AdminGroups"
@@ -2761,18 +2939,17 @@ $tab_Step3_AzureAd.Location = $Loc_Tab_Tier3
 	$tab_Step3_AzureAd.Padding = $System_Windows_Forms_Padding_Reusable
 	$tab_Step3_AzureAd.Size = $Size_Tab_Small
 	$tab_Step3_AzureAd.TabIndex = $TabIndex++
-	$tab_Step3_AzureAd.Text = "Get-AzureAD"
+	$tab_Step3_AzureAd.Text = "  Get-AzureAD  "
 	$tab_Step3_AzureAd.UseVisualStyleBackColor = $True
 	$tab_Step3_Azure_Tier2.Controls.Add($tab_Step3_AzureAd)
 $bx_AzureAd_Functions.Dock = 5
-	$bx_AzureAd_Functions.Font = $font_Calibri_10pt_bold
 	$bx_AzureAd_Functions.Location = $Loc_Box_1
 	$bx_AzureAd_Functions.Name = "bx_AzureAd_Functions"
 	$bx_AzureAd_Functions.Size = $Size_Box_3
 	$bx_AzureAd_Functions.TabIndex = $TabIndex++
 	$bx_AzureAd_Functions.TabStop = $False
 	$tab_Step3_AzureAd.Controls.Add($bx_AzureAd_Functions)
-$btn_Step3_AzureAd_CheckAll.Font = $font_Calibri_10pt_normal
+$btn_Step3_AzureAd_CheckAll.Font = $font_SegoeUI_9pt_normal
 	$btn_Step3_AzureAd_CheckAll.Location = $Loc_CheckAll_3
 	$btn_Step3_AzureAd_CheckAll.Name = "btn_Step3_AzureAd_CheckAll"
 	$btn_Step3_AzureAd_CheckAll.Size = $Size_Btn_3
@@ -2781,7 +2958,7 @@ $btn_Step3_AzureAd_CheckAll.Font = $font_Calibri_10pt_normal
 	$btn_Step3_AzureAd_CheckAll.UseVisualStyleBackColor = $True
 	$btn_Step3_AzureAd_CheckAll.add_Click($handler_btn_Step3_AzureAd_CheckAll_Click)
 	$bx_AzureAd_Functions.Controls.Add($btn_Step3_AzureAd_CheckAll)
-	$btn_Step3_AzureAd_UncheckAll.Font = $font_Calibri_10pt_normal
+$btn_Step3_AzureAd_UncheckAll.Font = $font_SegoeUI_9pt_normal
 	$btn_Step3_AzureAd_UncheckAll.Location = $Loc_UncheckAll_3
 	$btn_Step3_AzureAd_UncheckAll.Name = "btn_Step3_AzureAd_UncheckAll"
 	$btn_Step3_AzureAd_UncheckAll.Size = $Size_Btn_3
@@ -2794,7 +2971,7 @@ $Col_1_loc = 35
 $Col_2_loc = 290
 $Row_1_loc = 0
 $Row_2_loc = 0
-$chk_Azure_ADApplication.Font = $font_Calibri_10pt_normal
+$chk_Azure_ADApplication.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Azure_ADApplication.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Azure_ADApplication.Name = "chk_Azure_ADApplication"
@@ -2803,7 +2980,7 @@ $chk_Azure_ADApplication.Font = $font_Calibri_10pt_normal
 	$chk_Azure_ADApplication.Text = "Application"
 	$chk_Azure_ADApplication.UseVisualStyleBackColor = $True
 	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADApplication)
-$chk_Azure_ADContact.Font = $font_Calibri_10pt_normal
+$chk_Azure_ADContact.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Azure_ADContact.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Azure_ADContact.Name = "chk_Azure_ADContact"
@@ -2812,7 +2989,7 @@ $chk_Azure_ADContact.Font = $font_Calibri_10pt_normal
 	$chk_Azure_ADContact.Text = "Contact"
 	$chk_Azure_ADContact.UseVisualStyleBackColor = $True
 	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADContact)
-$chk_Azure_ADDevice.Font = $font_Calibri_10pt_normal
+$chk_Azure_ADDevice.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Azure_ADDevice.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Azure_ADDevice.Name = "chk_Azure_ADDevice"
@@ -2821,7 +2998,7 @@ $chk_Azure_ADDevice.Font = $font_Calibri_10pt_normal
 	$chk_Azure_ADDevice.Text = "Device"
 	$chk_Azure_ADDevice.UseVisualStyleBackColor = $True
 	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADDevice)
-$chk_Azure_ADDeviceRegisteredOwner.Font = $font_Calibri_10pt_normal
+$chk_Azure_ADDeviceRegisteredOwner.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Azure_ADDeviceRegisteredOwner.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Azure_ADDeviceRegisteredOwner.Name = "chk_Azure_ADDeviceRegisteredOwner"
@@ -2830,7 +3007,7 @@ $chk_Azure_ADDeviceRegisteredOwner.Font = $font_Calibri_10pt_normal
 	$chk_Azure_ADDeviceRegisteredOwner.Text = "DeviceRegisteredOwner"
 	$chk_Azure_ADDeviceRegisteredOwner.UseVisualStyleBackColor = $True
 	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADDeviceRegisteredOwner)
-$chk_Azure_ADDeviceRegisteredUser.Font = $font_Calibri_10pt_normal
+$chk_Azure_ADDeviceRegisteredUser.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Azure_ADDeviceRegisteredUser.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Azure_ADDeviceRegisteredUser.Name = "chk_Azure_ADDeviceRegisteredUser"
@@ -2839,7 +3016,7 @@ $chk_Azure_ADDeviceRegisteredUser.Font = $font_Calibri_10pt_normal
 	$chk_Azure_ADDeviceRegisteredUser.Text = "DeviceRegisteredUser"
 	$chk_Azure_ADDeviceRegisteredUser.UseVisualStyleBackColor = $True
 	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADDeviceRegisteredUser)
-$chk_Azure_ADDirectoryRole.Font = $font_Calibri_10pt_normal
+$chk_Azure_ADDirectoryRole.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Azure_ADDirectoryRole.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Azure_ADDirectoryRole.Name = "chk_Azure_ADDirectoryRole"
@@ -2848,7 +3025,7 @@ $chk_Azure_ADDirectoryRole.Font = $font_Calibri_10pt_normal
 	$chk_Azure_ADDirectoryRole.Text = "DirectoryRole"
 	$chk_Azure_ADDirectoryRole.UseVisualStyleBackColor = $True
 	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADDirectoryRole)
-$chk_Azure_ADDomain.Font = $font_Calibri_10pt_normal
+$chk_Azure_ADDomain.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Azure_ADDomain.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Azure_ADDomain.Name = "chk_Azure_ADDomain"
@@ -2857,7 +3034,7 @@ $chk_Azure_ADDomain.Font = $font_Calibri_10pt_normal
 	$chk_Azure_ADDomain.Text = "Domain"
 	$chk_Azure_ADDomain.UseVisualStyleBackColor = $True
 	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADDomain)
-$chk_Azure_AdDomainServiceConfigurationRecord.Font = $font_Calibri_10pt_normal
+$chk_Azure_AdDomainServiceConfigurationRecord.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Azure_AdDomainServiceConfigurationRecord.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Azure_AdDomainServiceConfigurationRecord.Name = "chk_Azure_AdDomainServiceConfigurationRecord"
@@ -2866,7 +3043,7 @@ $chk_Azure_AdDomainServiceConfigurationRecord.Font = $font_Calibri_10pt_normal
 	$chk_Azure_AdDomainServiceConfigurationRecord.Text = "DomainServiceConfigurationRecord"
 	$chk_Azure_AdDomainServiceConfigurationRecord.UseVisualStyleBackColor = $True
 	$bx_AzureAd_Functions.Controls.Add($chk_Azure_AdDomainServiceConfigurationRecord)
-$chk_Azure_AdDomainVerificationDnsRecord.Font = $font_Calibri_10pt_normal
+$chk_Azure_AdDomainVerificationDnsRecord.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Azure_AdDomainVerificationDnsRecord.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Azure_AdDomainVerificationDnsRecord.Name = "chk_Azure_AdDomainVerificationDnsRecord"
@@ -2875,7 +3052,7 @@ $chk_Azure_AdDomainVerificationDnsRecord.Font = $font_Calibri_10pt_normal
 	$chk_Azure_AdDomainVerificationDnsRecord.Text = "DomainVerificationDnsRecord"
 	$chk_Azure_AdDomainVerificationDnsRecord.UseVisualStyleBackColor = $True
 	$bx_AzureAd_Functions.Controls.Add($chk_Azure_AdDomainVerificationDnsRecord)
-$chk_Azure_ADGroup.Font = $font_Calibri_10pt_normal
+$chk_Azure_ADGroup.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Azure_ADGroup.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Azure_ADGroup.Name = "chk_Azure_ADGroup"
@@ -2884,7 +3061,7 @@ $chk_Azure_ADGroup.Font = $font_Calibri_10pt_normal
 	$chk_Azure_ADGroup.Text = "Group"
 	$chk_Azure_ADGroup.UseVisualStyleBackColor = $True
 	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADGroup)
-$chk_Azure_ADGroupMember.Font = $font_Calibri_10pt_normal
+$chk_Azure_ADGroupMember.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Azure_ADGroupMember.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Azure_ADGroupMember.Name = "chk_Azure_ADGroupMember"
@@ -2893,7 +3070,7 @@ $chk_Azure_ADGroupMember.Font = $font_Calibri_10pt_normal
 	$chk_Azure_ADGroupMember.Text = "GroupMember"
 	$chk_Azure_ADGroupMember.UseVisualStyleBackColor = $True
 	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADGroupMember)
-$chk_Azure_ADGroupOwner.Font = $font_Calibri_10pt_normal
+$chk_Azure_ADGroupOwner.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Azure_ADGroupOwner.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Azure_ADGroupOwner.Name = "chk_Azure_ADGroupOwner"
@@ -2902,7 +3079,7 @@ $chk_Azure_ADGroupOwner.Font = $font_Calibri_10pt_normal
 	$chk_Azure_ADGroupOwner.Text = "GroupOwner"
 	$chk_Azure_ADGroupOwner.UseVisualStyleBackColor = $True
 	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADGroupOwner)
-$chk_Azure_ADSubscribedSku.Font = $font_Calibri_10pt_normal
+$chk_Azure_ADSubscribedSku.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Azure_ADSubscribedSku.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Azure_ADSubscribedSku.Name = "chk_Azure_ADSubscribedSku"
@@ -2911,7 +3088,7 @@ $chk_Azure_ADSubscribedSku.Font = $font_Calibri_10pt_normal
 	$chk_Azure_ADSubscribedSku.Text = "SubscribedSku"
 	$chk_Azure_ADSubscribedSku.UseVisualStyleBackColor = $True
 	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADSubscribedSku)
-$chk_Azure_ADTenantDetail.Font = $font_Calibri_10pt_normal
+$chk_Azure_ADTenantDetail.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Azure_ADTenantDetail.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Azure_ADTenantDetail.Name = "chk_Azure_ADTenantDetail"
@@ -2920,7 +3097,7 @@ $chk_Azure_ADTenantDetail.Font = $font_Calibri_10pt_normal
 	$chk_Azure_ADTenantDetail.Text = "TenantDetail"
 	$chk_Azure_ADTenantDetail.UseVisualStyleBackColor = $True
 	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADTenantDetail)
-$chk_Azure_ADUser.Font = $font_Calibri_10pt_normal
+$chk_Azure_ADUser.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Azure_ADUser.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Azure_ADUser.Name = "chk_Azure_ADUser"
@@ -2929,7 +3106,7 @@ $chk_Azure_ADUser.Font = $font_Calibri_10pt_normal
 	$chk_Azure_ADUser.Text = "User"
 	$chk_Azure_ADUser.UseVisualStyleBackColor = $True
 	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADUser)
-$chk_Azure_ADUserLicenseDetail.Font = $font_Calibri_10pt_normal
+$chk_Azure_ADUserLicenseDetail.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Azure_ADUserLicenseDetail.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Azure_ADUserLicenseDetail.Name = "chk_Azure_ADUserLicenseDetail"
@@ -2938,7 +3115,7 @@ $chk_Azure_ADUserLicenseDetail.Font = $font_Calibri_10pt_normal
 	$chk_Azure_ADUserLicenseDetail.Text = "UserLicenseDetail"
 	$chk_Azure_ADUserLicenseDetail.UseVisualStyleBackColor = $True
 	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADUserLicenseDetail)
-$chk_Azure_ADUserMembership.Font = $font_Calibri_10pt_normal
+$chk_Azure_ADUserMembership.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Azure_ADUserMembership.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Azure_ADUserMembership.Name = "chk_Azure_ADUserMembership"
@@ -2947,7 +3124,7 @@ $chk_Azure_ADUserMembership.Font = $font_Calibri_10pt_normal
 	$chk_Azure_ADUserMembership.Text = "UserMembership"
 	$chk_Azure_ADUserMembership.UseVisualStyleBackColor = $True
 	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADUserMembership)
-$chk_Azure_ADUserOwnedDevice.Font = $font_Calibri_10pt_normal
+$chk_Azure_ADUserOwnedDevice.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Azure_ADUserOwnedDevice.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Azure_ADUserOwnedDevice.Name = "chk_Azure_ADUserOwnedDevice"
@@ -2956,7 +3133,7 @@ $chk_Azure_ADUserOwnedDevice.Font = $font_Calibri_10pt_normal
 	$chk_Azure_ADUserOwnedDevice.Text = "UserOwnedDevice"
 	$chk_Azure_ADUserOwnedDevice.UseVisualStyleBackColor = $True
 	$bx_AzureAd_Functions.Controls.Add($chk_Azure_ADUserOwnedDevice)
-$chk_Azure_ADUserRegisteredDevice.Font = $font_Calibri_10pt_normal
+$chk_Azure_ADUserRegisteredDevice.Font = $font_SegoeUI_9pt_normal
 	$Row_2_loc += 25
 	$chk_Azure_ADUserRegisteredDevice.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
 	$chk_Azure_ADUserRegisteredDevice.Name = "chk_Azure_ADUserRegisteredDevice"
@@ -2975,18 +3152,17 @@ $tab_Step3_Spo.Location = $Loc_Tab_Tier3
 	$tab_Step3_Spo.Padding = $System_Windows_Forms_Padding_Reusable
 	$tab_Step3_Spo.Size = $Size_Tab_Small
 	$tab_Step3_Spo.TabIndex = $TabIndex++
-	$tab_Step3_Spo.Text = "Get-SPO"
+	$tab_Step3_Spo.Text = "  Get-Spo  "
 	$tab_Step3_Spo.UseVisualStyleBackColor = $True
 	$tab_Step3_Sharepoint_Tier2.Controls.Add($tab_Step3_Spo)
 $bx_Spo_Functions.Dock = 5
-	$bx_Spo_Functions.Font = $font_Calibri_10pt_bold
 	$bx_Spo_Functions.Location = $Loc_Box_1
 	$bx_Spo_Functions.Name = "bx_Spo_Functions"
 	$bx_Spo_Functions.Size = $Size_Box_3
 	$bx_Spo_Functions.TabIndex = $TabIndex++
 	$bx_Spo_Functions.TabStop = $False
 	$tab_Step3_Spo.Controls.Add($bx_Spo_Functions)
-$btn_Step3_Spo_CheckAll.Font = $font_Calibri_10pt_normal
+$btn_Step3_Spo_CheckAll.Font = $font_SegoeUI_9pt_normal
 	$btn_Step3_Spo_CheckAll.Location = $Loc_CheckAll_3
 	$btn_Step3_Spo_CheckAll.Name = "btn_Step3_Spo_CheckAll"
 	$btn_Step3_Spo_CheckAll.Size = $Size_Btn_3
@@ -2995,7 +3171,7 @@ $btn_Step3_Spo_CheckAll.Font = $font_Calibri_10pt_normal
 	$btn_Step3_Spo_CheckAll.UseVisualStyleBackColor = $True
 	$btn_Step3_Spo_CheckAll.add_Click($handler_btn_Step3_Spo_CheckAll_Click)
 	$bx_Spo_Functions.Controls.Add($btn_Step3_Spo_CheckAll)
-$btn_Step3_Spo_UncheckAll.Font = $font_Calibri_10pt_normal
+$btn_Step3_Spo_UncheckAll.Font = $font_SegoeUI_9pt_normal
 	$btn_Step3_Spo_UncheckAll.Location = $Loc_UncheckAll_3
 	$btn_Step3_Spo_UncheckAll.Name = "btn_Step3_Spo_UncheckAll"
 	$btn_Step3_Spo_UncheckAll.Size = $Size_Btn_3
@@ -3008,7 +3184,7 @@ $Col_1_loc = 35
 $Col_2_loc = 290
 $Row_1_loc = 0
 $Row_2_loc = 0
-$chk_Spo_DeletedSite.Font = $font_Calibri_10pt_normal
+$chk_Spo_DeletedSite.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Spo_DeletedSite.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Spo_DeletedSite.Name = "chk_Spo_DeletedSite"
@@ -3017,7 +3193,7 @@ $chk_Spo_DeletedSite.Font = $font_Calibri_10pt_normal
 	$chk_Spo_DeletedSite.Text = "DeletedSite"
 	$chk_Spo_DeletedSite.UseVisualStyleBackColor = $True
 	$bx_Spo_Functions.Controls.Add($chk_Spo_DeletedSite)
-$chk_Spo_ExternalUser.Font = $font_Calibri_10pt_normal
+$chk_Spo_ExternalUser.Font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Spo_ExternalUser.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Spo_ExternalUser.Name = "chk_Spo_ExternalUser"
@@ -3026,7 +3202,7 @@ $chk_Spo_ExternalUser.Font = $font_Calibri_10pt_normal
 	$chk_Spo_ExternalUser.Text = "ExternalUser"
 	$chk_Spo_ExternalUser.UseVisualStyleBackColor = $True
 	$bx_Spo_Functions.Controls.Add($chk_Spo_ExternalUser)
-$chk_Spo_GeoStorageQuota.font = $font_Calibri_10pt_normal
+$chk_Spo_GeoStorageQuota.font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Spo_GeoStorageQuota.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Spo_GeoStorageQuota.Name = "chk_Spo_GeoStorageQuota"
@@ -3035,7 +3211,7 @@ $chk_Spo_GeoStorageQuota.font = $font_Calibri_10pt_normal
 	$chk_Spo_GeoStorageQuota.Text = "GeoStorageQuota"
 	$chk_Spo_GeoStorageQuota.UseVisualStyleBackColor = $True
 	$bx_Spo_Functions.Controls.Add($chk_Spo_GeoStorageQuota)
-$chk_Spo_Site.font = $font_Calibri_10pt_normal
+$chk_Spo_Site.font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Spo_Site.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Spo_Site.Name = "chk_Spo_Site"
@@ -3044,7 +3220,7 @@ $chk_Spo_Site.font = $font_Calibri_10pt_normal
 	$chk_Spo_Site.Text = "Site"
 	$chk_Spo_Site.UseVisualStyleBackColor = $True
 	$bx_Spo_Functions.Controls.Add($chk_Spo_Site)
-$chk_Spo_Tenant.font = $font_Calibri_10pt_normal
+$chk_Spo_Tenant.font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Spo_Tenant.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Spo_Tenant.Name = "chk_Spo_Tenant"
@@ -3053,7 +3229,7 @@ $chk_Spo_Tenant.font = $font_Calibri_10pt_normal
 	$chk_Spo_Tenant.Text = "Tenant"
 	$chk_Spo_Tenant.UseVisualStyleBackColor = $True
 	$bx_Spo_Functions.Controls.Add($chk_Spo_Tenant)
-$chk_Spo_TenantSyncClientRestriction.font = $font_Calibri_10pt_normal
+$chk_Spo_TenantSyncClientRestriction.font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Spo_TenantSyncClientRestriction.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Spo_TenantSyncClientRestriction.Name = "chk_Spo_TenantSyncClientRestriction"
@@ -3062,7 +3238,7 @@ $chk_Spo_TenantSyncClientRestriction.font = $font_Calibri_10pt_normal
 	$chk_Spo_TenantSyncClientRestriction.Text = "TenantSyncClientRestriction"
 	$chk_Spo_TenantSyncClientRestriction.UseVisualStyleBackColor = $True
 	$bx_Spo_Functions.Controls.Add($chk_Spo_TenantSyncClientRestriction)
-$chk_Spo_User.font = $font_Calibri_10pt_normal
+$chk_Spo_User.font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Spo_User.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Spo_User.Name = "chk_Spo_User"
@@ -3071,7 +3247,7 @@ $chk_Spo_User.font = $font_Calibri_10pt_normal
 	$chk_Spo_User.Text = "User"
 	$chk_Spo_User.UseVisualStyleBackColor = $True
 	$bx_Spo_Functions.Controls.Add($chk_Spo_User)
-$chk_Spo_WebTemplate.font = $font_Calibri_10pt_normal
+$chk_Spo_WebTemplate.font = $font_SegoeUI_9pt_normal
 	$Row_1_loc += 25
 	$chk_Spo_WebTemplate.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
 	$chk_Spo_WebTemplate.Name = "chk_Spo_WebTemplate"
@@ -3081,8 +3257,778 @@ $chk_Spo_WebTemplate.font = $font_Calibri_10pt_normal
 	$chk_Spo_WebTemplate.UseVisualStyleBackColor = $True
 	$bx_Spo_Functions.Controls.Add($chk_Spo_WebTemplate)
 
-	#EndRegion Step3 Sharepoint - SPO tab
+#EndRegion Step3 Sharepoint - SPO tab
 
+#Region Step3 Skype - CsOnline tab
+$TabIndex = 0
+$tab_Step3_CsOnline.Location = $Loc_Tab_Tier3
+	$tab_Step3_CsOnline.Name = "tab_Step3_CsOnline"
+	$tab_Step3_CsOnline.Padding = $System_Windows_Forms_Padding_Reusable
+	$tab_Step3_CsOnline.Size = $Size_Tab_Small
+	$tab_Step3_CsOnline.TabIndex = $TabIndex++
+	$tab_Step3_CsOnline.Text = "  CsOnline  "
+	$tab_Step3_CsOnline.UseVisualStyleBackColor = $True
+	$tab_Step3_Skype_Tier2.Controls.Add($tab_Step3_CsOnline)
+$bx_CsOnline_Functions.Dock = 5
+	$bx_CsOnline_Functions.Location = $Loc_Box_1
+	$bx_CsOnline_Functions.Name = "bx_CsOnline_Functions"
+	$bx_CsOnline_Functions.Size = $Size_Box_3
+	$bx_CsOnline_Functions.TabIndex = $TabIndex++
+	$bx_CsOnline_Functions.TabStop = $False
+	$tab_Step3_CsOnline.Controls.Add($bx_CsOnline_Functions)
+$btn_Step3_CsOnline_CheckAll.Font = $font_SegoeUI_9pt_normal
+	$btn_Step3_CsOnline_CheckAll.Location = $Loc_CheckAll_3
+	$btn_Step3_CsOnline_CheckAll.Name = "btn_Step3_CsOnline_CheckAll"
+	$btn_Step3_CsOnline_CheckAll.Size = $Size_Btn_3
+	$btn_Step3_CsOnline_CheckAll.TabIndex = $TabIndex++
+	$btn_Step3_CsOnline_CheckAll.Text = "Check all on this tab"
+	$btn_Step3_CsOnline_CheckAll.UseVisualStyleBackColor = $True
+	$btn_Step3_CsOnline_CheckAll.add_Click($handler_btn_Step3_CsOnline_CheckAll_Click)
+	$bx_CsOnline_Functions.Controls.Add($btn_Step3_CsOnline_CheckAll)
+$btn_Step3_CsOnline_UncheckAll.Font = $font_SegoeUI_9pt_normal
+	$btn_Step3_CsOnline_UncheckAll.Location = $Loc_UncheckAll_3
+	$btn_Step3_CsOnline_UncheckAll.Name = "btn_Step3_CsOnline_UncheckAll"
+	$btn_Step3_CsOnline_UncheckAll.Size = $Size_Btn_3
+	$btn_Step3_CsOnline_UncheckAll.TabIndex = $TabIndex++
+	$btn_Step3_CsOnline_UncheckAll.Text = "Uncheck all on this tab"
+	$btn_Step3_CsOnline_UncheckAll.UseVisualStyleBackColor = $True
+	$btn_Step3_CsOnline_UncheckAll.add_Click($handler_btn_Step3_CsOnline_UncheckAll_Click)
+	$bx_CsOnline_Functions.Controls.Add($btn_Step3_CsOnline_UncheckAll)
+$Col_1_loc = 35
+$Col_2_loc = 290
+$Row_1_loc = 0
+$Row_2_loc = 0
+$chk_Skype_CsOnlineDialInConferencingBridge.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsOnlineDialInConferencingBridge.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsOnlineDialInConferencingBridge.Name = "chk_Skype_CsOnlineDialInConferencingBridge"
+	$chk_Skype_CsOnlineDialInConferencingBridge.Size = $Size_Chk
+	$chk_Skype_CsOnlineDialInConferencingBridge.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineDialInConferencingBridge.Text = "DialInConferencingBridge"
+	$chk_Skype_CsOnlineDialInConferencingBridge.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialInConferencingBridge)
+$chk_Skype_CsOnlineDialinConferencingPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsOnlineDialinConferencingPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsOnlineDialinConferencingPolicy.Name = "chk_Skype_CsOnlineDialinConferencingPolicy"
+	$chk_Skype_CsOnlineDialinConferencingPolicy.Size = $Size_Chk
+	$chk_Skype_CsOnlineDialinConferencingPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineDialinConferencingPolicy.Text = "DialinConferencingPolicy"
+	$chk_Skype_CsOnlineDialinConferencingPolicy.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialinConferencingPolicy)
+$chk_Skype_CsOnlineDialInConferencingServiceNumber.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsOnlineDialInConferencingServiceNumber.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsOnlineDialInConferencingServiceNumber.Name = "chk_Skype_CsOnlineDialInConferencingServiceNumber"
+	$chk_Skype_CsOnlineDialInConferencingServiceNumber.Size = $Size_Chk
+	$chk_Skype_CsOnlineDialInConferencingServiceNumber.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineDialInConferencingServiceNumber.Text = "DialInConferencingServiceNumber"
+	$chk_Skype_CsOnlineDialInConferencingServiceNumber.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialInConferencingServiceNumber)
+$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.Name = "chk_Skype_CsOnlineDialinConferencingTenantConfig"
+	$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.Size = $Size_Chk
+	$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.Text = "DialinConferencingTenantConfig"
+	$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialinConferencingTenantConfiguration)
+$chk_Skype_CsOnlineDialInConferencingTenantSettings.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsOnlineDialInConferencingTenantSettings.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsOnlineDialInConferencingTenantSettings.Name = "chk_Skype_CsOnlineDialInConferencingTenantSettings"
+	$chk_Skype_CsOnlineDialInConferencingTenantSettings.Size = $Size_Chk
+	$chk_Skype_CsOnlineDialInConferencingTenantSettings.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineDialInConferencingTenantSettings.Text = "DialInConferencingTenantSettings"
+	$chk_Skype_CsOnlineDialInConferencingTenantSettings.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialInConferencingTenantSettings)
+$chk_Skype_CsOnlineDialInConferencingUser.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsOnlineDialInConferencingUser.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsOnlineDialInConferencingUser.Name = "chk_Skype_CsOnlineDialInConferencingUser"
+	$chk_Skype_CsOnlineDialInConferencingUser.Size = $Size_Chk
+	$chk_Skype_CsOnlineDialInConferencingUser.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineDialInConferencingUser.Text = "DialInConferencingUser"
+	$chk_Skype_CsOnlineDialInConferencingUser.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialInConferencingUser)
+$chk_Skype_CsOnlineDialInConferencingUserInfo.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsOnlineDialInConferencingUserInfo.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsOnlineDialInConferencingUserInfo.Name = "chk_Skype_CsOnlineDialInConferencingUserInfo"
+	$chk_Skype_CsOnlineDialInConferencingUserInfo.Size = $Size_Chk
+	$chk_Skype_CsOnlineDialInConferencingUserInfo.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineDialInConferencingUserInfo.Text = "DialInConferencingUserInfo"
+	$chk_Skype_CsOnlineDialInConferencingUserInfo.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialInConferencingUserInfo)
+$chk_Skype_CsOnlineDialInConferencingUserState.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsOnlineDialInConferencingUserState.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsOnlineDialInConferencingUserState.Name = "chk_Skype_CsOnlineDialInConferencingUserState"
+	$chk_Skype_CsOnlineDialInConferencingUserState.Size = $Size_Chk
+	$chk_Skype_CsOnlineDialInConferencingUserState.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineDialInConferencingUserState.Text = "DialInConferencingUserState"
+	$chk_Skype_CsOnlineDialInConferencingUserState.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialInConferencingUserState)
+$chk_Skype_CsOnlineDialOutPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsOnlineDialOutPolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsOnlineDialOutPolicy.Name = "chk_Skype_CsOnlineDialOutPolicy"
+	$chk_Skype_CsOnlineDialOutPolicy.Size = $Size_Chk
+	$chk_Skype_CsOnlineDialOutPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineDialOutPolicy.Text = "DialOutPolicy"
+	$chk_Skype_CsOnlineDialOutPolicy.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDialOutPolicy)
+$chk_Skype_CsOnlineDirectoryTenant.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsOnlineDirectoryTenant.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsOnlineDirectoryTenant.Name = "chk_Skype_CsOnlineDirectoryTenant"
+	$chk_Skype_CsOnlineDirectoryTenant.Size = $Size_Chk
+	$chk_Skype_CsOnlineDirectoryTenant.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineDirectoryTenant.Text = "DirectoryTenant"
+	$chk_Skype_CsOnlineDirectoryTenant.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineDirectoryTenant)
+$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.Name = "chk_Skype_CsOnlineTelephoneNumberInventoryTypes"
+	$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.Size = $Size_Chk
+	$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.Text = "TelephoneNumberInventoryTypes"
+	$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineTelephoneNumberInventoryTypes)
+$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.Name = "chk_Skype_CsOnlineTelephoneNumberReservationsInfo"
+	$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.Size = $Size_Chk
+	$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.Text = "TelephoneNumberReservationsInfo"
+	$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineTelephoneNumberReservationsInformation)
+$chk_Skype_CsOnlineUser.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsOnlineUser.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsOnlineUser.Name = "chk_Skype_CsOnlineUser"
+	$chk_Skype_CsOnlineUser.Size = $Size_Chk
+	$chk_Skype_CsOnlineUser.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineUser.Text = "User"
+	$chk_Skype_CsOnlineUser.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineUser)
+$chk_Skype_CsOnlineVoicemailPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsOnlineVoicemailPolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsOnlineVoicemailPolicy.Name = "chk_Skype_CsOnlineVoicemailPolicy"
+	$chk_Skype_CsOnlineVoicemailPolicy.Size = $Size_Chk
+	$chk_Skype_CsOnlineVoicemailPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineVoicemailPolicy.Text = "VoicemailPolicy"
+	$chk_Skype_CsOnlineVoicemailPolicy.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineVoicemailPolicy)
+$chk_Skype_CsOnlineVoiceRoute.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsOnlineVoiceRoute.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsOnlineVoiceRoute.Name = "chk_Skype_CsOnlineVoiceRoute"
+	$chk_Skype_CsOnlineVoiceRoute.Size = $Size_Chk
+	$chk_Skype_CsOnlineVoiceRoute.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineVoiceRoute.Text = "VoiceRoute"
+	$chk_Skype_CsOnlineVoiceRoute.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineVoiceRoute)
+$chk_Skype_CsOnlineVoiceRoutingPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsOnlineVoiceRoutingPolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsOnlineVoiceRoutingPolicy.Name = "chk_Skype_CsOnlineVoiceRoutingPolicy"
+	$chk_Skype_CsOnlineVoiceRoutingPolicy.Size = $Size_Chk
+	$chk_Skype_CsOnlineVoiceRoutingPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsOnlineVoiceRoutingPolicy.Text = "VoiceRoutingPolicy"
+	$chk_Skype_CsOnlineVoiceRoutingPolicy.UseVisualStyleBackColor = $True
+	$bx_CsOnline_Functions.Controls.Add($chk_Skype_CsOnlineVoiceRoutingPolicy)
+
+#EndRegion Step3 Skype - CsOnline tab
+
+#Region Step3 Skype - CsGeneral tab
+$TabIndex = 0
+$tab_Step3_CsGeneral.Location = $Loc_Tab_Tier3
+	$tab_Step3_CsGeneral.Name = "tab_Step3_CsGeneral"
+	$tab_Step3_CsGeneral.Padding = $System_Windows_Forms_Padding_Reusable
+	$tab_Step3_CsGeneral.Size = $Size_Tab_Small
+	$tab_Step3_CsGeneral.TabIndex = $TabIndex++
+	$tab_Step3_CsGeneral.Text = "  CsGeneral  "
+	$tab_Step3_CsGeneral.UseVisualStyleBackColor = $True
+	$tab_Step3_Skype_Tier2.Controls.Add($tab_Step3_CsGeneral)
+$bx_CsGeneral_Functions.Dock = 5
+	$bx_CsGeneral_Functions.Location = $Loc_Box_1
+	$bx_CsGeneral_Functions.Name = "bx_CsGeneral_Functions"
+	$bx_CsGeneral_Functions.Size = $Size_Box_3
+	$bx_CsGeneral_Functions.TabIndex = $TabIndex++
+	$bx_CsGeneral_Functions.TabStop = $False
+	$tab_Step3_CsGeneral.Controls.Add($bx_CsGeneral_Functions)
+$btn_Step3_CsGeneral_CheckAll.Font = $font_SegoeUI_9pt_normal
+	$btn_Step3_CsGeneral_CheckAll.Location = $Loc_CheckAll_3
+	$btn_Step3_CsGeneral_CheckAll.Name = "btn_Step3_CsGeneral_CheckAll"
+	$btn_Step3_CsGeneral_CheckAll.Size = $Size_Btn_3
+	$btn_Step3_CsGeneral_CheckAll.TabIndex = $TabIndex++
+	$btn_Step3_CsGeneral_CheckAll.Text = "Check all on this tab"
+	$btn_Step3_CsGeneral_CheckAll.UseVisualStyleBackColor = $True
+	$btn_Step3_CsGeneral_CheckAll.add_Click($handler_btn_Step3_CsGeneral_CheckAll_Click)
+	$bx_CsGeneral_Functions.Controls.Add($btn_Step3_CsGeneral_CheckAll)
+$btn_Step3_CsGeneral_UncheckAll.Font = $font_SegoeUI_9pt_normal
+	$btn_Step3_CsGeneral_UncheckAll.Location = $Loc_UncheckAll_3
+	$btn_Step3_CsGeneral_UncheckAll.Name = "btn_Step3_CsGeneral_UncheckAll"
+	$btn_Step3_CsGeneral_UncheckAll.Size = $Size_Btn_3
+	$btn_Step3_CsGeneral_UncheckAll.TabIndex = $TabIndex++
+	$btn_Step3_CsGeneral_UncheckAll.Text = "Uncheck all on this tab"
+	$btn_Step3_CsGeneral_UncheckAll.UseVisualStyleBackColor = $True
+	$btn_Step3_CsGeneral_UncheckAll.add_Click($handler_btn_Step3_CsGeneral_UncheckAll_Click)
+	$bx_CsGeneral_Functions.Controls.Add($btn_Step3_CsGeneral_UncheckAll)
+$Col_1_loc = 35
+$Col_2_loc = 290
+$Row_1_loc = 0
+$Row_2_loc = 0
+$chk_Skype_CsAudioConferencingProvider.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsAudioConferencingProvider.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsAudioConferencingProvider.Name = "chk_Skype_CsAudioConferencingProvider"
+	$chk_Skype_CsAudioConferencingProvider.Size = $Size_Chk
+	$chk_Skype_CsAudioConferencingProvider.TabIndex = $TabIndex++
+	$chk_Skype_CsAudioConferencingProvider.Text = "AudioConferencingProvider"
+	$chk_Skype_CsAudioConferencingProvider.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsAudioConferencingProvider)
+$chk_Skype_CsBroadcastMeetingConfiguration.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsBroadcastMeetingConfiguration.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsBroadcastMeetingConfiguration.Name = "chk_Skype_CsBroadcastMeetingConfiguration"
+	$chk_Skype_CsBroadcastMeetingConfiguration.Size = $Size_Chk
+	$chk_Skype_CsBroadcastMeetingConfiguration.TabIndex = $TabIndex++
+	$chk_Skype_CsBroadcastMeetingConfiguration.Text = "BroadcastMeetingConfiguration"
+	$chk_Skype_CsBroadcastMeetingConfiguration.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsBroadcastMeetingConfiguration)
+$chk_Skype_CsBroadcastMeetingPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsBroadcastMeetingPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsBroadcastMeetingPolicy.Name = "chk_Skype_CsBroadcastMeetingPolicy"
+	$chk_Skype_CsBroadcastMeetingPolicy.Size = $Size_Chk
+	$chk_Skype_CsBroadcastMeetingPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsBroadcastMeetingPolicy.Text = "BroadcastMeetingPolicy"
+	$chk_Skype_CsBroadcastMeetingPolicy.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsBroadcastMeetingPolicy)
+$chk_Skype_CsCallerIdPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsCallerIdPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsCallerIdPolicy.Name = "chk_Skype_CsCallerIdPolicy"
+	$chk_Skype_CsCallerIdPolicy.Size = $Size_Chk
+	$chk_Skype_CsCallerIdPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsCallerIdPolicy.Text = "CallerIdPolicy"
+	$chk_Skype_CsCallerIdPolicy.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsCallerIdPolicy)
+$chk_Skype_CsCallingLineIdentity.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsCallingLineIdentity.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsCallingLineIdentity.Name = "chk_Skype_CsCallingLineIdentity"
+	$chk_Skype_CsCallingLineIdentity.Size = $Size_Chk
+	$chk_Skype_CsCallingLineIdentity.TabIndex = $TabIndex++
+	$chk_Skype_CsCallingLineIdentity.Text = "CallingLineIdentity"
+	$chk_Skype_CsCallingLineIdentity.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsCallingLineIdentity)
+$chk_Skype_CsClientPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsClientPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsClientPolicy.Name = "chk_Skype_CsClientPolicy"
+	$chk_Skype_CsClientPolicy.Size = $Size_Chk
+	$chk_Skype_CsClientPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsClientPolicy.Text = "ClientPolicy"
+	$chk_Skype_CsClientPolicy.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsClientPolicy)
+$chk_Skype_CsCloudMeetingPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsCloudMeetingPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsCloudMeetingPolicy.Name = "chk_Skype_CsCloudMeetingPolicy"
+	$chk_Skype_CsCloudMeetingPolicy.Size = $Size_Chk
+	$chk_Skype_CsCloudMeetingPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsCloudMeetingPolicy.Text = "CloudMeetingPolicy"
+	$chk_Skype_CsCloudMeetingPolicy.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsCloudMeetingPolicy)
+$chk_Skype_CsConferencingPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsConferencingPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsConferencingPolicy.Name = "chk_Skype_CsConferencingPolicy"
+	$chk_Skype_CsConferencingPolicy.Size = $Size_Chk
+	$chk_Skype_CsConferencingPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsConferencingPolicy.Text = "ConferencingPolicy"
+	$chk_Skype_CsConferencingPolicy.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsConferencingPolicy)
+$chk_Skype_CsDialPlan.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsDialPlan.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsDialPlan.Name = "chk_Skype_CsDialPlan"
+	$chk_Skype_CsDialPlan.Size = $Size_Chk
+	$chk_Skype_CsDialPlan.TabIndex = $TabIndex++
+	$chk_Skype_CsDialPlan.Text = "DialPlan"
+	$chk_Skype_CsDialPlan.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsDialPlan)
+$chk_Skype_CsExternalAccessPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsExternalAccessPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsExternalAccessPolicy.Name = "chk_Skype_CsExternalAccessPolicy"
+	$chk_Skype_CsExternalAccessPolicy.Size = $Size_Chk
+	$chk_Skype_CsExternalAccessPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsExternalAccessPolicy.Text = "ExternalAccessPolicy"
+	$chk_Skype_CsExternalAccessPolicy.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsExternalAccessPolicy)
+$chk_Skype_CsExternalUserCommunicationPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsExternalUserCommunicationPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsExternalUserCommunicationPolicy.Name = "chk_Skype_CsExternalUserCommunicationPolicy"
+	$chk_Skype_CsExternalUserCommunicationPolicy.Size = $Size_Chk
+	$chk_Skype_CsExternalUserCommunicationPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsExternalUserCommunicationPolicy.Text = "ExternalUserCommunicationPolicy"
+	$chk_Skype_CsExternalUserCommunicationPolicy.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsExternalUserCommunicationPolicy)
+$chk_Skype_CsGraphPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsGraphPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsGraphPolicy.Name = "chk_Skype_CsGraphPolicy"
+	$chk_Skype_CsGraphPolicy.Size = $Size_Chk
+	$chk_Skype_CsGraphPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsGraphPolicy.Text = "GraphPolicy"
+	$chk_Skype_CsGraphPolicy.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsGraphPolicy)
+$chk_Skype_CsHostedVoicemailPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsHostedVoicemailPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsHostedVoicemailPolicy.Name = "chk_Skype_CsHostedVoicemailPolicy"
+	$chk_Skype_CsHostedVoicemailPolicy.Size = $Size_Chk
+	$chk_Skype_CsHostedVoicemailPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsHostedVoicemailPolicy.Text = "HostedVoicemailPolicy"
+	$chk_Skype_CsHostedVoicemailPolicy.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsHostedVoicemailPolicy)
+$chk_Skype_CsHostingProvider.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsHostingProvider.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsHostingProvider.Name = "chk_Skype_CsHostingProvider"
+	$chk_Skype_CsHostingProvider.Size = $Size_Chk
+	$chk_Skype_CsHostingProvider.TabIndex = $TabIndex++
+	$chk_Skype_CsHostingProvider.Text = "HostingProvider"
+	$chk_Skype_CsHostingProvider.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsHostingProvider)
+$chk_Skype_CsImFilterConfiguration.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsImFilterConfiguration.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsImFilterConfiguration.Name = "chk_Skype_CsImFilterConfiguration"
+	$chk_Skype_CsImFilterConfiguration.Size = $Size_Chk
+	$chk_Skype_CsImFilterConfiguration.TabIndex = $TabIndex++
+	$chk_Skype_CsImFilterConfiguration.Text = "ImFilterConfiguration"
+	$chk_Skype_CsImFilterConfiguration.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsImFilterConfiguration)
+$chk_Skype_CsIPPhonePolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsIPPhonePolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsIPPhonePolicy.Name = "chk_Skype_CsIPPhonePolicy"
+	$chk_Skype_CsIPPhonePolicy.Size = $Size_Chk
+	$chk_Skype_CsIPPhonePolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsIPPhonePolicy.Text = "IpPhonePolicy"
+	$chk_Skype_CsIPPhonePolicy.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsIPPhonePolicy)
+$chk_Skype_CsMeetingConfiguration.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsMeetingConfiguration.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsMeetingConfiguration.Name = "chk_Skype_CsMeetingConfiguration"
+	$chk_Skype_CsMeetingConfiguration.Size = $Size_Chk
+	$chk_Skype_CsMeetingConfiguration.TabIndex = $TabIndex++
+	$chk_Skype_CsMeetingConfiguration.Text = "MeetingConfiguration"
+	$chk_Skype_CsMeetingConfiguration.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsMeetingConfiguration)
+$chk_Skype_CsMeetingMigrationStatus.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsMeetingMigrationStatus.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsMeetingMigrationStatus.Name = "chk_Skype_CsMeetingMigrationStatus"
+	$chk_Skype_CsMeetingMigrationStatus.Size = $Size_Chk
+	$chk_Skype_CsMeetingMigrationStatus.TabIndex = $TabIndex++
+	$chk_Skype_CsMeetingMigrationStatus.Text = "MeetingMigrationStatus"
+	$chk_Skype_CsMeetingMigrationStatus.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsMeetingMigrationStatus)
+$chk_Skype_CsMobilityPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsMobilityPolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsMobilityPolicy.Name = "chk_Skype_CsMobilityPolicy"
+	$chk_Skype_CsMobilityPolicy.Size = $Size_Chk
+	$chk_Skype_CsMobilityPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsMobilityPolicy.Text = "MobilityPolicy"
+	$chk_Skype_CsMobilityPolicy.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsMobilityPolicy)
+$chk_Skype_CsPresencePolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsPresencePolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsPresencePolicy.Name = "chk_Skype_CsPresencePolicy"
+	$chk_Skype_CsPresencePolicy.Size = $Size_Chk
+	$chk_Skype_CsPresencePolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsPresencePolicy.Text = "PresencePolicy"
+	$chk_Skype_CsPresencePolicy.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsPresencePolicy)
+$chk_Skype_CsPrivacyConfiguration.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsPrivacyConfiguration.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsPrivacyConfiguration.Name = "chk_Skype_CsPrivacyConfiguration"
+	$chk_Skype_CsPrivacyConfiguration.Size = $Size_Chk
+	$chk_Skype_CsPrivacyConfiguration.TabIndex = $TabIndex++
+	$chk_Skype_CsPrivacyConfiguration.Text = "PrivacyConfiguration"
+	$chk_Skype_CsPrivacyConfiguration.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsPrivacyConfiguration)
+$chk_Skype_CsPushNotificationConfiguration.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsPushNotificationConfiguration.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsPushNotificationConfiguration.Name = "chk_Skype_CsPushNotificationConfiguration"
+	$chk_Skype_CsPushNotificationConfiguration.Size = $Size_Chk
+	$chk_Skype_CsPushNotificationConfiguration.TabIndex = $TabIndex++
+	$chk_Skype_CsPushNotificationConfiguration.Text = "PushNotificationConfiguration"
+	$chk_Skype_CsPushNotificationConfiguration.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsPushNotificationConfiguration)
+$chk_Skype_CsUCPhoneConfiguration.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsUCPhoneConfiguration.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsUCPhoneConfiguration.Name = "chk_Skype_CsUCPhoneConfiguration"
+	$chk_Skype_CsUCPhoneConfiguration.Size = $Size_Chk
+	$chk_Skype_CsUCPhoneConfiguration.TabIndex = $TabIndex++
+	$chk_Skype_CsUCPhoneConfiguration.Text = "UcPhoneConfiguration"
+	$chk_Skype_CsUCPhoneConfiguration.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsUCPhoneConfiguration)
+$chk_Skype_CsUserServicesPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsUserServicesPolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsUserServicesPolicy.Name = "chk_Skype_CsUserServicesPolicy"
+	$chk_Skype_CsUserServicesPolicy.Size = $Size_Chk
+	$chk_Skype_CsUserServicesPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsUserServicesPolicy.Text = "UserServicesPolicy"
+	$chk_Skype_CsUserServicesPolicy.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsUserServicesPolicy)
+$chk_Skype_CsVoicePolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsVoicePolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsVoicePolicy.Name = "chk_Skype_CsVoicePolicy"
+	$chk_Skype_CsVoicePolicy.Size = $Size_Chk
+	$chk_Skype_CsVoicePolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsVoicePolicy.Text = "VoicePolicy"
+	$chk_Skype_CsVoicePolicy.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsVoicePolicy)
+$chk_Skype_CsVoiceRoutingPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsVoiceRoutingPolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsVoiceRoutingPolicy.Name = "chk_Skype_CsVoiceRoutingPolicy"
+	$chk_Skype_CsVoiceRoutingPolicy.Size = $Size_Chk
+	$chk_Skype_CsVoiceRoutingPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsVoiceRoutingPolicy.Text = "VoiceRoutingPolicy"
+	$chk_Skype_CsVoiceRoutingPolicy.UseVisualStyleBackColor = $True
+	$bx_CsGeneral_Functions.Controls.Add($chk_Skype_CsVoiceRoutingPolicy)
+
+#EndRegion Step3 Skype - CsGeneral tab
+
+#Region Step3 Skype - CsTeams tab
+$TabIndex = 0
+$tab_Step3_CsTeams.Location = $Loc_Tab_Tier3
+	$tab_Step3_CsTeams.Name = "tab_Step3_CsTeams"
+	$tab_Step3_CsTeams.Padding = $System_Windows_Forms_Padding_Reusable
+	$tab_Step3_CsTeams.Size = $Size_Tab_Small
+	$tab_Step3_CsTeams.TabIndex = $TabIndex++
+	$tab_Step3_CsTeams.Text = "  CsTeams  "
+	$tab_Step3_CsTeams.UseVisualStyleBackColor = $True
+	$tab_Step3_Skype_Tier2.Controls.Add($tab_Step3_CsTeams)
+$bx_CsTeams_Functions.Dock = 5
+	$bx_CsTeams_Functions.Location = $Loc_Box_1
+	$bx_CsTeams_Functions.Name = "bx_CsTeams_Functions"
+	$bx_CsTeams_Functions.Size = $Size_Box_3
+	$bx_CsTeams_Functions.TabIndex = $TabIndex++
+	$bx_CsTeams_Functions.TabStop = $False
+	$tab_Step3_CsTeams.Controls.Add($bx_CsTeams_Functions)
+$btn_Step3_CsTeams_CheckAll.Font = $font_SegoeUI_9pt_normal
+	$btn_Step3_CsTeams_CheckAll.Location = $Loc_CheckAll_3
+	$btn_Step3_CsTeams_CheckAll.Name = "btn_Step3_CsTeams_CheckAll"
+	$btn_Step3_CsTeams_CheckAll.Size = $Size_Btn_3
+	$btn_Step3_CsTeams_CheckAll.TabIndex = $TabIndex++
+	$btn_Step3_CsTeams_CheckAll.Text = "Check all on this tab"
+	$btn_Step3_CsTeams_CheckAll.UseVisualStyleBackColor = $True
+	$btn_Step3_CsTeams_CheckAll.add_Click($handler_btn_Step3_CsTeams_CheckAll_Click)
+	$bx_CsTeams_Functions.Controls.Add($btn_Step3_CsTeams_CheckAll)
+$btn_Step3_CsTeams_UncheckAll.Font = $font_SegoeUI_9pt_normal
+	$btn_Step3_CsTeams_UncheckAll.Location = $Loc_UncheckAll_3
+	$btn_Step3_CsTeams_UncheckAll.Name = "btn_Step3_CsTeams_UncheckAll"
+	$btn_Step3_CsTeams_UncheckAll.Size = $Size_Btn_3
+	$btn_Step3_CsTeams_UncheckAll.TabIndex = $TabIndex++
+	$btn_Step3_CsTeams_UncheckAll.Text = "Uncheck all on this tab"
+	$btn_Step3_CsTeams_UncheckAll.UseVisualStyleBackColor = $True
+	$btn_Step3_CsTeams_UncheckAll.add_Click($handler_btn_Step3_CsTeams_UncheckAll_Click)
+	$bx_CsTeams_Functions.Controls.Add($btn_Step3_CsTeams_UncheckAll)
+$Col_1_loc = 35
+$Col_2_loc = 290
+$Row_1_loc = 0
+$Row_2_loc = 0
+$chk_Skype_CsTeamsCallingPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsTeamsCallingPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsTeamsCallingPolicy.Name = "chk_Skype_CsTeamsCallingPolicy"
+	$chk_Skype_CsTeamsCallingPolicy.Size = $Size_Chk
+	$chk_Skype_CsTeamsCallingPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsTeamsCallingPolicy.Text = "CallingPolicy"
+	$chk_Skype_CsTeamsCallingPolicy.UseVisualStyleBackColor = $True
+	$bx_CsTeams_Functions.Controls.Add($chk_Skype_CsTeamsCallingPolicy)
+$chk_Skype_CsTeamsClientConfiguration.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsTeamsClientConfiguration.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsTeamsClientConfiguration.Name = "chk_Skype_CsTeamsClientConfiguration"
+	$chk_Skype_CsTeamsClientConfiguration.Size = $Size_Chk
+	$chk_Skype_CsTeamsClientConfiguration.TabIndex = $TabIndex++
+	$chk_Skype_CsTeamsClientConfiguration.Text = "ClientConfiguration"
+	$chk_Skype_CsTeamsClientConfiguration.UseVisualStyleBackColor = $True
+	$bx_CsTeams_Functions.Controls.Add($chk_Skype_CsTeamsClientConfiguration)
+$chk_Skype_CsTeamsGuestCallingConfiguration.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsTeamsGuestCallingConfiguration.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsTeamsGuestCallingConfiguration.Name = "chk_Skype_CsTeamsGuestCallingConfiguration"
+	$chk_Skype_CsTeamsGuestCallingConfiguration.Size = $Size_Chk
+	$chk_Skype_CsTeamsGuestCallingConfiguration.TabIndex = $TabIndex++
+	$chk_Skype_CsTeamsGuestCallingConfiguration.Text = "GuestCallingConfiguration"
+	$chk_Skype_CsTeamsGuestCallingConfiguration.UseVisualStyleBackColor = $True
+	$bx_CsTeams_Functions.Controls.Add($chk_Skype_CsTeamsGuestCallingConfiguration)
+$chk_Skype_CsTeamsGuestMeetingConfiguration.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsTeamsGuestMeetingConfiguration.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsTeamsGuestMeetingConfiguration.Name = "chk_Skype_CsTeamsGuestMeetingConfiguration"
+	$chk_Skype_CsTeamsGuestMeetingConfiguration.Size = $Size_Chk
+	$chk_Skype_CsTeamsGuestMeetingConfiguration.TabIndex = $TabIndex++
+	$chk_Skype_CsTeamsGuestMeetingConfiguration.Text = "GuestMeetingConfiguration"
+	$chk_Skype_CsTeamsGuestMeetingConfiguration.UseVisualStyleBackColor = $True
+	$bx_CsTeams_Functions.Controls.Add($chk_Skype_CsTeamsGuestMeetingConfiguration)
+$chk_Skype_CsTeamsGuestMessagingConfiguration.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsTeamsGuestMessagingConfiguration.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsTeamsGuestMessagingConfiguration.Name = "chk_Skype_CsTeamsGuestMessagingConfiguration"
+	$chk_Skype_CsTeamsGuestMessagingConfiguration.Size = $Size_Chk
+	$chk_Skype_CsTeamsGuestMessagingConfiguration.TabIndex = $TabIndex++
+	$chk_Skype_CsTeamsGuestMessagingConfiguration.Text = "GuestMessagingConfig"
+	$chk_Skype_CsTeamsGuestMessagingConfiguration.UseVisualStyleBackColor = $True
+	$bx_CsTeams_Functions.Controls.Add($chk_Skype_CsTeamsGuestMessagingConfiguration)
+$chk_Skype_CsTeamsInteropPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsTeamsInteropPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsTeamsInteropPolicy.Name = "chk_Skype_CsTeamsInteropPolicy"
+	$chk_Skype_CsTeamsInteropPolicy.Size = $Size_Chk
+	$chk_Skype_CsTeamsInteropPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsTeamsInteropPolicy.Text = "InteropPolicy"
+	$chk_Skype_CsTeamsInteropPolicy.UseVisualStyleBackColor = $True
+	$bx_CsTeams_Functions.Controls.Add($chk_Skype_CsTeamsInteropPolicy)
+$chk_Skype_CsTeamsMeetingBroadcastConfiguration.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsTeamsMeetingBroadcastConfiguration.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsTeamsMeetingBroadcastConfiguration.Name = "chk_Skype_CsTeamsMeetingBroadcastConfig"
+	$chk_Skype_CsTeamsMeetingBroadcastConfiguration.Size = $Size_Chk
+	$chk_Skype_CsTeamsMeetingBroadcastConfiguration.TabIndex = $TabIndex++
+	$chk_Skype_CsTeamsMeetingBroadcastConfiguration.Text = "MeetingBroadcastConfiguration"
+	$chk_Skype_CsTeamsMeetingBroadcastConfiguration.UseVisualStyleBackColor = $True
+	$bx_CsTeams_Functions.Controls.Add($chk_Skype_CsTeamsMeetingBroadcastConfiguration)
+$chk_Skype_CsTeamsMeetingBroadcastPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsTeamsMeetingBroadcastPolicy.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsTeamsMeetingBroadcastPolicy.Name = "chk_Skype_CsTeamsMeetingBroadcastPolicy"
+	$chk_Skype_CsTeamsMeetingBroadcastPolicy.Size = $Size_Chk
+	$chk_Skype_CsTeamsMeetingBroadcastPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsTeamsMeetingBroadcastPolicy.Text = "MeetingBroadcastPolicy"
+	$chk_Skype_CsTeamsMeetingBroadcastPolicy.UseVisualStyleBackColor = $True
+	$bx_CsTeams_Functions.Controls.Add($chk_Skype_CsTeamsMeetingBroadcastPolicy)
+$chk_Skype_CsTeamsMeetingConfiguration.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsTeamsMeetingConfiguration.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsTeamsMeetingConfiguration.Name = "chk_Skype_CsTeamsMeetingConfiguration"
+	$chk_Skype_CsTeamsMeetingConfiguration.Size = $Size_Chk
+	$chk_Skype_CsTeamsMeetingConfiguration.TabIndex = $TabIndex++
+	$chk_Skype_CsTeamsMeetingConfiguration.Text = "MeetingConfiguration"
+	$chk_Skype_CsTeamsMeetingConfiguration.UseVisualStyleBackColor = $True
+	$bx_CsTeams_Functions.Controls.Add($chk_Skype_CsTeamsMeetingConfiguration)
+$chk_Skype_CsTeamsMeetingPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsTeamsMeetingPolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsTeamsMeetingPolicy.Name = "chk_Skype_CsTeamsMeetingPolicy"
+	$chk_Skype_CsTeamsMeetingPolicy.Size = $Size_Chk
+	$chk_Skype_CsTeamsMeetingPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsTeamsMeetingPolicy.Text = "MeetingPolicy"
+	$chk_Skype_CsTeamsMeetingPolicy.UseVisualStyleBackColor = $True
+	$bx_CsTeams_Functions.Controls.Add($chk_Skype_CsTeamsMeetingPolicy)
+$chk_Skype_CsTeamsMessagingPolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsTeamsMessagingPolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsTeamsMessagingPolicy.Name = "chk_Skype_CsTeamsMessagingPolicy"
+	$chk_Skype_CsTeamsMessagingPolicy.Size = $Size_Chk
+	$chk_Skype_CsTeamsMessagingPolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsTeamsMessagingPolicy.Text = "MessagingPolicy"
+	$chk_Skype_CsTeamsMessagingPolicy.UseVisualStyleBackColor = $True
+	$bx_CsTeams_Functions.Controls.Add($chk_Skype_CsTeamsMessagingPolicy)
+$chk_Skype_CsTeamsMigrationConfiguration.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsTeamsMigrationConfiguration.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsTeamsMigrationConfiguration.Name = "chk_Skype_CsTeamsMigrationConfiguration"
+	$chk_Skype_CsTeamsMigrationConfiguration.Size = $Size_Chk
+	$chk_Skype_CsTeamsMigrationConfiguration.TabIndex = $TabIndex++
+	$chk_Skype_CsTeamsMigrationConfiguration.Text = "MigrationConfiguration"
+	$chk_Skype_CsTeamsMigrationConfiguration.UseVisualStyleBackColor = $True
+	$bx_CsTeams_Functions.Controls.Add($chk_Skype_CsTeamsMigrationConfiguration)
+$chk_Skype_CsTeamsUpgradeConfiguration.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsTeamsUpgradeConfiguration.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsTeamsUpgradeConfiguration.Name = "chk_Skype_CsTeamsUpgradeConfiguration"
+	$chk_Skype_CsTeamsUpgradeConfiguration.Size = $Size_Chk
+	$chk_Skype_CsTeamsUpgradeConfiguration.TabIndex = $TabIndex++
+	$chk_Skype_CsTeamsUpgradeConfiguration.Text = "UpgradeConfiguration"
+	$chk_Skype_CsTeamsUpgradeConfiguration.UseVisualStyleBackColor = $True
+	$bx_CsTeams_Functions.Controls.Add($chk_Skype_CsTeamsUpgradeConfiguration)
+$chk_Skype_CsTeamsUpgradePolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsTeamsUpgradePolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsTeamsUpgradePolicy.Name = "chk_Skype_CsTeamsUpgradePolicy"
+	$chk_Skype_CsTeamsUpgradePolicy.Size = $Size_Chk
+	$chk_Skype_CsTeamsUpgradePolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsTeamsUpgradePolicy.Text = "UpgradePolicy"
+	$chk_Skype_CsTeamsUpgradePolicy.UseVisualStyleBackColor = $True
+	$bx_CsTeams_Functions.Controls.Add($chk_Skype_CsTeamsUpgradePolicy)
+$chk_Skype_CsTeamsUpgradeStatus.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsTeamsUpgradeStatus.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsTeamsUpgradeStatus.Name = "chk_Skype_CsTeamsUpgradeStatus"
+	$chk_Skype_CsTeamsUpgradeStatus.Size = $Size_Chk
+	$chk_Skype_CsTeamsUpgradeStatus.TabIndex = $TabIndex++
+	$chk_Skype_CsTeamsUpgradeStatus.Text = "UpgradeStatus"
+	$chk_Skype_CsTeamsUpgradeStatus.UseVisualStyleBackColor = $True
+	$bx_CsTeams_Functions.Controls.Add($chk_Skype_CsTeamsUpgradeStatus)
+$chk_Skype_CsTeamsVideoInteropServicePolicy.Font = $font_SegoeUI_9pt_normal
+	$Row_2_loc += 25
+	$chk_Skype_CsTeamsVideoInteropServicePolicy.Location = New-Object System.Drawing.Point($Col_2_loc,$Row_2_loc)
+	$chk_Skype_CsTeamsVideoInteropServicePolicy.Name = "chk_Skype_CsTeamsVideoInteropServicePolicy"
+	$chk_Skype_CsTeamsVideoInteropServicePolicy.Size = $Size_Chk
+	$chk_Skype_CsTeamsVideoInteropServicePolicy.TabIndex = $TabIndex++
+	$chk_Skype_CsTeamsVideoInteropServicePolicy.Text = "VideoInteropServicePolicy"
+	$chk_Skype_CsTeamsVideoInteropServicePolicy.UseVisualStyleBackColor = $True
+	$bx_CsTeams_Functions.Controls.Add($chk_Skype_CsTeamsVideoInteropServicePolicy)
+
+#EndRegion Step3 Skype - CsTeams tab
+
+#Region Step3 Skype - CsTenant tab
+$TabIndex = 0
+$tab_Step3_CsTenant.Location = $Loc_Tab_Tier3
+	$tab_Step3_CsTenant.Name = "tab_Step3_CsTenant"
+	$tab_Step3_CsTenant.Padding = $System_Windows_Forms_Padding_Reusable
+	$tab_Step3_CsTenant.Size = $Size_Tab_Small
+	$tab_Step3_CsTenant.TabIndex = $TabIndex++
+	$tab_Step3_CsTenant.Text = "  CsTenant  "
+	$tab_Step3_CsTenant.UseVisualStyleBackColor = $True
+	$tab_Step3_Skype_Tier2.Controls.Add($tab_Step3_CsTenant)
+$bx_CsTenant_Functions.Dock = 5
+	$bx_CsTenant_Functions.Location = $Loc_Box_1
+	$bx_CsTenant_Functions.Name = "bx_CsTenant_Functions"
+	$bx_CsTenant_Functions.Size = $Size_Box_3
+	$bx_CsTenant_Functions.TabIndex = $TabIndex++
+	$bx_CsTenant_Functions.TabStop = $False
+	$tab_Step3_CsTenant.Controls.Add($bx_CsTenant_Functions)
+$btn_Step3_CsTenant_CheckAll.Font = $font_SegoeUI_9pt_normal
+	$btn_Step3_CsTenant_CheckAll.Location = $Loc_CheckAll_3
+	$btn_Step3_CsTenant_CheckAll.Name = "btn_Step3_CsTenant_CheckAll"
+	$btn_Step3_CsTenant_CheckAll.Size = $Size_Btn_3
+	$btn_Step3_CsTenant_CheckAll.TabIndex = $TabIndex++
+	$btn_Step3_CsTenant_CheckAll.Text = "Check all on this tab"
+	$btn_Step3_CsTenant_CheckAll.UseVisualStyleBackColor = $True
+	$btn_Step3_CsTenant_CheckAll.add_Click($handler_btn_Step3_CsTenant_CheckAll_Click)
+	$bx_CsTenant_Functions.Controls.Add($btn_Step3_CsTenant_CheckAll)
+$btn_Step3_CsTenant_UncheckAll.Font = $font_SegoeUI_9pt_normal
+	$btn_Step3_CsTenant_UncheckAll.Location = $Loc_UncheckAll_3
+	$btn_Step3_CsTenant_UncheckAll.Name = "btn_Step3_CsTenant_UncheckAll"
+	$btn_Step3_CsTenant_UncheckAll.Size = $Size_Btn_3
+	$btn_Step3_CsTenant_UncheckAll.TabIndex = $TabIndex++
+	$btn_Step3_CsTenant_UncheckAll.Text = "Uncheck all on this tab"
+	$btn_Step3_CsTenant_UncheckAll.UseVisualStyleBackColor = $True
+	$btn_Step3_CsTenant_UncheckAll.add_Click($handler_btn_Step3_CsTenant_UncheckAll_Click)
+	$bx_CsTenant_Functions.Controls.Add($btn_Step3_CsTenant_UncheckAll)
+$Col_1_loc = 35
+$Col_2_loc = 290
+$Row_1_loc = 0
+$Row_2_loc = 0
+$chk_Skype_CsTenant.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsTenant.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsTenant.Name = "chk_Skype_CsTenant"
+	$chk_Skype_CsTenant.Size = $Size_Chk
+	$chk_Skype_CsTenant.TabIndex = $TabIndex++
+	$chk_Skype_CsTenant.Text = "CsTenant"
+	$chk_Skype_CsTenant.UseVisualStyleBackColor = $True
+	$bx_CsTenant_Functions.Controls.Add($chk_Skype_CsTenant)
+$chk_Skype_CsTenantBlockedCallingNumbers.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsTenantBlockedCallingNumbers.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsTenantBlockedCallingNumbers.Name = "chk_Skype_CsTenantBlockedCallingNumbers"
+	$chk_Skype_CsTenantBlockedCallingNumbers.Size = $Size_Chk
+	$chk_Skype_CsTenantBlockedCallingNumbers.TabIndex = $TabIndex++
+	$chk_Skype_CsTenantBlockedCallingNumbers.Text = "BlockedCallingNumbers"
+	$chk_Skype_CsTenantBlockedCallingNumbers.UseVisualStyleBackColor = $True
+	$bx_CsTenant_Functions.Controls.Add($chk_Skype_CsTenantBlockedCallingNumbers)
+$chk_Skype_CsTenantDialPlan.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsTenantDialPlan.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsTenantDialPlan.Name = "chk_Skype_CsTenantDialPlan"
+	$chk_Skype_CsTenantDialPlan.Size = $Size_Chk
+	$chk_Skype_CsTenantDialPlan.TabIndex = $TabIndex++
+	$chk_Skype_CsTenantDialPlan.Text = "DialPlan"
+	$chk_Skype_CsTenantDialPlan.UseVisualStyleBackColor = $True
+	$bx_CsTenant_Functions.Controls.Add($chk_Skype_CsTenantDialPlan)
+$chk_Skype_CsTenantFederationConfiguration.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsTenantFederationConfiguration.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsTenantFederationConfiguration.Name = "chk_Skype_CsTenantFederationConfiguration"
+	$chk_Skype_CsTenantFederationConfiguration.Size = $Size_Chk
+	$chk_Skype_CsTenantFederationConfiguration.TabIndex = $TabIndex++
+	$chk_Skype_CsTenantFederationConfiguration.Text = "FederationConfiguration"
+	$chk_Skype_CsTenantFederationConfiguration.UseVisualStyleBackColor = $True
+	$bx_CsTenant_Functions.Controls.Add($chk_Skype_CsTenantFederationConfiguration)
+$chk_Skype_CsTenantHybridConfiguration.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsTenantHybridConfiguration.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsTenantHybridConfiguration.Name = "chk_Skype_CsTenantHybridConfiguration"
+	$chk_Skype_CsTenantHybridConfiguration.Size = $Size_Chk
+	$chk_Skype_CsTenantHybridConfiguration.TabIndex = $TabIndex++
+	$chk_Skype_CsTenantHybridConfiguration.Text = "HybridConfiguration"
+	$chk_Skype_CsTenantHybridConfiguration.UseVisualStyleBackColor = $True
+	$bx_CsTenant_Functions.Controls.Add($chk_Skype_CsTenantHybridConfiguration)
+$chk_Skype_CsTenantLicensingConfiguration.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsTenantLicensingConfiguration.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsTenantLicensingConfiguration.Name = "chk_Skype_CsTenantLicensingConfiguration"
+	$chk_Skype_CsTenantLicensingConfiguration.Size = $Size_Chk
+	$chk_Skype_CsTenantLicensingConfiguration.TabIndex = $TabIndex++
+	$chk_Skype_CsTenantLicensingConfiguration.Text = "LicensingConfiguration"
+	$chk_Skype_CsTenantLicensingConfiguration.UseVisualStyleBackColor = $True
+	$bx_CsTenant_Functions.Controls.Add($chk_Skype_CsTenantLicensingConfiguration)
+$chk_Skype_CsTenantMigrationConfiguration.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsTenantMigrationConfiguration.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsTenantMigrationConfiguration.Name = "chk_Skype_CsTenantMigrationConfiguration"
+	$chk_Skype_CsTenantMigrationConfiguration.Size = $Size_Chk
+	$chk_Skype_CsTenantMigrationConfiguration.TabIndex = $TabIndex++
+	$chk_Skype_CsTenantMigrationConfiguration.Text = "MigrationConfiguration"
+	$chk_Skype_CsTenantMigrationConfiguration.UseVisualStyleBackColor = $True
+	$bx_CsTenant_Functions.Controls.Add($chk_Skype_CsTenantMigrationConfiguration)
+$chk_Skype_CsTenantPublicProvider.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsTenantPublicProvider.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsTenantPublicProvider.Name = "chk_Skype_CsTenantPublicProvider"
+	$chk_Skype_CsTenantPublicProvider.Size = $Size_Chk
+	$chk_Skype_CsTenantPublicProvider.TabIndex = $TabIndex++
+	$chk_Skype_CsTenantPublicProvider.Text = "PublicProvider"
+	$chk_Skype_CsTenantPublicProvider.UseVisualStyleBackColor = $True
+	$bx_CsTenant_Functions.Controls.Add($chk_Skype_CsTenantPublicProvider)
+$chk_Skype_CsTenantUpdateTimeWindow.Font = $font_SegoeUI_9pt_normal
+	$Row_1_loc += 25
+	$chk_Skype_CsTenantUpdateTimeWindow.Location = New-Object System.Drawing.Point($Col_1_loc,$Row_1_loc)
+	$chk_Skype_CsTenantUpdateTimeWindow.Name = "chk_Skype_CsTenantUpdateTimeWindow"
+	$chk_Skype_CsTenantUpdateTimeWindow.Size = $Size_Chk
+	$chk_Skype_CsTenantUpdateTimeWindow.TabIndex = $TabIndex++
+	$chk_Skype_CsTenantUpdateTimeWindow.Text = "UpdateTimeWindow"
+	$chk_Skype_CsTenantUpdateTimeWindow.UseVisualStyleBackColor = $True
+	$bx_CsTenant_Functions.Controls.Add($chk_Skype_CsTenantUpdateTimeWindow)
+
+#EndRegion Step3 Skype - CsTenant tab
 
 
 #EndRegion "Step3 - Tests"
@@ -3090,7 +4036,7 @@ $chk_Spo_WebTemplate.font = $font_Calibri_10pt_normal
 #Region "Step4 - Reporting"
 $TabIndex = 0
 $tab_Step4.BackColor = [System.Drawing.Color]::FromArgb(0,255,255,255)
-	$tab_Step4.Font = $font_Calibri_8pt_normal
+	$tab_Step4.Font = $font_SegoeUI_9pt_normal
 	$tab_Step4.Location = $Loc_Tab_Tier1
 	$tab_Step4.Name = "tab_Step4"
 	$tab_Step4.Padding = $System_Windows_Forms_Padding_Reusable
@@ -3098,7 +4044,7 @@ $tab_Step4.BackColor = [System.Drawing.Color]::FromArgb(0,255,255,255)
 	$tab_Step4.Text = "  Reporting  "
 	$tab_Step4.Size = $Size_Tab_1
 	$tab_Master.Controls.Add($tab_Step4)
-$btn_Step4_Assemble.Font = $font_Calibri_14pt_normal
+$btn_Step4_Assemble.Font = $font_SegoeUI_14pt_normal
 	$btn_Step4_Assemble.Location = $Loc_Btn_1
 	$btn_Step4_Assemble.Name = "btn_Step4_Assemble"
 	$btn_Step4_Assemble.Size = $Size_Buttons
@@ -3107,7 +4053,7 @@ $btn_Step4_Assemble.Font = $font_Calibri_14pt_normal
 	$btn_Step4_Assemble.UseVisualStyleBackColor = $True
 	$btn_Step4_Assemble.add_Click($handler_btn_Step4_Assemble_Click)
 	$tab_Step4.Controls.Add($btn_Step4_Assemble)
-$lbl_Step4_Assemble.Font = $font_Calibri_10pt_normal
+$lbl_Step4_Assemble.Font = $font_SegoeUI_9pt_normal
 	$lbl_Step4_Assemble.Location = $Loc_Lbl_1
 	$lbl_Step4_Assemble.Name = "lbl_Step4"
 	$lbl_Step4_Assemble.Size = New-Object System.Drawing.Size(510,38)
@@ -3115,7 +4061,7 @@ $lbl_Step4_Assemble.Font = $font_Calibri_10pt_normal
 	$lbl_Step4_Assemble.Text = "If Office 2010 or later is installed, the Execute button can be used to assemble `nthe output from Tests into reports."
 	$lbl_Step4_Assemble.TextAlign = 16
 	$tab_Step4.Controls.Add($lbl_Step4_Assemble)
-$bx_Step4_Functions.Font = $font_Calibri_10pt_bold
+$bx_Step4_Functions.Font = $font_SegoeUI_12pt_normal
 	$bx_Step4_Functions.Location = New-Object System.Drawing.Point(27,91)
 	$bx_Step4_Functions.Name = "bx_Step4_Functions"
 	$bx_Step4_Functions.Size = $Size_Box_1  #New-Object System.Drawing.Size(536,487)
@@ -3125,7 +4071,7 @@ $bx_Step4_Functions.Font = $font_Calibri_10pt_bold
 	$tab_Step4.Controls.Add($bx_Step4_Functions)
 <# $chk_Step4_DC_Report.Checked = $True
 	$chk_Step4_DC_Report.CheckState = 1
-	$chk_Step4_DC_Report.Font = $font_Calibri_10pt_normal
+	$chk_Step4_DC_Report.Font = $font_SegoeUI_9pt_normal
 	$System_Drawing_Point = New-Object System.Drawing.Point
 	$System_Drawing_Point.X = 50
 	$System_Drawing_Point.Y = 25
@@ -3138,7 +4084,7 @@ $bx_Step4_Functions.Font = $font_Calibri_10pt_bold
 	$bx_Step4_Functions.Controls.Add($chk_Step4_DC_Report)
 $chk_Step4_Ex_Report.Checked = $True
 	$chk_Step4_Ex_Report.CheckState = 1
-	$chk_Step4_Ex_Report.Font = $font_Calibri_10pt_normal
+	$chk_Step4_Ex_Report.Font = $font_SegoeUI_9pt_normal
 	$System_Drawing_Point = New-Object System.Drawing.Point
 	$System_Drawing_Point.X = 50
 	$System_Drawing_Point.Y = 50
@@ -3152,7 +4098,7 @@ $chk_Step4_Ex_Report.Checked = $True
  #>
  $chk_Step4_Exchange_Report.Checked = $True
 	$chk_Step4_Exchange_Report.CheckState = 1
-	$chk_Step4_Exchange_Report.Font = $font_Calibri_10pt_normal
+	$chk_Step4_Exchange_Report.Font = $font_SegoeUI_9pt_normal
 	$chk_Step4_Exchange_Report.Location = New-Object System.Drawing.Point(50,25)
 	$chk_Step4_Exchange_Report.Name = "chk_Step4_Exchange_Report"
 	$chk_Step4_Exchange_Report.Size = $Size_Chk_long
@@ -3162,7 +4108,7 @@ $chk_Step4_Ex_Report.Checked = $True
 	$bx_Step4_Functions.Controls.Add($chk_Step4_Exchange_Report)
 $chk_Step4_Azure_Report.Checked = $True
 	$chk_Step4_Azure_Report.CheckState = 1
-	$chk_Step4_Azure_Report.Font = $font_Calibri_10pt_normal
+	$chk_Step4_Azure_Report.Font = $font_SegoeUI_9pt_normal
 	$chk_Step4_Azure_Report.Location = New-Object System.Drawing.Point(50,50)
 	$chk_Step4_Azure_Report.Name = "chk_Step4_Azure_Report"
 	$chk_Step4_Azure_Report.Size = $Size_Chk_long
@@ -3172,7 +4118,7 @@ $chk_Step4_Azure_Report.Checked = $True
 	$bx_Step4_Functions.Controls.Add($chk_Step4_Azure_Report)
 $chk_Step4_Sharepoint_Report.Checked = $True
 	$chk_Step4_Sharepoint_Report.CheckState = 1
-	$chk_Step4_Sharepoint_Report.Font = $font_Calibri_10pt_normal
+	$chk_Step4_Sharepoint_Report.Font = $font_SegoeUI_9pt_normal
 	$chk_Step4_Sharepoint_Report.Location = New-Object System.Drawing.Point(50,75)
 	$chk_Step4_Sharepoint_Report.Name = "chk_Step4_Sharepoint_Report"
 	$chk_Step4_Sharepoint_Report.Size = $Size_Chk_long
@@ -3183,7 +4129,7 @@ $chk_Step4_Sharepoint_Report.Checked = $True
 
 <# $chk_Step4_Exchange_Environment_Doc.Checked = $True
 	$chk_Step4_Exchange_Environment_Doc.CheckState = 1
-	$chk_Step4_Exchange_Environment_Doc.Font = $font_Calibri_10pt_normal
+	$chk_Step4_Exchange_Environment_Doc.Font = $font_SegoeUI_9pt_normal
 	$System_Drawing_Point = New-Object System.Drawing.Point
 	$System_Drawing_Point.X = 50
 	$System_Drawing_Point.Y = 100
@@ -3194,7 +4140,7 @@ $chk_Step4_Sharepoint_Report.Checked = $True
 	$chk_Step4_Exchange_Environment_Doc.Text = "Generate Word for Exchange Documention"
 	$chk_Step4_Exchange_Environment_Doc.UseVisualStyleBackColor = $True
 	$bx_Step4_Functions.Controls.Add($chk_Step4_Exchange_Environment_Doc)
- #>$Status_Step4.Font = $font_Calibri_10pt_normal
+ #>$Status_Step4.Font = $font_SegoeUI_9pt_normal
 	$Status_Step4.Location = $Loc_Status
 	$Status_Step4.Name = "Status_Step4"
 	$Status_Step4.Size = $Size_Status
@@ -3206,7 +4152,7 @@ $chk_Step4_Sharepoint_Report.Checked = $True
 <#
 #Region "Step5 - Having Trouble?"
 $tab_Step5.BackColor = [System.Drawing.Color]::FromArgb(0,255,255,255)
-$tab_Step5.Font = $font_Calibri_8pt_normal
+$tab_Step5.Font = $font_SegoeUI_9pt_normal
 	$System_Drawing_Point = New-Object System.Drawing.Point
 	$System_Drawing_Point.X = 4
 	$System_Drawing_Point.Y = 36
@@ -3219,7 +4165,7 @@ $tab_Step5.Size = $System_Drawing_Size_tab_2
 $tab_Step5.visible = $False
 $tab_Master.Controls.Add($tab_Step5)
 
-$bx_Step5_Functions.Font = $font_Calibri_10pt_bold
+$bx_Step5_Functions.Font = $font_SegoeUI_12pt_normal
 	$System_Drawing_Point_bx_Step5 = New-Object System.Drawing.Point
 	$System_Drawing_Point_bx_Step5.X = 27	# 96-69
 	$System_Drawing_Point_bx_Step5.Y = 91
@@ -3234,7 +4180,7 @@ $bx_Step5_Functions.TabStop = $False
 $bx_Step5_Functions.Text = "If you're having trouble collecting data..."
 $tab_Step5.Controls.Add($bx_Step5_Functions)
 
-$Status_Step5.Font = $font_Calibri_10pt_normal
+$Status_Step5.Font = $font_SegoeUI_9pt_normal
 $Status_Step5.Location = $Loc_Status
 $Status_Step5.Name = "Status_Step5"
 $Status_Step5.Size = $Size_Status
@@ -3787,6 +4733,16 @@ if (
 		{$true}
 }
 
+Function Get-SkypeBoxStatus
+{
+if (
+	(Get-CsGeneralBoxStatus -eq $true) -or
+	(Get-CsOnlineBoxStatus -eq $true) -or
+	(Get-CsTeamsBoxStatus -eq $true) -or
+	(Get-CsTenantBoxStatus -eq $true)
+	)
+	{$true}
+}
 Function Get-SpoBoxStatus # See if any are checked
 {
 if (
@@ -3801,6 +4757,103 @@ if (
 	)
 		{$true}
 }
+
+Function Get-CsGeneralBoxStatus # See if any are checked
+{
+if (
+	($chk_Skype_CsAudioConferencingProvider.checked -eq $true) -or
+	($chk_Skype_CsBroadcastMeetingConfiguration.checked -eq $true) -or
+	($chk_Skype_CsBroadcastMeetingPolicy.checked -eq $true) -or
+	($chk_Skype_CsCallerIdPolicy.checked -eq $true) -or
+	($chk_Skype_CsCallingLineIdentity.checked -eq $true) -or
+	($chk_Skype_CsClientPolicy.checked -eq $true) -or
+	($chk_Skype_CsCloudMeetingPolicy.checked -eq $true) -or
+	($chk_Skype_CsConferencingPolicy.checked -eq $true) -or
+	($chk_Skype_CsDialPlan.checked -eq $true) -or
+	($chk_Skype_CsExternalAccessPolicy.checked -eq $true) -or
+	($chk_Skype_CsExternalUserCommunicationPolicy.checked -eq $true) -or
+	($chk_Skype_CsGraphPolicy.checked -eq $true) -or
+	($chk_Skype_CsHostedVoicemailPolicy.checked -eq $true) -or
+	($chk_Skype_CsHostingProvider.checked -eq $true) -or
+	($chk_Skype_CsImFilterConfiguration.checked -eq $true) -or
+	($chk_Skype_CsIPPhonePolicy.checked -eq $true) -or
+	($chk_Skype_CsMeetingConfiguration.checked -eq $true) -or
+	($chk_Skype_CsMeetingMigrationStatus.checked -eq $true) -or
+	($chk_Skype_CsMobilityPolicy.checked -eq $true) -or
+	($chk_Skype_CsPresencePolicy.checked -eq $true) -or
+	($chk_Skype_CsPrivacyConfiguration.checked -eq $true) -or
+	($chk_Skype_CsPushNotificationConfiguration.checked -eq $true) -or
+	($chk_Skype_CsUCPhoneConfiguration.checked -eq $true) -or
+	($chk_Skype_CsUserServicesPolicy.checked -eq $true) -or
+	($chk_Skype_CsVoicePolicy.checked -eq $true) -or
+	($chk_Skype_CsVoiceRoutingPolicy.checked -eq $true)
+	)
+		{$True}
+}
+
+Function Get-CsOnlineBoxStatus # See if any are checked
+{
+if (
+	($chk_Skype_CsOnlineDialInConferencingBridge.checked -eq $true) -or
+	($chk_Skype_CsOnlineDialinConferencingPolicy.checked -eq $true) -or
+	($chk_Skype_CsOnlineDialInConferencingServiceNumber.checked -eq $true) -or
+	($chk_Skype_CsOnlineDialinConferencingTenantConfiguration.checked -eq $true) -or
+	($chk_Skype_CsOnlineDialInConferencingTenantSettings.checked -eq $true) -or
+	($chk_Skype_CsOnlineDialInConferencingUser.checked -eq $true) -or
+	($chk_Skype_CsOnlineDialInConferencingUserInfo.checked -eq $true) -or
+	($chk_Skype_CsOnlineDialInConferencingUserState.checked -eq $true) -or
+	($chk_Skype_CsOnlineDialOutPolicy.checked -eq $true) -or
+	($chk_Skype_CsOnlineDirectoryTenant.checked -eq $true) -or
+	($chk_Skype_CsOnlineTelephoneNumberInventoryTypes.checked -eq $true) -or
+	($chk_Skype_CsOnlineTelephoneNumberReservationsInformation.checked -eq $true) -or
+	($chk_Skype_CsOnlineUser.checked -eq $true) -or
+	($chk_Skype_CsOnlineVoicemailPolicy.checked -eq $true) -or
+	($chk_Skype_CsOnlineVoiceRoute.checked -eq $true) -or
+	($chk_Skype_CsOnlineVoiceRoutingPolicy.checked -eq $true)
+	)
+		{$True}
+}
+
+Function Get-CsTeamsBoxStatus # See if any are checked
+{
+if (
+	($chk_Skype_CsTeamsCallingPolicy.checked -eq $true) -or
+	($chk_Skype_CsTeamsClientConfiguration.checked -eq $true) -or
+	($chk_Skype_CsTeamsGuestCallingConfiguration.checked -eq $true) -or
+	($chk_Skype_CsTeamsGuestMeetingConfiguration.checked -eq $true) -or
+	($chk_Skype_CsTeamsGuestMessagingConfiguration.checked -eq $true) -or
+	($chk_Skype_CsTeamsInteropPolicy.checked -eq $true) -or
+	($chk_Skype_CsTeamsMeetingBroadcastConfiguration.checked -eq $true) -or
+	($chk_Skype_CsTeamsMeetingBroadcastPolicy.checked -eq $true) -or
+	($chk_Skype_CsTeamsMeetingConfiguration.checked -eq $true) -or
+	($chk_Skype_CsTeamsMeetingPolicy.checked -eq $true) -or
+	($chk_Skype_CsTeamsMessagingPolicy.checked -eq $true) -or
+	($chk_Skype_CsTeamsMigrationConfiguration.checked -eq $true) -or
+	($chk_Skype_CsTeamsUpgradeConfiguration.checked -eq $true) -or
+	($chk_Skype_CsTeamsUpgradePolicy.checked -eq $true) -or
+	($chk_Skype_CsTeamsUpgradeStatus.checked -eq $true) -or
+	($chk_Skype_CsTeamsVideoInteropServicePolicy.checked -eq $true)
+	)
+		{$True}
+}
+
+Function Get-CsTenantBoxStatus # See if any are checked
+{
+if (
+	($chk_Skype_CsTenant.checked -eq $true) -or
+	($chk_Skype_CsTenantBlockedCallingNumbers.checked -eq $true) -or
+	($chk_Skype_CsTenantDialPlan.checked -eq $true) -or
+	($chk_Skype_CsTenantFederationConfiguration.checked -eq $true) -or
+	($chk_Skype_CsTenantHybridConfiguration.checked -eq $true) -or
+	($chk_Skype_CsTenantLicensingConfiguration.checked -eq $true) -or
+	($chk_Skype_CsTenantMigrationConfiguration.checked -eq $true) -or
+	($chk_Skype_CsTenantPublicProvider.checked -eq $true) -or
+	($chk_Skype_CsTenantUpdateTimeWindow.checked -eq $true)
+	)
+		{$True}
+}
+
+
 
 Function Import-TargetsMailboxes
 {
@@ -4031,6 +5084,95 @@ Function Set-AllFunctionsSpo
 	$chk_Spo_WebTemplate.Checked = $Check
 }
 
+Function Set-AllFunctionsCsGeneral
+{
+    Param([boolean]$Check)
+	$chk_Skype_CsAudioConferencingProvider.checked = $Check
+	$chk_Skype_CsBroadcastMeetingConfiguration.checked = $Check
+	$chk_Skype_CsBroadcastMeetingPolicy.checked = $Check
+	$chk_Skype_CsCallerIdPolicy.checked = $Check
+	$chk_Skype_CsCallingLineIdentity.checked = $Check
+	$chk_Skype_CsClientPolicy.checked = $Check
+	$chk_Skype_CsCloudMeetingPolicy.checked = $Check
+	$chk_Skype_CsConferencingPolicy.checked = $Check
+	$chk_Skype_CsDialPlan.checked = $Check
+	$chk_Skype_CsExternalAccessPolicy.checked = $Check
+	$chk_Skype_CsExternalUserCommunicationPolicy.checked = $Check
+	$chk_Skype_CsGraphPolicy.checked = $Check
+	$chk_Skype_CsHostedVoicemailPolicy.checked = $Check
+	$chk_Skype_CsHostingProvider.checked = $Check
+	$chk_Skype_CsImFilterConfiguration.checked = $Check
+	$chk_Skype_CsIPPhonePolicy.checked = $Check
+	$chk_Skype_CsMeetingConfiguration.checked = $Check
+	$chk_Skype_CsMeetingMigrationStatus.checked = $Check
+	$chk_Skype_CsMobilityPolicy.checked = $Check
+	$chk_Skype_CsPresencePolicy.checked = $Check
+	$chk_Skype_CsPrivacyConfiguration.checked = $Check
+	$chk_Skype_CsPushNotificationConfiguration.checked = $Check
+	$chk_Skype_CsUCPhoneConfiguration.checked = $Check
+	$chk_Skype_CsUserServicesPolicy.checked = $Check
+	$chk_Skype_CsVoicePolicy.checked = $Check
+	$chk_Skype_CsVoiceRoutingPolicy.checked = $Check
+}
+
+Function Set-AllFunctionsCsOnline
+{
+    Param([boolean]$Check)
+	$chk_Skype_CsOnlineDialInConferencingBridge.checked = $Check
+	$chk_Skype_CsOnlineDialinConferencingPolicy.checked = $Check
+	$chk_Skype_CsOnlineDialInConferencingServiceNumber.checked = $Check
+	$chk_Skype_CsOnlineDialinConferencingTenantConfiguration.checked = $Check
+	$chk_Skype_CsOnlineDialInConferencingTenantSettings.checked = $Check
+	$chk_Skype_CsOnlineDialInConferencingUser.checked = $Check
+	$chk_Skype_CsOnlineDialInConferencingUserInfo.checked = $Check
+	$chk_Skype_CsOnlineDialInConferencingUserState.checked = $Check
+	$chk_Skype_CsOnlineDialOutPolicy.checked = $Check
+	$chk_Skype_CsOnlineDirectoryTenant.checked = $Check
+	$chk_Skype_CsOnlineTelephoneNumberInventoryTypes.checked = $Check
+	$chk_Skype_CsOnlineTelephoneNumberReservationsInformation.checked = $Check
+	$chk_Skype_CsOnlineUser.checked = $Check
+	$chk_Skype_CsOnlineVoicemailPolicy.checked = $Check
+	$chk_Skype_CsOnlineVoiceRoute.checked = $Check
+	$chk_Skype_CsOnlineVoiceRoutingPolicy.checked = $Check
+}
+
+Function Set-AllFunctionsCsTeams
+{
+    Param([boolean]$Check)
+	$chk_Skype_CsTeamsCallingPolicy.checked = $Check
+	$chk_Skype_CsTeamsClientConfiguration.checked = $Check
+	$chk_Skype_CsTeamsGuestCallingConfiguration.checked = $Check
+	$chk_Skype_CsTeamsGuestMeetingConfiguration.checked = $Check
+	$chk_Skype_CsTeamsGuestMessagingConfiguration.checked = $Check
+	$chk_Skype_CsTeamsInteropPolicy.checked = $Check
+	$chk_Skype_CsTeamsMeetingBroadcastConfiguration.checked = $Check
+	$chk_Skype_CsTeamsMeetingBroadcastPolicy.checked = $Check
+	$chk_Skype_CsTeamsMeetingConfiguration.checked = $Check
+	$chk_Skype_CsTeamsMeetingPolicy.checked = $Check
+	$chk_Skype_CsTeamsMessagingPolicy.checked = $Check
+	$chk_Skype_CsTeamsMigrationConfiguration.checked = $Check
+	$chk_Skype_CsTeamsUpgradeConfiguration.checked = $Check
+	$chk_Skype_CsTeamsUpgradePolicy.checked = $Check
+	$chk_Skype_CsTeamsUpgradeStatus.checked = $Check
+	$chk_Skype_CsTeamsVideoInteropServicePolicy.checked = $Check
+}
+
+Function Set-AllFunctionsCsTenant
+{
+    Param([boolean]$Check)
+	$chk_Skype_CsTenant.checked = $Check
+	$chk_Skype_CsTenantBlockedCallingNumbers.checked = $Check
+	$chk_Skype_CsTenantDialPlan.checked = $Check
+	$chk_Skype_CsTenantFederationConfiguration.checked = $Check
+	$chk_Skype_CsTenantHybridConfiguration.checked = $Check
+	$chk_Skype_CsTenantLicensingConfiguration.checked = $Check
+	$chk_Skype_CsTenantMigrationConfiguration.checked = $Check
+	$chk_Skype_CsTenantPublicProvider.checked = $Check
+	$chk_Skype_CsTenantUpdateTimeWindow.checked = $Check
+}
+
+
+
 Function Start-O365DCJob
 {
     param(  [string]$server,`
@@ -4118,19 +5260,19 @@ Function Test-CheckBoxAndRun
 # Check Powershell version
 $PowershellVersionNumber = $null
 $powershellVersion = get-host
-# Teminate if Powershell is less than version 2
-if ($powershellVersion.Version.Major -lt "2")
+# Teminate if Powershell is less than version 3
+if ($powershellVersion.Version.Major -lt "3")
 {
     write-host "Unsupported Powershell version detected."
-    write-host "Powershell v2 is required."
+    write-host "Powershell v3 is required."
     end
 }
 # Powershell v2 or later required for Ex2010 environments
-elseif ($powershellVersion.Version.Major -lt "3")
-{
-    $PowershellVersionNumber = 2
-	write-host "Powershell version 2 detected" -ForegroundColor Green
-}
+#elseif ($powershellVersion.Version.Major -lt "3")
+#{
+#    $PowershellVersionNumber = 2
+#	write-host "Powershell version 2 detected" -ForegroundColor Green
+#}
 # Powershell v3 or later required for Ex2013 or later environments
 elseif ($powershellVersion.Version.Major -lt "4")
 {
@@ -4168,7 +5310,7 @@ else
 # Exchange Online Remote Powershell that supports MFA - Hybrid blade of EAC - https://cmdletpswmodule.blob.core.windows.net/exopsmodule/Microsoft.Online.CSE.PSModule.Client.application
 # Security and Compliance Center - https://docs.microsoft.com/en-us/powershell/exchange/office-365-scc/connect-to-scc-powershell/mfa-connect-to-scc-powershell?view=exchange-ps
 
-$TestGUI = $False
+$TestGUI = $true
 if ($TestGUI -eq $true)
 {}
 else {
@@ -4252,7 +5394,7 @@ If (($CurrentPSSession -eq $false) -or ($ForceNewConnection -eq $True))
 		write-host "Connecting to Skype for Business Online" -ForegroundColor Green
 		$CsSession = New-CsOnlineSession -Credential $O365Cred
 	}
-	Import-PSSession $CsSession
+	Import-PSSession $CsSession -AllowClobber
 
 	#Connect to Exchange Online
 	If ($MFA -eq $true)
@@ -4274,7 +5416,7 @@ If (($CurrentPSSession -eq $false) -or ($ForceNewConnection -eq $True))
 		write-host "Connecting to Exchange Online" -foregroundcolor green
 		$ExoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri $ExoConnectioUri -Credential $O365Cred -Authentication Basic -AllowRedirection
 	}
-	Import-PSSession $ExoSession
+	Import-PSSession $ExoSession -AllowClobber
 
 	#Connect to Security and Compliance Center
 	If ($MFA -eq $true)
@@ -4287,7 +5429,7 @@ If (($CurrentPSSession -eq $false) -or ($ForceNewConnection -eq $True))
 	{
 		write-host "Connecting to Security and Compliance Center" -foregroundcolor green
 		$SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri $SccConnectionUri -Credential $O365Cred -Authentication Basic -AllowRedirection
-		Import-PSSession $SccSession -Prefix CC
+		Import-PSSession $SccSession -Prefix CC -AllowClobber
 	}
 }
 else
