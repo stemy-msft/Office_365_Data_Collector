@@ -50,8 +50,8 @@ $Exchange_TransportConfig_outputfile = $output_location + "\Exchange_TransportCo
 	$_.AnonymousSenderToRecipientRatePerHour + "`t" + `
 	$_.ClearCategories + "`t" + `
 	$_.ConvertDisclaimerWrapperToEml + "`t" + `
-	$_.DSNConversionMode #+ "`t" + `
-	$_.ExternalDelayDsnEnabled #+ "`t" + `
+	$_.DSNConversionMode + "`t" + `
+	$_.ExternalDelayDsnEnabled + "`t" + `
 	$_.ExternalDsnDefaultLanguage + "`t" + `
 	$_.ExternalDsnLanguageDetectionEnabled + "`t" + `
 	$_.ExternalDsnMaxMessageAttachSize + "`t" + `

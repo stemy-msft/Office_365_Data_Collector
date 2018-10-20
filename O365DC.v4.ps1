@@ -4191,12 +4191,87 @@ if (($INI_Exchange -ne ""))
 else
 {
 	# Exchange Functions
-		Set-AllFunctionsClientAccess -Check $true
-		Set-AllFunctionsGlobal -Check $true
-		Set-AllFunctionsRecipient -Check $true
-		Set-AllFunctionsTransport -Check $true
-		Set-AllFunctionsMisc -Check $true
-		Set-AllFunctionsUm -Check $true
+	Set-AllFunctionsClientAccess -Check $true
+	Set-AllFunctionsGlobal -Check $true
+	Set-AllFunctionsRecipient -Check $true
+	Set-AllFunctionsTransport -Check $true
+	Set-AllFunctionsMisc -Check $true
+	Set-AllFunctionsUm -Check $true
+}
+
+# Not yet implemented
+if (($INI_Azure -ne ""))
+{
+	# Code to parse INI
+	write-host "Importing INI settings"
+	write-host "Exchange INI settings: " $ini_Exchange
+	# Exchange INI
+	write-host $ini_Exchange
+	if (($ini_Exchange -ne "") -and ((Test-Path $ini_Exchange) -eq $true))
+	{
+		write-host "File specified using the -INI_Exchange switch" -ForegroundColor Green
+		& ".\O365DC_Scripts\Core_Parse_Ini_File.ps1" -IniFile $INI_Exchange
+	}
+	elseif (($ini_Exchange -ne "") -and ((Test-Path $ini_Exchange) -eq $false))
+	{
+		write-host "File specified using the -INI_Exchange switch was not found" -ForegroundColor Red
+	}
+}
+else
+{
+	# Azure Functions
+	Set-AllFunctionsAzureAd -Check $true
+}
+
+# Not yet implemented
+if (($INI_Sharepoint -ne ""))
+{
+	# Code to parse INI
+	write-host "Importing INI settings"
+	write-host "Exchange INI settings: " $ini_Exchange
+	# Exchange INI
+	write-host $ini_Exchange
+	if (($ini_Exchange -ne "") -and ((Test-Path $ini_Exchange) -eq $true))
+	{
+		write-host "File specified using the -INI_Exchange switch" -ForegroundColor Green
+		& ".\O365DC_Scripts\Core_Parse_Ini_File.ps1" -IniFile $INI_Exchange
+	}
+	elseif (($ini_Exchange -ne "") -and ((Test-Path $ini_Exchange) -eq $false))
+	{
+		write-host "File specified using the -INI_Exchange switch was not found" -ForegroundColor Red
+	}
+}
+else
+{
+	# Sharepoint Functions
+	Set-AllFunctionsSpo -Check $true
+}
+
+# Not yet implemented
+if (($INI_Skype -ne ""))
+{
+	# Code to parse INI
+	write-host "Importing INI settings"
+	write-host "Exchange INI settings: " $ini_Exchange
+	# Exchange INI
+	write-host $ini_Exchange
+	if (($ini_Exchange -ne "") -and ((Test-Path $ini_Exchange) -eq $true))
+	{
+		write-host "File specified using the -INI_Exchange switch" -ForegroundColor Green
+		& ".\O365DC_Scripts\Core_Parse_Ini_File.ps1" -IniFile $INI_Exchange
+	}
+	elseif (($ini_Exchange -ne "") -and ((Test-Path $ini_Exchange) -eq $false))
+	{
+		write-host "File specified using the -INI_Exchange switch was not found" -ForegroundColor Red
+	}
+}
+else
+{
+	# Skype Functions
+	Set-AllFunctionsCsGeneral -Check $true
+	Set-AllFunctionsCsOnline -Check $true
+	Set-AllFunctionsCsTeams -Check $true
+	Set-AllFunctionsCsTenant -Check $true
 }
 
 #EndRegion Set Checkbox States
@@ -4722,6 +4797,7 @@ if (
 	)
 	{$true}
 }
+
 Function Get-SpoBoxStatus # See if any are checked
 {
 if (
@@ -4832,8 +4908,6 @@ if (
 		{$True}
 }
 
-
-
 Function Import-TargetsMailboxes
 {
 	Disable-AllTargetsButtons
@@ -4943,7 +5017,6 @@ Function Disable-TargetsAzureAdUser
 		$clb_Step1_AzureAdUser_List.SetItemChecked($i,$False)
 	}
 }
-
 
 Function Set-AllFunctionsClientAccess
 {
@@ -5302,7 +5375,7 @@ If (($CurrentPSSession -eq $false) -or ($ForceNewConnection -eq $True))
 	# Hard-code these for initial testing
 	# Commercial
 	$SharepointAdminCenter = "https://$domainhost-admin.sharepoint.com"
-	$ExoConnectioUri = "https://outlook.office365.com/powershell-liveid/"
+	$ExoConnectionUri = "https://outlook.office365.com/powershell-liveid/"
 	$SccConnectionUri = "https://ps.compliance.protection.outlook.com/powershell-liveid/"
 
 	# 21Vianet
@@ -5314,8 +5387,6 @@ If (($CurrentPSSession -eq $false) -or ($ForceNewConnection -eq $True))
 	# US Government GCC
 
 	# US Government DOD
-
-
 
 	If ($MFA -ne $true)
 	{
@@ -5345,6 +5416,7 @@ If (($CurrentPSSession -eq $false) -or ($ForceNewConnection -eq $True))
 
 	# Connect to Sharepoint
 	# Need to check this with non-MFA
+	write-host "Importing Sharepoint Online Module" -ForegroundColor green
 	Import-Module Microsoft.Online.SharePoint.PowerShell -DisableNameChecking
 	if ($MFA -eq $true)
 	{
@@ -5360,6 +5432,7 @@ If (($CurrentPSSession -eq $false) -or ($ForceNewConnection -eq $True))
 
 	#Connect to Skype
 	# Need to check this with non-MFA
+	write-host "Importing Skype Online Module" -ForegroundColor green
 	Import-Module SkypeOnlineConnector
 	if ($MFA -eq $true)
 	{
@@ -5372,9 +5445,13 @@ If (($CurrentPSSession -eq $false) -or ($ForceNewConnection -eq $True))
 		write-host "Connecting to Skype for Business Online" -ForegroundColor Green
 		$CsSession = New-CsOnlineSession -Credential $O365Cred
 	}
-	Import-PSSession $CsSession -AllowClobber
+	write-host "Importing Skype PsSession" -ForegroundColor green
+	Try {Import-PSSession $CsSession -AllowClobber}
+		catch{Write-host "Import of Skype PSSession failed." -ForegroundColor Red}
 
 	#Connect to Exchange Online
+	#Small sleep delay to delay the "FullyQualifiedErrorId : AccessDenied,PSSessionOpenFailed" error seen in some of my lab environments
+	Start-Sleep 2
 	If ($MFA -eq $true)
 	{
 		write-host "Multi-factor authentication is enabled" -foregroundcolor yellow
@@ -5383,20 +5460,25 @@ If (($CurrentPSSession -eq $false) -or ($ForceNewConnection -eq $True))
 		$ExoModuleLocation = @(Get-ChildItem -Path $ModuleLocation -Filter "Microsoft.Exchange.Management.ExoPowershellModule.manifest" -Recurse )
 		If ($ExoModuleLocation.Count -ge 1)
 		{
-			write-host "ExoPowershellModule.manifest found.  Trying to load the dll." -foregroundcolor green
+			write-host "ExoPowershellModule.manifest found.  Trying to import the module." -foregroundcolor green
 			$FullExoModulePath =  $ExoModuleLocation[0].Directory.tostring() + "\Microsoft.Exchange.Management.ExoPowershellModule.dll"
 			Import-Module $FullExoModulePath  -Force
+			write-host "Connecting to Exchange Online" -ForegroundColor green
 			$ExoSession	= New-ExoPSSession
 		}
 	}
 	else
 	{
 		write-host "Connecting to Exchange Online" -foregroundcolor green
-		$ExoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri $ExoConnectioUri -Credential $O365Cred -Authentication Basic -AllowRedirection
+		$ExoSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri $ExoConnectionUri -Credential $O365Cred -Authentication Basic -AllowRedirection
 	}
-	Import-PSSession $ExoSession -AllowClobber
+	write-host "Importing Exchange PsSession" -ForegroundColor green
+	Try {Import-PSSession $ExoSession -AllowClobber}
+		catch{Write-host "Import of Exchange PSSession failed." -ForegroundColor Red}
 
 	#Connect to Security and Compliance Center
+	#Small sleep delay to delay the "FullyQualifiedErrorId : AccessDenied,PSSessionOpenFailed" error seen in some of my lab environments
+	Start-Sleep 2
 	If ($MFA -eq $true)
 	{
 		write-host "Multi-factor authentication is enabled" -foregroundcolor yellow
@@ -5407,7 +5489,10 @@ If (($CurrentPSSession -eq $false) -or ($ForceNewConnection -eq $True))
 	{
 		write-host "Connecting to Security and Compliance Center" -foregroundcolor green
 		$SccSession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri $SccConnectionUri -Credential $O365Cred -Authentication Basic -AllowRedirection
-		Import-PSSession $SccSession -Prefix CC -AllowClobber
+		write-host "Importing Security and Compliance PsSession" -ForegroundColor green
+		Try {Import-PSSession $SccSession -Prefix CC -AllowClobber}
+			catch{Write-host "Import of SCC PSSession failed." -ForegroundColor Red}
+
 	}
 }
 else
